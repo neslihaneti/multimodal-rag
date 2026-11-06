@@ -1,0 +1,9 @@
+streamlit
+python-dotenv
+pillow
+torch
+transformers>=5.2
+accelerate
+chandra-ocr[hf]>=0.2
+docling
+psycopg[binary]

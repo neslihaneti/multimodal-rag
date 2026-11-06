@@ -1,0 +1,217 @@
+=== 2026-11-05 19:14:35 FINAL HOLDOUT (2 images, buffer 60) ===
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10109.68it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5947.78it/s]
+[1/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In the ML workflow, what percentage of effort does data prep
+[2/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which two automotive regulatory standards are mentioned for 
+[3/72] vector=4  keyword=1  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  What are the two types of parameters passed to an algorithm 
+[4/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How are prices determined for Google Cloud AI and ML Product
+[5/72] vector=1  keyword=4  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Why did the CODATA Task Group decide not to include the muon
+[6/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Where and in what year was the cyclotron frequency ratio of 
+[7/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Why are the 2022 and 2018 CODATA recommended values of the N
+[8/72] vector=7  keyword=3  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=2  What minimum aperture and angular resolutions at visible and
+[9/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What were the reading time, sampling time, and shock-front t
+[10/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What total relativistic precession per year is expected for 
+[11/72] vector=1  keyword=4  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How does reinforcement learning differ from supervised learn
+[12/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is the distinction between flexibility and adaptability
+[13/72] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  What are the distinct roles of the training, validation, and
+[14/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Why are virtual test environments advantageous for testing t
+[15/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Why is an AI-based approach needed for defect prediction, an
+[16/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Why did the CODATA Task Group exclude electron-proton and el
+[17/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How do atom-recoil experiments measure the mass of a neutral
+[18/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Why is a video receiver preferred over point-by-point scanni
+[19/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In space radar astronomy, what is the difference between mon
+[20/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Why is determining the oblateness of the Sun critical for re
+[21/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to the table of ML system risks, what can cause an
+[22/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In the acceptance criteria table for AI-based systems, how c
+[23/72] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to the acceptance criteria table, how can reward h
+[24/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is the 2022 CODATA recommended value and unit of the Bo
+[25/72] vector=2  keyword=7  hybrid (RRF)=4  vector + reranker=2  hybrid + reranker=2  What is the 2022 CODATA recommended value and relative stand
+[26/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to Table XXXIV, what is the 2022 CODATA value and 
+[27/72] vector=5  keyword=2  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  What is the 2022 CODATA recommended value of the proton-elec
+[28/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In Table 3a on solar XUV accomplishments, what wavelength pr
+[29/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to Table 3b on solar XUV spectrum needs, why is th
+[30/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In the table of relief events for an orbiting microwave alti
+[31/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to Figure 3 on the structure of a deep neural netw
+[32/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to Figure 4 on the computation performed by each n
+[33/72] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to Figure 1 in the ML workflow section, which thre
+[34/72] vector=-  keyword=5  hybrid (RRF)=26  vector + reranker=-  hybrid + reranker=1  What does Figure 1 in the CODATA 2022 report compare?
+[35/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to Figure 2 in the CODATA 2022 report, how large i
+[36/72] vector=2  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In Figure 3 of the CODATA 2022 report, which two types of me
+[37/72] vector=-  keyword=1  hybrid (RRF)=22  vector + reranker=-  hybrid + reranker=1  What does Figure 4 in the CODATA 2022 report display, and wh
+[38/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In Figure 3 showing the electromagnetic spectrum of the Crab
+[39/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In Figure 1 on the estimated infrared background, what are t
+[40/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How are flexibility and adaptability defined in Section 2.1,
+[41/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In the table of ML system risks spanning pages 55 and 56, ho
+[42/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In the acceptance criteria table spanning pages 63 and 64, w
+[43/72] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What causes test environments for self-learning and autonomo
+[44/72] vector=2  keyword=1  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Why were electron-proton and electron-deuteron scattering da
+[45/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What provides a recommended value of the alpha-particle rms 
+[46/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  By what factors does a video receiver reduce recording time 
+[47/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What were the reading time and sampling time of IMP-1, and w
+[48/72] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Pekiştirmeli öğrenme (reinforcement learning) nedir ve hangi
+[49/72] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Yapay zeka tabanlı sistemlerde esneklik (flexibility) ile uy
+[50/72] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  ML iş akışında veri hazırlama (data preparation) ortalama ne
+[51/72] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Derin sinir ağlarında hangi üç katman türü bulunur ve her nö
+[52/72] vector=2  keyword=4  hybrid (RRF)=4  vector + reranker=3  hybrid + reranker=3  Grafiksel kullanıcı arayüzünü (GUI) test etmek için yapay ze
+[53/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  CODATA 2022 ayarlamasında Avogadro sabiti (N_A) ve Boltzmann
+[54/72] vector=2  keyword=8  hybrid (RRF)=3  vector + reranker=12  hybrid + reranker=12  Nötronun kütlesi (m_n) hangi ölçümden türetilmektedir?
+[55/72] vector=7  keyword=36  hybrid (RRF)=12  vector + reranker=3  hybrid + reranker=3  Güneş Astronomisi Çalışma Grubu Tavsiye 6'da yörüngedeki gün
+[56/72] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Yörüngedeki bir mikrodalga altimetre ve gradiyometre ile oky
+[57/72] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  IMP-1 uydusunun okuma süresi (reading time), örnekleme süres
+
+## Overall (57 answerable questions)
+
+| Method | Recall@1 | Recall@6 | MRR | All pages@6 (multi-page) |
+|---|---|---|---|---|
+| vector | 0.81 | 0.93 | 0.864 | 1.00 |
+| keyword | 0.68 | 0.91 | 0.782 | 1.00 |
+| hybrid (RRF) | 0.77 | 0.95 | 0.848 | 1.00 |
+| vector + reranker | 0.88 | 0.95 | 0.908 | 1.00 |
+| hybrid + reranker | 0.89 | 0.98 | 0.934 | 1.00 |
+
+## Recall@6 by question type
+
+| Type (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| factual (10) | 0.90 | 1.00 | 1.00 | 1.00 | 1.00 |
+| figure (9) | 0.78 | 1.00 | 0.78 | 0.78 | 1.00 |
+| multi_page (8) | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| paraphrase (10) | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| table (10) | 1.00 | 0.90 | 1.00 | 1.00 | 1.00 |
+| turkish (10) | 0.90 | 0.60 | 0.90 | 0.90 | 0.90 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## Recall@6 / MRR by document
+
+| Document (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| doc1.pdf (24) | 1.00 / 0.95 | 0.96 / 0.75 | 1.00 / 0.91 | 1.00 / 0.97 | 1.00 / 0.97 |
+| doc2.pdf (17) | 0.88 / 0.72 | 0.88 / 0.78 | 0.88 / 0.72 | 0.82 / 0.77 | 0.94 / 0.89 |
+| doc3.pdf (16) | 0.88 / 0.89 | 0.88 / 0.84 | 0.94 / 0.90 | 1.00 / 0.96 | 1.00 / 0.93 |
+
+Report: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261105-1921-retrieval.md
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 9061.17it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5689.05it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 8439.24it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:26,  4.85it/s]Loading weights:   9%|▉         | 64/713 [00:00<00:02, 259.08it/s]Loading weights:  19%|█▊        | 132/713 [00:00<00:01, 411.62it/s]Loading weights:  27%|██▋       | 192/713 [00:00<00:01, 474.94it/s]Loading weights:  37%|███▋      | 262/713 [00:00<00:00, 546.49it/s]Loading weights:  46%|████▋     | 330/713 [00:00<00:00, 586.89it/s]Loading weights:  55%|█████▌    | 393/713 [00:00<00:00, 577.62it/s]Loading weights:  98%|█████████▊| 696/713 [00:00<00:00, 1310.62it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 761.43it/s] 
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[1/72] f01  17.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 33)]
+[2/72] f02  14.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 19)]
+[3/72] f03  17.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 28)]
+[4/72] f04  17.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 17)]
+[5/72] f05  22.4s refused=False correct=True faith=0.5 cites=[('doc2.pdf', 4), ('doc2.pdf', 55)]
+[6/72] f06  25.0s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 7)]
+[7/72] f07  25.1s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 5), ('doc2.pdf', 41)]
+[8/72] f08  18.3s refused=False correct=True faith=0.5 cites=[('doc3.pdf', 60), ('doc3.pdf', 49)]
+[9/72] f09  19.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 197)]
+[10/72] f10  20.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 186)]
+[11/72] f11  23.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 27), ('doc1.pdf', 26)]
+[12/72] f12  15.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 21)]
+[13/72] f13  15.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 35)]
+[14/72] f14  17.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 75)]
+[15/72] f15  17.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 79)]
+[16/72] f16  29.2s refused=False correct=True faith=0.6666666666666666 cites=[('doc2.pdf', 3), ('doc2.pdf', 2)]
+[17/72] f17  21.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 24)]
+[18/72] f18  28.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 88), ('doc3.pdf', 85)]
+[19/72] f19  19.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 119)]
+[20/72] f20  29.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 179), ('doc3.pdf', 183), ('doc3.pdf', 178)]
+[21/72] f21  16.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 55)]
+[22/72] f22  15.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 63)]
+[23/72] f23  13.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 64)]
+[24/72] f24  30.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[25/72] f25  32.9s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45)]
+[26/72] f26  41.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 50)]
+[27/72] f27  34.4s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[28/72] f28  21.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 89)]
+[29/72] f29  22.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 89)]
+[30/72] f30  24.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 193)]
+[31/72] f31  19.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 45)]
+[32/72] f32  20.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 46)]
+[33/72] f33  12.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 28)]
+[34/72] f34  34.6s refused=False correct=True faith=0.5 cites=[('doc2.pdf', 21)]
+[35/72] f35  29.9s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 22)]
+[36/72] f36  22.2s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 24), ('doc2.pdf', 24)]
+[37/72] f37  36.0s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 42)]
+[38/72] f38  22.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 145)]
+[39/72] f39  21.1s refused=False correct=False faith=0.5 cites=[('doc3.pdf', 198), ('doc3.pdf', 199)]
+[40/72] f40  20.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 21), ('doc1.pdf', 22)]
+[41/72] f41  23.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 55), ('doc1.pdf', 56)]
+[42/72] f42  20.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 63), ('doc1.pdf', 64)]
+[43/72] f43  23.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 74), ('doc1.pdf', 75)]
+[44/72] f44  30.5s refused=False correct=False faith=0.5 cites=[('doc2.pdf', 21), ('doc2.pdf', 4)]
+[45/72] f45  28.0s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 3), ('doc2.pdf', 56)]
+[46/72] f46  24.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 88), ('doc3.pdf', 89)]
+[47/72] f47  21.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 197), ('doc3.pdf', 198)]
+[48/72] f48  28.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 27)]
+[49/72] f49  21.7s refused=False correct=False faith=0.5 cites=[('doc1.pdf', 21)]
+[50/72] f50  21.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 33)]
+[51/72] f51  14.9s refused=True correct=False faith=None cites=[]
+[52/72] f52  37.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 79), ('doc1.pdf', 80), ('doc1.pdf', 79)]
+[53/72] f53  40.4s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[54/72] f54  52.2s refused=False correct=False faith=1.0 cites=[('doc2.pdf', 47)]
+[55/72] f55  22.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 60)]
+[56/72] f56  19.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 193)]
+[57/72] f57  17.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 197)]
+[58/72] f58  11.4s refused=True correct=- faith=None cites=[]
+[59/72] f59  26.5s refused=True correct=- faith=None cites=[]
+[60/72] f60  17.1s refused=True correct=- faith=None cites=[]
+[61/72] f61  22.4s refused=True correct=- faith=None cites=[]
+[62/72] f62  24.9s refused=True correct=- faith=None cites=[]
+[63/72] f63  23.1s refused=True correct=- faith=None cites=[]
+[64/72] f64  24.7s refused=True correct=- faith=None cites=[]
+[65/72] f65  18.7s refused=True correct=- faith=None cites=[]
+[66/72] f66  23.3s refused=True correct=- faith=None cites=[]
+[67/72] f67  78.9s refused=True correct=- faith=None cites=[]
+[68/72] f68  12.7s refused=True correct=- faith=None cites=[]
+[69/72] f69  25.4s refused=True correct=- faith=None cites=[]
+[70/72] f70  14.2s refused=True correct=- faith=None cites=[]
+[71/72] f71  30.5s refused=True correct=- faith=None cites=[]
+[72/72] f72  25.6s refused=True correct=- faith=None cites=[]
+
+## Summary
+
+| Metric | Value |
+|---|---|
+| answer_correctness | 0.91 |
+| faithfulness | 0.94 |
+| citation_precision | 0.87 |
+| cites_expected_page | 0.95 |
+| answers_without_citation | 0.00 |
+| false_refusals | 0.02 |
+| unanswerable_refused | 1.00 |
+| unanswerable_with_citation | 0.00 |
+| raw_unanswerable_with_citation | 0.07 |
+| mean_latency_s | 24.11 |
+| p50_latency_s | 22.20 |
+| p95_latency_s | 40.40 |
+| p50_ttft_s | 15.20 |
+| p95_ttft_s | 30.50 |
+
+Judge: the local generator model. Check it with `python evaluate.py calibrate <run>-judgments.jsonl` after labelling some rows.
+
+## By question type
+
+| Type (n) | correct | faithfulness | cites expected page |
+|---|---|---|---|
+| factual (10) | 1.00 | 0.90 | 1.00 |
+| figure (9) | 0.89 | 0.89 | 1.00 |
+| multi_page (8) | 0.88 | 0.94 | 1.00 |
+| paraphrase (10) | 1.00 | 0.97 | 1.00 |
+| table (10) | 1.00 | 1.00 | 1.00 |
+| turkish (10) | 0.70 | 0.94 | 0.70 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## By document
+
+| Document (n) | correct | faithfulness | cites expected page | without citation | unanswerable refused |
+|---|---|---|---|---|---|
+| doc1.pdf (29) | 0.92 | 0.98 | 0.96 | 0.00 | 1.00 |
+| doc2.pdf (22) | 0.88 | 0.89 | 0.94 | 0.00 | 1.00 |
+| doc3.pdf (21) | 0.94 | 0.94 | 0.94 | 0.00 | 1.00 |
+
+Report: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261105-1952-answers.md
+Judge decisions to label: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261105-1952-answers-judgments.jsonl (set "human" to true/false)
+2026-11-05 19:52:20 run_resume: done
+2026-11-05 19:52:20 chain: final done

@@ -1,0 +1,25 @@
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 6759.56it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<05:31,  2.15it/s]Loading weights:   2%|▏         | 14/713 [00:00<00:22, 31.46it/s]Loading weights:   4%|▎         | 26/713 [00:00<00:13, 52.52it/s]Loading weights:   5%|▌         | 38/713 [00:00<00:09, 68.88it/s]Loading weights:   8%|▊         | 54/713 [00:00<00:07, 92.03it/s]Loading weights:  10%|▉         | 69/713 [00:00<00:06, 106.06it/s]Loading weights:  12%|█▏        | 82/713 [00:01<00:06, 104.68it/s]Loading weights:  14%|█▍        | 99/713 [00:01<00:05, 120.92it/s]Loading weights:  16%|█▌        | 113/713 [00:01<00:04, 124.38it/s]Loading weights:  18%|█▊        | 127/713 [00:01<00:04, 120.11it/s]Loading weights:  20%|██        | 143/713 [00:01<00:04, 129.35it/s]Loading weights:  22%|██▏       | 157/713 [00:01<00:04, 125.74it/s]Loading weights:  24%|██▍       | 170/713 [00:01<00:04, 117.41it/s]Loading weights:  26%|██▌       | 187/713 [00:01<00:04, 129.92it/s]Loading weights:  28%|██▊       | 201/713 [00:02<00:03, 129.16it/s]Loading weights:  30%|███       | 215/713 [00:02<00:04, 123.44it/s]Loading weights:  32%|███▏      | 231/713 [00:02<00:03, 131.65it/s]Loading weights:  34%|███▍      | 245/713 [00:02<00:03, 129.74it/s]Loading weights:  36%|███▋      | 259/713 [00:02<00:03, 121.18it/s]Loading weights:  39%|███▊      | 275/713 [00:02<00:03, 129.54it/s]Loading weights:  41%|████      | 289/713 [00:02<00:03, 127.41it/s]Loading weights:  42%|████▏     | 302/713 [00:02<00:03, 119.62it/s]Loading weights:  45%|████▍     | 319/713 [00:02<00:02, 131.71it/s]Loading weights:  47%|████▋     | 333/713 [00:03<00:02, 131.60it/s]Loading weights:  49%|████▊     | 347/713 [00:03<00:02, 125.34it/s]Loading weights:  51%|█████     | 363/713 [00:03<00:02, 133.19it/s]Loading weights:  53%|█████▎    | 377/713 [00:03<00:02, 132.89it/s]Loading weights:  55%|█████▍    | 391/713 [00:03<00:02, 126.54it/s]Loading weights:  67%|██████▋   | 475/713 [00:03<00:00, 320.91it/s]Loading weights:  81%|████████  | 574/713 [00:03<00:00, 504.05it/s]Loading weights:  95%|█████████▌| 679/713 [00:03<00:00, 658.55it/s]Loading weights: 100%|██████████| 713/713 [00:03<00:00, 181.63it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+fixed2    q38    ok  'The documents do not contain information about this.'
+fixed2    q39    ok  'The documents do not contain information about this.'
+fixed2    q40    ok  'The documents do not contain information about fine-tuning a large language model with LoRA.'
+fixed2    q41    ok  'The documents do not contain information about vector databases recommended for retrieval-augmented generation.'
+fixed2    q42    ok  'The documents do not contain information about this.'
+fixed2    q43    ok  'The documents do not contain information about the capital of Australia.'
+fixed2    q44    ok  'The documents do not contain information about how to restart a pod in Kubernetes.'
+fixed2    q45    ok  'Belgelerde bu konuda bilgi yok.'
+fixed2    d2u01  ok  'The documents do not contain information about the half-life of carbon-14.'
+fixed2    d2u02  ok  'The documents do not contain information about how to test machine learning models against the CODATA constants.'
+fixed2    d3u01  ok  'The documents do not contain information about this.'
+fixed2    d3u02  BAD 'The documents do not contain information about the launch date of the Hubble Space Telescope. The provided excerpts discuss the Large Orbita'
+fixed2    d3u03  ok  'Belgelerde bu konuda bilgi yok.'
+fixed2    q01    ok  'The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].'
+fixed2    q09    ok  'Back-to-back testing is also known as differential testing [1].'
+fixed2    q31    ok  'Kavram kayması (concept drift), operasyonel ortamın zaman içinde değişmesiyle birlikte, eğitilmiş modelin bu değişikliklere uyum sağlamaması'
+fixed2    q32    ok  'Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim verisini manipüle etmesiyle gerçekleştirilir ve bu, modelin yanlış tahm'
+fixed2    q33    ok  'Yapay zeka tabanlı sistemlerdeki test seviyeleri şunlardır: giriş veri testi, ML model testi, bileşen testi, bileşen entegrasyon testi, sist'
+fixed2    d2q06  ok  'The 2022 least-squares adjustment used 133 input data and 79 adjusted constants [1].'
+fixed2    d2q12  ok  '2022 ayarlamasında hafif çekirdeklerin bağıl atom kütleleri, muonik hidrojen ve deuteriumun Lamb kayması ölçümleriyle belirlendi [1]. Ayrıca'
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

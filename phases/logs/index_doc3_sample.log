@@ -1,0 +1,139 @@
+      0s  0.0% doc3_sample.pdf: converting pages
+2026-11-04 08:53:28,104 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-11-04 08:53:28,132 - INFO - Going to convert document batch...
+2026-11-04 08:53:28,132 - INFO - Initializing pipeline for StandardPdfPipeline with options hash 3bbeca38a730f5505ea29e4137fd7d86
+2026-11-04 08:53:28,139 - INFO - Loading plugin 'docling_defaults'
+2026-11-04 08:53:28,139 - INFO - Registered picture descriptions: ['vlm', 'api']
+2026-11-04 08:53:28,144 - INFO - Loading plugin 'docling_defaults'
+2026-11-04 08:53:28,146 - INFO - Registered ocr engines: ['auto', 'easyocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-11-04 08:53:28,151 - INFO - Loading plugin 'docling_defaults'
+2026-11-04 08:53:28,152 - INFO - Registered layout engines: ['docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-11-04 08:53:28,157 - INFO - Accelerator device: 'mps'
+2026-11-04 08:53:28,671 - INFO - Loading plugin 'docling_defaults'
+2026-11-04 08:53:28,672 - INFO - Registered table structure engines: ['docling_tableformer']
+2026-11-04 08:53:28,786 - INFO - Accelerator device: 'mps'
+2026-11-04 08:53:29,039 - INFO - Processing document doc3_sample.pdf
+2026-11-04 08:53:38,729 - INFO - Finished converting document doc3_sample.pdf in 10.63 sec.
+     11s  0.0% doc3_sample.pdf: page 1/40
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+    137s  2.5% doc3_sample.pdf: page 2/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+    217s  5.0% doc3_sample.pdf: page 3/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+    302s  7.5% doc3_sample.pdf: page 4/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+    392s 10.0% doc3_sample.pdf: page 5/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+    482s 12.5% doc3_sample.pdf: page 6/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+    569s 15.0% doc3_sample.pdf: page 7/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+    674s 17.5% doc3_sample.pdf: page 8/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+    796s 20.0% doc3_sample.pdf: page 9/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+    937s 22.5% doc3_sample.pdf: page 10/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   1015s 25.0% doc3_sample.pdf: page 11/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   1124s 27.5% doc3_sample.pdf: page 12/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   1217s 30.0% doc3_sample.pdf: page 13/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   1300s 32.5% doc3_sample.pdf: page 14/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   1399s 35.0% doc3_sample.pdf: page 15/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   1568s 37.5% doc3_sample.pdf: page 16/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   1814s 40.0% doc3_sample.pdf: page 17/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   1908s 42.5% doc3_sample.pdf: page 18/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   2179s 45.0% doc3_sample.pdf: page 19/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   2258s 47.5% doc3_sample.pdf: page 20/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   2354s 50.0% doc3_sample.pdf: page 21/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   2460s 52.5% doc3_sample.pdf: page 22/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   2560s 55.0% doc3_sample.pdf: page 23/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   2672s 57.5% doc3_sample.pdf: page 24/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   2771s 60.0% doc3_sample.pdf: page 25/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   2872s 62.5% doc3_sample.pdf: page 26/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   2950s 65.0% doc3_sample.pdf: page 27/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3046s 67.5% doc3_sample.pdf: page 28/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3135s 70.0% doc3_sample.pdf: page 29/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3220s 72.5% doc3_sample.pdf: page 30/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3330s 75.0% doc3_sample.pdf: page 31/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3438s 77.5% doc3_sample.pdf: page 32/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3572s 80.0% doc3_sample.pdf: page 33/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3673s 82.5% doc3_sample.pdf: page 34/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3748s 85.0% doc3_sample.pdf: page 35/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3853s 87.5% doc3_sample.pdf: page 36/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   3958s 90.0% doc3_sample.pdf: page 37/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   4068s 92.5% doc3_sample.pdf: page 38/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   4253s 95.0% doc3_sample.pdf: page 39/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   4362s 97.5% doc3_sample.pdf: page 40/40
+Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+   4509s 100.0% Done
+DONE in 75.2 min: {'indexed': ['doc3_sample.pdf'], 'skipped': []}

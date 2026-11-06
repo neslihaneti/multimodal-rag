@@ -1,0 +1,1780 @@
+{
+  "info": {
+    "time": "2026-11-05T19:52:19",
+    "golden": "golden_final.jsonl",
+    "golden_sha256": "2e207d243847",
+    "indexed_documents": 3,
+    "indexed_chunks": 1164,
+    "embedder": "BAAI/bge-m3",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "generator": "Qwen/Qwen3-VL-4B-Instruct",
+    "prompt_sha256": "fef3a3124534",
+    "judge_sha256": "b5c1519a840b",
+    "candidates": 40,
+    "top_k": 6,
+    "max_search_rounds": 3,
+    "rrf_k": 60,
+    "image_max_side": 896,
+    "enough_score": 0.5,
+    "max_page_images": 2,
+    "first_sentence_max": 60
+  },
+  "metrics": {
+    "answer_correctness": 0.9122807017543859,
+    "faithfulness": 0.9404761904761905,
+    "citation_precision": 0.869047619047619,
+    "cites_expected_page": 0.9473684210526315,
+    "answers_without_citation": 0.0,
+    "false_refusals": 0.017543859649122806,
+    "unanswerable_refused": 1.0,
+    "unanswerable_with_citation": 0.0,
+    "raw_unanswerable_with_citation": 0.06666666666666667,
+    "mean_latency_s": 24.11388888888889,
+    "p50_latency_s": 22.2,
+    "p95_latency_s": 40.4,
+    "p50_ttft_s": 15.2,
+    "p95_ttft_s": 30.5
+  },
+  "rows": [
+    {
+      "id": "f01",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 17.6,
+      "ttft_s": 16.0,
+      "answer": "Data preparation uses an average of 43% of the ML workflow effort, while model selection and building use only 17% [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Data preparation uses an average of 43% of the ML workflow effort, while model selection and building use only 17% [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          33
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f02",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.7,
+      "ttft_s": 11.3,
+      "answer": "The two automotive regulatory standards mentioned for safety-related systems using AI are ISO 26262 and ISO/PAS 21448 (SOTIF) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two automotive regulatory standards mentioned for safety-related systems using AI are ISO 26262 and ISO/PAS 21448 (SOTIF) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          19
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f03",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 17.3,
+      "ttft_s": 10.5,
+      "answer": "The two types of parameters passed to an algorithm during model training are model hyperparameters and algorithm hyperparameters. Model hyperparameters define the model structure, such as the number of layers in a neural network or the depth of a decision tree [1]. Algorithm hyperparameters control the training process, such as the number of epochs to use when training a neural network [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two types of parameters passed to an algorithm during model training are model hyperparameters and algorithm hyperparameters. Model hyperparameters define the model structure, such as the number of layers in a neural network or the depth of a decision tree [1]. Algorithm hyperparameters control the training process, such as the number of epochs to use when training a neural network [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          28
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f04",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 17.3,
+      "ttft_s": 11.1,
+      "answer": "Prices for Google Cloud AI and ML Products are based on the number of pages sent for processing [1]. Prices for Amazon CodeGuru are based on the number of lines of source code analyzed [1]. Prices for Microsoft Azure Cognitive Search are based on search units (defined in terms of the storage and throughput used) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Prices for Google Cloud AI and ML Products are based on the number of pages sent for processing [1]. Prices for Amazon CodeGuru are based on the number of lines of source code analyzed [1]. Prices for Microsoft Azure Cognitive Search are based on search units (defined in terms of the storage and throughput used) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          17
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f05",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 22.4,
+      "ttft_s": 13.6,
+      "answer": "The CODATA Task Group decided not to include the muon magnetic-moment anomaly in the 2022 adjustment because there is a 4.2 σ discrepancy between the experimental and theoretical values, and because of possible contributions from physics beyond the standard model [1]. Additionally, the Task Group cited questions about the hadronic contributions to the theory, especially those from lattice QCD, as a reason for excluding it [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The CODATA Task Group decided not to include the muon magnetic-moment anomaly in the 2022 adjustment because there is a 4.2 σ discrepancy between the experimental and theoretical values, and because of possible contributions from physics beyond the standard model [1]. Additionally, the Task Group cited questions about the hadronic contributions to the theory, especially those from lattice QCD, as a reason for excluding it [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          4
+        ],
+        [
+          "doc2.pdf",
+          55
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "f06",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 25.0,
+      "ttft_s": 17.7,
+      "answer": "The cyclotron frequency ratio of the 12C6+ ion to the proton was measured by Heiße et al. in 2017 [1]. This measurement was conducted at the Max Planck Institute (MPIK) in Heidelberg, Germany [1]. The value was later revised in 2019 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The cyclotron frequency ratio of the 12C6+ ion to the proton was measured by Heiße et al. in 2017 [1]. This measurement was conducted at the Max Planck Institute (MPIK) in Heidelberg, Germany [1]. The value was later revised in 2019 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          7
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f07",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 25.1,
+      "ttft_s": 15.4,
+      "answer": "The 2022 and 2018 CODATA recommended values of the Newtonian constant of gravitation G are identical because the input data for G were unchanged since the 2018 adjustment, and the same 3.9 expansion factor was applied to their uncertainties in both adjustments [1][2]. The expansion factor of 3.9 was applied to reduce the inconsistencies among the 16 input values to an acceptable level [1][2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 and 2018 CODATA recommended values of the Newtonian constant of gravitation G are identical because the input data for G were unchanged since the 2018 adjustment, and the same 3.9 expansion factor was applied to their uncertainties in both adjustments [1][2]. The expansion factor of 3.9 was applied to reduce the inconsistencies among the 16 input values to an acceptable level [1][2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          5
+        ],
+        [
+          "doc2.pdf",
+          41
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f08",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 18.3,
+      "ttft_s": 11.3,
+      "answer": "Recommendation 6 specified that orbiting solar telescopes should have an aperture of at least 1-meter and achieve a resolution of 0.1 sec of arc at visible wavelengths and 0.5 sec of arc at far ultraviolet wavelengths [1]. The same recommendation is repeated in the excerpt from page 49, confirming the specifications [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Recommendation 6 specified that orbiting solar telescopes should have an aperture of at least 1-meter and achieve a resolution of 0.1 sec of arc at visible wavelengths and 0.5 sec of arc at far ultraviolet wavelengths [1]. The same recommendation is repeated in the excerpt from page 49, confirming the specifications [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          60
+        ],
+        [
+          "doc3.pdf",
+          49
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "f09",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 19.6,
+      "ttft_s": 14.5,
+      "answer": "The reading time for IMP-1 was 4.8 sec [1]. The sampling time for IMP-1 was 20.4 sec [1]. The thickness of the shock front obtained by IMP-1 was of the order of 40 km or more [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The reading time for IMP-1 was 4.8 sec [1]. The sampling time for IMP-1 was 20.4 sec [1]. The thickness of the shock front obtained by IMP-1 was of the order of 40 km or more [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          197
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f10",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 20.2,
+      "ttft_s": 12.3,
+      "answer": "The expected precession of the axis of a spinning artificial Earth satellite is about 7 sec of arc per year [1]. This precession is composed of two parts: (i) the de Sitter precession due to space curvature, and (ii) the precession arising from the tendency of a rotating mass (the Earth) to tug inertial coordinate frames around with it [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The expected precession of the axis of a spinning artificial Earth satellite is about 7 sec of arc per year [1]. This precession is composed of two parts: (i) the de Sitter precession due to space curvature, and (ii) the precession arising from the tendency of a rotating mass (the Earth) to tug inertial coordinate frames around with it [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          186
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f11",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 23.8,
+      "ttft_s": 15.2,
+      "answer": "Reinforcement learning does not use training data, whereas supervised learning creates the model from labeled data during the training phase [1][2]. The agent in reinforcement learning learns by interacting with the environment and is rewarded for correct decisions and penalized for incorrect ones [1]. In supervised learning, the algorithm infers relationships between input data and output labels using labeled data [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Reinforcement learning does not use training data, whereas supervised learning creates the model from labeled data during the training phase [1][2]. The agent in reinforcement learning learns by interacting with the environment and is rewarded for correct decisions and penalized for incorrect ones [1]. In supervised learning, the algorithm infers relationships between input data and output labels using labeled data [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          27
+        ],
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f12",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.7,
+      "ttft_s": 10.2,
+      "answer": "Flexibility is considered to be the ability of the system to be used in situations that were not part of the original system requirements [1]. Adaptability is considered to be the ease with which the system can be modified for new situations, such as different hardware and changing operational environments [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Flexibility is considered to be the ability of the system to be used in situations that were not part of the original system requirements [1]. Adaptability is considered to be the ease with which the system can be modified for new situations, such as different hardware and changing operational environments [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          21
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f13",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.4,
+      "ttft_s": 11.2,
+      "answer": "The training dataset is used to train the model [1]. The validation dataset is used for evaluating and subsequently tuning the model [1]. The test dataset, also known as the holdout dataset, is used for testing the tuned model [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The training dataset is used to train the model [1]. The validation dataset is used for evaluating and subsequently tuning the model [1]. The test dataset, also known as the holdout dataset, is used for testing the tuned model [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          35
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f14",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 17.5,
+      "ttft_s": 10.5,
+      "answer": "Virtual test environments are advantageous for testing time-intensive scenarios because they can be tested in reduced timescales, such as several times per second, which is not feasible in real time [1]. They are also advantageous for observability because they provide far greater controllability and allow all digitally provided parts of the environment to be continuously monitored and recorded [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Virtual test environments are advantageous for testing time-intensive scenarios because they can be tested in reduced timescales, such as several times per second, which is not feasible in real time [1]. They are also advantageous for observability because they provide far greater controllability and allow all digitally provided parts of the environment to be continuously monitored and recorded [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          75
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f15",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 17.5,
+      "ttft_s": 10.7,
+      "answer": "An AI-based approach is needed for defect prediction because determining the relationship between potential factors (like source code metrics, process metrics, and organizational metrics) and the likelihood of defects is beyond human capabilities [1]. It works best when based on prior experiences in a similar situation, such as with the same code base and/or the same developers [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "An AI-based approach is needed for defect prediction because determining the relationship between potential factors (like source code metrics, process metrics, and organizational metrics) and the likelihood of defects is beyond human capabilities [1]. It works best when based on prior experiences in a similar situation, such as with the same code base and/or the same developers [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          79
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f16",
+      "type": "paraphrase",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 29.2,
+      "ttft_s": 15.5,
+      "answer": "The CODATA Task Group excluded electron-proton and electron-deuteron scattering data for the 2022 adjustment because there is a lack of consensus on how to analyze the experimental data to obtain the radii, and different methods can yield significantly different values [1]. Additionally, the uncertainties of the scattering values are well over an order of magnitude larger than those from the Lamb shift measurements in muonic hydrogen and deuterium [1]. The group also noted that the scattering data were not included in the 2018 adjustment, and the 2022 adjustment follows this precedent [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The CODATA Task Group excluded electron-proton and electron-deuteron scattering data for the 2022 adjustment because there is a lack of consensus on how to analyze the experimental data to obtain the radii, and different methods can yield significantly different values [1]. Additionally, the uncertainties of the scattering values are well over an order of magnitude larger than those from the Lamb shift measurements in muonic hydrogen and deuterium [1]. The group also noted that the scattering data were not included in the 2018 adjustment, and the 2022 adjustment follows this precedent [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          3
+        ],
+        [
+          "doc2.pdf",
+          2
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "id": "f17",
+      "type": "paraphrase",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 21.6,
+      "ttft_s": 15.0,
+      "answer": "Atom-recoil measurements determine the mass of a neutral atom X by using interferometers with atoms in superpositions of momentum states and taking advantage of precisely measured photon energies [1]. To improve the sensitivity of the measurement, Bloch oscillations are used to transfer a large number of photon momenta to the atoms [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Atom-recoil measurements determine the mass of a neutral atom X by using interferometers with atoms in superpositions of momentum states and taking advantage of precisely measured photon energies [1]. To improve the sensitivity of the measurement, Bloch oscillations are used to transfer a large number of photon momenta to the atoms [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          24
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f18",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 28.5,
+      "ttft_s": 16.6,
+      "answer": "A video receiver is preferred over point-by-point scanning or photography for recording solar XUV images because it can theoretically record all elements of the observed area simultaneously, which drastically reduces the time required. Point-by-point scanning is shown to be impractical, requiring days for a single area, while photography is noted to be about 20 times slower than video [1][3]. The video receiver's ability to capture the entire area at once makes it far more efficient for this purpose [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "A video receiver is preferred over point-by-point scanning or photography for recording solar XUV images because it can theoretically record all elements of the observed area simultaneously, which drastically reduces the time required. Point-by-point scanning is shown to be impractical, requiring days for a single area, while photography is noted to be about 20 times slower than video [1][3]. The video receiver's ability to capture the entire area at once makes it far more efficient for this purpose [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          88
+        ],
+        [
+          "doc3.pdf",
+          85
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f19",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 19.5,
+      "ttft_s": 11.0,
+      "answer": "In space radar astronomy, monostatic radar refers to the case where the transmitter and receiver are close together, while bistatic radar involves them being widely separated [1]. Putting both the transmitter and receiver near the Earth is unhelpful because it yields little gain, as the power received in such a system depends on the inverse fourth power of the range to the target, making it difficult to detect signals from distant planets [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "In space radar astronomy, monostatic radar refers to the case where the transmitter and receiver are close together, while bistatic radar involves them being widely separated [1]. Putting both the transmitter and receiver near the Earth is unhelpful because it yields little gain, as the power received in such a system depends on the inverse fourth power of the range to the target, making it difficult to detect signals from distant planets [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          119
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f20",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 29.8,
+      "ttft_s": 10.9,
+      "answer": "Determining the oblateness of the Sun is critical for relativity experiments because it introduces a significant, unknown contribution to the perihelion rotation of planets, which can mask or mimic the relativistic effect predicted by Einstein's theory [1]. This oblateness effect is so large that it makes the overall uncertainty in measuring the perihelion rotation exceed 20 percent, which is the same level of uncertainty as the gravitational deflection of light, making it difficult to distinguish the relativistic effect from this solar contribution [2]. The oblateness also affects the motion of the line of nodes, which can be used to separate the contributions from the Sun's oblateness and the relativistic effect [4]. The Sun's oblateness is a key factor in the interpretation of the excess perihelion rotation, which is essential for unambiguously identifying the relativistic effect [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Determining the oblateness of the Sun is critical for relativity experiments because it introduces a significant, unknown contribution to the perihelion rotation of planets, which can mask or mimic the relativistic effect predicted by Einstein's theory [1]. This oblateness effect is so large that it makes the overall uncertainty in measuring the perihelion rotation exceed 20 percent, which is the same level of uncertainty as the gravitational deflection of light, making it difficult to distinguish the relativistic effect from this solar contribution [2]. The oblateness also affects the motion of the line of nodes, which can be used to separate the contributions from the Sun's oblateness and the relativistic effect [4]. The Sun's oblateness is a key factor in the interpretation of the excess perihelion rotation, which is essential for unambiguously identifying the relativistic effect [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          179
+        ],
+        [
+          "doc3.pdf",
+          183
+        ],
+        [
+          "doc3.pdf",
+          178
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.3333333333333333,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f21",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 16.0,
+      "ttft_s": 10.4,
+      "answer": "The risk can be caused by the datasets used for training and testing the model in isolation not being representative of the data encountered operationally [1]. This risk can be mitigated by reviews of the selected datasets by experts (or users) to reduce the chance that the selected data is not representative [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The risk can be caused by the datasets used for training and testing the model in isolation not being representative of the data encountered operationally [1]. This risk can be mitigated by reviews of the selected datasets by experts (or users) to reduce the chance that the selected data is not representative [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          55
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f22",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.6,
+      "ttft_s": 10.6,
+      "answer": "Freedom from inappropriate bias can be tested by using an independent bias-free test suite, or by using expert reviewers [1]. Additionally, test results can be compared using external data such as census data to check for unwanted bias on inferred variables, which is known as external validity testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Freedom from inappropriate bias can be tested by using an independent bias-free test suite, or by using expert reviewers [1]. Additionally, test results can be compared using external data such as census data to check for unwanted bias on inferred variables, which is known as external validity testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          63
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f23",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.8,
+      "ttft_s": 11.8,
+      "answer": "Independent tests can identify reward hacking when these tests use a different means of measuring success compared to the intelligent agent being tested [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Independent tests can identify reward hacking when these tests use a different means of measuring success compared to the intelligent agent being tested [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          64
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f24",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 30.6,
+      "ttft_s": 23.7,
+      "answer": "The 2022 CODATA recommended value of the Boltzmann constant k is 1.380649 × 10⁻²³ J K⁻¹, and its unit is J K⁻¹ [1]. The value is exact [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 CODATA recommended value of the Boltzmann constant k is 1.380649 × 10⁻²³ J K⁻¹, and its unit is J K⁻¹ [1]. The value is exact [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f25",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 32.9,
+      "ttft_s": 24.3,
+      "answer": "The 2022 CODATA recommended value of the Rydberg constant R_infinity is 10 973 731.568 157(12) m⁻¹ [2]. The relative standard uncertainty associated with this value is 1.1 × 10⁻¹² [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 CODATA recommended value of the Rydberg constant R_infinity is 10 973 731.568 157(12) m⁻¹ [2]. The relative standard uncertainty associated with this value is 1.1 × 10⁻¹² [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          45
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f26",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 41.6,
+      "ttft_s": 30.5,
+      "answer": "The 2022 CODATA value for the lattice parameter a of silicon in vacuum at 22.5 degrees C is 5.431020511(89) × 10⁻¹⁰ m, with a relative standard uncertainty of 1.6 × 10⁻⁸ [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 CODATA value for the lattice parameter a of silicon in vacuum at 22.5 degrees C is 5.431020511(89) × 10⁻¹⁰ m, with a relative standard uncertainty of 1.6 × 10⁻⁸ [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          50
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f27",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 34.4,
+      "ttft_s": 26.1,
+      "answer": "The 2022 CODATA recommended value for the proton-electron mass ratio is 1836.152 673 426(32) [1]. Its relative standard uncertainty is 1.7 × 10⁻¹¹ [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 CODATA recommended value for the proton-electron mass ratio is 1836.152 673 426(32) [1]. Its relative standard uncertainty is 1.7 × 10⁻¹¹ [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f28",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 21.5,
+      "ttft_s": 16.5,
+      "answer": "The NRL echelle instrument achieved a wavelength precision of 0.01-0.02 Å and a resolving power of 10^5 in the 3000-2085 Å range [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The NRL echelle instrument achieved a wavelength precision of 0.01-0.02 Å and a resolving power of 10^5 in the 3000-2085 Å range [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          89
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f29",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 22.5,
+      "ttft_s": 17.9,
+      "answer": "The 149-55 Å range is problematic because the signal is too low, making it difficult to obtain precise wavelength measurements [1]. The needs for this range include higher altitudes and increased solar activity to improve the signal-to-noise ratio [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 149-55 Å range is problematic because the signal is too low, making it difficult to obtain precise wavelength measurements [1]. The needs for this range include higher altitudes and increased solar activity to improve the signal-to-noise ratio [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          89
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f30",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 24.3,
+      "ttft_s": 18.1,
+      "answer": "The amplitude range for category (1) is 0 to 2 x 10² cm [1]. The scale range for category (1) is 0 to 10⁸ cm [1]. The frequency range for category (1) is 10² to 10⁻⁵ sec⁻¹ [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The amplitude range for category (1) is 0 to 2 x 10² cm [1]. The scale range for category (1) is 0 to 10⁸ cm [1]. The frequency range for category (1) is 10² to 10⁻⁵ sec⁻¹ [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          193
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f31",
+      "type": "figure",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 19.8,
+      "ttft_s": 12.1,
+      "answer": "A deep neural network comprises three types of layers: the input layer, which receives inputs such as pixel values from a camera, the hidden layers, which are made up of artificial neurons (also known as nodes) and perform computations, and the output layer, which provides results to the outside world, such as a value signifying the likelihood that an input image is a cat [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "A deep neural network comprises three types of layers: the input layer, which receives inputs such as pixel values from a camera, the hidden layers, which are made up of artificial neurons (also known as nodes) and perform computations, and the output layer, which provides results to the outside world, such as a value signifying the likelihood that an input image is a cat [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          45
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f32",
+      "type": "figure",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 20.7,
+      "ttft_s": 13.1,
+      "answer": "The activation function receives as input the activation values from all the neurons in the previous layer, the weights assigned to the connections between the neurons, and the individual bias of each neuron [1]. An activation value of -1 signifies that the neuron is 'disinterested' [1]. An activation value of +1 signifies that the neuron is 'very interested' [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The activation function receives as input the activation values from all the neurons in the previous layer, the weights assigned to the connections between the neurons, and the individual bias of each neuron [1]. An activation value of -1 signifies that the neuron is 'disinterested' [1]. An activation value of +1 signifies that the neuron is 'very interested' [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          46
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f33",
+      "type": "figure",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.5,
+      "ttft_s": 10.3,
+      "answer": "The three activities that comprise model generation, as shown in Figure 1, are training the model, evaluating the model, and tuning the model [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The three activities that comprise model generation, as shown in Figure 1, are training the model, evaluating the model, and tuning the model [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          28
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f34",
+      "type": "figure",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 34.6,
+      "ttft_s": 24.2,
+      "answer": "Figure 1 compares the recommended values of the rms charge radii of the proton (r_p) and the deuteron (r_d) from the 2022 CODATA adjustment with the values from the previous five CODATA adjustments [1]. The 2022 values are shown in blue, while the previous values are shown in red [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Figure 1 compares the recommended values of the rms charge radii of the proton (r_p) and the deuteron (r_d) from the 2022 CODATA adjustment with the values from the previous five CODATA adjustments [1]. The 2022 values are shown in blue, while the previous values are shown in red [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          21
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "f35",
+      "type": "figure",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 29.9,
+      "ttft_s": 17.9,
+      "answer": "The discrepancy between the two evaluations of the 10th-order electron anomaly coefficient A_1^(10) by Aoyama, Kinoshita, and Nio (2019) and Volkov (2019) is 4.8 σ [1]. An expansion factor of 2.1 was applied to the uncertainties of the two input data to ensure their values lie within twice their (expanded) uncertainties of the recommended value [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The discrepancy between the two evaluations of the 10th-order electron anomaly coefficient A_1^(10) by Aoyama, Kinoshita, and Nio (2019) and Volkov (2019) is 4.8 σ [1]. An expansion factor of 2.1 was applied to the uncertainties of the two input data to ensure their values lie within twice their (expanded) uncertainties of the recommended value [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          22
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f36",
+      "type": "figure",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 22.2,
+      "ttft_s": 17.9,
+      "answer": "The two types of measurements compared in Figure 3 are atom-recoil measurements and electron magnetic-moment anomaly measurements [1]. The figure shows the values of the fine-structure constant inferred from these two types of measurements [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two types of measurements compared in Figure 3 are atom-recoil measurements and electron magnetic-moment anomaly measurements [1]. The figure shows the values of the fine-structure constant inferred from these two types of measurements [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          24
+        ],
+        [
+          "doc2.pdf",
+          24
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f37",
+      "type": "figure",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 36.0,
+      "ttft_s": 29.8,
+      "answer": "Figure 4 displays the 16 input data determining the Newtonian constant of gravitation G, ordered by publication year [1]. The gray band corresponds to the 1-standard-deviation uncertainty of the recommended value [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Figure 4 displays the 16 input data determining the Newtonian constant of gravitation G, ordered by publication year [1]. The gray band corresponds to the 1-standard-deviation uncertainty of the recommended value [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          42
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f38",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 22.3,
+      "ttft_s": 14.3,
+      "answer": "The experimental method corresponding to label C is X-RAY, ROCKET [1]. The method for label D is X-RAY, BALLOON [1]. The method for label E is GAMMA RAY, SATELLITE [1]. The method for label H is GAMMA RAY, BALLOON-BORNE SPARK CHAMBER [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The experimental method corresponding to label C is X-RAY, ROCKET [1]. The method for label D is X-RAY, BALLOON [1]. The method for label E is GAMMA RAY, SATELLITE [1]. The method for label H is GAMMA RAY, BALLOON-BORNE SPARK CHAMBER [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          145
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f39",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 21.1,
+      "ttft_s": 15.6,
+      "answer": "The three cosmological models plotted are Model A, Model B, and Model C, which are represented by the solid curves labeled with their respective acceleration parameters and luminosity characteristics [3]. The horizontal lower limit line is set by the bolometer described by Low (1961) [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The three cosmological models plotted are Model A, Model B, and Model C, which are represented by the solid curves labeled with their respective acceleration parameters and luminosity characteristics [3]. The horizontal lower limit line is set by the bolometer described by Low (1961) [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          198
+        ],
+        [
+          "doc3.pdf",
+          199
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": false,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "f40",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 20.2,
+      "ttft_s": 10.1,
+      "answer": "Flexibility is defined as the ability of the system to be used in situations that were not part of the original system requirements [2]. Adaptability is defined as the ease with which the system can be modified for new situations, such as different hardware and changing operational environments [2]. Self-learning AI-based systems typically need to manage two forms of change: one where the system learns from its own decisions and interactions with its environment, and the other where the system learns from changes made to the system's operational environment [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Flexibility is defined as the ability of the system to be used in situations that were not part of the original system requirements [2]. Adaptability is defined as the ease with which the system can be modified for new situations, such as different hardware and changing operational environments [2]. Self-learning AI-based systems typically need to manage two forms of change: one where the system learns from its own decisions and interactions with its environment, and the other where the system learns from changes made to the system's operational environment [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          21
+        ],
+        [
+          "doc1.pdf",
+          22
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f41",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 23.7,
+      "ttft_s": 12.4,
+      "answer": "The risk of suboptimal ML framework, algorithm, model, model settings and/or hyperparameters may be mitigated by reviews with experts and better management ensuring the evaluation and tuning (and test) steps of the workflow are followed [2]. The three reasons given for a self-learning system failing to provide the expected service are: the data used by the system for self-learning may be inappropriate, the system may be failing due to new self-learnt functionality being unacceptable, and the system may be learning in a way that is not expected by the users [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The risk of suboptimal ML framework, algorithm, model, model settings and/or hyperparameters may be mitigated by reviews with experts and better management ensuring the evaluation and tuning (and test) steps of the workflow are followed [2]. The three reasons given for a self-learning system failing to provide the expected service are: the data used by the system for self-learning may be inappropriate, the system may be failing due to new self-learnt functionality being unacceptable, and the system may be learning in a way that is not expected by the users [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          55
+        ],
+        [
+          "doc1.pdf",
+          56
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f42",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 20.7,
+      "ttft_s": 11.4,
+      "answer": "For Adaptability, the system should be checked to ensure it still functions correctly and meets non-functional requirements when it adapts to a change in its environment, which may be implemented as automated regression testing [2]. The system's adaptation time and resource usage during such changes should also be checked [2]. Probabilistic and non-deterministic systems cannot be evaluated with precise acceptance criteria because, when working correctly, they may return slightly different results for the same tests [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "For Adaptability, the system should be checked to ensure it still functions correctly and meets non-functional requirements when it adapts to a change in its environment, which may be implemented as automated regression testing [2]. The system's adaptation time and resource usage during such changes should also be checked [2]. Probabilistic and non-deterministic systems cannot be evaluated with precise acceptance criteria because, when working correctly, they may return slightly different results for the same tests [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          63
+        ],
+        [
+          "doc1.pdf",
+          64
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f43",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 23.4,
+      "ttft_s": 9.7,
+      "answer": "Test environments for self-learning and autonomous AI systems differ from conventional ones because self-learning systems adapt to undefined environments, requiring test environments that mimic these changes with randomness, and autonomous systems must respond to environmental changes without human intervention, which may require hazardous or extreme test environments to mimic real-world conditions [3]. Virtual test environments help with time-intensive scenarios by allowing them to be tested in reduced timescales, such as several times per second, in a virtual environment, which is faster than real-time [1]. They also provide greater observability by enabling continuous monitoring and recording of all digitally provided parts of the environment [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Test environments for self-learning and autonomous AI systems differ from conventional ones because self-learning systems adapt to undefined environments, requiring test environments that mimic these changes with randomness, and autonomous systems must respond to environmental changes without human intervention, which may require hazardous or extreme test environments to mimic real-world conditions [3]. Virtual test environments help with time-intensive scenarios by allowing them to be tested in reduced timescales, such as several times per second, in a virtual environment, which is faster than real-time [1]. They also provide greater observability by enabling continuous monitoring and recording of all digitally provided parts of the environment [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          74
+        ],
+        [
+          "doc1.pdf",
+          75
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f44",
+      "type": "multi_page",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 30.5,
+      "ttft_s": 15.8,
+      "answer": "The electron-proton and electron-deuteron scattering data were excluded from the 2022 adjustment because there was a lack of consensus on how to analyze the experimental data to obtain the radii, and different methods can yield significantly different values [3]. When the 2022 adjustment is rerun without the muonic Lamb-shift data, the resulting values for the proton radius (r_p) and deuteron radius (r_d) are 0.8529(43) fm and 2.1326(17) fm, respectively [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The electron-proton and electron-deuteron scattering data were excluded from the 2022 adjustment because there was a lack of consensus on how to analyze the experimental data to obtain the radii, and different methods can yield significantly different values [3]. When the 2022 adjustment is rerun without the muonic Lamb-shift data, the resulting values for the proton radius (r_p) and deuteron radius (r_d) are 0.8529(43) fm and 2.1326(17) fm, respectively [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          21
+        ],
+        [
+          "doc2.pdf",
+          4
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": false,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "f45",
+      "type": "multi_page",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 28.0,
+      "ttft_s": 17.3,
+      "answer": "The experimentally determined Lamb-shift transition in muonic helium ion, μ⁴He⁺, reported in 2021, provides a recommended value of the alpha-particle rms charge radius rα for the first time in CODATA 2022 [3]. The inconsistency of the Berkeley h/m(133Cs) recoil measurement before expansion is shown by a 4.7 normalized residual [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The experimentally determined Lamb-shift transition in muonic helium ion, μ⁴He⁺, reported in 2021, provides a recommended value of the alpha-particle rms charge radius rα for the first time in CODATA 2022 [3]. The inconsistency of the Berkeley h/m(133Cs) recoil measurement before expansion is shown by a 4.7 normalized residual [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          3
+        ],
+        [
+          "doc2.pdf",
+          56
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f46",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 24.6,
+      "ttft_s": 15.6,
+      "answer": "A video receiver can theoretically reduce the time required by a factor of about 10^4 in the XUV and 10^6 in the visible [1]. The first instrument listed in Table 3a for the 3000-2085 Å range is the NRL echelle, which has a resolving power of 10^5 [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "A video receiver can theoretically reduce the time required by a factor of about 10^4 in the XUV and 10^6 in the visible [1]. The first instrument listed in Table 3a for the 3000-2085 Å range is the NRL echelle, which has a resolving power of 10^5 [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          88
+        ],
+        [
+          "doc3.pdf",
+          89
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f47",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 21.7,
+      "ttft_s": 14.2,
+      "answer": "The reading time and sampling time for IMP-1 were 4.8 sec and 20.4 sec, respectively [2]. The reciprocal Hubble constant H^-1 was set at 1 × 10^10 y [1]. In cosmological models A and B, each galaxy radiates like a blackbody at 6000°K [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The reading time and sampling time for IMP-1 were 4.8 sec and 20.4 sec, respectively [2]. The reciprocal Hubble constant H^-1 was set at 1 × 10^10 y [1]. In cosmological models A and B, each galaxy radiates like a blackbody at 6000°K [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          197
+        ],
+        [
+          "doc3.pdf",
+          198
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f48",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 28.5,
+      "ttft_s": 17.9,
+      "answer": "Pekiştirmeli öğrenme, sistem (bir \"zeka varlığı\") ortamla etkileşime girerek deneyimle öğrenirken kullanılan bir yaklaşım [1]. Bu yöntem, sistemdeki kararların doğru olması durumunda ödüllendirilmesi ve yanlış olması durumunda cezalandırılmasıyla çalışır [1]. Pekiştirmeli öğrenme, robotik, otomatik araçlar ve chatbotlar gibi uygulama alanlarında kullanılır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Pekiştirmeli öğrenme, sistem (bir \"zeka varlığı\") ortamla etkileşime girerek deneyimle öğrenirken kullanılan bir yaklaşım [1]. Bu yöntem, sistemdeki kararların doğru olması durumunda ödüllendirilmesi ve yanlış olması durumunda cezalandırılmasıyla çalışır [1]. Pekiştirmeli öğrenme, robotik, otomatik araçlar ve chatbotlar gibi uygulama alanlarında kullanılır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          27
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f49",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 21.7,
+      "ttft_s": 11.4,
+      "answer": "Esneklik, sistemin orijinal sistem gereksinimleri dışında kullanılabilecek durumlar için kullanılabilme yeteneğidir, ancak uyarlanabilirlik, sistemin yeni durumlar için kolayca değiştirilebilme kolaylığıdır [1]. Esneklik, sistemdeki değişikliklere karşı direnç gösterme yeteneğidir, ancak uyarlanabilirlik, sistemdeki değişikliklere karşı direnç gösterme yeteneğidir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Esneklik, sistemin orijinal sistem gereksinimleri dışında kullanılabilecek durumlar için kullanılabilme yeteneğidir, ancak uyarlanabilirlik, sistemin yeni durumlar için kolayca değiştirilebilme kolaylığıdır [1]. Esneklik, sistemdeki değişikliklere karşı direnç gösterme yeteneğidir, ancak uyarlanabilirlik, sistemdeki değişikliklere karşı direnç gösterme yeteneğidir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          21
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": false,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "f50",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 21.4,
+      "ttft_s": 14.0,
+      "answer": "ML iş akışında veri hazırlama (data preparation) ortalama 43% çaba gerektirir [1]. Model seçimi ve oluşturma ile karşılaştırıldığında, veri hazırlama daha çok kaynak yoğunluğunu gerektirirken, model seçimi ve oluşturma sadece 17% çaba gerektirir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "ML iş akışında veri hazırlama (data preparation) ortalama 43% çaba gerektirir [1]. Model seçimi ve oluşturma ile karşılaştırıldığında, veri hazırlama daha çok kaynak yoğunluğunu gerektirirken, model seçimi ve oluşturma sadece 17% çaba gerektirir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          33
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f51",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.9,
+      "ttft_s": 14.9,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": null
+    },
+    {
+      "id": "f52",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 37.7,
+      "ttft_s": 11.3,
+      "answer": "Grafiksel kullanıcı arayüzünü (GUI) test etmek için yapay zeka, GUI'nin grafiksel öğeleri (örneğin butonlar, metin alanları) tanımlamak ve test etmek için kullanılır. Bu, AI tabanlı araçlarla gerçek nesnelerin tanımlanması ve en esnek tanımlayıcıların seçilmesiyle yapılır [2]. Ayrıca, AI, kullanıcı arayüzünün görsel görünümünün kabul edilebilir olup olmadığını belirlemek için heuristik ve süpervized öğrenme kullanabilir [3]. Bilgisayarlı görü, GUI'nin görsel öğeleriyle etkileşim kurmak için kullanılır ve bu, kodun alt yapısına veya arayüz tanımlarına erişmeden tamamen non-intrusif ve teknoloji bağımsızdır [1]. Bilgisayarlı görü, ekran görüntülerini karşılaştırmak için de kullanılır, böylece arayüzdeki düzen, boyut, konum, renk, yazı tipi gibi değişiklikler tespit edilebilir [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Grafiksel kullanıcı arayüzünü (GUI) test etmek için yapay zeka, GUI'nin grafiksel öğeleri (örneğin butonlar, metin alanları) tanımlamak ve test etmek için kullanılır. Bu, AI tabanlı araçlarla gerçek nesnelerin tanımlanması ve en esnek tanımlayıcıların seçilmesiyle yapılır [2]. Ayrıca, AI, kullanıcı arayüzünün görsel görünümünün kabul edilebilir olup olmadığını belirlemek için heuristik ve süpervized öğrenme kullanabilir [3]. Bilgisayarlı görü, GUI'nin görsel öğeleriyle etkileşim kurmak için kullanılır ve bu, kodun alt yapısına veya arayüz tanımlarına erişmeden tamamen non-intrusif ve teknoloji bağımsızdır [1]. Bilgisayarlı görü, ekran görüntülerini karşılaştırmak için de kullanılır, böylece arayüzdeki düzen, boyut, konum, renk, yazı tipi gibi değişiklikler tespit edilebilir [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          79
+        ],
+        [
+          "doc1.pdf",
+          80
+        ],
+        [
+          "doc1.pdf",
+          79
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.3333333333333333,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f53",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 40.4,
+      "ttft_s": 29.7,
+      "answer": "Avogadro sabitinin (N_A) önerilen değeridir 6.02214076 × 10²³ mol⁻¹ ve bu değer tam (exact)dır [1]. Boltzmann sabitinin (k) önerilen değeridir 1.380649 × 10⁻²³ J K⁻¹ ve bu değer tam (exact)dır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Avogadro sabitinin (N_A) önerilen değeridir 6.02214076 × 10²³ mol⁻¹ ve bu değer tam (exact)dır [1]. Boltzmann sabitinin (k) önerilen değeridir 1.380649 × 10⁻²³ J K⁻¹ ve bu değer tam (exact)dır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f54",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 52.2,
+      "ttft_s": 34.7,
+      "answer": "Neutronun kütlesi (m_n) 1.674 927 500 56(85) × 10⁻²⁷ kg olarak verilmiştir [1]. Bu değer, 1.008 664 916 06(40) u olarak da ifade edilmiştir [1]. Ayrıca, bu kütlenin enerji eşdeğeri 1.505 349 765 14(76) × 10⁻¹⁰ J olarak verilmiştir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Neutronun kütlesi (m_n) 1.674 927 500 56(85) × 10⁻²⁷ kg olarak verilmiştir [1]. Bu değer, 1.008 664 916 06(40) u olarak da ifade edilmiştir [1]. Ayrıca, bu kütlenin enerji eşdeğeri 1.505 349 765 14(76) × 10⁻¹⁰ J olarak verilmiştir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          47
+        ]
+      ],
+      "retrieved_gold": false,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f55",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 22.0,
+      "ttft_s": 12.7,
+      "answer": "Güneş Astronomisi Çalışma Grubu Tavsiye 6'da yörüngedeki güneş teleskopları için en az 1 metre açıklık önermiştir [2]. Aynı tavsiyede, görsel dalgalar için 0.1 saniye ark (sec of arc) ve uzak ultraviyole dalgalar (λ > 500 Å) için 0.5 saniye ark çözünürlük önerilmiştir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Güneş Astronomisi Çalışma Grubu Tavsiye 6'da yörüngedeki güneş teleskopları için en az 1 metre açıklık önermiştir [2]. Aynı tavsiyede, görsel dalgalar için 0.1 saniye ark (sec of arc) ve uzak ultraviyole dalgalar (λ > 500 Å) için 0.5 saniye ark çözünürlük önerilmiştir [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          60
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f56",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 19.0,
+      "ttft_s": 15.9,
+      "answer": "Rölyef gözlemlerinin etkili olabilmesi için, okyanus ve meteoroloji amaçlı olarak, 1 santimetrelik değişimlere duyarlı olması gerekir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Rölyef gözlemlerinin etkili olabilmesi için, okyanus ve meteoroloji amaçlı olarak, 1 santimetrelik değişimlere duyarlı olması gerekir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          193
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f57",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 17.9,
+      "ttft_s": 13.8,
+      "answer": "The reading time for IMP-1 was 4.8 sec, and the sampling time was 20.4 sec [1]. The thickness of the shock front obtained by IMP-1 was of the order of 40 km or more [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The reading time for IMP-1 was 4.8 sec, and the sampling time was 20.4 sec [1]. The thickness of the shock front obtained by IMP-1 was of the order of 40 km or more [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          197
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "f58",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 11.4,
+      "ttft_s": 11.4,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f59",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 26.5,
+      "ttft_s": 26.5,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f60",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 17.1,
+      "ttft_s": 17.1,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f61",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 22.4,
+      "ttft_s": 22.4,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f62",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 24.9,
+      "ttft_s": 24.9,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f63",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 23.1,
+      "ttft_s": 23.1,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f64",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 24.7,
+      "ttft_s": 24.7,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f65",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 18.7,
+      "ttft_s": 18.7,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about the closing date",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f66",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 23.3,
+      "ttft_s": 23.3,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f67",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 78.9,
+      "ttft_s": 78.9,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f68",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 12.7,
+      "ttft_s": 12.7,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about the date of Apollo",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f69",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 25.4,
+      "ttft_s": 25.4,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f70",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 14.2,
+      "ttft_s": 14.2,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about which contractor",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f71",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 30.5,
+      "ttft_s": 30.5,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about the orbital inclination",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "f72",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 25.6,
+      "ttft_s": 25.6,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    }
+  ]
+}

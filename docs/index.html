@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multimodal Agentic RAG & Calibrated Evaluation Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <span>Multimodal RAG Engineering Portfolio</span>
+        </div>
+        <div class="top-links">
+          <a href="#overview">Overview</a>
+          <a href="#architecture">Architecture &amp; ADR</a>
+          <a href="#testing">7-Layer Testing</a>
+          <a href="#evaluation">Holdout Benchmarks</a>
+          <a href="#failures">Failure Analysis</a>
+          <a href="#limitations">Limitations</a>
+          <a href="#calibration">Judge Calibration</a>
+          <a href="https://github.com/neslihaneti/multimodal-rag/blob/main/docs/MODEL_CARD.md" target="_blank" style="color: var(--accent-purple); font-weight: 600;">Model Card</a>
+          <a href="https://github.com/neslihaneti/multimodal-rag/blob/main/docs/NIST_AI_RMF.md" target="_blank" style="color: var(--accent-purple); font-weight: 600;">NIST AI RMF</a>
+          <a href="presentation.html" target="_blank" style="color: var(--accent-cyan); font-weight: 600;">Tech Slides (16:9)</a>
+          <a href="presentation_nontech.html" target="_blank" style="color: var(--accent-emerald); font-weight: 600;">Non-Tech Slides</a>
+        </div>
+      </nav>
+
+      <div class="hero-banner">
+        <span class="eyebrow">LOCAL MULTIMODAL AGENTIC RAG &bull; CALIBRATED EVALUATION</span>
+        <h1>Locally Measured, Holdout-Validated Multimodal RAG with Hybrid pgvector Search and 7-Layer Verification.</h1>
+      </div>
+
+      <p class="hero-text">
+        A framework-free Python architecture (&lt;1,100 modular core lines) combining <strong>Docling + Chandra OCR 2</strong> for adaptive page ingestion,
+        <strong>PostgreSQL pgvector + Full-Text RRF</strong> and <strong>BGE Cross-Encoder Reranking</strong> for retrieval,
+        <strong>Qwen3-VL-4B</strong> for visual-textual grounded streaming answers, and a <strong>Cohen’s &kappa; calibrated evaluation suite</strong>.
+      </p>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#evaluation">Explore Final Holdout &amp; Phases</a>
+            <a class="btn btn-secondary" href="Multimodal_RAG_Presentation.pdf" target="_blank">📄 Tech Slide Deck (PDF)</a>
+            <a class="btn btn-secondary" href="Multimodal_RAG_Presentation_NonTech.pdf" target="_blank" style="border-color: rgba(52, 211, 153, 0.5); color: #34d399;">💼 Non-Tech Slide Deck (PDF)</a>
+            <a class="btn btn-secondary" href="https://github.com/neslihaneti/multimodal-rag/blob/main/docs/MODEL_CARD.md" target="_blank" style="border-color: rgba(192, 132, 252, 0.5); color: #c084fc;">📋 Model Card</a>
+            <a class="btn btn-secondary" href="https://github.com/neslihaneti/multimodal-rag/blob/main/docs/NIST_AI_RMF.md" target="_blank" style="border-color: rgba(192, 132, 252, 0.5); color: #c084fc;">🛡️ NIST AI RMF</a>
+            <a class="btn btn-secondary" href="#failures">View Failure Post-Mortems</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card">
+              <div class="stat-value">0.98 / 0.94</div>
+              <div class="stat-label">Holdout R@6 &amp; Faithfulness</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">0.91 / 0.95</div>
+              <div class="stat-label">Final Correctness &amp; Gold Page Cited</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">&kappa; = 0.79 &ndash; 1.00</div>
+              <div class="stat-label">Calibrated Holdout Judge Agreement</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="code-card">
+            <div class="code-header">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="code-title">rag.py &mdash; Agentic Multi-Hop &amp; VLM Grounding</span>
+            </div>
+            <pre><code><span class="code-comment"># 1. Standalone query rewrite + up to 3 agentic search rounds</span>
+<span class="code-kw">Query:</span> <span class="code-str">"Which two mirror shapes are used in the grazing incidence X-ray telescope?"</span>
+<span class="code-fn">Round 1:</span> Hybrid RRF (40 candidates) &rarr; BGE Reranker (Top 6 of 1,164 chunks)
+<span class="code-fn">Decision:</span> <span class="code-ok">ENOUGH</span> (top rerank_score = 0.994, doc3.pdf p.156&ndash;157)
+
+<span class="code-comment"># 2. VLM receives top text chunks + 1966 scanned schematic image (896px)</span>
+<span class="code-kw">Visual Input:</span> [doc3.pdf page 157 (Chandra OCR + PIL Image)]
+<span class="code-kw">Answer:</span> <span class="code-str">"The two mirror shapes used in the grazing incidence X-ray
+telescope are a paraboloid and a hyperboloid [1]."</span>
+<span class="code-ok">&check; Grounded Citation: doc3.pdf p.157 [1] &bull; Query Rerank Score: 0.994</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- OVERVIEW -->
+      <section class="section" id="overview">
+        <div class="section-heading">
+          <span class="section-kicker">OVERVIEW</span>
+          <h2>What this project demonstrates</h2>
+          <p>
+            Designed without heavy orchestration wrappers (&lt;1,100 lines of modular core Python), every component is explicitly measurable,
+            protected against untrusted document inputs, and validated on real scientific and technical PDFs.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="card-badge">indexer.py &bull; file_processing.py</span>
+            <h3>Adaptive Hybrid PDF Ingestion</h3>
+            <p>
+              Measures per-page largest object area (<code>image_coverage</code> via <code>pypdfium2</code>). Born-digital text and tables
+              are extracted in seconds via <strong>Docling</strong> (<code>text_layer</code>), while scanned pages or pages with large diagrams
+              (<code>coverage &ge; 0.30</code>) automatically route to <strong>Chandra OCR 2</strong> (<code>datalab-to/chandra-ocr-2</code>).
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-badge">db.py &bull; PostgreSQL + pgvector</span>
+            <h3>SQL-Native Hybrid Search (RRF) + Reranking</h3>
+            <p>
+              Combines 1024-dim <strong>BAAI/bge-m3</strong> cosine similarity (HNSW index) with PostgreSQL <code>TSVECTOR</code> full-text search
+              (GIN index) inside a single SQL CTE using <strong>Reciprocal Rank Fusion (k=60)</strong>, then re-scores top-40 candidates with
+              <strong>BAAI/bge-reranker-v2-m3</strong>.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-badge">rag.py &bull; model.py</span>
+            <h3>Agentic Multi-Hop Search &amp; VLM Grounding</h3>
+            <p>
+              Rewrites conversational follow-ups into standalone queries, evaluates whether retrieved chunks are sufficient
+              (<code>ENOUGH</code> vs. <code>SEARCH: &lt;new query&gt;</code> up to 3 rounds), and passes both text excerpts and rendered page PNGs
+              to <strong>Qwen3-VL-4B-Instruct</strong> within a strict 9,000-token budget.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-badge">test_prompt_injection.py &bull; evaluate.py</span>
+            <h3>Defense-in-Depth &amp; Hypothesis-Driven Phases</h3>
+            <p>
+              Protects against indirect prompt injection planted in PDFs (hidden white text &amp; fake system notes) at both index time
+              (regex canary/URL stripping on contextual summaries) and answer time. Every engineering change follows a strict
+              <em>Measure &rarr; Single Change &rarr; Re-Measure</em> phase discipline.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ARCHITECTURE -->
+      <section class="section" id="architecture">
+        <div class="section-heading">
+          <span class="section-kicker">ARCHITECTURE</span>
+          <h2>End-to-end multimodal indexing &amp; agentic retrieval pipeline</h2>
+          <p>
+            Models load lazily on Apple Silicon (<code>mps</code>) / CUDA with <code>bfloat16</code> precision. Chandra OCR is automatically unloaded
+            and GPU cache is cleared once indexing completes.
+          </p>
+        </div>
+
+        <div class="image-card">
+          <svg viewBox="0 0 1100 500" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Multimodal RAG Architecture Diagram">
+            <defs>
+              <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2e1142" />
+                <stop offset="100%" stop-color="#150720" />
+              </linearGradient>
+              <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#581c87" />
+                <stop offset="100%" stop-color="#3b0764" />
+              </linearGradient>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 1 L 10 5 L 0 9 z" fill="#c084fc" />
+              </marker>
+            </defs>
+
+            <!-- Pipeline 1 Label -->
+            <text x="24" y="34" fill="#e879f9" font-family="Inter, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">
+              1. ADAPTIVE MULTIMODAL INDEXING PIPELINE (indexer.py &bull; file_processing.py)
+            </text>
+
+            <!-- Boxes Row 1 -->
+            <rect x="24" y="52" width="150" height="86" rx="10" fill="url(#boxGrad)" stroke="#c084fc" stroke-width="1.2"/>
+            <text x="99" y="84" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">PDF Corpus</text>
+            <text x="99" y="104" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">SHA-256 Dedup</text>
+            <text x="99" y="121" fill="#957da8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">doc1, doc2, doc3</text>
+
+            <line x1="174" y1="95" x2="212" y2="95" stroke="#c084fc" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+            <rect x="216" y="52" width="185" height="86" rx="10" fill="url(#boxGrad)" stroke="#c084fc" stroke-width="1.2"/>
+            <text x="308" y="82" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Docling + pypdfium2</text>
+            <text x="308" y="102" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">Page PNG (scale=2.0)</text>
+            <text x="308" y="120" fill="#e879f9" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">image_coverage &lt; 0.30?</text>
+
+            <line x1="401" y1="95" x2="439" y2="95" stroke="#c084fc" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+            <rect x="443" y="52" width="195" height="86" rx="10" fill="url(#accentGrad)" stroke="#e879f9" stroke-width="1.4"/>
+            <text x="540" y="79" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Dual Text Extraction</text>
+            <text x="540" y="99" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">&bull; Fast: PDF text_layer</text>
+            <text x="540" y="118" fill="#fde68a" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">&bull; Deep: Chandra OCR 2</text>
+
+            <line x1="638" y1="95" x2="676" y2="95" stroke="#c084fc" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+            <rect x="680" y="52" width="185" height="86" rx="10" fill="url(#boxGrad)" stroke="#c084fc" stroke-width="1.2"/>
+            <text x="772" y="80" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Contextual Chunking</text>
+            <text x="772" y="100" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">Heading split (&le;1500c)</text>
+            <text x="772" y="118" fill="#957da8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">+ Safe Context Summary</text>
+
+            <line x1="865" y1="95" x2="903" y2="95" stroke="#c084fc" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+            <rect x="907" y="52" width="168" height="86" rx="10" fill="url(#accentGrad)" stroke="#34d399" stroke-width="1.5"/>
+            <text x="991" y="80" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">PostgreSQL 17</text>
+            <text x="991" y="100" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">pgvector HNSW (1024d)</text>
+            <text x="991" y="118" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">+ GIN TSVECTOR (done)</text>
+
+            <!-- Divider -->
+            <line x1="24" y1="175" x2="1075" y2="175" stroke="rgba(192,132,252,0.2)" stroke-dasharray="6,6" />
+
+            <!-- Pipeline 2 Label -->
+            <text x="24" y="212" fill="#e879f9" font-family="Inter, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">
+              2. AGENTIC MULTI-HOP RETRIEVAL &amp; VLM GROUNDED GENERATION (rag.py &bull; model.py)
+            </text>
+
+            <!-- Boxes Row 2 -->
+            <rect x="24" y="235" width="165" height="96" rx="10" fill="url(#boxGrad)" stroke="#c084fc" stroke-width="1.2"/>
+            <text x="106" y="267" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">User Question</text>
+            <text x="106" y="287" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">rewrite_query()</text>
+            <text x="106" y="306" fill="#957da8" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">Last 6 turns context</text>
+
+            <line x1="189" y1="283" x2="227" y2="283" stroke="#c084fc" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+            <rect x="231" y="235" width="195" height="96" rx="10" fill="url(#boxGrad)" stroke="#c084fc" stroke-width="1.2"/>
+            <text x="328" y="265" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Hybrid RRF Search</text>
+            <text x="328" y="285" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">Dense (bge-m3) + Sparse</text>
+            <text x="328" y="304" fill="#e879f9" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">Top 40 Candidates (k=60)</text>
+
+            <line x1="426" y1="283" x2="464" y2="283" stroke="#c084fc" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+            <rect x="468" y="235" width="195" height="96" rx="10" fill="url(#accentGrad)" stroke="#e879f9" stroke-width="1.4"/>
+            <text x="565" y="265" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Cross-Encoder Rerank</text>
+            <text x="565" y="285" fill="#fde68a" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">bge-reranker-v2-m3</text>
+            <text x="565" y="304" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">Select Top K = 6 Chunks</text>
+
+            <line x1="663" y1="283" x2="701" y2="283" stroke="#c084fc" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+            <rect x="705" y="235" width="175" height="96" rx="10" fill="url(#boxGrad)" stroke="#fbbf24" stroke-width="1.4"/>
+            <text x="792" y="265" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Agentic Gate</text>
+            <text x="792" y="285" fill="#fbbf24" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">ENOUGH or SEARCH?</text>
+            <text x="792" y="304" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">Max 3 Search Rounds</text>
+
+            <!-- Loop back arrow for Agentic Search -->
+            <path d="M 792 331 L 792 368 L 328 368 L 328 335" fill="none" stroke="#fbbf24" stroke-width="1.4" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+            <text x="560" y="385" fill="#fbbf24" font-family="JetBrains Mono, monospace" font-size="10.5" text-anchor="middle">If missing info: emit new query &amp; merge candidate pool</text>
+
+            <line x1="880" y1="283" x2="912" y2="283" stroke="#c084fc" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+            <rect x="916" y="235" width="160" height="96" rx="10" fill="url(#accentGrad)" stroke="#34d399" stroke-width="1.5"/>
+            <text x="996" y="262" fill="#fff" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Qwen3-VL-4B</text>
+            <text x="996" y="282" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">6 Chunks + 2 Page PNGs</text>
+            <text x="996" y="300" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">896px &bull; Budget &le; 9,000</text>
+            <text x="996" y="317" fill="#fde68a" font-family="JetBrains Mono, monospace" font-size="10" text-anchor="middle">[1][2] Streamed Answer</text>
+
+            <!-- Bottom Evaluation Bar -->
+            <rect x="24" y="415" width="1052" height="62" rx="10" fill="rgba(52, 211, 153, 0.08)" stroke="rgba(52, 211, 153, 0.35)" stroke-width="1.2"/>
+            <text x="550" y="442" fill="#34d399" font-family="Inter, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+              CONTINUOUS VERIFICATION &amp; CALIBRATED EVALUATION LAYER (evaluate.py &bull; pytest)
+            </text>
+            <text x="550" y="462" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="11" text-anchor="middle">
+              Recall@1/6 &bull; MRR &bull; Faithfulness &bull; Citation Precision &bull; Refusal Accuracy &bull; TTFT &amp; p50/p95 Latency &bull; Stratified Cohen&apos;s &kappa; Calibration
+            </text>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ARCHITECTURE DECISION RECORDS (ADR MATRIX) -->
+      <section class="section" id="adr">
+        <div class="section-heading">
+          <span class="section-kicker">ARCHITECTURE DECISION RECORDS (ADR)</span>
+          <h2>Key engineering decisions &amp; explicit trade-offs</h2>
+          <p>
+            Every architectural choice was evaluated against industry-standard alternatives, documenting both the capability gained
+            and the concrete engineering trade-off accepted.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <div class="table-header-bar">
+            <h3>Architecture Decision Record (ADR) Matrix</h3>
+            <span class="table-meta">ADR-001 through ADR-005 &bull; Production Trade-Off Analysis</span>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ADR &amp; Component</th>
+                <th>Decision Chosen</th>
+                <th>Industry Default Rejected</th>
+                <th>Engineering Rationale &amp; Trade-Off Accepted</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>ADR-001</strong><br/><code>rag.py &bull; model.py</code></td>
+                <td><span class="pill pill-fix">&lt;1,100 LOC Pure Python</span></td>
+                <td>LangChain / LlamaIndex wrappers</td>
+                <td><strong>Why:</strong> Zero hidden prompt templates or abstraction layers; enabled custom 1,024-query <code>blocked_eager</code> attention, exact 9k token budgeting (<code>fit_prompt</code>), and streaming first-60-char refusal gating.<br/><strong>Trade-off:</strong> Built custom RRF SQL, chunker, and streaming state machine from scratch.</td>
+              </tr>
+              <tr>
+                <td><strong>ADR-002</strong><br/><code>indexer.py &bull; file_processing.py</code></td>
+                <td><span class="pill pill-fix">Adaptive Docling + Chandra OCR 2</span></td>
+                <td>PyPDF text-only or OCR-everything</td>
+                <td><strong>Why:</strong> Text-only extractors fail on 1965 scanned NASA reports (<code>doc3</code>) and diagrams; OCR-everything wastes hours on born-digital PDFs. Per-page <code>image_coverage &ge; 0.30</code> routing gets the best of both worlds and frees MPS VRAM after indexing.<br/><strong>Trade-off:</strong> Full 200-page scanned NASA report takes ~5.5 hrs one-time indexing, mitigated via page-level ACID checkpointing.</td>
+              </tr>
+              <tr>
+                <td><strong>ADR-003</strong><br/><code>db.py &bull; PostgreSQL 17</code></td>
+                <td><span class="pill pill-fix">Single-DB pgvector HNSW + FTS RRF</span></td>
+                <td>Separate Vector DB (Pinecone / Qdrant) + Elastic</td>
+                <td><strong>Why:</strong> Eliminates dual-write synchronization bugs. Dense 1024-d <code>bge-m3</code> cosine search and stopword-filtered <code>ts_rank(..., 1)</code> execute inside a single ACID SQL CTE with <code>status = 'done'</code> isolation.<br/><strong>Trade-off:</strong> Requires explicit stopword normalization in Python (Phase 4 lifted keyword Recall@6 from <code>0.29 &rarr; 0.86</code>).</td>
+              </tr>
+              <tr>
+                <td><strong>ADR-004</strong><br/><code>rag.py &bull; attention.py</code></td>
+                <td><span class="pill pill-fix">Local Qwen3-VL-4B + Python Guardrails</span></td>
+                <td>Cloud VLM APIs (GPT-4o) or Prompt-Only Rules</td>
+                <td><strong>Why:</strong> 100% air-gapped data privacy and zero API cost; processes both OCR markdown and rendered <code>896px</code> page PNGs.<br/><strong>Trade-off:</strong> A 4B model struggles with multi-clause negative prompt exceptions (Phase 3b), so conditional rules (bilingual refusal + citation stripping + <code>ENOUGH_SCORE &ge; 0.5</code> gate) are enforced deterministically in Python.</td>
+              </tr>
+              <tr>
+                <td><strong>ADR-005</strong><br/><code>evaluate.py</code></td>
+                <td><span class="pill pill-fix">Human-Calibrated Judge (&kappa; &ge; 0.70 Target)</span></td>
+                <td>Uncalibrated RAGAS / LLM-as-a-Judge</td>
+                <td><strong>Why:</strong> Uncalibrated LLM judges hallucinate atomic claims on 1-sentence answers (&kappa; = 0.61 in Phase 2). Deterministic sentence splitting + per-citation verification achieved <strong>&kappa; = 0.79 / 1.00 / 1.00</strong> on the final holdout.<br/><strong>Trade-off:</strong> Required three iterative rounds of 90-row stratified human labeling and SHA-256 judge code tracking (<code>judge_sha256</code>).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 7-LAYER TESTING & SECURITY PYRAMID -->
+      <section class="section" id="testing">
+        <div class="section-heading">
+          <span class="section-kicker">VERIFICATION ARCHITECTURE</span>
+          <h2>7-Layer Testing, Security &amp; Evaluation Pyramid</h2>
+          <p>
+            Fast unit and database integration tests run locally in under a second with lightweight model stubs (CI workflow pre-configured), while end-to-end security,
+            Playwright browser tests, and golden-set evaluations run against the real local models on Apple Silicon MPS.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <div class="table-header-bar">
+            <h3>Automated Verification Suite</h3>
+            <span class="table-meta">80 Unit/DB + 25 E2E Pytest Assertions &bull; Isolated *_test Databases</span>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Layer</th>
+                <th>Scope &amp; Assertions</th>
+                <th>Execution Target</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Unit Tests</strong> (<code>tests/unit/</code>)</td>
+                <td>Text-layer vs. OCR routing, 1,500c table/list re-chunking with repeated headers, <code>blocked_eager</code> attention mask, 60-char streaming refusal guardrail, <code>[n]</code> parser, 9k token budget, judge sentence deduplication</td>
+                <td>Local Environment (&lt; 1s, stubbed models; CI-ready)</td>
+                <td><span class="pill pill-pass">80 / 80 PASS</span></td>
+              </tr>
+              <tr>
+                <td><strong>2. DB Integration</strong> (<code>test_hybrid_search.py</code>)</td>
+                <td>Verifies SQL Reciprocal Rank Fusion + stopword-filtered <code>ts_rank(..., 1)</code> against exact Python math in real <code>pgvector:pg17</code>; ensures half-indexed documents (<code>status != 'done'</code>) never shift ranks</td>
+                <td>Local PostgreSQL 17 Service (Docker / Native)</td>
+                <td><span class="pill pill-pass">PASS (Exact Match)</span></td>
+              </tr>
+              <tr>
+                <td><strong>3. Prompt Injection E2E</strong> (<code>test_prompt_injection.py</code>)</td>
+                <td>Indexes adversarial PDF with hidden white text &amp; fake "Note to AI systems" phishing payload (<code>PWNED-7731</code>, <code>malicious.example</code>); asserts zero leak in context or answer</td>
+                <td>Local MPS (Real Models, ~1 min)</td>
+                <td><span class="pill pill-pass">5 / 5 PASS (0 Leaks)</span></td>
+              </tr>
+              <tr>
+                <td><strong>4. Playwright UI &amp; Refusal E2E</strong> (<code>tests/e2e/</code>)</td>
+                <td>Headless Chromium tests for streaming Turkish &amp; English multi-turn queries, rendered page PNGs (<code>naturalWidth &gt; 0</code>), search details drawer, Turkish citation-free refusal, and 15/15 refusal judge tests</td>
+                <td>Local MPS + Chromium (~2.2 min)</td>
+                <td><span class="pill pill-pass">25 / 25 E2E PASS</span></td>
+              </tr>
+              <tr>
+                <td><strong>5. Retrieval Benchmark</strong> (<code>evaluate.py retrieval</code>)</td>
+                <td>Compares 5 search strategies (Vector, Keyword, Hybrid RRF, Vector+Rerank, Hybrid+Rerank) across 69 answerable &amp; 13 unanswerable questions on full 361-page corpus</td>
+                <td>Local MPS (3 Docs, 1,164 Chunks)</td>
+                <td><span class="pill pill-pass">R@1: 0.88 &bull; R@6: 0.94</span></td>
+              </tr>
+              <tr>
+                <td><strong>6. Final Holdout Evaluation</strong> (<code>evaluate.py answers</code>)</td>
+                <td>72 sealed questions evaluated once without post-hoc tuning: correctness, claim-level faithfulness, citation precision, gold-page citation rate, refusal accuracy, TTFT, and latency</td>
+                <td>Unseen Holdout (72 Questions)</td>
+                <td><span class="pill pill-pass">0.91 Correct &bull; 0.94 Faith</span></td>
+              </tr>
+              <tr>
+                <td><strong>7. Judge Calibration</strong> (<code>evaluate.py calibrate</code>)</td>
+                <td>Three rounds of stratified 90-row human audits across <code>claim_supported</code>, <code>correct</code>, and <code>refusal</code> using Cohen’s &kappa;</td>
+                <td>Human-in-the-Loop Verification</td>
+                <td><span class="pill pill-pass">&kappa; = 0.79 / 1.00 / 1.00</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- EVALUATION & PHASE PROGRESSION -->
+      <section class="section" id="evaluation">
+        <div class="section-heading">
+          <span class="section-kicker">BENCHMARKS &amp; ITERATIVE PHASES</span>
+          <h2>Phase-by-phase engineering progression</h2>
+          <p>
+            Every improvement is isolated into a dedicated phase with dated Markdown/JSON reports committed under <code>phases/faz-N/reports/</code>.
+            Final success is declared only on a separate, unseen holdout set.
+          </p>
+        </div>
+
+        <!-- Multi-Document Corpus Summary -->
+        <div class="split-grid" style="margin-top: 0; margin-bottom: 26px;">
+          <div class="bullet-card">
+            <h3>Full Indexed Multimodal Corpus (3 Documents, 361 Pages, 1,164 Chunks)</h3>
+            <ul class="clean-list">
+              <li><strong>doc1.pdf (ISTQB CT-AI Syllabus):</strong> 99 pages, 298 chunks (max 1,500 chars) &mdash; born-digital text layer, risk/acceptance tables, and ML workflow diagrams.</li>
+              <li><strong>doc2.pdf (CODATA 2022 Fundamental Constants):</strong> 62 pages, 304 chunks &mdash; dense LaTeX equations and multi-page metrological tables with repeated table headers per split chunk.</li>
+              <li><strong>doc3.pdf (1965 NASA Space Research Report):</strong> 200 full scanned pages, 562 chunks &mdash; 100% processed via <strong>Chandra OCR 2</strong> covering optical, solar, radio/radar, X-ray/gamma-ray, and relativistic physics reports.</li>
+              <li><strong>Unseen Final Holdout Set (<code>eval/golden_final.jsonl</code>):</strong> 72 stratified questions (10 factual, 10 paraphrase, 10 table, 9 figure, 8 multi-page, 10 Turkish, 15 unanswerable) held sealed until final evaluation.</li>
+            </ul>
+          </div>
+          <div class="bullet-card">
+            <h3>Critical Engineering Discoveries &amp; Fixes (Phases 1 &rarr; 6)</h3>
+            <ul class="clean-list">
+              <li><strong>MPS Attention &amp; Memory Guard (Phases 2 &amp; J):</strong> PyTorch <code>sdpa</code> corrupted long multimodal prompts (<code>"!!!"</code>), while standard <code>eager</code> hit 50 GB memory spikes and segfaulted on long prompts. Built custom 1024-query <code>blocked_eager</code> attention + 9k token budget (<code>fit_prompt</code>) + 128-multiple padding (<code>Z13</code>).</li>
+              <li><strong>Why HF <code>no_repeat_ngram_size</code> Silently Corrupts RAG (Phase 5b):</strong> Controlled sweeps proved decoder-only n-gram blocking penalizes prompt tokens too, forcing the model to mutate exact source numbers (<code>2017 &rarr; 2020</code>, <code>0.5 &rarr; 0.7 MeV</code>). Repetition loops were eliminated instead via 1,500-char table re-chunking (Phase 5).</li>
+              <li><strong>Stopword FTS &amp; Bilingual Refusal Guardrail (Phases 4 &amp; 5c):</strong> Stopword filtering + length-normalized <code>ts_rank(..., 1)</code> lifted keyword Recall@6 from <code>0.29 &rarr; 0.86</code>; normalizing first-sentence refusals in <code>rag.py</code> eliminated refusal citation leaks (<code>0.38 &rarr; 0.00</code>) and enabled native Turkish refusals.</li>
+              <li><strong>Visual Prefill Bottleneck (Phase 6a):</strong> Profiling revealed 3 page PNGs consumed ~3,500 prefill tokens (~66% of prompt); resizing max image side <code>1280 &rarr; 896px</code> kept <code>22/22</code> figure/table accuracy while cutting p50 latency in the 24-question sweep from <code>32.3s &rarr; 20.9s</code>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Retrieval Table -->
+        <div class="table-wrap">
+          <div class="table-header-bar">
+            <h3>Retrieval Benchmark Progression (Phase 1b/2 Baseline &rarr; Phase 4 FTS Fix &rarr; Full 361-Page Corpus)</h3>
+            <span class="table-meta">Reports: 20261104-1019 &bull; 20261104-1515 &bull; 20261105-1012 (69 Answerable + 13 Unanswerable Qs)</span>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Search Method</th>
+                <th>Phase 1b/2 R@1 / R@6 (657 Chunks)</th>
+                <th>Phase 4 R@1 / R@6 (Stopword FTS)</th>
+                <th>Full 361p Corpus Recall@1 (1,164 Chunks)</th>
+                <th>Full 361p Corpus Recall@6</th>
+                <th>Full 361p Corpus MRR</th>
+                <th>Doc Breakdown R@6 (doc1 / doc2 / doc3)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dense Vector (<code>BAAI/bge-m3</code>)</td>
+                <td>0.81 / 0.94</td>
+                <td>0.81 / 0.94</td>
+                <td>0.88</td>
+                <td>0.97</td>
+                <td>0.914</td>
+                <td>1.00 / 0.83 / 1.00</td>
+              </tr>
+              <tr>
+                <td>Keyword Only (Postgres <code>TSVECTOR</code>)</td>
+                <td>0.07 / 0.29</td>
+                <td>0.45 / 0.86</td>
+                <td>0.54</td>
+                <td>0.86</td>
+                <td>0.670</td>
+                <td>0.89 / 0.75 / 0.85</td>
+              </tr>
+              <tr>
+                <td>Hybrid RRF (<code>k = 60</code>)</td>
+                <td>0.41 / 0.83</td>
+                <td>0.64 / 0.88</td>
+                <td>0.74</td>
+                <td>0.90</td>
+                <td>0.817</td>
+                <td>0.92 / 0.67 / 1.00</td>
+              </tr>
+              <tr>
+                <td>Vector + Cross-Encoder Reranker</td>
+                <td>0.81 / 0.96</td>
+                <td>0.81 / 0.96</td>
+                <td>0.88</td>
+                <td>0.94</td>
+                <td>0.918</td>
+                <td>0.97 / 0.75 / 1.00</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>Hybrid RRF + Reranker (Dev Baseline)</strong></td>
+                <td><strong>0.81 / 0.96</strong></td>
+                <td><strong>0.81 / 0.96</strong></td>
+                <td><strong>0.88</strong></td>
+                <td><strong>0.94</strong></td>
+                <td><strong>0.918</strong></td>
+                <td><strong>0.97 / 0.75 / 1.00</strong></td>
+              </tr>
+              <tr class="highlight-row" style="background: rgba(52, 211, 153, 0.16); border-top: 2px solid rgba(52, 211, 153, 0.45);">
+                <td><strong>FINAL UNSEEN HOLDOUT (72 Qs)</strong></td>
+                <td><span class="pill pill-pass">SEALED</span></td>
+                <td><span class="pill pill-pass">SEALED</span></td>
+                <td><strong>0.89</strong></td>
+                <td><span class="pill pill-pass">0.98</span></td>
+                <td><strong>0.934</strong></td>
+                <td><strong>1.00 / 0.95 / 1.00 (All pages: 1.00)</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Answer Quality Progression Table -->
+        <div class="table-wrap">
+          <div class="table-header-bar">
+            <h3>End-to-End Answer Quality, Citation &amp; Latency Progression (Phases 2&ndash;8b &rarr; Final Unseen Holdout)</h3>
+            <span class="table-meta">Reports: Faz 2 &bull; Faz 5 &bull; Full Baseline &bull; Faz 8b &bull; Final Holdout (20261105-1952)</span>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Target</th>
+                <th>Phase 2 (Stability)</th>
+                <th>Phase 5 (1.5k Re-chunk)</th>
+                <th>Phase 8b (2 Imgs, Stream)</th>
+                <th>FINAL UNSEEN HOLDOUT (72 Qs)</th>
+                <th>Holdout Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Completed Questions</strong></td>
+                <td>100%</td>
+                <td>82 / 82</td>
+                <td>82 / 82</td>
+                <td>82 / 82</td>
+                <td><strong>72 / 72</strong> (57 Ans + 15 Refusal)</td>
+                <td><span class="pill pill-pass">100% (0 Crashes)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Answer Correctness</strong></td>
+                <td>&ge; 0.85</td>
+                <td>0.91</td>
+                <td>0.97</td>
+                <td>0.97</td>
+                <td><strong>0.91</strong> (52 / 57 correct)</td>
+                <td><span class="pill pill-pass">0.91 ( PASS )</span></td>
+              </tr>
+              <tr>
+                <td><strong>Faithfulness (Judge)</strong></td>
+                <td>&ge; 0.92</td>
+                <td>0.93</td>
+                <td>0.94</td>
+                <td>0.96* (Verified)</td>
+                <td><strong>0.94</strong> (Raw judge score)</td>
+                <td><span class="pill pill-pass">0.94 ( PASS )</span></td>
+              </tr>
+              <tr>
+                <td><strong>Citation Precision</strong></td>
+                <td>&ge; 0.80</td>
+                <td>0.83</td>
+                <td>0.84</td>
+                <td>0.84</td>
+                <td><strong>0.87</strong></td>
+                <td><span class="pill pill-pass">0.87 ( PASS )</span></td>
+              </tr>
+              <tr>
+                <td><strong>Cites Expected Gold Page</strong></td>
+                <td>&ge; 0.85</td>
+                <td><span class="pill pill-warn">0.62</span></td>
+                <td>0.90</td>
+                <td>0.90</td>
+                <td><strong>0.95</strong></td>
+                <td><span class="pill pill-pass">0.95 ( PASS )</span></td>
+              </tr>
+              <tr>
+                <td><strong>Answers Without Citation</strong></td>
+                <td>&le; 0.05</td>
+                <td><span class="pill pill-warn">0.30</span></td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td><strong>0.00</strong></td>
+                <td><span class="pill pill-pass">0.00 ( PASS )</span></td>
+              </tr>
+              <tr>
+                <td><strong>Unanswerable Refused</strong></td>
+                <td>&ge; 0.90</td>
+                <td>0.92 (12/13)</td>
+                <td>1.00 (13/13)</td>
+                <td>1.00 (13/13)</td>
+                <td><strong>1.00</strong> (15 / 15)</td>
+                <td><span class="pill pill-pass">1.00 ( PASS )</span></td>
+              </tr>
+              <tr>
+                <td><strong>Unanswerable With Citation</strong></td>
+                <td>0.00</td>
+                <td><span class="pill pill-warn">0.08</span></td>
+                <td><span class="pill pill-warn">0.15</span></td>
+                <td>0.00</td>
+                <td><strong>0.00</strong> (Raw: 0.07*)</td>
+                <td><span class="pill pill-pass">0.00 ( PASS )</span></td>
+              </tr>
+              <tr>
+                <td><strong>False Refusals</strong></td>
+                <td>&le; 0.05</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td><strong>0.02</strong> (1 / 57, f51)</td>
+                <td><span class="pill pill-pass">0.02 ( PASS )</span></td>
+              </tr>
+              <tr>
+                <td><strong>Latency (p50 / p95)</strong></td>
+                <td>&le; 30s / &le; 60s</td>
+                <td><span class="pill pill-warn">49.9s / 97.8s</span></td>
+                <td>35.4s / 67.0s</td>
+                <td>17.8s / 52.4s</td>
+                <td><strong>22.2s / 40.4s</strong></td>
+                <td><span class="pill pill-pass">22.2s ( PASS )</span></td>
+              </tr>
+              <tr>
+                <td><strong>Streaming TTFT (p50)</strong></td>
+                <td>&le; 15s (Rev. from &le;10s)</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+                <td>12.9s</td>
+                <td><strong>15.2s</strong> (0.2s over target)</td>
+                <td><span class="pill pill-pass">ACCEPTED (Owner decision)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ABLATION STUDY VISUAL CHARTS -->
+        <div class="ablation-grid" id="ablation">
+          <!-- Chart 1: Retrieval Ablation SVG -->
+          <div class="chart-card">
+            <span class="card-badge" style="align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #c084fc; background: rgba(192,132,252,0.12); padding: 3px 9px; border-radius: 6px;">ABLATION STUDY 01 &bull; RETRIEVAL PIPELINE</span>
+            <h3>Retrieval Ablation: Sparse FTS Fix &rarr; Hybrid RRF &rarr; Cross-Encoder</h3>
+            <p>
+              Removing English/Turkish stopwords and normalizing document length (<code>ts_rank(..., 1)</code> in Phase 4) lifted
+              keyword Recall@1 from <code>0.07 &rarr; 0.51</code> (7.3&times;) and Recall@6 from <code>0.29 &rarr; 0.86</code> on the 69-question dev set.
+            </p>
+            <svg viewBox="0 0 520 250" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Retrieval Ablation Bar Chart">
+              <rect x="0" y="0" width="520" height="250" rx="10" fill="rgba(9, 3, 15, 0.75)" stroke="rgba(192,132,252,0.2)"/>
+              <!-- Legend -->
+              <rect x="160" y="14" width="10" height="10" rx="2" fill="#a855f7"/>
+              <text x="174" y="23" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10">Recall@1</text>
+              <rect x="242" y="14" width="10" height="10" rx="2" fill="#34d399"/>
+              <text x="256" y="23" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10">Recall@6</text>
+              <rect x="324" y="14" width="10" height="10" rx="2" fill="#fbbf24"/>
+              <text x="338" y="23" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10">MRR (R@1 / R@6 / MRR)</text>
+
+              <!-- Row 1: Raw Keyword (0.07 / 0.29 / 0.169) -->
+              <text x="14" y="56" fill="#f8f4fc" font-family="Inter, sans-serif" font-size="11" font-weight="600">1. Raw FTS (Phase 1b)</text>
+              <rect x="160" y="42" width="15" height="8" rx="3" fill="#a855f7"/>
+              <rect x="160" y="52" width="61" height="8" rx="3" fill="#34d399"/>
+              <rect x="160" y="62" width="35" height="8" rx="3" fill="#fbbf24"/>
+              <text x="230" y="59" fill="#fb7185" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">0.07 / 0.29 / 0.169</text>
+
+              <!-- Row 2: Stopword FTS (0.51 / 0.86 / 0.655) -->
+              <text x="14" y="104" fill="#f8f4fc" font-family="Inter, sans-serif" font-size="11" font-weight="600">2. Stopword FTS (Phase 4)</text>
+              <rect x="160" y="90" width="107" height="8" rx="3" fill="#a855f7"/>
+              <rect x="160" y="100" width="181" height="8" rx="3" fill="#34d399"/>
+              <rect x="160" y="110" width="138" height="8" rx="3" fill="#fbbf24"/>
+              <text x="350" y="107" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">0.51 / 0.86 / 0.655</text>
+
+              <!-- Row 3: Hybrid RRF (0.71 / 0.90 / 0.792) -->
+              <text x="14" y="152" fill="#f8f4fc" font-family="Inter, sans-serif" font-size="11" font-weight="600">3. Hybrid RRF (k=60)</text>
+              <rect x="160" y="138" width="149" height="8" rx="3" fill="#a855f7"/>
+              <rect x="160" y="148" width="189" height="8" rx="3" fill="#34d399"/>
+              <rect x="160" y="158" width="166" height="8" rx="3" fill="#fbbf24"/>
+              <text x="358" y="155" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="600">0.71 / 0.90 / 0.792</text>
+
+              <!-- Row 4: Final Holdout Live (0.89 / 0.98 / 0.934) -->
+              <text x="14" y="202" fill="#34d399" font-family="Inter, sans-serif" font-size="11" font-weight="700">4. Final Holdout Hybrid</text>
+              <rect x="160" y="188" width="187" height="8" rx="3" fill="#a855f7"/>
+              <rect x="160" y="198" width="206" height="8" rx="3" fill="#34d399"/>
+              <rect x="160" y="208" width="196" height="8" rx="3" fill="#fbbf24"/>
+              <text x="372" y="205" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="10.5" font-weight="700">0.89 / 0.98 / 0.934</text>
+
+              <text x="14" y="236" fill="#957da8" font-family="JetBrains Mono, monospace" font-size="9.5">Evaluation: Phase 1b vs 4 (69 dev Qs) &bull; Final Holdout (57 answerable Qs)</text>
+            </svg>
+          </div>
+
+          <!-- Chart 2: Multimodal Prefill & Latency Pareto Curve SVG -->
+          <div class="chart-card">
+            <span class="card-badge" style="align-self: flex-start; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #34d399; background: rgba(52,211,153,0.12); padding: 3px 9px; border-radius: 6px;">ABLATION STUDY 02 &bull; LATENCY vs. ACCURACY PARETO</span>
+            <h3>Visual Token Prefill &amp; Page Image Count Pareto Analysis</h3>
+            <p>
+              Downscaling page PNGs from <code>1280px &rarr; 896px</code> halved visual prefill tokens. Reducing
+              <code>MAX_PAGE_IMAGES</code> from <code>3 &rarr; 1</code> cut TTFT to <code>10.8s</code> but regressed on 2 questions (<code>q24, q29</code>), choosing <strong>2 images (17.8s p50, 0.97 dev accuracy)</strong> as Pareto-optimal.
+            </p>
+            <svg viewBox="0 0 520 250" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Latency vs Accuracy Pareto Chart">
+              <rect x="0" y="0" width="520" height="250" rx="10" fill="rgba(9, 3, 15, 0.75)" stroke="rgba(192,132,252,0.2)"/>
+              <!-- Axes -->
+              <line x1="60" y1="30" x2="60" y2="205" stroke="#957da8" stroke-width="1.2"/>
+              <line x1="60" y1="205" x2="490" y2="205" stroke="#957da8" stroke-width="1.2"/>
+              <text x="18" y="120" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="9.5" transform="rotate(-90 18,120)" text-anchor="middle">Accuracy (Dev Set)</text>
+              <text x="275" y="236" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="9.5" text-anchor="middle">Median Latency p50 (Lower is Faster &larr;)</text>
+
+              <!-- Target Threshold Line (30s) -->
+              <line x1="365" y1="30" x2="365" y2="205" stroke="rgba(251,191,36,0.45)" stroke-dasharray="4,4" stroke-width="1.2"/>
+              <text x="370" y="44" fill="#fbbf24" font-family="JetBrains Mono, monospace" font-size="9">Target p50 &le; 30s</text>
+
+              <!-- Pareto Curve Path -->
+              <polyline points="435,90 385,72 285,52 245,60 140,125" fill="none" stroke="#c084fc" stroke-width="2.2"/>
+
+              <!-- Point 1: Faz 2 (49.9s, 0.91) -->
+              <circle cx="435" cy="90" r="5" fill="#fb7185"/>
+              <text x="425" y="110" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Faz 2 (49.9s, 0.91)</text>
+
+              <!-- Point 2: Baseline Full 1280px (31.4s, 0.97) -->
+              <circle cx="385" cy="72" r="5" fill="#fbbf24"/>
+              <text x="415" y="65" fill="#fde68a" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">1280px (31.4s, 0.97)</text>
+
+              <!-- Point 3: Faz 7 896px 3 Imgs (19.9s, 0.99) -->
+              <circle cx="285" cy="52" r="6" fill="#34d399"/>
+              <text x="285" y="38" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">Faz 7: 3 Imgs (19.9s, 0.99)</text>
+
+              <!-- Point 4: Faz 8b 2 Imgs Pareto Optimum (17.8s, 0.97) -->
+              <circle cx="245" cy="60" r="7" fill="#34d399" stroke="#ffffff" stroke-width="2"/>
+              <text x="240" y="80" fill="#ffffff" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">&starf; Pareto: 2 Imgs (17.8s, 0.97)</text>
+
+              <!-- Point 5: Faz 8 1 Img (14.6s, 0.96 - Rejected) -->
+              <circle cx="140" cy="125" r="5.5" fill="#fb7185"/>
+              <text x="145" y="146" fill="#fb7185" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">1 Img (14.6s, 0.96 &mdash; q24/q29 fail)</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAILURE ANALYSIS & POST-MORTEMS -->
+      <section class="section" id="failures">
+        <div class="section-heading">
+          <span class="section-kicker">FAILURE ANALYSIS &amp; POST-MORTEMS</span>
+          <h2>What failed during development &amp; how we proved the root cause</h2>
+          <p>
+            Instead of cherry-picking only successful runs, every failed hypothesis or regression was isolated, root-caused with concrete
+            question IDs, and either rolled back or solved at the architectural level.
+          </p>
+        </div>
+
+        <div class="postmortem-grid">
+          <article class="postmortem-card pm-resolved">
+            <div class="pm-header">
+              <span class="pill pill-fail">POST-MORTEM 01 &bull; PHASE 5b</span>
+              <span class="pill pill-pass">ROLLED BACK &amp; FIXED IN CHUNKER</span>
+            </div>
+            <h3>Why Hugging Face <code>no_repeat_ngram_size</code> Silently Corrupts RAG Facts</h3>
+            <ul class="pm-list">
+              <li><strong>Symptom:</strong> On dense tables (<code>q33, q36, q37, d2q10</code>), the 4B VLM occasionally entered a sentence repetition loop.</li>
+              <li><strong>Failed Hypothesis:</strong> Adding standard <code>no_repeat_ngram_size=5</code> or <code>repetition_penalty=1.05</code> during generation.</li>
+              <li><strong>Root Cause Discovered:</strong> Controlled sweeps (<code>phases/faz-5b/RAPOR.md</code>) proved HF’s n-gram filter blocks n-grams appearing in the <em>input prompt</em> too. When a question and source excerpt shared a 5-gram, the model was forbidden from repeating the exact year or number, silently mutating <code>2017 &rarr; 2020</code> (<code>q01</code>) and <code>0.5 MeV &rarr; 0.7 MeV</code> (<code>d2q05</code>).</li>
+              <li><strong>Engineering Resolution:</strong> Rejected all decoding penalties. Eliminated loops at the root by splitting 6,104-char tables into <code>&le;1,500</code>-char chunks with repeated headers (Phase 5) and deduplicating identical sentences in the judge.</li>
+            </ul>
+          </article>
+
+          <article class="postmortem-card pm-resolved">
+            <div class="pm-header">
+              <span class="pill pill-fail">POST-MORTEM 02 &bull; PHASES 2 &amp; J (Z9&ndash;Z13)</span>
+              <span class="pill pill-pass">SOLVED VIA BLOCKED_EAGER</span>
+            </div>
+            <h3>Multimodal Long-Context <code>sdpa</code> Collapse vs. 50 GB <code>eager</code> Memory Spikes</h3>
+            <ul class="pm-list">
+              <li><strong>Symptom:</strong> On <code>q43</code> (13.3k input tokens with 3 high-res page PNGs), standard <code>eager</code> attention caused an MPS segfault/OOM (spiking up to 50 GB memory footprint on <code>d2q12</code>).</li>
+              <li><strong>Failed Hypothesis:</strong> Switching Qwen3-VL to PyTorch <code>sdpa</code> (Scaled Dot-Product Attention). Above ~9,500 multimodal tokens, <code>sdpa</code> silently overflowed and emitted <code>"!!!!!!"</code> garbage while corrupting subsequent calls in the same process.</li>
+              <li><strong>Engineering Resolution:</strong> Implemented custom <code>blocked_eager</code> attention in <code>attention.py</code> (computing the Q &bull; K<sup>T</sup> matrix in 1,024-query blocks), enforced a 9,000-token budget (<code>rag.fit_prompt</code>), and padded embeddings/reranker inputs to multiples of 128 (<code>Z13</code>) to stop MPS graph cache growth (cutting peak memory from 50 GB to ~9 GB).</li>
+            </ul>
+          </article>
+
+          <article class="postmortem-card pm-resolved">
+            <div class="pm-header">
+              <span class="pill pill-fail">POST-MORTEM 03 &bull; PHASE 8</span>
+              <span class="pill pill-pass">CAUGHT BY NON-REGRESSION GATE</span>
+            </div>
+            <h3>Single-Image Context Starvation &amp; TOC Loop on <code>q29</code> and <code>q24</code></h3>
+            <ul class="pm-list">
+              <li><strong>Symptom:</strong> To push streaming TTFT under 10s, we tested reducing <code>MAX_PAGE_IMAGES</code> from <code>3 &rarr; 1</code>. On the 22-question figure/table sweep (<code>sweep8.json</code>), 1 image scored a perfect <code>22/22</code> with <code>10.6s</code> TTFT.</li>
+              <li><strong>Full-Set Regression:</strong> On the full 82-question dev benchmark, 1 image achieved <code>10.8s</code> TTFT and <code>0.93</code> raw faithfulness, but regressed on two questions (<code>0.99 &rarr; 0.96</code>): on <code>q29</code>, missing the second page image caused the VLM to loop over the Table of Contents and cite non-existent chunks <code>[7][8]</code>; on <code>q24</code>, it hallucinated <em>"test cases or inputs"</em>.</li>
+              <li><strong>Engineering Resolution:</strong> Enforced our strict non-regression rule (max 1 question drop allowed for speed) and selected <code>MAX_PAGE_IMAGES = 2</code>, which restores <code>q29</code> while cutting TTFT from 17.7s to 12.9s and overall p50 latency from 19.9s to 17.8s.</li>
+            </ul>
+          </article>
+
+          <article class="postmortem-card pm-resolved">
+            <div class="pm-header">
+              <span class="pill pill-fail">POST-MORTEM 04 &bull; PHASES 3b, 5c &amp; 6a</span>
+              <span class="pill pill-pass">SOLVED IN PYTHON GUARDRAIL</span>
+            </div>
+            <h3>Conditional Prompt Exceptions in 4B Models &amp; Cross-Chunk Attribution Drift</h3>
+            <ul class="pm-list">
+              <li><strong>Symptom 1 (Refusal Citations):</strong> Phase 3’s mandatory citation prompt reduced uncited answers from <code>0.30 &rarr; 0.00</code>, but caused the model to append <code>[1]</code> to refusal sentences (<code>0.38</code>). Phase 3b’s prompt-only exception (<em>"Cite every sentence EXCEPT when refusing"</em>) had zero effect (<code>0.38 &rarr; 0.38</code>).</li>
+              <li><strong>Symptom 2 (Attribution Drift):</strong> Human audit of all 16 "unsupported" claims in Phase 6a revealed <strong>7/16 were judge false negatives</strong> (facts were explicitly in the chunk, lifting true faithfulness to <strong>0.95</strong>), while human inspection of the remainder showed most unsupported flags were accurate facts cited to adjacent page chunks.</li>
+              <li><strong>Engineering Resolution:</strong> Moved conditional refusal logic out of the prompt into a deterministic 60-character streaming buffer in <code>rag.py</code> (<code>is_refusal</code> &rarr; clean bilingual refusal with <code>0.00</code> citations).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- JUDGE CALIBRATION -->
+      <section class="section" id="calibration">
+        <div class="section-heading">
+          <span class="section-kicker">HUMAN-IN-THE-LOOP CALIBRATION</span>
+          <h2>LLM-as-a-Judge audit on stratified decisions across Dev &amp; Final Holdout</h2>
+          <p>
+            Because answers are evaluated locally by the same 4B vision-language model (so no private document data leaves the machine),
+            we audited three rounds of 90 stratified judge decisions against human ground-truth labels using Cohen’s &kappa;.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <div class="table-header-bar">
+            <h3>Stratified Human vs. Local 4B Judge Agreement (Phase 2 &rarr; Phase J &rarr; Final Holdout)</h3>
+            <span class="table-meta">Reports: 20261104-1330 &bull; 20261104-2303 &bull; Final Holdout 20261105-1952 (3 &times; 90 Human Labels)</span>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Judgment Kind</th>
+                <th>Phase 2 (Audit)</th>
+                <th>Phase J (Stratified Re-Audit)</th>
+                <th>Final Holdout (72 Qs Audit)</th>
+                <th>Target &amp; Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong><code>refusal</code></strong></td>
+                <td>&kappa; = 1.00</td>
+                <td>13 positive refusals + 17 non-refusals<br/><strong>1.00 (&kappa; = 1.00)</strong></td>
+                <td>16 positive refusals + 14 non-refusals<br/><strong>1.00 (&kappa; = 1.00)</strong></td>
+                <td><span class="pill pill-pass">&kappa; &ge; 0.70 (PERFECT)</span></td>
+              </tr>
+              <tr>
+                <td><strong><code>correct</code></strong></td>
+                <td>&kappa; = 0.76</td>
+                <td>4 negative verdicts + 26 positive verdicts<br/><strong>0.93 (&kappa; = 0.76)</strong></td>
+                <td>5 negative verdicts + 25 positive verdicts<br/><strong>1.00 (&kappa; = 1.00)</strong></td>
+                <td><span class="pill pill-pass">&kappa; &ge; 0.70 (PERFECT)</span></td>
+              </tr>
+              <tr>
+                <td><strong><code>claim_supported</code></strong></td>
+                <td><span class="pill pill-warn">&kappa; = 0.61</span></td>
+                <td>17 negative verdicts + 13 positive verdicts<br/><strong>0.93 (&kappa; = 0.86)</strong></td>
+                <td>7 negative verdicts + 23 positive verdicts<br/><strong>0.93 (&kappa; = 0.79)</strong></td>
+                <td><span class="pill pill-pass">&kappa; &ge; 0.70 (PASS)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- LIMITATIONS & FAILURE MODES -->
+      <section class="section" id="limitations">
+        <div class="section-heading">
+          <span class="section-kicker">SYSTEM LIMITATIONS &amp; HONEST OBSERVATIONS</span>
+          <h2>Where the system currently falls short &amp; open engineering challenges</h2>
+          <p>
+            True engineering maturity means acknowledging boundary conditions and failure modes transparently rather than claiming
+            flawless production readiness.
+          </p>
+        </div>
+
+        <div class="split-grid" style="margin-top: 0;">
+          <div class="bullet-card" style="border-left: 4px solid var(--accent-amber);">
+            <h3>1. Multilingual Performance Gap (Turkish vs. English)</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 12px;">
+              On the final unseen holdout, Turkish retrieval remained robust at <strong>Recall@6 = 0.90</strong>, yet answer correctness dropped to <strong>0.70</strong> (vs. 0.95+ on English questions), isolating the primary bottleneck to generation rather than search.
+            </p>
+            <ul class="clean-list">
+              <li><strong>Language-Drift in Generation (Resolved in Phase 9):</strong> The 4B VLM occasionally answered Turkish queries in English (e.g., <code>f57</code>). Phase 9 introduced deterministic <code>answer_language()</code> enforcement, reducing language mismatch to <code>0</code> with 89 passing tests.</li>
+              <li><strong>Cross-Lingual Terminology Mismatch (Tested in Phase 10):</strong> Conceptual Turkish queries (e.g., <em>"Kavram kayması nedir?"</em>) cannot match English passages without query translation. Phase 10 proved translation lifted dev correctness to <strong>0.99</strong> (12/12 Turkish correct), but added ~9s latency; rolled back to Phase 9 to respect TTFT limits. Phase 10 code preserved; single-pass reranking is the planned fix.</li>
+              <li><strong>Inflectional Stemming Deficit:</strong> PostgreSQL full-text search uses the unstemmed <code>simple</code> dictionary, so inflected Turkish words rely on dense vector recall.</li>
+              <li><strong>Failed Holdout Questions:</strong> <code>f49</code> (flexibility vs. resilience nuance), <code>f51</code> (over-cautious false refusal on valid passage), and <code>f54</code> (omitted binding energy derivation).</li>
+              <li><strong>Governance Artifacts:</strong> Full system reporting committed in <a href="https://github.com/neslihaneti/multimodal-rag/blob/main/docs/MODEL_CARD.md" style="color: var(--accent-cyan);"><code>docs/MODEL_CARD.md</code></a> and risk self-assessment in <a href="https://github.com/neslihaneti/multimodal-rag/blob/main/docs/NIST_AI_RMF.md" style="color: var(--accent-cyan);"><code>docs/NIST_AI_RMF.md</code></a>.</li>
+            </ul>
+          </div>
+
+          <div class="bullet-card" style="border-left: 4px solid var(--accent-amber);">
+            <h3>2. Hardware &amp; Local VLM Constraints</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 12px;">
+              Executing completely air-gapped on local unified memory entails physical trade-offs against multi-billion parameter cloud APIs:
+            </p>
+            <ul class="clean-list">
+              <li><strong>Streaming TTFT (15.2s vs. 15s Target):</strong> Processing two 896px page images plus cross-encoder reranking incurs &asymp;4&ndash;5 s retrieval + &asymp;7&ndash;10 s prefill before the first generated token appears.</li>
+              <li><strong>4B Parameter Ceiling:</strong> 4B models struggle with complex compound instructions (e.g., <code>f39</code> missed the specific bolometer instrument and <code>f44</code> lost multi-page proton radius nuances).</li>
+              <li><strong>Local Single-User Architecture:</strong> Current database connections and model memory footprints are optimized for a dedicated workstation, requiring batch queueing for multi-tenant deployment.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- MULTIMODAL CORPUS & UI SHOWCASE -->
+      <section class="section" id="multimodal-ui">
+        <div class="section-heading">
+          <span class="section-kicker">MULTIMODAL UI &amp; SOURCE VERIFICATION</span>
+          <h2>Interactive Streamlit interface &amp; real indexed page sources</h2>
+          <p>
+            Every answer displays clickable page thumbnails and an expandable <strong>Search details</strong> drawer exposing the rewritten queries,
+            hybrid retrieval candidates, and Cross-Encoder rerank scores.
+          </p>
+        </div>
+
+        <!-- Simulated Streamlit UI Card -->
+        <div class="ui-preview-card">
+          <div class="code-header">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="code-title">Streamlit App (app.py) &mdash; Illustrative UI Walkthrough</span>
+          </div>
+          <div class="ui-preview-body">
+            <aside class="ui-sidebar">
+              <h4>📁 Data Source</h4>
+              <p style="color: #34d399; font-size: 0.8rem; margin-bottom: 14px;">&check; Indexed Documents (3 &bull; 361 Pages)</p>
+              <ul class="ui-doc-list">
+                <li>&bull; doc1.pdf (99p, 298 chunks)</li>
+                <li>&bull; doc2.pdf (62p, 304 chunks)</li>
+                <li>&bull; doc3.pdf (200p, 562 chunks)</li>
+              </ul>
+            </aside>
+            <div class="ui-chat-area">
+              <div class="chat-bubble chat-user">
+                <strong>User:</strong> In the ML workflow figure, which steps come after testing the model, and what are the two mirror shapes in the grazing incidence X-ray telescope?
+              </div>
+              <div class="chat-bubble chat-assistant">
+                <p style="margin-bottom: 10px;">
+                  <strong>Assistant:</strong> In the ML workflow diagram, after <em>Test the model</em>, the workflow proceeds to
+                  <strong>Deploy the model</strong>, <strong>Use the model</strong>, and finally <strong>Monitor and tune the model</strong> [1].
+                  In the grazing incidence X-ray telescope schematic, the two mirror shapes used are a <strong>paraboloid</strong> and a <strong>hyperboloid</strong> [2].
+                </p>
+                <p style="font-size: 0.8rem; color: #c084fc; font-family: 'JetBrains Mono', monospace;">
+                  &blacktriangleright; Search details: Queries: `ML workflow figure steps after testing model` &rarr; `grazing incidence x-ray telescope mirror shapes` &bull; Top Rerank Scores: 0.996, 0.994
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Real Source Page Cards -->
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <span class="pill pill-fix" style="align-self: flex-start;">doc1.pdf &bull; Page 29 (Figure)</span>
+            <h3>Born-Digital Diagram Grounding</h3>
+            <p>ISTQB CT-AI ML workflow diagram extracted via Docling + passed as a visual page image to Qwen3-VL.</p>
+            <img src="assets/doc1_p29_figure.png" alt="ISTQB CT-AI Page 29 ML Workflow Diagram" />
+          </article>
+
+          <article class="gallery-card">
+            <span class="pill pill-fix" style="align-self: flex-start;">doc2.pdf &bull; Page 45 (Table XXXIII)</span>
+            <h3>Dense Metrological Table Extraction</h3>
+            <p>CODATA 2022 fundamental physical constants table preserving exact uncertainties and exponent notation.</p>
+            <img src="assets/doc2_p45_table.png" alt="CODATA 2022 Page 45 Constants Table" />
+          </article>
+
+          <article class="gallery-card">
+            <span class="pill pill-fix" style="align-self: flex-start;">doc3.pdf &bull; Page 157 (Sample Page 33)</span>
+            <h3>1966 Scanned NASA Report (Chandra OCR)</h3>
+            <p>Full-page scan routed to <code>chandra-ocr-2</code> (original report page 157) showing grazing incidence X-ray optics.</p>
+            <img src="assets/doc3_p33_ocr.png" alt="1966 NASA Scanned Report Page 157 (Sample Page 33) X-Ray Telescope Figure" />
+          </article>
+        </div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section class="section" id="stack">
+        <div class="section-heading">
+          <span class="section-kicker">TECH STACK</span>
+          <h2>Models, infrastructure &amp; verification tools</h2>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-item">Qwen/Qwen3-VL-4B-Instruct<span>Multimodal VLM Generator</span></div>
+          <div class="stack-item">datalab-to/chandra-ocr-2<span>Layout-Aware VLM OCR</span></div>
+          <div class="stack-item">BAAI/bge-m3<span>1024-d Dense Embeddings</span></div>
+          <div class="stack-item">BAAI/bge-reranker-v2-m3<span>Cross-Encoder Reranker</span></div>
+          <div class="stack-item">PostgreSQL 17 + pgvector<span>HNSW Vector + GIN FTS RRF</span></div>
+          <div class="stack-item">Docling + pypdfium2<span>PDF Layout &amp; Image Coverage</span></div>
+          <div class="stack-item">Pytest + Playwright<span>Unit, DB, Injection &amp; UI E2E</span></div>
+          <div class="stack-item">Streamlit + PyTorch MPS<span>Local Interactive UI &amp; Runtime</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built as an engineering-grade Multimodal Agentic RAG portfolio project with hypothesis-driven phases and calibrated evaluation.</p>
+      <a href="#overview">Back to Top &uarr;</a>
+    </footer>
+  </div>
+</body>
+</html>
+

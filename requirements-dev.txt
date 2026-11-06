@@ -1,0 +1,4 @@
+# Test tools on top of requirements.txt, for the full local run
+-r requirements-ci.txt
+reportlab     # tests/fixtures/make_injection_pdf.py
+playwright    # tests/e2e/test_ui.py, then: playwright install chromium

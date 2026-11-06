@@ -1,0 +1,2061 @@
+{
+  "info": {
+    "time": "2026-11-05T17:32:10",
+    "golden": "golden_dev.jsonl",
+    "golden_sha256": "6cab820cb2f0",
+    "indexed_documents": 3,
+    "indexed_chunks": 1164,
+    "embedder": "BAAI/bge-m3",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "generator": "Qwen/Qwen3-VL-4B-Instruct",
+    "prompt_sha256": "fef3a3124534",
+    "judge_sha256": "b5c1519a840b",
+    "candidates": 40,
+    "top_k": 6,
+    "max_search_rounds": 3,
+    "rrf_k": 60,
+    "image_max_side": 896,
+    "enough_score": 0.5,
+    "max_page_images": 1,
+    "first_sentence_max": 60
+  },
+  "metrics": {
+    "answer_correctness": 0.9565217391304348,
+    "faithfulness": 0.9317632850241546,
+    "citation_precision": 0.8647342995169082,
+    "cites_expected_page": 0.8985507246376812,
+    "answers_without_citation": 0.0,
+    "false_refusals": 0.0,
+    "unanswerable_refused": 1.0,
+    "unanswerable_with_citation": 0.0,
+    "raw_unanswerable_with_citation": 0.0,
+    "mean_latency_s": 20.054878048780488,
+    "p50_latency_s": 14.6,
+    "p95_latency_s": 37.7,
+    "p50_ttft_s": 10.8,
+    "p95_ttft_s": 31.1
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.1,
+      "ttft_s": 14.8,
+      "answer": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          18
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q02",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 8.7,
+      "ttft_s": 7.1,
+      "answer": "The example uptime given in a service-level agreement for AI as a Service is 99.99% uptime [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The example uptime given in a service-level agreement for AI as a Service is 99.99% uptime [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          16
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q03",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 10.8,
+      "ttft_s": 6.4,
+      "answer": "The 'AI Effect' is the changing perception of what constitutes AI, which causes the definition of AI to evolve as technology advances [1]. It is also defined as the situation when a previously labeled AI system is no longer considered to be AI as technology advances [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 'AI Effect' is the changing perception of what constitutes AI, which causes the definition of AI to evolve as technology advances [1]. It is also defined as the situation when a previously labeled AI system is no longer considered to be AI as technology advances [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          13
+        ],
+        [
+          "doc1.pdf",
+          88
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q04",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 8.9,
+      "ttft_s": 8.1,
+      "answer": "The OECD principles for AI were adopted by forty-two countries when they were issued [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The OECD principles for AI were adopted by forty-two countries when they were issued [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          23
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q05",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 8.7,
+      "ttft_s": 8.1,
+      "answer": "The DeepXplore researchers used a threshold of 0.75 when measuring threshold coverage [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The DeepXplore researchers used a threshold of 0.75 when measuring threshold coverage [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          47
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q06",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 9.5,
+      "ttft_s": 8.4,
+      "answer": "According to research, AI can reduce the size of a regression test suite by 50% [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "According to research, AI can reduce the size of a regression test suite by 50% [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          78
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q07",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 10.2,
+      "ttft_s": 8.7,
+      "answer": "The F1-score is calculated as 2 times the product of precision and recall, divided by the sum of precision and recall [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The F1-score is calculated as 2 times the product of precision and recall, divided by the sum of precision and recall [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          40
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q08",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 9.7,
+      "ttft_s": 7.9,
+      "answer": "The silhouette coefficient can take values between -1 and +1 [1]. A score of +1 means the clusters are well-separated [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The silhouette coefficient can take values between -1 and +1 [1]. A score of +1 means the clusters are well-separated [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          41
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 7.1,
+      "ttft_s": 7.0,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q10",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 10.8,
+      "ttft_s": 8.6,
+      "answer": "Mobileye produces the EyeQ family of SoC devices [1]. These devices are used to support complex and computationally intense vision processing, particularly for use in vehicles [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Mobileye produces the EyeQ family of SoC devices [1]. These devices are used to support complex and computationally intense vision processing, particularly for use in vehicles [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          16
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q11",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.9,
+      "ttft_s": 8.7,
+      "answer": "The syllabus gives the example of an AI-based system teaching itself to play an arcade computer game, where it hacks the data record that stores the highest score to achieve the goal of the highest score [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The syllabus gives the example of an AI-based system teaching itself to play an arcade computer game, where it hacks the data record that stores the highest score to achieve the goal of the highest score [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          23
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q12",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 6.9,
+      "ttft_s": 5.8,
+      "answer": "Full neuron coverage requires that each neuron in the neural network achieves an activation value greater than zero [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Full neuron coverage requires that each neuron in the neural network achieves an activation value greater than zero [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          47
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q13",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.7,
+      "ttft_s": 5.7,
+      "answer": "The three basic desirable XAI characteristics are transparency, interpretability, and explainability [1]. Transparency is defined as the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is considered to be the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The three basic desirable XAI characteristics are transparency, interpretability, and explainability [1]. Transparency is defined as the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is considered to be the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          24
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q14",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 10.8,
+      "ttft_s": 8.0,
+      "answer": "AI-based test generation tools reduced the average number of steps needed to cause a failure from around 15,000 steps to around 100 steps [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "AI-based test generation tools reduced the average number of steps needed to cause a failure from around 15,000 steps to around 100 steps [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          78
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q15",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 9.7,
+      "ttft_s": 8.6,
+      "answer": "The ISTQB ® Foundation Level certificate must be obtained before taking the Certified Tester Specialist AI Testing exam [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The ISTQB ® Foundation Level certificate must be obtained before taking the Certified Tester Specialist AI Testing exam [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          10
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q16",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 10.7,
+      "ttft_s": 9.2,
+      "answer": "The minimum number of hours of instruction required for an accredited CT-AI course is 25.1 hours [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The minimum number of hours of instruction required for an accredited CT-AI course is 25.1 hours [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          11
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q17",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.0,
+      "ttft_s": 8.0,
+      "answer": "This is called overfitting [4]. It can occur when the model tries to fit to every data point, including those described as noise or outliers [4]. It can also occur when insufficient data is provided in the training dataset [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "This is called overfitting [4]. It can occur when the model tries to fit to every data point, including those described as noise or outliers [4]. It can also occur when insufficient data is provided in the training dataset [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          31
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q18",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.3,
+      "ttft_s": 11.2,
+      "answer": "People sometimes accept a machine's suggestion without checking anything else because this is the first form of automation/complacency bias, where the human accepts recommendations provided by the system and fails to consider inputs from other sources (including themselves) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "People sometimes accept a machine's suggestion without checking anything else because this is the first form of automation/complacency bias, where the human accepts recommendations provided by the system and fails to consider inputs from other sources (including themselves) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          52
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q19",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.9,
+      "ttft_s": 9.3,
+      "answer": "When customer behaviour changes over time but the trained model stays the same, the outputs of the model become increasingly less accurate and less useful [1]. This phenomenon is known as concept drift [1]. Systems prone to concept drift should be regularly tested to detect such changes early enough for mitigation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "When customer behaviour changes over time but the trained model stays the same, the outputs of the model become increasingly less accurate and less useful [1]. This phenomenon is known as concept drift [1]. Systems prone to concept drift should be regularly tested to detect such changes early enough for mitigation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q20",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 19.8,
+      "ttft_s": 11.7,
+      "answer": "Graphics processors are usually better than general-purpose processors for machine learning because they have thousands of cores designed for massively parallel processing of images, which is suitable for ML tasks, whereas general-purpose CPUs are less efficient for training and running ML models [1]. Additionally, GPUs are specifically designed for the relatively simple processing required by ML, making them outperform CPUs for ML applications [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Graphics processors are usually better than general-purpose processors for machine learning because they have thousands of cores designed for massively parallel processing of images, which is suitable for ML tasks, whereas general-purpose CPUs are less efficient for training and running ML models [1]. Additionally, GPUs are specifically designed for the relatively simple processing required by ML, making them outperform CPUs for ML applications [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          15
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q21",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.2,
+      "ttft_s": 9.8,
+      "answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q22",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 26.9,
+      "ttft_s": 9.8,
+      "answer": "Random errors may be made by annotators (e.g., pressing the wrong button) [1]. Systemic errors may be made, (e.g., where the labelers are given the wrong instructions or poor training) [1]. Deliberate errors may be made by malicious data annotators [1]. Translation errors may take correctly labeled data in one language and mislabel it in another [1]. Where the choice is open to interpretation, subjective judgements made by data annotators may lead to conflicting data labels from different annotators [1]. Lack of required domain knowledge may lead to incorrect labelling [1]. Complex classification tasks can result in more errors being made [1]. The tools used to support data labelling have defects that lead to incorrect labels [1]. ML-based approaches to labelling are probabilistic, and this can lead to some incorrect labels [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Random errors may be made by annotators (e.g., pressing the wrong button) [1]. Systemic errors may be made, (e.g., where the labelers are given the wrong instructions or poor training) [1]. Deliberate errors may be made by malicious data annotators [1]. Translation errors may take correctly labeled data in one language and mislabel it in another [1]. Where the choice is open to interpretation, subjective judgements made by data annotators may lead to conflicting data labels from different annotators [1]. Lack of required domain knowledge may lead to incorrect labelling [1]. Complex classification tasks can result in more errors being made [1]. The tools used to support data labelling have defects that lead to incorrect labels [1]. ML-based approaches to labelling are probabilistic, and this can lead to some incorrect labels [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          38
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 9.8,
+      "ttft_s": 8.8,
+      "answer": "Clustering is the kind of learning used to group customers for marketing when there are no labels [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Clustering is the kind of learning used to group customers for marketing when there are no labels [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q24",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 18.8,
+      "ttft_s": 13.1,
+      "answer": "A second, independently built version of a system can help when expected results are unknown by acting as a pseudo-oracle for regression testing, as described in the context of back-to-back testing [1]. The two versions must not share the same test cases or inputs to ensure the independence required for effective defect detection [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "A second, independently built version of a system can help when expected results are unknown by acting as a pseudo-oracle for regression testing, as described in the context of back-to-back testing [1]. The two versions must not share the same test cases or inputs to ensure the independence required for effective defect detection [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          72
+        ]
+      ],
+      "retrieved_gold": false,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "q25",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.9,
+      "ttft_s": 10.3,
+      "answer": "Obsolete data refers to data that is outdated and may lead to inaccurate results, such as using financial data from several years ago [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Obsolete data refers to data that is outdated and may lead to inaccurate results, such as using financial data from several years ago [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          36
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q26",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.4,
+      "ttft_s": 10.4,
+      "answer": "A false positive is when the model mistakenly predicts the positive class [6]. A false negative is when the model mistakenly predicts the negative class [6].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "A false positive is when the model mistakenly predicts the positive class [6]. A false negative is when the model mistakenly predicts the negative class [6].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          91
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "q27",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.8,
+      "ttft_s": 9.6,
+      "answer": "The risk that the operational data pipeline may be faulty can be partly mitigated by dynamic testing of the individual pipeline components and integration testing of the complete pipeline [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The risk that the operational data pipeline may be faulty can be partly mitigated by dynamic testing of the individual pipeline components and integration testing of the complete pipeline [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q28",
+      "type": "figure",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.0,
+      "ttft_s": 8.4,
+      "answer": "After testing the model, the next step is to deploy the model [1]. Following deployment, the model is used operationally [5]. Finally, the model is monitored and tuned [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "After testing the model, the next step is to deploy the model [1]. Following deployment, the model is used operationally [5]. Finally, the model is monitored and tuned [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          29
+        ],
+        [
+          "doc1.pdf",
+          29
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q29",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 131.8,
+      "ttft_s": 10.4,
+      "answer": "The test levels for AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing [2]. Additionally, the document mentions that there are specialized test levels for handling input data and models, which are part of the broader test levels [2]. The document also lists \"Test Data for Testing AI-based Systems\" as a separate section, indicating it is a test level [7]. The document further mentions \"Testing for Automation Bias in AI-Based Systems\" as a test level [7]. The document also lists \"Testing for Concept Drift\" as a test level [7]. The document also lists \"Documenting an AI Component\" as a test level [7]. The document also lists \"Selecting a Test Approach for an ML System\" as a test level [7]. The document also lists \"Testing AI-Specific Quality Characteristics\" as a test level [8]. The document also lists \"Challenges Testing Self-Learning Systems\" as a test level [8]. The document also lists \"Testing Autonomous AI-Based Systems\" as a test level [8]. The document also lists \"Challenges for Algorithmic, Sample and Inappropriate Bias\" as a test level [8]. The document also lists \"Challenges Testing Probabilistic and Non-Deterministic AI-Based Systems\" as a test level [8]. The document also lists \"Challenges Testing Complex AI-Based Systems\" as a test level [8]. The document also lists \"Testing the Transparency, Interpretability and Explainability of AI-Based Systems\" as a test level [8]. The document also lists \"Test Objectives and Acceptance Criteria\" as a test level [8]. The document also lists \"Methods and Techniques for the Testing of AI-Based Systems\" as a test level [9]. The document also lists \"Adversarial Attacks and Data Poisoning\" as a test level [9]. The document also lists \"Pairwise Testing\" as a test level [9]. The document also lists \"Back-to-Back Testing\" as a test level [9]. The document also lists \"A/B Testing\" as a test level [9]. The document also lists \"Metamorphic Testing (MT)\" as a test level [9]. The document also lists \"Experience-Based Testing of AI-Based Systems\" as a test level [9]. The document also lists \"Selecting Test Techniques for AI-Based Systems\" as a test level [9]. The document also lists \"Test Environments for AI-Based Systems\" as a test level [10]. The document also lists \"Using AI for Testing\" as a test level [11]. The document also lists \"AI Technologies for Testing\" as a test level [11]. The document also lists \"Using AI to Analyze Reported Defects\" as a test level [11]. The document also lists \"Using AI for Test Case Generation\" as a test level [11]. The document also lists \"Using AI for the Optimization of Regression Test Suites\" as a test level [11]. The document also lists \"Using AI for Defect Prediction\" as a test level [11]. The document also lists \"Hands-On Exercise: Build a Defect Prediction System\" as a test level [11]. The document also lists \"Hands-On Exercise: The Use of AI in Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Exploratory Testing and Exploratory Data Analysis (EDA)\" as a test level [11]. The document also lists \"Hands-On Exercise: Metamorphic Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Pairwise Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Implement a Simple Perceptron\" as a test level [6]. The document also lists \"Hands-On Exercise: Exploratory Testing and Exploratory Data Analysis (EDA)\" as a test level [11]. The document also lists \"Hands-On Exercise: Metamorphic Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Pairwise Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Implement a Simple Perceptron\" as a test level [6]. The document also lists \"Hands-On Exercise: Exploratory Testing and Exploratory Data Analysis (EDA)\" as a test level [11]. The document also lists \"Hands-On Exercise: Metamorphic Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Pairwise Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Implement a Simple Perceptron\" as a test level [6]. The document also lists \"Hands-On Exercise: Exploratory Testing and Exploratory Data Analysis (EDA)\" as a test level [11]. The document also lists \"Hands-On Exercise: Metamorphic Testing\" as a test level [",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The test levels for AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing [2]. Additionally, the document mentions that there are specialized test levels for handling input data and models, which are part of the broader test levels [2]. The document also lists \"Test Data for Testing AI-based Systems\" as a separate section, indicating it is a test level [7]. The document further mentions \"Testing for Automation Bias in AI-Based Systems\" as a test level [7]. The document also lists \"Testing for Concept Drift\" as a test level [7]. The document also lists \"Documenting an AI Component\" as a test level [7]. The document also lists \"Selecting a Test Approach for an ML System\" as a test level [7]. The document also lists \"Testing AI-Specific Quality Characteristics\" as a test level [8]. The document also lists \"Challenges Testing Self-Learning Systems\" as a test level [8]. The document also lists \"Testing Autonomous AI-Based Systems\" as a test level [8]. The document also lists \"Challenges for Algorithmic, Sample and Inappropriate Bias\" as a test level [8]. The document also lists \"Challenges Testing Probabilistic and Non-Deterministic AI-Based Systems\" as a test level [8]. The document also lists \"Challenges Testing Complex AI-Based Systems\" as a test level [8]. The document also lists \"Testing the Transparency, Interpretability and Explainability of AI-Based Systems\" as a test level [8]. The document also lists \"Test Objectives and Acceptance Criteria\" as a test level [8]. The document also lists \"Methods and Techniques for the Testing of AI-Based Systems\" as a test level [9]. The document also lists \"Adversarial Attacks and Data Poisoning\" as a test level [9]. The document also lists \"Pairwise Testing\" as a test level [9]. The document also lists \"Back-to-Back Testing\" as a test level [9]. The document also lists \"A/B Testing\" as a test level [9]. The document also lists \"Metamorphic Testing (MT)\" as a test level [9]. The document also lists \"Experience-Based Testing of AI-Based Systems\" as a test level [9]. The document also lists \"Selecting Test Techniques for AI-Based Systems\" as a test level [9]. The document also lists \"Test Environments for AI-Based Systems\" as a test level [10]. The document also lists \"Using AI for Testing\" as a test level [11]. The document also lists \"AI Technologies for Testing\" as a test level [11]. The document also lists \"Using AI to Analyze Reported Defects\" as a test level [11]. The document also lists \"Using AI for Test Case Generation\" as a test level [11]. The document also lists \"Using AI for the Optimization of Regression Test Suites\" as a test level [11]. The document also lists \"Using AI for Defect Prediction\" as a test level [11]. The document also lists \"Hands-On Exercise: Build a Defect Prediction System\" as a test level [11]. The document also lists \"Hands-On Exercise: The Use of AI in Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Exploratory Testing and Exploratory Data Analysis (EDA)\" as a test level [11]. The document also lists \"Hands-On Exercise: Metamorphic Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Pairwise Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Implement a Simple Perceptron\" as a test level [6]. The document also lists \"Hands-On Exercise: Exploratory Testing and Exploratory Data Analysis (EDA)\" as a test level [11]. The document also lists \"Hands-On Exercise: Metamorphic Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Pairwise Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Implement a Simple Perceptron\" as a test level [6]. The document also lists \"Hands-On Exercise: Exploratory Testing and Exploratory Data Analysis (EDA)\" as a test level [11]. The document also lists \"Hands-On Exercise: Metamorphic Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Pairwise Testing\" as a test level [11]. The document also lists \"Hands-On Exercise: Implement a Simple Perceptron\" as a test level [6]. The document also lists \"Hands-On Exercise: Exploratory Testing and Exploratory Data Analysis (EDA)\" as a test level [11]. The document also lists \"Hands-On Exercise: Metamorphic Testing\" as a test level [",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          50
+        ],
+        [
+          "doc1.pdf",
+          65
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": false,
+      "faithfulness": 0.375
+    },
+    {
+      "id": "q30",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 35.6,
+      "ttft_s": 9.1,
+      "answer": "The documentation of an AI component should contain general information such as identifiers, description, developer details, hardware requirements, license details, version, date, and point of contact [1]. It should also include design assumptions and technical decisions [1]. Usage details should cover primary and secondary use cases, typical users, approach to self-learning, known bias, ethical issues, safety issues, transparency, decision thresholds, platform, and concept drift [1]. Datasets should detail features, collection, availability, pre-processing requirements, use, content, labelling, size, privacy, security, bias/fairness, and restrictions/constraints [1]. Testing documentation should include test dataset description and availability, independence of testing, test results, testing approach for robustness, explainability, concept drift, and portability [1]. Training and ML functional performance documentation should cover the ML algorithm, weights, validation dataset, selection of ML functional performance metrics, thresholds for ML functional performance metrics, and actual ML functional performance metrics [1]. Additionally, the documentation should include the purpose of the system and specification of functional and non-functional requirements [2], architectural and design information outlining how AI and non-AI components interact [2], specification of the operating environment [2], and the source of any input data, including associated metadata [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The documentation of an AI component should contain general information such as identifiers, description, developer details, hardware requirements, license details, version, date, and point of contact [1]. It should also include design assumptions and technical decisions [1]. Usage details should cover primary and secondary use cases, typical users, approach to self-learning, known bias, ethical issues, safety issues, transparency, decision thresholds, platform, and concept drift [1]. Datasets should detail features, collection, availability, pre-processing requirements, use, content, labelling, size, privacy, security, bias/fairness, and restrictions/constraints [1]. Testing documentation should include test dataset description and availability, independence of testing, test results, testing approach for robustness, explainability, concept drift, and portability [1]. Training and ML functional performance documentation should cover the ML algorithm, weights, validation dataset, selection of ML functional performance metrics, thresholds for ML functional performance metrics, and actual ML functional performance metrics [1]. Additionally, the documentation should include the purpose of the system and specification of functional and non-functional requirements [2], architectural and design information outlining how AI and non-AI components interact [2], specification of the operating environment [2], and the source of any input data, including associated metadata [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          53
+        ],
+        [
+          "doc1.pdf",
+          53
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q31",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 25.4,
+      "ttft_s": 8.9,
+      "answer": "Kavram kayması (concept drift), bir ML modelinin zaman içinde kullanıcı beklentileri, davranışları ve operasyonel ortamda değişiklikler nedeniyle tahmin doğruluğunda kaybederek kaybedebileceği bir durumdur [3]. Bu durum, modelin eğitim verisiyle uyumlu olmayan yeni veriye göre performansını düşürür [1]. Modelin düzenli olarak test edilmesi, bu kayıpları erken tespit etmek ve gerekirse sistem yeniden eğitilmesi veya sistemden çıkarılması gibi önlemleri almak için gerekli olur [1]. Testler, modelin veri akışının doğru çalışıp çalışmadığını, ML modelinin nasıl çalıştığını ve bu modelin veri akışının nasıl çalıştığını kontrol etmek için yapılır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Kavram kayması (concept drift), bir ML modelinin zaman içinde kullanıcı beklentileri, davranışları ve operasyonel ortamda değişiklikler nedeniyle tahmin doğruluğunda kaybederek kaybedebileceği bir durumdur [3]. Bu durum, modelin eğitim verisiyle uyumlu olmayan yeni veriye göre performansını düşürür [1]. Modelin düzenli olarak test edilmesi, bu kayıpları erken tespit etmek ve gerekirse sistem yeniden eğitilmesi veya sistemden çıkarılması gibi önlemleri almak için gerekli olur [1]. Testler, modelin veri akışının doğru çalışıp çalışmadığını, ML modelinin nasıl çalıştığını ve bu modelin veri akışının nasıl çalıştığını kontrol etmek için yapılır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          89
+        ],
+        [
+          "doc1.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "q32",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 37.7,
+      "ttft_s": 8.7,
+      "answer": "Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim verisini manipüle etmesiyle gerçekleştirilir ve bu, modelin yanlış sınıflandırmalar yapmasına neden olmak amacıyla yapılır [1]. Bu saldırı, modelin gelecekteki intrüzyonları kolaylaştırmak için arka kapılar veya nöronal ağ trojanları yerleştirmesi veya daha çok, bozulmuş eğitim verileri (örneğin, yanlış etiketlenmiş veriler) kullanarak modelin yanlış tahminler vermesini tetiklemesi şeklinde olabilir [1]. Bu saldırılar, belirli durumlarda ML sisteminin yanlış sınıflandırmalar yapmasına yönelik hedeflenen veya genel olarak indiscriminate (örneğin, reddetme saldırıları) olabilir [1]. Microsoft Tay chatbotu gibi bir örnekte, küçük sayıda zararlı Twitter konuşmaları sistemi kendi gelecekteki konuşmalarını bozulmuş şekilde üretmeye yönlendirdi [1]. Ayrıca, binlerce spam e-postasının \"spam değil\" olarak raporlanmasından kaynaklanan bir saldırı, spam filtreleme yazılımını bozma amacıyla kullanılmıştır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim verisini manipüle etmesiyle gerçekleştirilir ve bu, modelin yanlış sınıflandırmalar yapmasına neden olmak amacıyla yapılır [1]. Bu saldırı, modelin gelecekteki intrüzyonları kolaylaştırmak için arka kapılar veya nöronal ağ trojanları yerleştirmesi veya daha çok, bozulmuş eğitim verileri (örneğin, yanlış etiketlenmiş veriler) kullanarak modelin yanlış tahminler vermesini tetiklemesi şeklinde olabilir [1]. Bu saldırılar, belirli durumlarda ML sisteminin yanlış sınıflandırmalar yapmasına yönelik hedeflenen veya genel olarak indiscriminate (örneğin, reddetme saldırıları) olabilir [1]. Microsoft Tay chatbotu gibi bir örnekte, küçük sayıda zararlı Twitter konuşmaları sistemi kendi gelecekteki konuşmalarını bozulmuş şekilde üretmeye yönlendirdi [1]. Ayrıca, binlerce spam e-postasının \"spam değil\" olarak raporlanmasından kaynaklanan bir saldırı, spam filtreleme yazılımını bozma amacıyla kullanılmıştır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q33",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 27.5,
+      "ttft_s": 10.2,
+      "answer": "Yapay zeka tabanlı sistemlerde test seviyeleri şunlardır: giriş veri testi, ML model testi, bileşen testi, bileşen entegrasyon testi, sistem testi ve kabul testi [3]. Sistem testi, tüm entegre bileşenlerin (AI ve non-AI) işlevsel ve non-fonksiyonel olarak beklenen şekilde çalıştığını doğrulayan bir standart test seviyesidir [4]. Kabul testi, müşteriye uygun olup olmadığını belirlemek için kullanılan bir standart test seviyesidir ve AI tabanlı sistemlerde kabul kriterlerinin tanımlanması zor olabilir [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yapay zeka tabanlı sistemlerde test seviyeleri şunlardır: giriş veri testi, ML model testi, bileşen testi, bileşen entegrasyon testi, sistem testi ve kabul testi [3]. Sistem testi, tüm entegre bileşenlerin (AI ve non-AI) işlevsel ve non-fonksiyonel olarak beklenen şekilde çalıştığını doğrulayan bir standart test seviyesidir [4]. Kabul testi, müşteriye uygun olup olmadığını belirlemek için kullanılan bir standart test seviyesidir ve AI tabanlı sistemlerde kabul kriterlerinin tanımlanması zor olabilir [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          6
+        ],
+        [
+          "doc1.pdf",
+          51
+        ],
+        [
+          "doc1.pdf",
+          52
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.6666666666666666,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q34",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 23.9,
+      "ttft_s": 13.6,
+      "answer": "Yapay zeka (narrow AI) sistemleri, belirli bir görevi sınırlı bağlamda gerçekleştirmek için programlanmıştır. Genel yapay zeka (general AI) ise insanlara benzer geniş kapsamlı zihinsel yeteneklere sahip olup, düşünme ve çevresini anlama yeteneğine sahiptir. Bu fark, 1.2 bölümünde açıklanmıştır [1]. Ayrıca, genel yapay zeka henüz gerçekleştirmemiştir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yapay zeka (narrow AI) sistemleri, belirli bir görevi sınırlı bağlamda gerçekleştirmek için programlanmıştır. Genel yapay zeka (general AI) ise insanlara benzer geniş kapsamlı zihinsel yeteneklere sahip olup, düşünme ve çevresini anlama yeteneğine sahiptir. Bu fark, 1.2 bölümünde açıklanmıştır [1]. Ayrıca, genel yapay zeka henüz gerçekleştirmemiştir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          13
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 28.9,
+      "ttft_s": 11.0,
+      "answer": "Eşli test (pairwise testing) kullanılır çünkü AI tabanlı sistemlerdeki parametre sayısı çok yüksek olabilir ve tamamen kapsamlı test edilemez; bu nedenle test teknikleriyle bir alt küme seçilmektedir [2]. Ayrıca, eşli test, defektin az sayıda parametre etkileşimiyle oluştuğunu gösteren araştırmalarla desteklenmektedir [2]. Eşli test, anlaşılır ve çok sayıda araç desteklenmektedir [2]. Eşli test, özellikle otomatik sürüş araçları gibi sistemlerde, çevre kısıtlarının ve araç fonksiyonlarının çeşitli kombinasyonlarını test etmek için kullanılır [3]. Eşli test, defektleri tespit etmek için etkili bir yöntem olarak kabul edilmektedir [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing) kullanılır çünkü AI tabanlı sistemlerdeki parametre sayısı çok yüksek olabilir ve tamamen kapsamlı test edilemez; bu nedenle test teknikleriyle bir alt küme seçilmektedir [2]. Ayrıca, eşli test, defektin az sayıda parametre etkileşimiyle oluştuğunu gösteren araştırmalarla desteklenmektedir [2]. Eşli test, anlaşılır ve çok sayıda araç desteklenmektedir [2]. Eşli test, özellikle otomatik sürüş araçları gibi sistemlerde, çevre kısıtlarının ve araç fonksiyonlarının çeşitli kombinasyonlarını test etmek için kullanılır [3]. Eşli test, defektleri tespit etmek için etkili bir yöntem olarak kabul edilmektedir [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ],
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q36",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 23.3,
+      "ttft_s": 10.8,
+      "answer": "Otonom sistemlerin otonomisi test edilirken, sistem belirli senaryolarda insan müdahalesini talep etmesi veya insan müdahalesini gerektirmemesi kontrol edilir [1]. Sistem, operasyonel ortamda değişiklikler veya otonomitesi sınırlarını aştığında insan müdahalesini talep etmesi test edilir [1]. Sistem, belirli bir süre sonra insan müdahalesini gerektirmesi de test edilir [1]. Sistem, hâlâ otonom olarak çalışması gerekirken insan müdahalesini gerektirmemesi de kontrol edilir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Otonom sistemlerin otonomisi test edilirken, sistem belirli senaryolarda insan müdahalesini talep etmesi veya insan müdahalesini gerektirmemesi kontrol edilir [1]. Sistem, operasyonel ortamda değişiklikler veya otonomitesi sınırlarını aştığında insan müdahalesini talep etmesi test edilir [1]. Sistem, belirli bir süre sonra insan müdahalesini gerektirmesi de test edilir [1]. Sistem, hâlâ otonom olarak çalışması gerekirken insan müdahalesini gerektirmemesi de kontrol edilir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          59
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q37",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 18.3,
+      "ttft_s": 11.8,
+      "answer": "A/B testing is used to compare two variants of the same system, while back-to-back testing is used to detect defects [1]. One major difference between A/B testing and back-to-back testing relates to the use of A/B testing to compare two variants of the same system and the use of back-to-back testing to detect defects [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "A/B testing is used to compare two variants of the same system, while back-to-back testing is used to detect defects [1]. One major difference between A/B testing and back-to-back testing relates to the use of A/B testing to compare two variants of the same system and the use of back-to-back testing to detect defects [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          68
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q38",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 27.1,
+      "ttft_s": 27.1,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q39",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 11.9,
+      "ttft_s": 11.9,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 19.7,
+      "ttft_s": 19.7,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning a",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q41",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 18.6,
+      "ttft_s": 18.6,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q42",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 18.2,
+      "ttft_s": 18.2,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q43",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 51.6,
+      "ttft_s": 51.6,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q44",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 52.1,
+      "ttft_s": 52.1,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q45",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 17.8,
+      "ttft_s": 17.8,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d2q01",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 13.8,
+      "ttft_s": 12.2,
+      "answer": "Data for the 2022 CODATA adjustment was taken into account up to December 31, 2022 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Data for the 2022 CODATA adjustment was taken into account up to December 31, 2022 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          2
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q02",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 14.7,
+      "ttft_s": 13.2,
+      "answer": "The CODATA values of the fundamental constants are recommended by the Committee on Data of the International Science Council [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The CODATA values of the fundamental constants are recommended by the Committee on Data of the International Science Council [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          1
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q03",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 29.2,
+      "ttft_s": 16.3,
+      "answer": "The 2022 CODATA recommended value of the Newtonian constant of gravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻² [3]. This value is the same as the 2018 value because no new data have been added since the 2018 adjustment, and the same expansion factor of 3.9 was used [1][5]. The value is based on 16 measurements, which were adjusted using a least-squares method [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 CODATA recommended value of the Newtonian constant of gravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻² [3]. This value is the same as the 2018 value because no new data have been added since the 2018 adjustment, and the same expansion factor of 3.9 was used [1][5]. The value is based on 16 measurements, which were adjusted using a least-squares method [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ],
+        [
+          "doc2.pdf",
+          41
+        ],
+        [
+          "doc2.pdf",
+          41
+        ]
+      ],
+      "retrieved_gold": false,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q04",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 21.6,
+      "ttft_s": 18.0,
+      "answer": "The relative standard uncertainty of the vacuum magnetic permeability in the 2022 values is 1.6 × 10⁻¹⁰ [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The relative standard uncertainty of the vacuum magnetic permeability in the 2022 values is 1.6 × 10⁻¹⁰ [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q05",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 33.5,
+      "ttft_s": 27.9,
+      "answer": "Yes, the elementary charge is an exact constant in CODATA 2022, with a value of 1.602176634 × 10⁻¹⁹ C [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yes, the elementary charge is an exact constant in CODATA 2022, with a value of 1.602176634 × 10⁻¹⁹ C [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q06",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 18.9,
+      "ttft_s": 17.7,
+      "answer": "The 2022 CODATA least-squares adjustment used 133 input data and 79 adjusted constants [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 CODATA least-squares adjustment used 133 input data and 79 adjusted constants [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          5
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q07",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 32.4,
+      "ttft_s": 14.9,
+      "answer": "An expansion factor of 2.5 was applied to the uncertainties of the data that determine the fine-structure constant [1]. This factor is also mentioned in relation to the uncertainties of the input data for the fine-structure constant in the adjustment [5]. The expansion factor of 2.5 is specifically applied to the six data items related to the determination of α at the beginning of Table XXV (D1 through D6) [4]. The recommended value includes an expansion factor of 2.5 on the uncertainties of both the measurement input data and the QED theory of the electron anomaly [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "An expansion factor of 2.5 was applied to the uncertainties of the data that determine the fine-structure constant [1]. This factor is also mentioned in relation to the uncertainties of the input data for the fine-structure constant in the adjustment [5]. The expansion factor of 2.5 is specifically applied to the six data items related to the determination of α at the beginning of Table XXV (D1 through D6) [4]. The recommended value includes an expansion factor of 2.5 on the uncertainties of both the measurement input data and the QED theory of the electron anomaly [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          54
+        ],
+        [
+          "doc2.pdf",
+          5
+        ],
+        [
+          "doc2.pdf",
+          52
+        ],
+        [
+          "doc2.pdf",
+          24
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d2q08",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 16.4,
+      "ttft_s": 15.2,
+      "answer": "The final 2022 least-squares adjustment gave a chi-squared value of 44.2 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The final 2022 least-squares adjustment gave a chi-squared value of 44.2 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          52
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q09",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 28.5,
+      "ttft_s": 24.6,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          2
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.0
+    },
+    {
+      "id": "d2q10",
+      "type": "paraphrase",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 31.7,
+      "ttft_s": 13.9,
+      "answer": "The 2022 adjustment includes more accurate and new experimental data, such as improved hydrogen and deuterium spectroscopic data and better muonic atom theory, which have led to more precise values for the proton and deuteron radii [2]. The inclusion of muonic hydrogen and deuterium Lamb-shift data, which were first used in the 2018 adjustment, has also contributed to the improved precision [5]. Additionally, the use of the isotope shift measurement provides a link between the deuteron and proton radii, which enhances the accuracy of the recommended values [4]. The reduction in uncertainties of the proton and deuteron radii compared to the 2018 adjustment has contributed to the reduction in the uncertainty of the 2022 recommended value of R∞ [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 adjustment includes more accurate and new experimental data, such as improved hydrogen and deuterium spectroscopic data and better muonic atom theory, which have led to more precise values for the proton and deuteron radii [2]. The inclusion of muonic hydrogen and deuterium Lamb-shift data, which were first used in the 2018 adjustment, has also contributed to the improved precision [5]. Additionally, the use of the isotope shift measurement provides a link between the deuteron and proton radii, which enhances the accuracy of the recommended values [4]. The reduction in uncertainties of the proton and deuteron radii compared to the 2018 adjustment has contributed to the reduction in the uncertainty of the 2022 recommended value of R∞ [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          21
+        ],
+        [
+          "doc2.pdf",
+          3
+        ],
+        [
+          "doc2.pdf",
+          20
+        ]
+      ],
+      "retrieved_gold": false,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d2q11",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 32.8,
+      "ttft_s": 31.4,
+      "answer": "CODATA 2022'ye göre boşlukta ışık hızının değeri 299 792 458 m/s'dir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "CODATA 2022'ye göre boşlukta ışık hızının değeri 299 792 458 m/s'dir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q12",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 26.6,
+      "ttft_s": 12.2,
+      "answer": "2022 ayarlamasında hafif çekirdeklerin bağıl atom kütleleri, muonic hidrojen ve muonic deuteron Lamb shift ölçümleriyle belirlendi [5]. Bu ölçümler, muonic atomların Lamb shift değerlerini kullanarak çekirdek yarıçaplarını belirlemek için kullanıldı [5]. Ayrıca, bu ayarlamada 87 Rb ve 133 Cs gibi atomların bağıl atom kütleleri de belirlendi [4]. Bu değerler, atom interferometrisiyle elde edilen h/m (87 Rb) ve h/m (133 Cs) ölçümleriyle de belirlendi [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "2022 ayarlamasında hafif çekirdeklerin bağıl atom kütleleri, muonic hidrojen ve muonic deuteron Lamb shift ölçümleriyle belirlendi [5]. Bu ölçümler, muonic atomların Lamb shift değerlerini kullanarak çekirdek yarıçaplarını belirlemek için kullanıldı [5]. Ayrıca, bu ayarlamada 87 Rb ve 133 Cs gibi atomların bağıl atom kütleleri de belirlendi [4]. Bu değerler, atom interferometrisiyle elde edilen h/m (87 Rb) ve h/m (133 Cs) ölçümleriyle de belirlendi [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          3
+        ],
+        [
+          "doc2.pdf",
+          5
+        ],
+        [
+          "doc2.pdf",
+          4
+        ]
+      ],
+      "retrieved_gold": false,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d2u01",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 68.0,
+      "ttft_s": 68.0,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d2u02",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 30.8,
+      "ttft_s": 30.8,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3q01",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.1,
+      "ttft_s": 9.3,
+      "answer": "The Summer Study behind Space Research: Directions for the Future was held at Woods Hole during June and July, 1965 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The Summer Study behind Space Research: Directions for the Future was held at Woods Hole during June and July, 1965 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          4
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q02",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.1,
+      "ttft_s": 9.0,
+      "answer": "The Optical Astronomy Working Group recommended a space telescope with a resolution corresponding to an aperture of at least 120 inches [1]. This recommendation is reiterated in another excerpt, which states the same minimum aperture requirement [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The Optical Astronomy Working Group recommended a space telescope with a resolution corresponding to an aperture of at least 120 inches [1]. This recommendation is reiterated in another excerpt, which states the same minimum aperture requirement [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          24
+        ],
+        [
+          "doc3.pdf",
+          11
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q03",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 14.2,
+      "ttft_s": 13.9,
+      "answer": "The launch on Saturn V is planned for the calendar year 1979 [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The launch on Saturn V is planned for the calendar year 1979 [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          29
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q04",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.6,
+      "ttft_s": 10.6,
+      "answer": "The photographic emulsion that matches the Airy disk for an f/30 beam is IIa-O (50-70 lines/mm) [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The photographic emulsion that matches the Airy disk for an f/30 beam is IIa-O (50-70 lines/mm) [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          34
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q05",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 16.3,
+      "ttft_s": 11.7,
+      "answer": "The spatial resolution of a ground-based solar telescope is limited to 1 sec of arc by seeing, regardless of aperture [1]. This limit is set by poor seeing in the Earth's atmosphere, which could be overcome by space observation [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The spatial resolution of a ground-based solar telescope is limited to 1 sec of arc by seeing, regardless of aperture [1]. This limit is set by poor seeing in the Earth's atmosphere, which could be overcome by space observation [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          86
+        ],
+        [
+          "doc3.pdf",
+          43
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q06",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.3,
+      "ttft_s": 13.3,
+      "answer": "The solar features marked as resolution limits in the figure are granulation, supergranulation, the largest sun spots, and the sun [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The solar features marked as resolution limits in the figure are granulation, supergranulation, the largest sun spots, and the sun [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          87
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q07",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 17.0,
+      "ttft_s": 11.1,
+      "answer": "The summary figure of observational x-ray data shows that the resolved sources are close to the galactic plane [1]. The proximity of the resolved sources to the galactic plane is clearly evident [1]. The most remarkable feature of the distribution is a concentration toward the galactic plane, which implies that the sources are galactic objects [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The summary figure of observational x-ray data shows that the resolved sources are close to the galactic plane [1]. The proximity of the resolved sources to the galactic plane is clearly evident [1]. The most remarkable feature of the distribution is a concentration toward the galactic plane, which implies that the sources are galactic objects [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          140
+        ],
+        [
+          "doc3.pdf",
+          139
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q08",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.8,
+      "ttft_s": 11.9,
+      "answer": "The power law fitted to the cosmic gamma-ray flux data is N(E)dE ∝ E^-2 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The power law fitted to the cosmic gamma-ray flux data is N(E)dE ∝ E^-2 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.1,
+      "ttft_s": 10.9,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are hyperboloid and paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are hyperboloid and paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.0,
+      "ttft_s": 10.0,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q11",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.5,
+      "ttft_s": 9.5,
+      "answer": "The Doppler shift of a returned radar signal gives information on planetary radii, movements of the plasma envelope, and propagation within the planetary atmosphere [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The Doppler shift of a returned radar signal gives information on planetary radii, movements of the plasma envelope, and propagation within the planetary atmosphere [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          118
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q12",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 9.6,
+      "ttft_s": 9.6,
+      "answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q13",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.9,
+      "ttft_s": 9.4,
+      "answer": "Space and ground-based astronomy are partners—not competitors—and the knowledge to be gained from using the two together is very likely greater than the sum of the two used separately [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Space and ground-based astronomy are partners—not competitors—and the knowledge to be gained from using the two together is very likely greater than the sum of the two used separately [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q14",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 14.6,
+      "ttft_s": 9.1,
+      "answer": "A space radio telescope for very low frequencies could usefully get up to about 43 km in aperture [6]. The size is limited by irregularities in the interplanetary medium, which affect resolving power [2]. The documents suggest that larger apertures would be limited by these irregularities [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "A space radio telescope for very low frequencies could usefully get up to about 43 km in aperture [6]. The size is limited by irregularities in the interplanetary medium, which affect resolving power [2]. The documents suggest that larger apertures would be limited by these irregularities [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          108
+        ],
+        [
+          "doc3.pdf",
+          108
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "id": "d3q15",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.3,
+      "ttft_s": 10.7,
+      "answer": "En güçlü x-ışını kaynağının 1-10 Å bölgesindeki akısı, sakin Güneş'inkinden yaklaşık onda biridir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "En güçlü x-ışını kaynağının 1-10 Å bölgesindeki akısı, sakin Güneş'inkinden yaklaşık onda biridir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          131
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 14.5,
+      "ttft_s": 10.2,
+      "answer": "Fizik çalışma grubu uzay ortamının temel özelliklerini şu şekilde not etti: (1) düşük sıcaklık, (2) düşük basınç, (3) zayıf manyetik alan ve (4) sıfır-gravity alan [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Fizik çalışma grubu uzay ortamının temel özelliklerini şu şekilde not etti: (1) düşük sıcaklık, (2) düşük basınç, (3) zayıf manyetik alan ve (4) sıfır-gravity alan [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q17",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.7,
+      "ttft_s": 10.8,
+      "answer": "Güneş'in manyetik aktivite döngüsü yaklaşık 22 yıl sürer [1]. Güneş lekesi döngüsü 11 yıl sürer [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Güneş'in manyetik aktivite döngüsü yaklaşık 22 yıl sürer [1]. Güneş lekesi döngüsü 11 yıl sürer [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          50
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q18",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.8,
+      "ttft_s": 12.4,
+      "answer": "The preliminary design studies are planned for 1967 [1]. The completed prototype is planned for 1976 [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The preliminary design studies are planned for 1967 [1]. The completed prototype is planned for 1976 [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          28
+        ],
+        [
+          "doc3.pdf",
+          29
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 10.5,
+      "ttft_s": 8.0,
+      "answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [3]. The initial design study should last of perhaps two years' duration [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [3]. The initial design study should last of perhaps two years' duration [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d3q20",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.9,
+      "ttft_s": 11.6,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3u01",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 31.1,
+      "ttft_s": 31.1,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u02",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 27.1,
+      "ttft_s": 27.1,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 17.2,
+      "ttft_s": 17.2,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    }
+  ]
+}

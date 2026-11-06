@@ -1,0 +1,6 @@
+# What the fast tests need: no torch, no models, no Docling (tests/stubs.py stands in for them)
+pytest
+python-dotenv
+pillow
+pypdfium2
+psycopg[binary]

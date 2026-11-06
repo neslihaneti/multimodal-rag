@@ -1,0 +1,30 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/391 [00:00<00:44,  8.63it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 669.30it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:25, 14.99it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 650.04it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 8192.00it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<05:40,  2.09it/s]Loading weights:   2%|▏         | 15/713 [00:00<00:21, 33.09it/s]Loading weights:   4%|▍         | 27/713 [00:00<00:12, 53.02it/s]Loading weights:   6%|▌         | 44/713 [00:00<00:08, 81.79it/s]Loading weights:   8%|▊         | 58/713 [00:00<00:06, 93.66it/s]Loading weights:  10%|▉         | 71/713 [00:01<00:06, 96.85it/s]Loading weights:  12%|█▏        | 88/713 [00:01<00:05, 114.61it/s]Loading weights:  14%|█▍        | 102/713 [00:01<00:05, 119.63it/s]Loading weights:  16%|█▋        | 116/713 [00:01<00:05, 117.25it/s]Loading weights:  19%|█▊        | 132/713 [00:01<00:04, 127.46it/s]Loading weights:  20%|██        | 146/713 [00:01<00:04, 128.61it/s]Loading weights:  22%|██▏       | 160/713 [00:01<00:04, 123.12it/s]Loading weights:  25%|██▍       | 176/713 [00:01<00:04, 131.69it/s]Loading weights:  27%|██▋       | 190/713 [00:01<00:03, 131.89it/s]Loading weights:  29%|██▊       | 204/713 [00:02<00:04, 125.40it/s]Loading weights:  31%|███       | 220/713 [00:02<00:03, 131.81it/s]Loading weights:  33%|███▎      | 234/713 [00:02<00:03, 131.28it/s]Loading weights:  35%|███▍      | 248/713 [00:02<00:03, 125.18it/s]Loading weights:  37%|███▋      | 264/713 [00:02<00:03, 133.15it/s]Loading weights:  39%|███▉      | 278/713 [00:02<00:03, 132.48it/s]Loading weights:  41%|████      | 292/713 [00:02<00:03, 124.84it/s]Loading weights:  43%|████▎     | 308/713 [00:02<00:03, 132.94it/s]Loading weights:  45%|████▌     | 322/713 [00:02<00:02, 132.98it/s]Loading weights:  47%|████▋     | 336/713 [00:03<00:02, 126.24it/s]Loading weights:  49%|████▉     | 352/713 [00:03<00:02, 134.07it/s]Loading weights:  51%|█████▏    | 366/713 [00:03<00:02, 133.40it/s]Loading weights:  53%|█████▎    | 380/713 [00:03<00:02, 126.24it/s]Loading weights:  56%|█████▌    | 396/713 [00:03<00:02, 133.96it/s]Loading weights:  70%|██████▉   | 496/713 [00:03<00:00, 374.23it/s]Loading weights:  84%|████████▎ | 596/713 [00:03<00:00, 547.74it/s]Loading weights:  96%|█████████▋| 688/713 [00:03<00:00, 650.53it/s]Loading weights: 100%|██████████| 713/713 [00:03<00:00, 183.49it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+sep_rule_tr q38    ok  'The documents do not contain information about the passing score for the CT-AI exam.'
+sep_rule_tr q39    BAD 'The documents do not contain information about this [1][2][3][4][5][6].'
+sep_rule_tr q40    ok  'The documents do not contain information about fine-tuning a large language model with LoRA.'
+sep_rule_tr q41    ok  'The documents do not contain information about vector databases recommended for retrieval-augmented generation.'
+sep_rule_tr q42    ok  'The documents do not contain information about the accuracy GPT-4 reached on the MMLU benchmark.'
+sep_rule_tr q43    ok  'The documents do not contain information about the capital of Australia.'
+sep_rule_tr q44    ok  'The documents do not contain information about how to restart a pod in Kubernetes.'
+sep_rule_tr q45    ok  'Belgelerde bu konuda bilgi yok.'
+sep_rule_tr d2u01  ok  'The documents do not contain information about the half-life of carbon-14.'
+sep_rule_tr d2u02  ok  'The documents do not contain information about how to test machine learning models against the CODATA constants.'
+sep_rule_tr d3u01  BAD 'The documents do not contain information about this [1][2][3][4][5][6].'
+sep_rule_tr d3u02  ok  'The documents do not contain information about the launch date of the Hubble Space Telescope.'
+sep_rule_tr d3u03  ok  'Belgelerde bu konuda bilgi yok.'
+sep_rule_tr q01    ok  'The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].'
+sep_rule_tr q09    ok  'Back-to-back testing is also known as differential testing [1].'
+sep_rule_tr q31    ok  'Kavram kayması (concept drift), sistem operasyonel ortamında değişiklikler yaşarken eğitilmiş modelin bu değişikliklere uyum sağlamaması ve '
+sep_rule_tr q32    ok  'Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim verisini manipüle etmesiyle gerçekleştirilir ve bu, modelin yanlış tahm'
+sep_rule_tr q33    ok  'Yapay zeka tabanlı sistemlerde, AI ve non-AI bileşenlerin test edildiği seviyeler arasında, giriş veri testi, ML model testi, bileşen testi,'
+sep_rule_tr d2q06  ok  'The 2022 least-squares adjustment used 133 input data and 79 adjusted constants [1].'
+sep_rule_tr d2q12  ok  '2022 ayarlamasında hafif çekirdeklerin bağıl atom kütleleri, muonik hidrojen ve deuterium lamb shift ölçümleriyle belirlendi [1]. Ayrıca, pr'
+sep_rule_tr d3q10  ok  'The 15 ft Aerospace Corp. reflector should be usable at a shortest wavelength of 1 mm [1].'
+sep_rule_tr d3q15  ok  "En güçlü x-ışını kaynağının 1-10 Å bölgesindeki akısı, sakin Güneş'inkiyle kıyaslandığında yaklaşık onda biridir [1]."
+sep_rule_tr d3q16  ok  'Fizik çalışma grubu uzay ortamının (1) düşük sıcaklık, (2) düşük basınç, (3) zayıf manyetik alan ve (4) sıfır-gravity alan gibi temel özelli'
+sep_rule_tr d3q20  ok  'The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].'
+== sep_rule_tr: 2 bad of 24

@@ -1,0 +1,182 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/391 [00:00<00:43,  8.97it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 696.57it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:24, 15.79it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 684.59it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 16513.01it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<05:34,  2.13it/s]Loading weights:   2%|▏         | 15/713 [00:00<00:20, 33.32it/s]Loading weights:   4%|▍         | 27/713 [00:00<00:12, 53.93it/s]Loading weights:   6%|▌         | 44/713 [00:00<00:08, 82.38it/s]Loading weights:   8%|▊         | 58/713 [00:00<00:06, 95.78it/s]Loading weights:  10%|▉         | 71/713 [00:01<00:06, 97.68it/s]Loading weights:  12%|█▏        | 88/713 [00:01<00:05, 114.46it/s]Loading weights:  14%|█▍        | 102/713 [00:01<00:05, 118.23it/s]Loading weights:  16%|█▌        | 115/713 [00:01<00:05, 113.03it/s]Loading weights:  18%|█▊        | 131/713 [00:01<00:04, 123.33it/s]Loading weights:  20%|██        | 145/713 [00:01<00:04, 125.76it/s]Loading weights:  22%|██▏       | 159/713 [00:01<00:04, 120.44it/s]Loading weights:  24%|██▍       | 174/713 [00:01<00:04, 128.14it/s]Loading weights:  27%|██▋       | 190/713 [00:01<00:04, 129.88it/s]Loading weights:  29%|██▊       | 204/713 [00:02<00:04, 119.81it/s]Loading weights:  31%|███       | 220/713 [00:02<00:03, 128.38it/s]Loading weights:  33%|███▎      | 234/713 [00:02<00:03, 128.36it/s]Loading weights:  35%|███▍      | 248/713 [00:02<00:03, 121.93it/s]Loading weights:  37%|███▋      | 264/713 [00:02<00:03, 129.87it/s]Loading weights:  39%|███▉      | 278/713 [00:02<00:03, 128.57it/s]Loading weights:  41%|████      | 291/713 [00:02<00:03, 119.47it/s]Loading weights:  43%|████▎     | 308/713 [00:02<00:03, 130.44it/s]Loading weights:  45%|████▌     | 322/713 [00:02<00:03, 129.88it/s]Loading weights:  47%|████▋     | 336/713 [00:03<00:03, 123.47it/s]Loading weights:  49%|████▉     | 351/713 [00:03<00:02, 128.91it/s]Loading weights:  51%|█████▏    | 366/713 [00:03<00:02, 131.90it/s]Loading weights:  53%|█████▎    | 380/713 [00:03<00:02, 124.65it/s]Loading weights:  56%|█████▌    | 396/713 [00:03<00:02, 132.40it/s]Loading weights:  68%|██████▊   | 488/713 [00:03<00:00, 346.83it/s]Loading weights:  83%|████████▎ | 592/713 [00:03<00:00, 540.55it/s]Loading weights:  96%|█████████▋| 688/713 [00:03<00:00, 646.86it/s]Loading weights: 100%|██████████| 713/713 [00:03<00:00, 180.70it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[1/82] q01  52.0s refused=False correct=True faith=1.0 cites=[]
+[2/82] q02  35.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[3/82] q03  37.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13)]
+[4/82] q04  48.4s refused=False correct=True faith=1.0 cites=[]
+[5/82] q05  36.8s refused=False correct=True faith=1.0 cites=[]
+[6/82] q06  41.6s refused=False correct=True faith=1.0 cites=[]
+[7/82] q07  31.1s refused=False correct=True faith=0.6666666666666666 cites=[('doc1.pdf', 40)]
+[8/82] q08  39.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 41)]
+[9/82] q09  34.5s refused=False correct=True faith=1.0 cites=[]
+[10/82] q10  81.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[11/82] q11  51.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 23)]
+[12/82] q12  30.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 47)]
+[13/82] q13  30.3s refused=False correct=True faith=0.6666666666666666 cites=[]
+[14/82] q14  49.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 78)]
+[15/82] q15  38.7s refused=False correct=True faith=1.0 cites=[]
+[16/82] q16  36.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 11)]
+[17/82] q17  40.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 31)]
+[18/82] q18  52.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 52)]
+[19/82] q19  49.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[20/82] q20  46.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 15)]
+[21/82] q21  46.0s refused=False correct=True faith=0.75 cites=[('doc1.pdf', 66)]
+[22/82] q22  52.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 38)]
+[23/82] q23  41.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[24/82] q24  52.2s refused=False correct=False faith=0.6 cites=[]
+[25/82] q25  44.1s refused=False correct=True faith=1.0 cites=[]
+[26/82] q26  78.9s refused=False correct=True faith=1.0 cites=[]
+[27/82] q27  41.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[28/82] q28  37.8s refused=False correct=True faith=1.0 cites=[]
+[29/82] q29  64.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 6), ('doc1.pdf', 50)]
+[30/82] q30  87.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 53), ('doc1.pdf', 53)]
+[31/82] q31  54.6s refused=False correct=False faith=1.0 cites=[('doc1.pdf', 89), ('doc1.pdf', 54)]
+[32/82] q32  98.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 66), ('doc1.pdf', 67)]
+[33/82] q33  41.4s refused=False correct=True faith=0.8333333333333334 cites=[('doc1.pdf', 50), ('doc1.pdf', 51), ('doc1.pdf', 52), ('doc1.pdf', 51)]
+[34/82] q34  51.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13)]
+[35/82] q35  53.0s refused=False correct=False faith=0.8 cites=[('doc1.pdf', 67)]
+[36/82] q36  46.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 59)]
+[37/82] q37  60.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 68), ('doc1.pdf', 72)]
+[38/82] q38  56.6s refused=True correct=- faith=None cites=[]
+[39/82] q39  63.9s refused=True correct=- faith=None cites=[]
+[40/82] q40  48.9s refused=True correct=- faith=None cites=[]
+[41/82] q41  74.8s refused=True correct=- faith=None cites=[]
+[42/82] q42  68.2s refused=True correct=- faith=None cites=[]
+[43/82] q43 134.0s refused=True correct=- faith=None cites=[]
+[44/82] q44 100.0s refused=False correct=- faith=None cites=[('doc2.pdf', 17)]
+[45/82] q45  69.2s refused=True correct=- faith=None cites=[]
+[46/82] d2q01  41.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 2)]
+[47/82] d2q02  40.8s refused=False correct=True faith=1.0 cites=[]
+[48/82] d2q03  80.1s refused=False correct=True faith=0.8333333333333334 cites=[('doc2.pdf', 44), ('doc2.pdf', 41), ('doc2.pdf', 56)]
+[49/82] d2q04  83.6s refused=False correct=True faith=1.0 cites=[]
+[50/82] d2q05  97.4s refused=False correct=True faith=0.75 cites=[('doc2.pdf', 44), ('doc2.pdf', 45)]
+[51/82] d2q06  44.1s refused=False correct=True faith=1.0 cites=[]
+[52/82] d2q07  71.3s refused=False correct=True faith=0.8 cites=[('doc2.pdf', 54), ('doc2.pdf', 24), ('doc2.pdf', 24), ('doc2.pdf', 52)]
+[53/82] d2q08  55.5s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 52), ('doc2.pdf', 5)]
+[54/82] d2q09  91.3s refused=False correct=True faith=0.5 cites=[('doc2.pdf', 54), ('doc2.pdf', 52)]
+[55/82] d2q10  53.5s refused=False correct=False faith=1.0 cites=[('doc2.pdf', 3), ('doc2.pdf', 21), ('doc2.pdf', 3)]
+[56/82] d2q11  97.8s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[57/82] d2q12  80.7s refused=False correct=False faith=0.3333333333333333 cites=[('doc2.pdf', 56), ('doc2.pdf', 5), ('doc2.pdf', 4)]
+[58/82] d2u01  95.5s refused=True correct=- faith=None cites=[]
+[59/82] d2u02  74.6s refused=True correct=- faith=None cites=[]
+[60/82] d3q01  33.4s refused=False correct=True faith=1.0 cites=[]
+[61/82] d3q02  35.0s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 4)]
+[62/82] d3q03  38.8s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 8)]
+[63/82] d3q04  81.3s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 9)]
+[64/82] d3q05  41.6s refused=False correct=True faith=0.3333333333333333 cites=[('doc3_sample.pdf', 15)]
+[65/82] d3q06  47.3s refused=False correct=True faith=1.0 cites=[]
+[66/82] d3q07  38.7s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 29)]
+[67/82] d3q08  44.2s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 31), ('doc3_sample.pdf', 30)]
+[68/82] d3q09  72.5s refused=False correct=True faith=0.5 cites=[('doc3_sample.pdf', 33)]
+[69/82] d3q10  38.5s refused=False correct=True faith=0.6666666666666666 cites=[]
+[70/82] d3q11  72.9s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 24)]
+[71/82] d3q12  49.5s refused=False correct=False faith=1.0 cites=[]
+[72/82] d3q13  38.6s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 11)]
+[73/82] d3q14  42.3s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 20)]
+[74/82] d3q15  50.3s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 26)]
+[75/82] d3q16  38.8s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 34)]
+[76/82] d3q17  59.3s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 14)]
+[77/82] d3q18  35.9s refused=False correct=True faith=1.0 cites=[]
+[78/82] d3q19  33.9s refused=False correct=True faith=1.0 cites=[]
+[79/82] d3q20  56.8s refused=False correct=True faith=0.8 cites=[]
+[80/82] d3u01  54.4s refused=True correct=- faith=None cites=[]
+[81/82] d3u02  59.4s refused=True correct=- faith=None cites=[]
+Traceback (most recent call last):
+  File "~/Desktop/multimodal_rag_Chandra _LLM/evaluate.py", line 396, in <module>
+    main()
+  File "~/Desktop/multimodal_rag_Chandra _LLM/evaluate.py", line 392, in main
+    {"retrieval": retrieval, "answers": answers, "label": label, "calibrate": calibrate}[args.command](args)
+  File "~/Desktop/multimodal_rag_Chandra _LLM/evaluate.py", line 251, in answers
+    result = rag.answer(item["question"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/Desktop/multimodal_rag_Chandra _LLM/rag.py", line 133, in answer
+    chunks, queries = agentic_search(query)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "~/Desktop/multimodal_rag_Chandra _LLM/rag.py", line 96, in agentic_search
+    decision = generate(decision_prompt(query, current), max_new_tokens=60)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/Desktop/multimodal_rag_Chandra _LLM/model.py", line 130, in generate
+    generated_ids = model.generate(**inputs, max_new_tokens=max_new_tokens, do_sample=False)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/generation/utils.py", line 2543, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/generation/utils.py", line 2736, in _sample
+    outputs = self._prefill(
+              ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/generation/utils.py", line 3768, in _prefill
+    return self(**model_inputs, return_dict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/utils/generic.py", line 876, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1507, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/utils/generic.py", line 876, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 1346, in forward
+    outputs = self.language_model(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/utils/generic.py", line 952, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 248, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 916, in forward
+    layer_outputs = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 548, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 492, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/transformers/models/qwen3_vl/modeling_qwen3_vl.py", line 174, in eager_attention_forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query.dtype)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/functional.py", line 2135, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 57.28 GiB, other allocations: 120.35 GiB, max allowed: 182.78 GiB). Tried to allocate 9.25 GiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).

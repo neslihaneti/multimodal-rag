@@ -1,0 +1,49 @@
+Resuming: 81 questions already answered
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/391 [00:00<00:42,  9.16it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 711.02it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:24, 15.97it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 692.76it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 6043.67it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<05:49,  2.04it/s]Loading weights:   2%|▏         | 15/713 [00:00<00:21, 32.23it/s]Loading weights:   4%|▍         | 27/713 [00:00<00:13, 52.37it/s]Loading weights:   6%|▌         | 44/713 [00:00<00:08, 80.65it/s]Loading weights:   8%|▊         | 58/713 [00:00<00:06, 93.58it/s]Loading weights:  10%|▉         | 71/713 [00:01<00:06, 95.96it/s]Loading weights:  12%|█▏        | 88/713 [00:01<00:05, 113.20it/s]Loading weights:  14%|█▍        | 102/713 [00:01<00:05, 117.22it/s]Loading weights:  16%|█▌        | 115/713 [00:01<00:05, 112.62it/s]Loading weights:  19%|█▊        | 132/713 [00:01<00:04, 124.88it/s]Loading weights:  20%|██        | 146/713 [00:01<00:04, 126.10it/s]Loading weights:  22%|██▏       | 160/713 [00:01<00:04, 120.17it/s]Loading weights:  25%|██▍       | 176/713 [00:01<00:04, 127.89it/s]Loading weights:  27%|██▋       | 190/713 [00:01<00:04, 127.68it/s]Loading weights:  28%|██▊       | 203/713 [00:02<00:04, 118.49it/s]Loading weights:  31%|███       | 220/713 [00:02<00:03, 130.12it/s]Loading weights:  33%|███▎      | 234/713 [00:02<00:03, 129.27it/s]Loading weights:  35%|███▍      | 248/713 [00:02<00:03, 122.03it/s]Loading weights:  37%|███▋      | 264/713 [00:02<00:03, 129.10it/s]Loading weights:  39%|███▉      | 278/713 [00:02<00:03, 128.21it/s]Loading weights:  41%|████      | 291/713 [00:02<00:03, 119.24it/s]Loading weights:  43%|████▎     | 306/713 [00:02<00:03, 127.30it/s]Loading weights:  45%|████▌     | 321/713 [00:02<00:02, 133.49it/s]Loading weights:  47%|████▋     | 335/713 [00:03<00:03, 119.29it/s]Loading weights:  49%|████▉     | 352/713 [00:03<00:02, 130.38it/s]Loading weights:  51%|█████▏    | 366/713 [00:03<00:02, 129.80it/s]Loading weights:  53%|█████▎    | 380/713 [00:03<00:02, 123.52it/s]Loading weights:  55%|█████▌    | 395/713 [00:03<00:02, 129.15it/s]Loading weights:  68%|██████▊   | 488/713 [00:03<00:00, 345.82it/s]Loading weights:  83%|████████▎ | 591/713 [00:03<00:00, 536.85it/s]Loading weights:  96%|█████████▋| 688/713 [00:03<00:00, 644.49it/s]Loading weights: 100%|██████████| 713/713 [00:03<00:00, 179.15it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[82/82] d3u03 124.3s refused=True correct=- faith=None cites=[]
+
+## Summary
+
+| Metric | Value |
+|---|---|
+| answer_correctness | 0.91 |
+| faithfulness | 0.93 |
+| citation_precision | 0.83 |
+| cites_expected_page | 0.62 |
+| answers_without_citation | 0.30 |
+| false_refusals | 0.00 |
+| unanswerable_refused | 0.92 |
+| unanswerable_with_citation | 0.08 |
+| mean_latency_s | 56.44 |
+| p50_latency_s | 49.90 |
+| p95_latency_s | 97.80 |
+
+Judge: the local generator model. Check it with `python evaluate.py calibrate <run>-judgments.jsonl` after labelling some rows.
+
+## By question type
+
+| Type (n) | correct | faithfulness | cites expected page |
+|---|---|---|---|
+| factual (26) | 0.96 | 0.94 | 0.50 |
+| figure (5) * | 1.00 | 0.90 | 0.60 |
+| multi_page (4) * | 1.00 | 1.00 | 0.50 |
+| paraphrase (11) | 0.82 | 0.94 | 0.82 |
+| table (11) | 1.00 | 0.87 | 0.55 |
+| turkish (12) | 0.75 | 0.91 | 0.83 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## By document
+
+| Document (n) | correct | faithfulness | cites expected page | without citation | unanswerable refused |
+|---|---|---|---|---|---|
+| doc1.pdf (45) | 0.92 | 0.95 | 0.70 | 0.30 | 0.88 |
+| doc2.pdf (14) | 0.83 | 0.85 | 0.33 | 0.25 | 1.00 |
+| doc3_sample.pdf (23) | 0.95 | 0.92 | 0.65 | 0.35 | 1.00 |
+
+Report: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261104-1330-answers.md
+Judge decisions to label: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261104-1330-answers-judgments.jsonl (set "human" to true/false)

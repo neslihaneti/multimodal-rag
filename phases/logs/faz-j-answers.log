@@ -1,0 +1,210 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/391 [00:00<00:42,  9.07it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 704.26it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/393 [00:00<00:07, 49.20it/s]Loading weights:   3%|▎         | 12/393 [00:02<01:49,  3.48it/s]Loading weights: 100%|██████████| 393/393 [00:02<00:00, 135.92it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 4877.10it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<05:27,  2.17it/s]Loading weights:   2%|▏         | 14/713 [00:00<00:21, 31.78it/s]Loading weights:   4%|▎         | 26/713 [00:00<00:13, 52.53it/s]Loading weights:   5%|▌         | 38/713 [00:00<00:09, 68.27it/s]Loading weights:   7%|▋         | 53/713 [00:00<00:07, 88.46it/s]Loading weights:  10%|▉         | 68/713 [00:01<00:06, 101.96it/s]Loading weights:  11%|█▏        | 81/713 [00:01<00:06, 98.90it/s] Loading weights:  13%|█▎        | 93/713 [00:01<00:05, 103.38it/s]Loading weights:  15%|█▌        | 108/713 [00:01<00:05, 115.69it/s]Loading weights:  17%|█▋        | 123/713 [00:01<00:04, 125.15it/s]Loading weights:  19%|█▉        | 137/713 [00:01<00:05, 108.72it/s]Loading weights:  21%|██▏       | 152/713 [00:01<00:04, 118.55it/s]Loading weights:  23%|██▎       | 167/713 [00:01<00:04, 120.21it/s]Loading weights:  25%|██▌       | 180/713 [00:01<00:04, 116.22it/s]Loading weights:  27%|██▋       | 192/713 [00:02<00:04, 111.68it/s]Loading weights:  29%|██▊       | 204/713 [00:02<00:04, 108.59it/s]Loading weights:  30%|███       | 216/713 [00:02<00:04, 110.58it/s]Loading weights:  32%|███▏      | 229/713 [00:02<00:04, 113.21it/s]Loading weights:  34%|███▍      | 243/713 [00:02<00:03, 120.23it/s]Loading weights:  36%|███▌      | 256/713 [00:02<00:03, 120.65it/s]Loading weights:  38%|███▊      | 269/713 [00:02<00:03, 114.46it/s]Loading weights:  40%|████      | 286/713 [00:02<00:03, 127.57it/s]Loading weights:  42%|████▏     | 300/713 [00:02<00:03, 127.96it/s]Loading weights:  44%|████▍     | 313/713 [00:03<00:03, 120.19it/s]Loading weights:  46%|████▌     | 328/713 [00:03<00:03, 127.89it/s]Loading weights:  48%|████▊     | 344/713 [00:03<00:02, 131.68it/s]Loading weights:  50%|█████     | 358/713 [00:03<00:02, 124.21it/s]Loading weights:  52%|█████▏    | 373/713 [00:03<00:02, 130.00it/s]Loading weights:  54%|█████▍    | 388/713 [00:03<00:02, 133.43it/s]Loading weights:  60%|██████    | 428/713 [00:03<00:01, 207.48it/s]Loading weights:  74%|███████▍  | 526/713 [00:03<00:00, 423.94it/s]Loading weights:  88%|████████▊ | 630/713 [00:03<00:00, 599.32it/s]Loading weights:  97%|█████████▋| 694/713 [00:04<00:00, 604.94it/s]Loading weights: 100%|██████████| 713/713 [00:04<00:00, 173.60it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[1/82] q01  40.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 18)]
+[2/82] q02  25.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[3/82] q03  39.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13), ('doc1.pdf', 88)]
+[4/82] q04  61.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 23)]
+[5/82] q05  41.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 47)]
+[6/82] q06  39.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 78)]
+[7/82] q07  31.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 40)]
+[8/82] q08  30.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 41)]
+[9/82] q09  32.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[10/82] q10  37.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[11/82] q11  38.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 23)]
+[12/82] q12  24.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 47)]
+[13/82] q13  34.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 24)]
+[14/82] q14  36.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 78)]
+[15/82] q15  28.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 10)]
+[16/82] q16  29.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 11)]
+[17/82] q17  34.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 31)]
+[18/82] q18  41.5s refused=False correct=True faith=0.5 cites=[('doc1.pdf', 52)]
+[19/82] q19  38.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54), ('doc1.pdf', 56)]
+[20/82] q20  47.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 15)]
+[21/82] q21  32.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 66)]
+[22/82] q22  49.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 38)]
+[23/82] q23  35.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26), ('doc1.pdf', 30)]
+[24/82] q24  31.9s refused=False correct=False faith=0.5 cites=[('doc1.pdf', 72)]
+[25/82] q25  31.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 36)]
+[26/82] q26  32.8s refused=False correct=False faith=1.0 cites=[('doc1.pdf', 40)]
+[27/82] q27  29.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[28/82] q28  29.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 29)]
+[29/82] q29  46.1s refused=False correct=True faith=0.8 cites=[('doc1.pdf', 6), ('doc1.pdf', 51)]
+[30/82] q30  87.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 53), ('doc1.pdf', 53)]
+[31/82] q31  77.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[32/82] q32  78.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 66)]
+[33/82] q33  29.5s refused=False correct=True faith=0.0 cites=[('doc1.pdf', 49), ('doc1.pdf', 51), ('doc1.pdf', 52), ('doc1.pdf', 49)]
+[34/82] q34  38.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13), ('doc1.pdf', 12)]
+[35/82] q35  51.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[36/82] q36 182.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 59)]
+[37/82] q37  53.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 68), ('doc1.pdf', 72)]
+[38/82] q38  36.2s refused=True correct=- faith=None cites=[]
+[39/82] q39  48.3s refused=True correct=- faith=None cites=[]
+[40/82] q40  39.5s refused=True correct=- faith=None cites=[]
+[41/82] q41  41.2s refused=True correct=- faith=None cites=[]
+[42/82] q42  72.4s refused=True correct=- faith=None cites=[]
+[43/82] q43  87.1s refused=True correct=- faith=None cites=[]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+=== 2026-11-04 21:47:27 Faz J yeniden (blocked_eager + maske düzeltmesi) ===
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/391 [00:00<00:42,  9.03it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 701.49it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:24, 15.58it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 675.77it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 16288.56it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:31,  4.71it/s]Loading weights:  10%|▉         | 69/713 [00:00<00:02, 276.21it/s]Loading weights:  19%|█▉        | 136/713 [00:00<00:01, 417.84it/s]Loading weights:  28%|██▊       | 203/713 [00:00<00:01, 497.81it/s]Loading weights:  39%|███▊      | 276/713 [00:00<00:00, 572.55it/s]Loading weights:  48%|████▊     | 339/713 [00:00<00:00, 582.60it/s]Loading weights:  63%|██████▎   | 452/713 [00:00<00:00, 750.84it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 785.23it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[1/82] q01  39.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 18)]
+[2/82] q02  27.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[3/82] q03  34.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13), ('doc1.pdf', 88)]
+[4/82] q04  39.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 23)]
+[5/82] q05  33.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 47)]
+[6/82] q06  35.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 78)]
+[7/82] q07  29.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 40)]
+[8/82] q08  29.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 41)]
+[9/82] q09  31.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[10/82] q10  38.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[11/82] q11  39.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 23)]
+[12/82] q12  24.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 47)]
+[13/82] q13  33.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 24)]
+[14/82] q14  36.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 78)]
+[15/82] q15  27.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 10)]
+[16/82] q16  27.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 11)]
+[17/82] q17  32.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 31)]
+[18/82] q18  41.5s refused=False correct=True faith=0.6666666666666666 cites=[('doc1.pdf', 52)]
+[19/82] q19  32.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[20/82] q20  44.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 15)]
+[21/82] q21  32.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 66)]
+[22/82] q22  47.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 38)]
+2026-11-04 22:01:14 mem_guard: pid 43152 at 70 GB >= 70 GB, killing 43152
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Resuming: 22 questions already answered
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10513.52it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5669.93it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 21509.25it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:24,  4.91it/s]Loading weights:  10%|▉         | 68/713 [00:00<00:02, 279.02it/s]Loading weights:  19%|█▊        | 132/713 [00:00<00:01, 411.36it/s]Loading weights:  28%|██▊       | 202/713 [00:00<00:01, 506.46it/s]Loading weights:  37%|███▋      | 263/713 [00:00<00:00, 540.25it/s]Loading weights:  47%|████▋     | 332/713 [00:00<00:00, 587.88it/s]Loading weights:  57%|█████▋    | 406/713 [00:00<00:00, 634.89it/s]Loading weights:  99%|█████████▉| 706/713 [00:00<00:00, 1364.17it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 782.41it/s] 
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[23/82] q23  34.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26), ('doc1.pdf', 30)]
+[24/82] q24  25.9s refused=False correct=False faith=0.5 cites=[('doc1.pdf', 72)]
+[25/82] q25  25.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 36)]
+[26/82] q26  29.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 40), ('doc1.pdf', 91)]
+[27/82] q27  25.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[28/82] q28  29.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 29)]
+[29/82] q29  55.9s refused=False correct=True faith=0.8 cites=[('doc1.pdf', 6), ('doc1.pdf', 51)]
+[30/82] q30  70.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 53)]
+[31/82] q31  81.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54), ('doc1.pdf', 55)]
+[32/82] q32  77.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 66)]
+[33/82] q33 174.6s refused=False correct=False faith=0.8 cites=[('doc1.pdf', 50)]
+[34/82] q34  39.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13), ('doc1.pdf', 12)]
+[35/82] q35  56.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[36/82] q36 183.3s refused=False correct=False faith=1.0 cites=[('doc1.pdf', 59)]
+[37/82] q37 208.1s refused=False correct=True faith=0.25 cites=[('doc1.pdf', 68), ('doc1.pdf', 72)]
+[38/82] q38  51.8s refused=True correct=- faith=None cites=[]
+[39/82] q39  49.3s refused=True correct=- faith=None cites=[]
+[40/82] q40  39.9s refused=True correct=- faith=None cites=[]
+2026-11-04 22:24:34 mem_guard: pid 48330 at 70 GB >= 70 GB, restarting it
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+2026-11-04 22:24:34 run_resume: run 1 stopped, resuming
+Resuming: 40 questions already answered
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10319.03it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5952.93it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 4495.50it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:26,  4.87it/s]Loading weights:   9%|▉         | 66/713 [00:00<00:02, 268.31it/s]Loading weights:  19%|█▉        | 135/713 [00:00<00:01, 419.08it/s]Loading weights:  27%|██▋       | 196/713 [00:00<00:01, 483.14it/s]Loading weights:  37%|███▋      | 267/713 [00:00<00:00, 551.20it/s]Loading weights:  46%|████▌     | 327/713 [00:00<00:00, 565.31it/s]Loading weights:  56%|█████▌    | 396/713 [00:00<00:00, 601.18it/s]Loading weights:  99%|█████████▉| 708/713 [00:00<00:00, 1366.72it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 775.93it/s] 
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[41/82] q41  45.2s refused=True correct=- faith=None cites=[]
+[42/82] q42  69.7s refused=True correct=- faith=None cites=[]
+[43/82] q43  84.0s refused=True correct=- faith=None cites=[]
+[44/82] q44  72.0s refused=True correct=- faith=None cites=[]
+[45/82] q45  32.1s refused=True correct=- faith=None cites=[]
+[46/82] d2q01  33.0s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 2)]
+[47/82] d2q02  36.1s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 2)]
+[48/82] d2q03  68.9s refused=False correct=True faith=0.6666666666666666 cites=[('doc2.pdf', 44)]
+[49/82] d2q04  70.9s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[50/82] d2q05  83.7s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[51/82] d2q06  37.8s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 5)]
+[52/82] d2q07  53.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 54), ('doc2.pdf', 52), ('doc2.pdf', 24)]
+[53/82] d2q08  41.8s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 52)]
+[54/82] d2q09  64.1s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[55/82] d2q10 198.4s refused=False correct=True faith=0.75 cites=[('doc2.pdf', 3), ('doc2.pdf', 3), ('doc2.pdf', 3), ('doc2.pdf', 20)]
+[56/82] d2q11  77.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[57/82] d2q12  51.9s refused=False correct=False faith=0.3333333333333333 cites=[('doc2.pdf', 3)]
+[58/82] d2u01  74.1s refused=True correct=- faith=None cites=[]
+[59/82] d2u02  61.4s refused=True correct=- faith=None cites=[]
+[60/82] d3q01  27.3s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 1)]
+[61/82] d3q02  29.3s refused=False correct=True faith=0.0 cites=[('doc3_sample.pdf', 3)]
+[62/82] d3q03  30.9s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 8)]
+[63/82] d3q04  43.6s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 9)]
+[64/82] d3q05  34.3s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 15)]
+[65/82] d3q06  39.7s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 16)]
+[66/82] d3q07  34.0s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 29)]
+[67/82] d3q08  39.2s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 31), ('doc3_sample.pdf', 30)]
+2026-11-04 22:51:46 mem_guard: pid 55952 at 71 GB >= 70 GB, restarting it
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+2026-11-04 22:51:46 run_resume: run 2 stopped, resuming
+Resuming: 67 questions already answered
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10060.75it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5645.50it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 9857.35it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:30,  4.74it/s]Loading weights:  10%|▉         | 69/713 [00:00<00:02, 274.45it/s]Loading weights:  19%|█▉        | 136/713 [00:00<00:01, 414.85it/s]Loading weights:  27%|██▋       | 196/713 [00:00<00:01, 477.59it/s]Loading weights:  37%|███▋      | 265/713 [00:00<00:00, 546.87it/s]Loading weights:  47%|████▋     | 333/713 [00:00<00:00, 581.41it/s]Loading weights:  56%|█████▌    | 401/713 [00:00<00:00, 611.71it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 1379.98it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 774.40it/s] 
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[68/82] d3q09  52.2s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 33)]
+[69/82] d3q10  31.4s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 23)]
+[70/82] d3q11  35.0s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 24)]
+[71/82] d3q12  38.5s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 23)]
+[72/82] d3q13  43.3s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 11), ('doc3_sample.pdf', 10)]
+[73/82] d3q14  35.4s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 20)]
+[74/82] d3q15  39.6s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 26)]
+[75/82] d3q16  29.1s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 34)]
+[76/82] d3q17  49.6s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 14)]
+[77/82] d3q18  31.8s refused=False correct=True faith=0.5 cites=[('doc3_sample.pdf', 7)]
+[78/82] d3q19  28.1s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 20), ('doc3_sample.pdf', 21)]
+[79/82] d3q20  45.4s refused=False correct=True faith=1.0 cites=[('doc3_sample.pdf', 31)]
+[80/82] d3u01  43.1s refused=True correct=- faith=None cites=[]
+[81/82] d3u02  49.8s refused=True correct=- faith=None cites=[]
+[82/82] d3u03 103.9s refused=True correct=- faith=None cites=[]
+
+## Summary
+
+| Metric | Value |
+|---|---|
+| answer_correctness | 0.94 |
+| faithfulness | 0.93 |
+| citation_precision | 0.77 |
+| cites_expected_page | 0.83 |
+| answers_without_citation | 0.00 |
+| false_refusals | 0.00 |
+| unanswerable_refused | 1.00 |
+| unanswerable_with_citation | 0.00 |
+| mean_latency_s | 51.32 |
+| p50_latency_s | 39.60 |
+| p95_latency_s | 103.90 |
+
+Judge: the local generator model. Check it with `python evaluate.py calibrate <run>-judgments.jsonl` after labelling some rows.
+
+## By question type
+
+| Type (n) | correct | faithfulness | cites expected page |
+|---|---|---|---|
+| factual (26) | 1.00 | 0.96 | 0.81 |
+| figure (5) * | 1.00 | 1.00 | 1.00 |
+| multi_page (4) * | 1.00 | 0.82 | 1.00 |
+| paraphrase (11) | 0.91 | 0.90 | 0.82 |
+| table (11) | 1.00 | 0.97 | 0.73 |
+| turkish (12) | 0.75 | 0.87 | 0.83 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## By document
+
+| Document (n) | correct | faithfulness | cites expected page | without citation | unanswerable refused |
+|---|---|---|---|---|---|
+| doc1.pdf (45) | 0.92 | 0.95 | 0.97 | 0.00 | 1.00 |
+| doc2.pdf (14) | 0.92 | 0.90 | 0.17 | 0.00 | 1.00 |
+| doc3_sample.pdf (23) | 1.00 | 0.93 | 0.95 | 0.00 | 1.00 |
+
+Report: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261104-2303-answers.md
+Judge decisions to label: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261104-2303-answers-judgments.jsonl (set "human" to true/false)
+2026-11-04 23:03:16 run_resume: done

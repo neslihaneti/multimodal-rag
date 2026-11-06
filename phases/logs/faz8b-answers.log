@@ -1,0 +1,135 @@
+=== 2026-11-05 17:37:05 Faz 8b: 2 images + 60-char buffer ===
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10056.56it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5806.83it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 4211.15it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:32,  4.66it/s]Loading weights:  10%|▉         | 70/713 [00:00<00:02, 277.81it/s]Loading weights:  19%|█▉        | 137/713 [00:00<00:01, 419.41it/s]Loading weights:  29%|██▉       | 210/713 [00:00<00:00, 525.31it/s]Loading weights:  38%|███▊      | 271/713 [00:00<00:00, 544.83it/s]Loading weights:  48%|████▊     | 341/713 [00:00<00:00, 593.60it/s]Loading weights:  65%|██████▌   | 466/713 [00:00<00:00, 796.01it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 787.53it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[1/82] q01  18.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 18)]
+[2/82] q02  12.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[3/82] q03  14.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13), ('doc1.pdf', 88)]
+[4/82] q04  13.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 23)]
+[5/82] q05  12.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 47)]
+[6/82] q06  13.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 78)]
+[7/82] q07  13.4s refused=False correct=True faith=0.0 cites=[('doc1.pdf', 40)]
+[8/82] q08  12.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 41)]
+[9/82] q09  10.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[10/82] q10  13.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[11/82] q11  16.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 23)]
+[12/82] q12  10.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 47)]
+[13/82] q13  17.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 24)]
+[14/82] q14  15.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 78)]
+[15/82] q15  13.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 10)]
+[16/82] q16  13.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 11)]
+[17/82] q17  14.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 31)]
+[18/82] q18  18.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 52)]
+[19/82] q19  19.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[20/82] q20  20.8s refused=False correct=True faith=0.5 cites=[('doc1.pdf', 15), ('doc1.pdf', 15)]
+[21/82] q21  14.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 66)]
+[22/82] q22  24.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 38)]
+[23/82] q23  13.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[24/82] q24  18.1s refused=False correct=False faith=0.5 cites=[('doc1.pdf', 72)]
+[25/82] q25  14.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 36)]
+[26/82] q26  14.0s refused=False correct=True faith=0.5 cites=[('doc1.pdf', 91)]
+[27/82] q27  13.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[28/82] q28  12.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 29)]
+[29/82] q29  22.9s refused=False correct=True faith=0.3333333333333333 cites=[('doc1.pdf', 50), ('doc1.pdf', 6)]
+[30/82] q30  39.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 53), ('doc1.pdf', 53)]
+[31/82] q31  34.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 89), ('doc1.pdf', 54)]
+[32/82] q32 124.2s refused=False correct=True faith=0.8333333333333334 cites=[('doc1.pdf', 66)]
+[33/82] q33  23.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 6), ('doc1.pdf', 50)]
+[34/82] q34  27.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13), ('doc1.pdf', 12)]
+[35/82] q35  26.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[36/82] q36 123.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 59)]
+[37/82] q37  21.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 68), ('doc1.pdf', 72)]
+[38/82] q38  29.5s refused=True correct=- faith=None cites=[]
+[39/82] q39  13.8s refused=True correct=- faith=None cites=[]
+[40/82] q40  21.2s refused=True correct=- faith=None cites=[]
+[41/82] q41  21.5s refused=True correct=- faith=None cites=[]
+[42/82] q42  20.4s refused=True correct=- faith=None cites=[]
+[43/82] q43  58.8s refused=True correct=- faith=None cites=[]
+[44/82] q44  52.4s refused=True correct=- faith=None cites=[]
+[45/82] q45  19.2s refused=True correct=- faith=None cites=[]
+[46/82] d2q01  16.2s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 2)]
+[47/82] d2q02  16.7s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 1)]
+[48/82] d2q03  33.2s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44), ('doc2.pdf', 41), ('doc2.pdf', 41)]
+[49/82] d2q04  24.7s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[50/82] d2q05  31.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[51/82] d2q06  16.0s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 5)]
+[52/82] d2q07  28.3s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 54), ('doc2.pdf', 24), ('doc2.pdf', 52), ('doc2.pdf', 24)]
+[53/82] d2q08  17.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 52)]
+[54/82] d2q09  27.1s refused=False correct=True faith=0.0 cites=[('doc2.pdf', 2)]
+[55/82] d2q10  35.3s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 21), ('doc2.pdf', 3), ('doc2.pdf', 3)]
+[56/82] d2q11  44.4s refused=False correct=True faith=0.5 cites=[('doc2.pdf', 44), ('doc2.pdf', 44)]
+[57/82] d2q12  28.8s refused=False correct=False faith=0.6666666666666666 cites=[('doc2.pdf', 3), ('doc2.pdf', 21), ('doc2.pdf', 5), ('doc2.pdf', 4)]
+[58/82] d2u01  69.1s refused=True correct=- faith=None cites=[]
+[59/82] d2u02  31.6s refused=True correct=- faith=None cites=[]
+[60/82] d3q01  12.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 4)]
+[61/82] d3q02  16.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 24), ('doc3.pdf', 11)]
+[62/82] d3q03  16.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 29)]
+[63/82] d3q04  14.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 34)]
+[64/82] d3q05  18.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 86), ('doc3.pdf', 43)]
+[65/82] d3q06  16.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 87)]
+[66/82] d3q07  22.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 140), ('doc3.pdf', 139)]
+[67/82] d3q08  21.7s refused=False correct=True faith=0.5 cites=[('doc3.pdf', 142), ('doc3.pdf', 143)]
+[68/82] d3q09  15.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[69/82] d3q10  14.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[70/82] d3q11  14.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 118)]
+[71/82] d3q12  13.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[72/82] d3q13  29.8s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 42), ('doc3.pdf', 63)]
+[73/82] d3q14  18.5s refused=False correct=True faith=0.5 cites=[('doc3.pdf', 108), ('doc3.pdf', 108)]
+[74/82] d3q15  17.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 131)]
+[75/82] d3q16  17.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[76/82] d3q17  16.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 50)]
+[77/82] d3q18  20.6s refused=False correct=True faith=0.5 cites=[('doc3.pdf', 28)]
+[78/82] d3q19  15.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[79/82] d3q20  15.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[80/82] d3u01  40.9s refused=True correct=- faith=None cites=[]
+[81/82] d3u02  34.6s refused=True correct=- faith=None cites=[]
+[82/82] d3u03  22.0s refused=True correct=- faith=None cites=[]
+
+## Summary
+
+| Metric | Value |
+|---|---|
+| answer_correctness | 0.97 |
+| faithfulness | 0.90 |
+| citation_precision | 0.84 |
+| cites_expected_page | 0.90 |
+| answers_without_citation | 0.00 |
+| false_refusals | 0.00 |
+| unanswerable_refused | 1.00 |
+| unanswerable_with_citation | 0.00 |
+| raw_unanswerable_with_citation | 0.00 |
+| mean_latency_s | 23.95 |
+| p50_latency_s | 17.80 |
+| p95_latency_s | 52.40 |
+| p50_ttft_s | 12.90 |
+| p95_ttft_s | 36.40 |
+
+Judge: the local generator model. Check it with `python evaluate.py calibrate <run>-judgments.jsonl` after labelling some rows.
+
+## By question type
+
+| Type (n) | correct | faithfulness | cites expected page |
+|---|---|---|---|
+| factual (26) | 1.00 | 0.92 | 0.96 |
+| figure (5) * | 1.00 | 0.90 | 1.00 |
+| multi_page (4) * | 1.00 | 0.71 | 1.00 |
+| paraphrase (11) | 0.91 | 0.84 | 0.73 |
+| table (11) | 1.00 | 0.95 | 0.82 |
+| turkish (12) | 0.92 | 0.92 | 0.92 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## By document
+
+| Document (n) | correct | faithfulness | cites expected page | without citation | unanswerable refused |
+|---|---|---|---|---|---|
+| doc1.pdf (45) | 0.97 | 0.91 | 0.95 | 0.00 | 1.00 |
+| doc2.pdf (14) | 0.92 | 0.85 | 0.67 | 0.00 | 1.00 |
+| doc3.pdf (23) | 1.00 | 0.91 | 0.95 | 0.00 | 1.00 |
+
+Report: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261105-1812-answers.md
+Judge decisions to label: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261105-1812-answers-judgments.jsonl (set "human" to true/false)
+2026-11-05 18:12:23 run_resume: done
+2026-11-05 18:12:23 chain: 8b done

@@ -1,0 +1,65 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/391 [00:00<00:42,  9.00it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 698.49it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:24, 15.96it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 692.55it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 2979.97it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<06:00,  1.98it/s]Loading weights:   2%|▏         | 15/713 [00:00<00:22, 31.72it/s]Loading weights:   4%|▍         | 27/713 [00:00<00:13, 51.68it/s]Loading weights:   6%|▌         | 44/713 [00:00<00:08, 79.83it/s]Loading weights:   8%|▊         | 58/713 [00:00<00:06, 93.60it/s]Loading weights:  10%|▉         | 71/713 [00:01<00:06, 95.90it/s]Loading weights:  12%|█▏        | 88/713 [00:01<00:05, 112.99it/s]Loading weights:  14%|█▍        | 102/713 [00:01<00:05, 116.78it/s]Loading weights:  16%|█▌        | 115/713 [00:01<00:05, 112.33it/s]Loading weights:  19%|█▊        | 132/713 [00:01<00:04, 124.89it/s]Loading weights:  20%|██        | 146/713 [00:01<00:04, 126.02it/s]Loading weights:  22%|██▏       | 160/713 [00:01<00:04, 118.39it/s]Loading weights:  25%|██▍       | 175/713 [00:01<00:04, 124.80it/s]Loading weights:  27%|██▋       | 189/713 [00:01<00:04, 125.36it/s]Loading weights:  28%|██▊       | 202/713 [00:02<00:04, 124.10it/s]Loading weights:  30%|███       | 215/713 [00:02<00:04, 123.45it/s]Loading weights:  32%|███▏      | 231/713 [00:02<00:03, 131.13it/s]Loading weights:  34%|███▍      | 245/713 [00:02<00:03, 129.59it/s]Loading weights:  36%|███▋      | 259/713 [00:02<00:03, 121.17it/s]Loading weights:  38%|███▊      | 274/713 [00:02<00:03, 126.69it/s]Loading weights:  41%|████      | 289/713 [00:02<00:03, 128.41it/s]Loading weights:  42%|████▏     | 302/713 [00:02<00:03, 119.83it/s]Loading weights:  45%|████▍     | 318/713 [00:02<00:03, 130.53it/s]Loading weights:  47%|████▋     | 333/713 [00:03<00:02, 129.71it/s]Loading weights:  49%|████▊     | 347/713 [00:03<00:02, 122.63it/s]Loading weights:  51%|█████     | 363/713 [00:03<00:02, 130.56it/s]Loading weights:  53%|█████▎    | 377/713 [00:03<00:02, 129.77it/s]Loading weights:  55%|█████▍    | 391/713 [00:03<00:02, 123.41it/s]Loading weights:  66%|██████▋   | 473/713 [00:03<00:00, 307.48it/s]Loading weights:  80%|████████  | 573/713 [00:03<00:00, 493.93it/s]Loading weights:  95%|█████████▌| 680/713 [00:03<00:00, 649.58it/s]Loading weights: 100%|██████████| 713/713 [00:03<00:00, 178.61it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+faz3      q38    ok  'The provided documents do not contain information regarding the passing score for the CT-AI exam.'
+faz3      q39    ok  'The provided documents do not contain information regarding the cost of the CT-AI certification exam.'
+faz3      q40    ok  'The provided documents do not contain information on how to fine-tune a large language model with LoRA.'
+faz3      q41    ok  'The provided documents do not mention any vector database or recommend one for retrieval-augmented generation.'
+faz3      q42    ok  'The provided documents do not contain information about the accuracy GPT-4 reached on the MMLU benchmark.'
+faz3      q43    ok  'The provided documents do not contain any information about the capital of Australia.'
+faz3      q44    ok  'The provided documents do not contain information on how to restart a pod in Kubernetes.'
+faz3      q45    BAD 'The provided documents do not contain information about the average salary for a certified AI testing professional [1][2][3][4][5][6].'
+faz3      d2u01  BAD 'The provided documents do not contain information about the half-life of carbon-14 [1][2][3].'
+faz3      d2u02  ok  'The provided documents do not contain any information on how to test machine learning models against the CODATA constants.'
+faz3      d3u01  BAD 'The provided documents do not contain any information regarding the specific budget allocated by NASA for building the Large Orbital Telesco'
+faz3      d3u02  BAD 'The documents do not contain information about the launch date of the Hubble Space Telescope [1][2][3].'
+faz3      d3u03  BAD 'Verilen metinlerde pulsarların keşfi hakkında hiçbir bilgi verilmemiştir [1][2][3].'
+faz3      q01    ok  'The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].'
+faz3      q09    ok  'Back-to-back testing is also known as differential testing [1].'
+faz3      q31    ok  'Kavram kayması (concept drift), operasyonel ortamın zaman içinde değişmesiyle birlikte eğitilmiş modelin bu değişikliklere uyum sağlamaması '
+faz3      d2q06  ok  'The 2022 least-squares adjustment used 133 input data and 79 adjusted constants [1].'
+faz3      d3q10  ok  'The 15 ft Aerospace Corp. reflector should be usable at a shortest wavelength of 1 mm [1].'
+faz3      d3q20  ok  'The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].'
+== faz3: 5 bad of 19
+example   q38    ok  'The documents do not contain information about the passing score for the CT-AI exam.'
+example   q39    BAD 'The documents do not contain information about this [1][2][3][4][5][6].'
+example   q40    ok  'The documents do not contain information about fine-tuning a large language model with LoRA.'
+example   q41    ok  'The documents do not contain information about vector databases recommended for retrieval-augmented generation.'
+example   q42    ok  'The documents do not contain information about the accuracy GPT-4 reached on the MMLU benchmark.'
+example   q43    ok  'The documents do not contain information about the capital of Australia.'
+example   q44    ok  'The documents do not contain information about how to restart a pod in Kubernetes.'
+example   q45    BAD 'The documents do not contain information about the average salary for a certified AI testing professional [1][2][3][4][5][6].'
+example   d2u01  ok  'The documents do not contain information about the half-life of carbon-14.'
+example   d2u02  ok  'The documents do not contain information about how to test machine learning models against the CODATA constants.'
+example   d3u01  ok  'The documents do not contain information about the budget NASA allocated for building the Large Orbital Telescope.'
+example   d3u02  ok  'The documents do not contain information about the launch date of the Hubble Space Telescope.'
+example   d3u03  ok  'Verilen belgelerde pulsarların keşfi hakkında hiçbir bilgi verilmemiştir.'
+example   q01    ok  'The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].'
+example   q09    ok  'Back-to-back testing is also known as differential testing [1].'
+example   q31    ok  'Kavram kayması (concept drift), operasyonel ortamın zaman içinde değişmesiyle birlikte eğitilmiş modelin bu değişikliklere uyum sağlamaması '
+example   d2q06  ok  'The 2022 least-squares adjustment used 133 input data and 79 adjusted constants [1].'
+example   d3q10  ok  'The 15 ft Aerospace Corp. reflector should be usable at a shortest wavelength of 1 mm [1].'
+example   d3q20  ok  'The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].'
+== example: 2 bad of 19
+sep_rule  q38    ok  'The documents do not contain information about this.'
+sep_rule  q39    ok  'The documents do not contain information about this.'
+sep_rule  q40    ok  'The documents do not contain information about fine-tuning a large language model with LoRA.'
+sep_rule  q41    ok  'The documents do not contain information about vector databases recommended for retrieval-augmented generation.'
+sep_rule  q42    ok  'The documents do not contain information about this.'
+sep_rule  q43    ok  'The documents do not contain information about this.'
+sep_rule  q44    ok  'The documents do not contain information about how to restart a pod in Kubernetes.'
+sep_rule  q45    ok  'The documents do not contain information about this.'
+sep_rule  d2u01  ok  'The documents do not contain information about this.'
+sep_rule  d2u02  ok  'The documents do not contain information about how machine learning models should be tested against the CODATA constants.'
+sep_rule  d3u01  ok  'The documents do not contain information about this.'
+sep_rule  d3u02  ok  'The documents do not contain information about the launch date of the Hubble Space Telescope.'
+sep_rule  d3u03  ok  'The documents do not contain information about the discovery of pulsars.'
+sep_rule  q01    ok  'The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].'
+sep_rule  q09    ok  'Back-to-back testing is also known as differential testing [1].'
+sep_rule  q31    ok  'Kavram kayması (concept drift), operasyonel ortamın zaman içinde değişmesiyle birlikte, eğitilmiş modelin bu değişikliklere uyum sağlamaması'
+sep_rule  d2q06  ok  'The 2022 least-squares adjustment used 133 input data and 79 adjusted constants [1].'
+sep_rule  d3q10  ok  'The 15 ft Aerospace Corp. reflector should be usable at a shortest wavelength of 1 mm [1].'
+sep_rule  d3q20  ok  'The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].'
+== sep_rule: 0 bad of 19

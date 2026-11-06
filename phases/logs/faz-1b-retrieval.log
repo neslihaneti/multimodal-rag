@@ -1,0 +1,104 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/391 [00:00<00:42,  9.14it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 709.02it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:24, 15.68it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 680.01it/s]
+[1/82] vector=1  keyword=-  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  When was the ISO/IEC JTC 1/SC42 subcommittee on AI set up?
+[2/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What uptime is given as an example in a service-level agreem
+[3/82] vector=1  keyword=9  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is the 'AI Effect'?
+[4/82] vector=1  keyword=27  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  How many countries adopted the OECD principles for AI when t
+[5/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What activation threshold did the DeepXplore researchers use
+[6/82] vector=1  keyword=4  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to research, how much can AI reduce the size of a 
+[7/82] vector=1  keyword=-  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  How is the F1-score calculated?
+[8/82] vector=1  keyword=-  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  What range of values can the silhouette coefficient take, an
+[9/82] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is back-to-back testing also known as?
+[10/82] vector=1  keyword=-  hybrid (RRF)=7  vector + reranker=1  hybrid + reranker=1  Which family of chips does Mobileye produce, and what are th
+[11/82] vector=1  keyword=11  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  What example of reward hacking does the syllabus give?
+[12/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What does full neuron coverage require?
+[13/82] vector=1  keyword=27  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What are the three basic desirable XAI characteristics?
+[14/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How did AI-based test generation tools change the average nu
+[15/82] vector=1  keyword=22  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What certificate must be obtained before taking the CT-AI ex
+[16/82] vector=1  keyword=-  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  What is the minimum number of hours of instruction required 
+[17/82] vector=1  keyword=-  hybrid (RRF)=7  vector + reranker=3  hybrid + reranker=2  A model does great on the examples it learned from but makes
+[18/82] vector=1  keyword=-  hybrid (RRF)=6  vector + reranker=1  hybrid + reranker=1  Why do people sometimes accept a machine's suggestion withou
+[19/82] vector=1  keyword=20  hybrid (RRF)=4  vector + reranker=1  hybrid + reranker=1  What happens when customer behaviour changes over time but t
+[20/82] vector=1  keyword=4  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Why are graphics processors usually better than general-purp
+[21/82] vector=1  keyword=14  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  How can someone fool an image classifier by changing a few p
+[22/82] vector=1  keyword=-  hybrid (RRF)=5  vector + reranker=1  hybrid + reranker=1  Why are the annotations in a supervised training set sometim
+[23/82] vector=1  keyword=6  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which kind of learning is used to group customers for market
+[24/82] vector=1  keyword=-  hybrid (RRF)=10  vector + reranker=7  hybrid + reranker=6  How can a second, independently built version of a system he
+[25/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What does 'obsolete data' mean as a data quality issue?
+[26/82] vector=1  keyword=9  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In a confusion matrix, what is the difference between a fals
+[27/82] vector=1  keyword=22  hybrid (RRF)=5  vector + reranker=1  hybrid + reranker=1  What mitigation is suggested for the risk that the operation
+[28/82] vector=2  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In the ML workflow figure, which steps come after testing th
+[29/82] vector=1  keyword=7  hybrid (RRF)=3  vector + reranker=2  hybrid + reranker=2  List all the test levels for AI-based systems.
+[30/82] vector=1  keyword=-  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  What should the documentation of an AI component contain?
+[31/82] vector=1  keyword=7  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Kavram kayması (concept drift) nedir ve nasıl test edilir?
+[32/82] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Veri zehirlenmesi (data poisoning) saldırısı nedir?
+[33/82] vector=1  keyword=9  hybrid (RRF)=3  vector + reranker=2  hybrid + reranker=2  Yapay zeka tabanlı sistemlerde hangi test seviyeleri vardır?
+[34/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Dar yapay zeka (narrow AI) ile genel yapay zeka arasındaki f
+[35/82] vector=1  keyword=7  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Eşli test (pairwise testing) neden kullanılır?
+[36/82] vector=1  keyword=-  hybrid (RRF)=14  vector + reranker=1  hybrid + reranker=1  Otonom sistemlerin otonomisi test edilirken neler kontrol ed
+[37/82] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  A/B testi ile back-to-back testi arasındaki temel fark nedir
+[46/82] vector=13  keyword=-  hybrid (RRF)=26  vector + reranker=2  hybrid + reranker=2  Up to what date was data taken into account in the 2022 CODA
+[47/82] vector=1  keyword=-  hybrid (RRF)=14  vector + reranker=1  hybrid + reranker=1  Which body recommends the CODATA values of the fundamental c
+[48/82] vector=18  keyword=-  hybrid (RRF)=34  vector + reranker=6  hybrid + reranker=29  What is the 2022 CODATA recommended value of the Newtonian c
+[49/82] vector=1  keyword=-  hybrid (RRF)=20  vector + reranker=2  hybrid + reranker=2  What is the relative standard uncertainty of the vacuum magn
+[50/82] vector=14  keyword=-  hybrid (RRF)=26  vector + reranker=2  hybrid + reranker=2  Is the elementary charge an exact constant in CODATA 2022, a
+[51/82] vector=3  keyword=11  hybrid (RRF)=5  vector + reranker=3  hybrid + reranker=3  How many adjusted constants and input data were used in the 
+[52/82] vector=3  keyword=6  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What expansion factor was applied to the uncertainties of th
+[53/82] vector=2  keyword=12  hybrid (RRF)=6  vector + reranker=1  hybrid + reranker=1  What chi-squared value did the final 2022 least-squares adju
+[54/82] vector=1  keyword=17  hybrid (RRF)=5  vector + reranker=1  hybrid + reranker=1  What is the 2022 recommended value of the inverse fine-struc
+[55/82] vector=17  keyword=25  hybrid (RRF)=32  vector + reranker=14  hybrid + reranker=14  Why are the proton and deuteron radii known more precisely n
+[56/82] vector=2  keyword=-  hybrid (RRF)=24  vector + reranker=2  hybrid + reranker=2  CODATA 2022'ye göre boşlukta ışık hızının değeri nedir?
+[57/82] vector=3  keyword=11  hybrid (RRF)=5  vector + reranker=8  hybrid + reranker=7  2022 ayarlamasında hafif çekirdeklerin bağıl atom kütleleri 
+[60/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Where and when was the Summer Study behind Space Research: D
+[61/82] vector=2  keyword=5  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  What minimum aperture did the Optical Astronomy Working Grou
+[62/82] vector=4  keyword=-  hybrid (RRF)=8  vector + reranker=2  hybrid + reranker=2  In the proposed schedule for the Large Orbital Telescope, in
+[63/82] vector=1  keyword=35  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  Which photographic emulsion matches the Airy disk for an f/3
+[64/82] vector=1  keyword=-  hybrid (RRF)=5  vector + reranker=1  hybrid + reranker=1  What limits the spatial resolution of a ground-based solar t
+[65/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which solar features are marked as resolution limits in the 
+[66/82] vector=1  keyword=-  hybrid (RRF)=4  vector + reranker=1  hybrid + reranker=1  What does the summary figure of observational x-ray data sho
+[67/82] vector=1  keyword=12  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  What power law is fitted to the cosmic gamma-ray flux data?
+[68/82] vector=1  keyword=6  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which two mirror shapes are used in the grazing incidence x-
+[69/82] vector=1  keyword=-  hybrid (RRF)=4  vector + reranker=1  hybrid + reranker=1  What is the shortest wavelength at which the 15 ft Aerospace
+[70/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What information does the Doppler shift of a returned radar 
+[71/82] vector=1  keyword=-  hybrid (RRF)=6  vector + reranker=1  hybrid + reranker=1  What blackbody temperature does the Sun show at 1 mm wavelen
+[72/82] vector=1  keyword=3  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  Why should observing the Sun from space and from the ground 
+[73/82] vector=1  keyword=7  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How large could a space radio telescope for very low frequen
+[74/82] vector=3  keyword=-  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  En güçlü x-ışını kaynağının 1-10 Å bölgesindeki akısı sakin 
+[75/82] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Fizik çalışma grubu uzay ortamının hangi temel özelliklerini
+[76/82] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Güneş'in manyetik aktivite döngüsü ve güneş lekesi döngüsü k
+[77/82] vector=1  keyword=-  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  In the Large Orbital Telescope schedule, in which years are 
+[78/82] vector=1  keyword=39  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  For the high-resolution broad-band antenna of Recommendation
+[79/82] vector=1  keyword=27  hybrid (RRF)=6  vector + reranker=1  hybrid + reranker=1  What process does the gamma-ray line at 0.5 MeV represent?
+
+## Overall (69 answerable questions)
+
+| Method | Recall@1 | Recall@6 | MRR | All pages@6 (multi-page) |
+|---|---|---|---|---|
+| vector | 0.81 | 0.94 | 0.867 | 0.40 |
+| keyword | 0.07 | 0.29 | 0.169 | 0.00 |
+| hybrid (RRF) | 0.41 | 0.83 | 0.548 | 0.00 |
+| vector + reranker | 0.81 | 0.96 | 0.879 | 0.60 |
+| hybrid + reranker | 0.81 | 0.96 | 0.880 | 0.60 |
+
+## Recall@6 by question type
+
+| Type (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| factual (26) | 0.96 | 0.35 | 0.88 | 1.00 | 1.00 |
+| figure (5) * | 1.00 | 0.60 | 1.00 | 1.00 | 1.00 |
+| multi_page (4) * | 1.00 | 0.00 | 1.00 | 1.00 | 1.00 |
+| paraphrase (11) | 0.91 | 0.27 | 0.73 | 0.82 | 0.91 |
+| table (11) | 0.82 | 0.18 | 0.64 | 1.00 | 0.91 |
+| turkish (12) | 1.00 | 0.25 | 0.83 | 0.92 | 0.92 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## Recall@6 / MRR by document
+
+| Document (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| doc1.pdf (37) | 1.00 / 0.99 | 0.35 / 0.22 | 0.89 / 0.66 | 0.97 / 0.93 | 1.00 / 0.94 |
+| doc2.pdf (12) | 0.67 / 0.44 | 0.08 / 0.04 | 0.42 / 0.17 | 0.83 / 0.56 | 0.75 / 0.55 |
+| doc3_sample.pdf (20) | 1.00 / 0.90 | 0.30 / 0.15 | 0.95 / 0.57 | 1.00 / 0.97 | 1.00 / 0.97 |
+
+Report: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261104-1019-retrieval.md

@@ -1,0 +1,37 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 9604.47it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5390.94it/s]
+[1/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  When was the ISO/IEC JTC 1/SC42 subcommittee on AI set up?
+[2/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What uptime is given as an example in a service-level agreem
+[3/82] vector=1  keyword=4  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  What is the 'AI Effect'?
+[4/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How many countries adopted the OECD principles for AI when t
+[5/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What activation threshold did the DeepXplore researchers use
+[6/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to research, how much can AI reduce the size of a 
+[7/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How is the F1-score calculated?
+[8/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What range of values can the silhouette coefficient take, an
+[9/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is back-to-back testing also known as?
+[10/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which family of chips does Mobileye produce, and what are th
+[11/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What example of reward hacking does the syllabus give?
+[12/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What does full neuron coverage require?
+[13/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What are the three basic desirable XAI characteristics?
+[14/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How did AI-based test generation tools change the average nu
+[15/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What certificate must be obtained before taking the CT-AI ex
+[16/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is the minimum number of hours of instruction required 
+[17/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=3  hybrid + reranker=3  A model does great on the examples it learned from but makes
+[18/82] vector=1  keyword=-  hybrid (RRF)=7  vector + reranker=1  hybrid + reranker=1  Why do people sometimes accept a machine's suggestion withou
+[19/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What happens when customer behaviour changes over time but t
+[20/82] vector=1  keyword=21  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Why are graphics processors usually better than general-purp
+[21/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How can someone fool an image classifier by changing a few p
+[22/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Why are the annotations in a supervised training set sometim
+[23/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which kind of learning is used to group customers for market
+[24/82] vector=1  keyword=3  hybrid (RRF)=7  vector + reranker=7  hybrid + reranker=7  How can a second, independently built version of a system he
+[25/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What does 'obsolete data' mean as a data quality issue?
+[26/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In a confusion matrix, what is the difference between a fals
+[27/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What mitigation is suggested for the risk that the operation
+[28/82] vector=2  keyword=2  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  In the ML workflow figure, which steps come after testing th
+[29/82] vector=1  keyword=3  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  List all the test levels for AI-based systems.
+[30/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What should the documentation of an AI component contain?
+[31/82] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Kavram kayması (concept drift) nedir ve nasıl test edilir?
+[32/82] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Veri zehirlenmesi (data poisoning) saldırısı nedir?
+2026-11-05 00:05:36 mem_guard: pid 94101 at 71 GB >= 70 GB, restarting it
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

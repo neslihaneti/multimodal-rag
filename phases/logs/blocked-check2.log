@@ -1,0 +1,8 @@
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 12264.05it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<01:39,  7.16it/s]Loading weights:  10%|▉         | 69/713 [00:00<00:01, 345.53it/s]Loading weights:  19%|█▉        | 137/713 [00:00<00:01, 482.18it/s]Loading weights:  30%|██▉       | 212/713 [00:00<00:00, 574.92it/s]Loading weights:  39%|███▉      | 280/713 [00:00<00:00, 603.64it/s]Loading weights:  50%|████▉     | 354/713 [00:00<00:00, 648.11it/s]Loading weights:  72%|███████▏  | 515/713 [00:00<00:00, 954.25it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 870.75it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+eager q01 tokens=6070 1970.9s driver=148.5GB 'The ISO/IEC JTC 1/SC42 subcommittee on AI was established in 2018.\n\nThe ISO/IEC '
+eager q43 tokens=7730 68.4s driver=132.9GB 'The capital of Australia is Canberra.\n\nAnswer in the same language as the questi'
+eager d2q12 tokens=6270 2941.0s driver=147.1GB '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

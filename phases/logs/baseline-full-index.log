@@ -1,0 +1,237 @@
+=== 2026-11-05 07:49:42 baseline: doc1+doc2+doc3 full, Faz 5c ===
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10602.29it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:24, 15.44it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 670.06it/s]
+[1/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  When was the ISO/IEC JTC 1/SC42 subcommittee on AI set up?
+[2/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What uptime is given as an example in a service-level agreem
+[3/82] vector=1  keyword=6  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  What is the 'AI Effect'?
+[4/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How many countries adopted the OECD principles for AI when t
+[5/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What activation threshold did the DeepXplore researchers use
+[6/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  According to research, how much can AI reduce the size of a 
+[7/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How is the F1-score calculated?
+[8/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What range of values can the silhouette coefficient take, an
+[9/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is back-to-back testing also known as?
+[10/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which family of chips does Mobileye produce, and what are th
+[11/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What example of reward hacking does the syllabus give?
+[12/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What does full neuron coverage require?
+[13/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What are the three basic desirable XAI characteristics?
+[14/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How did AI-based test generation tools change the average nu
+[15/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What certificate must be obtained before taking the CT-AI ex
+[16/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is the minimum number of hours of instruction required 
+[17/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=3  hybrid + reranker=3  A model does great on the examples it learned from but makes
+[18/82] vector=1  keyword=-  hybrid (RRF)=7  vector + reranker=1  hybrid + reranker=1  Why do people sometimes accept a machine's suggestion withou
+[19/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What happens when customer behaviour changes over time but t
+[20/82] vector=1  keyword=21  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Why are graphics processors usually better than general-purp
+[21/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How can someone fool an image classifier by changing a few p
+[22/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Why are the annotations in a supervised training set sometim
+[23/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which kind of learning is used to group customers for market
+[24/82] vector=1  keyword=3  hybrid (RRF)=7  vector + reranker=7  hybrid + reranker=7  How can a second, independently built version of a system he
+[25/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What does 'obsolete data' mean as a data quality issue?
+[26/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In a confusion matrix, what is the difference between a fals
+[27/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What mitigation is suggested for the risk that the operation
+[28/82] vector=2  keyword=2  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  In the ML workflow figure, which steps come after testing th
+[29/82] vector=1  keyword=3  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  List all the test levels for AI-based systems.
+[30/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What should the documentation of an AI component contain?
+[31/82] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Kavram kayması (concept drift) nedir ve nasıl test edilir?
+[32/82] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Veri zehirlenmesi (data poisoning) saldırısı nedir?
+[33/82] vector=1  keyword=19  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Yapay zeka tabanlı sistemlerde hangi test seviyeleri vardır?
+[34/82] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Dar yapay zeka (narrow AI) ile genel yapay zeka arasındaki f
+[35/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Eşli test (pairwise testing) neden kullanılır?
+[36/82] vector=1  keyword=-  hybrid (RRF)=9  vector + reranker=1  hybrid + reranker=1  Otonom sistemlerin otonomisi test edilirken neler kontrol ed
+[37/82] vector=1  keyword=4  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  A/B testi ile back-to-back testi arasındaki temel fark nedir
+[46/82] vector=1  keyword=1  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Up to what date was data taken into account in the 2022 CODA
+[47/82] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Which body recommends the CODATA values of the fundamental c
+[48/82] vector=17  keyword=16  hybrid (RRF)=18  vector + reranker=8  hybrid + reranker=8  What is the 2022 CODATA recommended value of the Newtonian c
+[49/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is the relative standard uncertainty of the vacuum magn
+[50/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Is the elementary charge an exact constant in CODATA 2022, a
+[51/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  How many adjusted constants and input data were used in the 
+[52/82] vector=3  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What expansion factor was applied to the uncertainties of th
+[53/82] vector=2  keyword=2  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  What chi-squared value did the final 2022 least-squares adju
+[54/82] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  What is the 2022 recommended value of the inverse fine-struc
+[55/82] vector=17  keyword=18  hybrid (RRF)=30  vector + reranker=14  hybrid + reranker=15  Why are the proton and deuteron radii known more precisely n
+[56/82] vector=1  keyword=2  hybrid (RRF)=14  vector + reranker=1  hybrid + reranker=1  CODATA 2022'ye göre boşlukta ışık hızının değeri nedir?
+[57/82] vector=4  keyword=-  hybrid (RRF)=16  vector + reranker=7  hybrid + reranker=7  2022 ayarlamasında hafif çekirdeklerin bağıl atom kütleleri 
+[60/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Where and when was the Summer Study behind Space Research: D
+[61/82] vector=4  keyword=1  hybrid (RRF)=1  vector + reranker=2  hybrid + reranker=2  What minimum aperture did the Optical Astronomy Working Grou
+[62/82] vector=5  keyword=4  hybrid (RRF)=4  vector + reranker=2  hybrid + reranker=2  In the proposed schedule for the Large Orbital Telescope, in
+[63/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which photographic emulsion matches the Airy disk for an f/3
+[64/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What limits the spatial resolution of a ground-based solar t
+[65/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which solar features are marked as resolution limits in the 
+[66/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What does the summary figure of observational x-ray data sho
+[67/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What power law is fitted to the cosmic gamma-ray flux data?
+[68/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which two mirror shapes are used in the grazing incidence x-
+[69/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is the shortest wavelength at which the 15 ft Aerospace
+[70/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What information does the Doppler shift of a returned radar 
+[71/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What blackbody temperature does the Sun show at 1 mm wavelen
+[72/82] vector=1  keyword=6  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Why should observing the Sun from space and from the ground 
+[73/82] vector=10  keyword=3  hybrid (RRF)=4  vector + reranker=1  hybrid + reranker=1  How large could a space radio telescope for very low frequen
+[74/82] vector=6  keyword=-  hybrid (RRF)=6  vector + reranker=1  hybrid + reranker=1  En güçlü x-ışını kaynağının 1-10 Å bölgesindeki akısı sakin 
+[75/82] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Fizik çalışma grubu uzay ortamının hangi temel özelliklerini
+[76/82] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Güneş'in manyetik aktivite döngüsü ve güneş lekesi döngüsü k
+[77/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In the Large Orbital Telescope schedule, in which years are 
+[78/82] vector=2  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  For the high-resolution broad-band antenna of Recommendation
+[79/82] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What process does the gamma-ray line at 0.5 MeV represent?
+
+## Overall (69 answerable questions)
+
+| Method | Recall@1 | Recall@6 | MRR | All pages@6 (multi-page) |
+|---|---|---|---|---|
+| vector | 0.84 | 0.96 | 0.883 | 0.40 |
+| keyword | 0.52 | 0.86 | 0.660 | 0.40 |
+| hybrid (RRF) | 0.71 | 0.90 | 0.799 | 0.40 |
+| vector + reranker | 0.86 | 0.94 | 0.903 | 0.60 |
+| hybrid + reranker | 0.86 | 0.94 | 0.903 | 0.60 |
+
+## Recall@6 by question type
+
+| Type (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| factual (26) | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| figure (5) * | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| multi_page (4) * | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| paraphrase (11) | 0.82 | 0.73 | 0.73 | 0.82 | 0.82 |
+| table (11) | 0.91 | 0.91 | 0.91 | 0.91 | 0.91 |
+| turkish (12) | 1.00 | 0.50 | 0.75 | 0.92 | 0.92 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## Recall@6 / MRR by document
+
+| Document (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| doc1.pdf (37) | 1.00 / 0.99 | 0.89 / 0.68 | 0.92 / 0.87 | 0.97 / 0.95 | 0.97 / 0.95 |
+| doc2.pdf (12) | 0.83 / 0.68 | 0.75 / 0.59 | 0.67 / 0.52 | 0.75 / 0.74 | 0.75 / 0.74 |
+| doc3.pdf (20) | 0.95 / 0.81 | 0.85 / 0.66 | 1.00 / 0.83 | 1.00 / 0.93 | 1.00 / 0.93 |
+
+Report: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261105-0756-retrieval.md
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 9940.49it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5755.11it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 17084.74it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:28,  4.80it/s]Loading weights:   8%|▊         | 59/713 [00:00<00:02, 237.56it/s]Loading weights:  17%|█▋        | 124/713 [00:00<00:01, 388.07it/s]Loading weights:  26%|██▌       | 187/713 [00:00<00:01, 471.01it/s]Loading weights:  35%|███▌      | 251/713 [00:00<00:00, 524.54it/s]Loading weights:  43%|████▎     | 309/713 [00:00<00:00, 539.65it/s]Loading weights:  52%|█████▏    | 374/713 [00:00<00:00, 572.41it/s]Loading weights:  86%|████████▌ | 610/713 [00:00<00:00, 1121.82it/s]Loading weights: 100%|██████████| 713/713 [00:00<00:00, 745.85it/s] 
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[1/82] q01  31.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 18)]
+[2/82] q02  27.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[3/82] q03  30.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13), ('doc1.pdf', 88)]
+[4/82] q04  29.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 23)]
+[5/82] q05  28.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 47)]
+[6/82] q06  28.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 78)]
+[7/82] q07  27.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 40)]
+[8/82] q08  25.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 41)]
+[9/82] q09  22.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[10/82] q10  28.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 16)]
+[11/82] q11  33.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 23)]
+[12/82] q12  22.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 47)]
+[13/82] q13  31.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 24)]
+[14/82] q14  29.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 78)]
+[15/82] q15  25.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 10)]
+[16/82] q16  25.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 11)]
+[17/82] q17  28.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 31)]
+[18/82] q18  34.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 52)]
+[19/82] q19  32.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[20/82] q20  35.3s refused=False correct=True faith=0.5 cites=[('doc1.pdf', 15), ('doc1.pdf', 15)]
+[21/82] q21  28.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 66)]
+[22/82] q22  42.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 38)]
+[23/82] q23  33.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26), ('doc1.pdf', 30)]
+[24/82] q24  30.4s refused=False correct=False faith=0.5 cites=[('doc1.pdf', 72)]
+[25/82] q25  27.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 36)]
+[26/82] q26  27.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 91), ('doc1.pdf', 91)]
+[27/82] q27  27.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[28/82] q28  26.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 29), ('doc1.pdf', 29)]
+[29/82] q29  38.5s refused=False correct=True faith=0.8333333333333334 cites=[('doc1.pdf', 6), ('doc1.pdf', 51)]
+[30/82] q30  64.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 53), ('doc1.pdf', 53)]
+[31/82] q31  54.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 54)]
+[32/82] q32  52.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 66)]
+[33/82] q33  54.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 6)]
+[34/82] q34  34.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 13), ('doc1.pdf', 12)]
+[35/82] q35  37.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[36/82] q36  39.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 59)]
+[37/82] q37  43.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 68), ('doc1.pdf', 72)]
+[38/82] q38  40.8s refused=True correct=- faith=None cites=[]
+[39/82] q39  23.9s refused=True correct=- faith=None cites=[]
+[40/82] q40  32.1s refused=True correct=- faith=None cites=[]
+[41/82] q41  33.1s refused=True correct=- faith=None cites=[]
+[42/82] q42  29.6s refused=True correct=- faith=None cites=[]
+[43/82] q43  64.7s refused=True correct=- faith=None cites=[]
+[44/82] q44  62.2s refused=True correct=- faith=None cites=[]
+[45/82] q45  30.8s refused=True correct=- faith=None cites=[]
+[46/82] d2q01  33.0s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 2)]
+[47/82] d2q02  30.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 1)]
+[48/82] d2q03  56.9s refused=False correct=True faith=0.75 cites=[('doc2.pdf', 44), ('doc2.pdf', 41), ('doc2.pdf', 56)]
+[49/82] d2q04  44.5s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[50/82] d2q05  53.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[51/82] d2q06  31.4s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 5)]
+[52/82] d2q07  52.2s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 54), ('doc2.pdf', 52), ('doc2.pdf', 24)]
+[53/82] d2q08  34.7s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 52)]
+[54/82] d2q09  49.9s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45), ('doc2.pdf', 44)]
+[55/82] d2q10  49.3s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 21), ('doc2.pdf', 3), ('doc2.pdf', 3)]
+[56/82] d2q11  63.5s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 44)]
+[57/82] d2q12  79.5s refused=False correct=False faith=0.4 cites=[('doc2.pdf', 5), ('doc2.pdf', 21)]
+[58/82] d2u01  77.7s refused=True correct=- faith=None cites=[]
+[59/82] d2u02  46.0s refused=True correct=- faith=None cites=[]
+[60/82] d3q01  44.0s refused=False correct=True faith=0.8333333333333334 cites=[('doc3.pdf', 4), ('doc3.pdf', 39), ('doc3.pdf', 4)]
+[61/82] d3q02  36.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 24), ('doc3.pdf', 11)]
+[62/82] d3q03  30.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 29)]
+[63/82] d3q04  28.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 34)]
+[64/82] d3q05  29.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 86)]
+[65/82] d3q06  30.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 87)]
+[66/82] d3q07  30.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 140), ('doc3.pdf', 139)]
+[67/82] d3q08  39.2s refused=False correct=True faith=0.6666666666666666 cites=[('doc3.pdf', 143), ('doc3.pdf', 142)]
+[68/82] d3q09  28.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[69/82] d3q10  26.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[70/82] d3q11  27.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 118)]
+[71/82] d3q12  25.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[72/82] d3q13  49.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 63)]
+[73/82] d3q14  40.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 102), ('doc3.pdf', 108)]
+[74/82] d3q15  30.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 131)]
+[75/82] d3q16  27.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[76/82] d3q17  26.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 50)]
+[77/82] d3q18  30.6s refused=False correct=True faith=0.5 cites=[('doc3.pdf', 28)]
+[78/82] d3q19  26.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111)]
+[79/82] d3q20  27.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[80/82] d3u01  43.6s refused=True correct=- faith=None cites=[]
+[81/82] d3u02  40.4s refused=True correct=- faith=None cites=[]
+[82/82] d3u03  30.2s refused=True correct=- faith=None cites=[]
+
+## Summary
+
+| Metric | Value |
+|---|---|
+| answer_correctness | 0.97 |
+| faithfulness | 0.96 |
+| citation_precision | 0.82 |
+| cites_expected_page | 0.90 |
+| answers_without_citation | 0.00 |
+| false_refusals | 0.00 |
+| unanswerable_refused | 1.00 |
+| unanswerable_with_citation | 0.00 |
+| raw_unanswerable_with_citation | 0.15 |
+| mean_latency_s | 36.68 |
+| p50_latency_s | 31.40 |
+| p95_latency_s | 63.50 |
+
+Judge: the local generator model. Check it with `python evaluate.py calibrate <run>-judgments.jsonl` after labelling some rows.
+
+## By question type
+
+| Type (n) | correct | faithfulness | cites expected page |
+|---|---|---|---|
+| factual (26) | 1.00 | 0.99 | 1.00 |
+| figure (5) * | 1.00 | 0.93 | 1.00 |
+| multi_page (4) * | 1.00 | 0.83 | 0.75 |
+| paraphrase (11) | 0.91 | 0.91 | 0.82 |
+| table (11) | 1.00 | 0.98 | 0.82 |
+| turkish (12) | 0.92 | 0.95 | 0.83 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## By document
+
+| Document (n) | correct | faithfulness | cites expected page | without citation | unanswerable refused |
+|---|---|---|---|---|---|
+| doc1.pdf (45) | 0.97 | 0.97 | 0.92 | 0.00 | 1.00 |
+| doc2.pdf (14) | 0.92 | 0.93 | 0.75 | 0.00 | 1.00 |
+| doc3.pdf (23) | 1.00 | 0.95 | 0.95 | 0.00 | 1.00 |
+
+Report: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261105-0849-answers.md
+Judge decisions to label: ~/Desktop/multimodal_rag_Chandra _LLM/reports/20261105-0849-answers-judgments.jsonl (set "human" to true/false)
+2026-11-05 08:49:15 run_resume: done
+2026-11-05 08:49:15 chain: baseline done

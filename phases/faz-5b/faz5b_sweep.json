@@ -1,0 +1,604 @@
+{
+ "base": {
+  "q33": {
+   "text": "Yapay zeka tabanlı sistemlerdeki test seviyeleri, 7.2.1 Girdi Veri Testi, 7.2.2 ML Model Testi, 7.2.3 Komponent Testi, 7.2.4 Komponent Entegrasyon Testi, 7.2.5 Sistem Testi, 7.2.6 Kabul Testi, 7.3 AI Tabanlı Sistemler İçin Test Verisi, 7.4 AI Tabanlı Sistemlerde Otomasyon Biyazı Testi, 7.5 AI Komponenti Belgeleme, 7.6 Kavram Kayması Testi ve 7.7 ML Sistemi İçin Test Yaklaşımı olarak listelenmektedir [3]. Bu test seviyeleri, 7.2.5 Sistem Testi ve 7.2.6 Kabul Testi gibi geleneksel seviyelerle birlikte, AI tabanlı sistemlerdeki özel test seviyeleri de dahil olmak üzere toplamda 11 test seviyesi içerir [3].",
+   "s": 53.3,
+   "chars": 610,
+   "repeats": 0,
+   "cites": true
+  },
+  "q36": {
+   "text": "Otonom sistemlerin otonomisi test edilirken, sistem insan müdahalesi için belirli senaryolarda istek etmesi, belirli bir süre sonra insan müdahalesi için istek etmesi ve insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1]. Ayrıca, sistem insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1]. Sistem insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1].",
+   "s": 36.6,
+   "chars": 503,
+   "repeats": 0,
+   "cites": true
+  },
+  "q37": {
+   "text": "A/B testing is used to compare two variants of the same system to determine which is better, while back-to-back testing is used to detect defects [1]. A/B testing compares two variants of the same system, whereas back-to-back testing is used to detect defects [2]. One major difference between A/B testing and back-to-back testing relates to the use of A/B testing to compare two variants of the same system and the use of back-to-back testing to detect defects [1].",
+   "s": 36.1,
+   "chars": 466,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q10": {
+   "text": "The proton and deuteron radii are known more precisely now because the 2022 adjustment incorporated new and more accurate H-D spectroscopic data and improved muonic atom theory, which were not available in the 2018 adjustment [2]. Additionally, the 2022 adjustment included the Lamb-shift data from muonic hydrogen and deuterium, which are more precise than the scattering data previously used [6]. The inclusion of these more accurate measurements, combined with the theoretical improvements, led to a reduction in the uncertainties of the radii compared to the 2018 adjustment [5].",
+   "s": 41.0,
+   "chars": 583,
+   "repeats": 0,
+   "cites": true
+  },
+  "q01": {
+   "text": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+   "s": 22.1,
+   "chars": 65,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q03": {
+   "text": "The 2022 CODATA recommended value of the Newtonian constant of gravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻² [3]. This value is presented in Table XXXII, which lists the recommended values of fundamental constants [3]. The text in Section XV.A confirms that the 2022 recommended value is the same as the 2018 value because the data were unchanged and the same expansion factor was used [1]. Section XV.2 further states that the 2022 and 2018 recommended values of G are therefore identical [4].",
+   "s": 47.0,
+   "chars": 495,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q05": {
+   "text": "Yes, the elementary charge is an exact constant in CODATA 2022, and its value is 1.602176634 × 10⁻¹⁹ C [1].",
+   "s": 39.7,
+   "chars": 107,
+   "repeats": 0,
+   "cites": true
+  },
+  "q43": {
+   "text": "The documents do not contain information about this.",
+   "s": 29.1,
+   "chars": 52,
+   "repeats": 0,
+   "cites": false
+  },
+  "q09": {
+   "text": "Back-to-back testing is also known as differential testing [1].",
+   "s": 17.5,
+   "chars": 63,
+   "repeats": 0,
+   "cites": true
+  },
+  "d3q20": {
+   "text": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+   "s": 24.2,
+   "chars": 76,
+   "repeats": 0,
+   "cites": true
+  },
+  "q42": {
+   "text": "The documents do not contain information about this [1][2][3][4][5][6].",
+   "s": 23.2,
+   "chars": 71,
+   "repeats": 0,
+   "cites": true
+  },
+  "q45": {
+   "text": "The documents do not contain information about this [1][2][3][4][5][6].",
+   "s": 21.7,
+   "chars": 71,
+   "repeats": 0,
+   "cites": true
+  }
+ },
+ "rp1.05": {
+  "q33": {
+   "text": "Yapay zeka tabanlı sistemlerdeki test seviyeleri, standart yazılım test seviyeleriyle benzer şekilde tanımlanır ancak AI özelinde yeni test seviyeleri de dahil edilir. Bu seviyeler arasında, girdi veri testi ve ML model testi gibi yeni özel seviyeler yer alır [1]. Standart test seviyeleri arasında bileşen testi, bileşen entegrasyon testi, sistem testi ve kabul testi bulunur [3]. Sistem testi, tüm entegre bileşenlerin (AI ve non-AI) işlevsel ve non-fonksiyonel olarak beklenen performansı sağladığını doğrular [4]. Kabul testi ise müşteriye uygun olup olmadığını belirlemek için kullanılır ve AI sistemlerde kabul kriterleri belirleme zorlukları olabilir [5].",
+   "s": 49.0,
+   "chars": 662,
+   "repeats": 0,
+   "cites": true
+  },
+  "q36": {
+   "text": "Otonom sistemlerin otonomisi test edilirken, sistem insan müdahalesi için belirli senaryolarda istek etmesi, belirli bir süre sonra insan müdahalesi için istek etmesi ve insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1]. Ayrıca, sistem insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1]. Sistem insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1].",
+   "s": 35.9,
+   "chars": 503,
+   "repeats": 0,
+   "cites": true
+  },
+  "q37": {
+   "text": "A/B testing is used to compare two variants of the same system to determine which is better, while back-to-back testing is used to detect defects [1]. One major difference between them is that A/B testing compares two variants of the same system, whereas back-to-back testing is used to detect defects [1]. The index also lists both terms, confirming their presence in the document [4].",
+   "s": 33.9,
+   "chars": 386,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q10": {
+   "text": "The proton and deuteron radii are known more precisely now because the 2022 adjustment incorporated new and more accurate H-D spectroscopic data and improved muonic atom theory, which led to significant improvements in the recommended values [2]. Additionally, the inclusion of Lamb-shift data from muonic hydrogen and deuterium, which are more precise than scattering data, contributed to the reduced uncertainties [5]. The 2022 adjustment also utilized the isotope shift measurement, which provides a link between the deuteron and proton radii, further improving the accuracy [4].",
+   "s": 41.5,
+   "chars": 582,
+   "repeats": 0,
+   "cites": true
+  },
+  "q01": {
+   "text": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+   "s": 22.5,
+   "chars": 65,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q03": {
+   "text": "The 2022 CODATA recommended value of the Newtonian constant of gravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻² [3]. This value is presented in Table XXXII, which lists the recommended values of fundamental constants [3]. The text confirms that this value is the same as the 2018 value, as no new data was added for the 2022 adjustment [1][5]. The value is derived from 16 measurements, which were adjusted using a factor of 3.9 to resolve inconsistencies [1][5].",
+   "s": 47.9,
+   "chars": 461,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q05": {
+   "text": "Yes, the elementary charge is an exact constant in CODATA 2022, and its value is 1.602176634 × 10⁻¹⁹ C [1].",
+   "s": 40.7,
+   "chars": 107,
+   "repeats": 0,
+   "cites": true
+  },
+  "q43": {
+   "text": "The documents do not contain information about this.",
+   "s": 29.6,
+   "chars": 52,
+   "repeats": 0,
+   "cites": false
+  },
+  "q09": {
+   "text": "Back-to-back testing is also known as differential testing [1].",
+   "s": 17.6,
+   "chars": 63,
+   "repeats": 0,
+   "cites": true
+  },
+  "d3q20": {
+   "text": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+   "s": 24.8,
+   "chars": 76,
+   "repeats": 0,
+   "cites": true
+  },
+  "q42": {
+   "text": "The documents do not contain information about this [1].",
+   "s": 21.3,
+   "chars": 56,
+   "repeats": 0,
+   "cites": true
+  },
+  "q45": {
+   "text": "The documents do not contain information about this [1].",
+   "s": 20.5,
+   "chars": 56,
+   "repeats": 0,
+   "cites": true
+  }
+ },
+ "rp1.10": {
+  "q33": {
+   "text": "Yapay zeka tabanlı sistemlerdeki test seviyeleri, standart yazılım test seviyelerinden farklı olarak, girdi verilerinin ve modelin test edilmesini sağlayan iki yeni özel test seviyesiyle başlar [1]. Bu seviyelerle birlikte, sistem testi ve kabul testi gibi standart seviyeler de dahil olmak üzere toplamda altı test seviyesi tanımlanmıştır [3]. Sistem testi, tüm entegre bileşenlerin (AI ve non-AI) işlevsel ve non-fonksiyonel olarak beklenen şekilde çalışıp çalışmadığını kontrol eder [4]. Kabul testi ise müşteriye uygunluk açısından sistemin kabul edilebilir olup olmadığını belirlemek için kullanılır ve AI tabanlı sistemlerde kabul kriterleri belirlenmesi zor olabilir [5].",
+   "s": 45.4,
+   "chars": 678,
+   "repeats": 0,
+   "cites": true
+  },
+  "q36": {
+   "text": "Otonom sistemlerin otonomisi test edilirken, sistem insan müdahalesi için belirli senaryolarda istek etmesi, belirli bir süre sonra insan müdahalesi için istek etmesi ve insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1]. Ayrıca, sistem insan müdahalesi gerektiren durumlarda insan müdahalesini vermek zorunda kalması durumu da dikkate alınır [2].",
+   "s": 31.9,
+   "chars": 399,
+   "repeats": 0,
+   "cites": true
+  },
+  "q37": {
+   "text": "A/B testing is used to compare two variants of the same system to determine which is better, while back-to-back testing is used to detect defects [1]. One major difference between them is that A/B testing compares two variants of the same system, whereas back-to-back testing is used to detect defects [1]. The index confirms that both terms are listed separately, indicating distinct purposes [4].",
+   "s": 32.5,
+   "chars": 398,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q10": {
+   "text": "The proton and deuteron radii are known more precisely now because the 2022 adjustment incorporated new and more accurate H-D spectroscopic data along with improved muonic atom theory, which led to significant improvements in the recommended values [2]. Additionally, the inclusion of Lamb-shift data from muonic hydrogen and deuterium, which have smaller uncertainties than scattering data, contributed to the reduced uncertainties [5]. Furthermore, the analysis took into account relationships between data sets, such as the isotope shift, which helped constrain the values [4].",
+   "s": 38.3,
+   "chars": 580,
+   "repeats": 0,
+   "cites": true
+  },
+  "q01": {
+   "text": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+   "s": 21.8,
+   "chars": 65,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q03": {
+   "text": "The 2022 CODATA recommended value of the Newtonian constant of gravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻² [3]. This value is presented in Table XXXII, which lists the recommended values of fundamental constants [3]. The text confirms that this value is the same as the 2018 value, as no new data was added for the 2022 adjustment [1], and the 2022 value is derived from the same set of 16 measurements used in the 2018 adjustment [4].",
+   "s": 45.0,
+   "chars": 438,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q05": {
+   "text": "Yes, the elementary charge is an exact constant in CODATA 2022, and its value is 1.602176634 × 10⁻¹⁹ C [1].",
+   "s": 40.0,
+   "chars": 107,
+   "repeats": 0,
+   "cites": true
+  },
+  "q43": {
+   "text": "The documents do not contain information about this.",
+   "s": 29.1,
+   "chars": 52,
+   "repeats": 0,
+   "cites": false
+  },
+  "q09": {
+   "text": "Back-to-back testing is also known as differential testing [1].",
+   "s": 17.6,
+   "chars": 63,
+   "repeats": 0,
+   "cites": true
+  },
+  "d3q20": {
+   "text": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+   "s": 24.2,
+   "chars": 76,
+   "repeats": 0,
+   "cites": true
+  },
+  "q42": {
+   "text": "The documents do not contain information about this [1].",
+   "s": 21.7,
+   "chars": 56,
+   "repeats": 0,
+   "cites": true
+  },
+  "q45": {
+   "text": "The documents do not contain information about this [1].",
+   "s": 21.0,
+   "chars": 56,
+   "repeats": 0,
+   "cites": true
+  }
+ },
+ "ng8_hf": {
+  "q33": {
+   "text": "Yapay zeka tabanlı sistemlere ait test seviyeleri, 7.2.1 Girdi Veri Testi, 7.2.2 ML MODEL TESTİ, 7.2.3 Komponent Testi, 7.2,4 Komponent Entegrasyon Testi, 7.2.,5 Sistem Testi, 7.2..6 Kabul Testi, 7.3 AI Tabanlı Sistemler İçin Test Verisi, 7.4 AI Tabanlı Sistemlerde Otomasyon Biçimi Testi, 7.5 AI Komponenti Belgeleme, 7.6 Kavram Kayması Testi ve 7.7 ML Sistemi İçin Test Yaklaşımı olarak listelenmektedir [3]. Bu test seviyeleri, AI tabanlı sistemlerdeki AI ve non-AI bileşenlerin test edilmesi için farklı yaklaşımlar gerektirir [1]. Sistem testi, tüm entegre bileşenlerin (AI ve non-AI) işlevsel ve non-fonksiyonel olarak beklenen şekilde çalıştığını doğrulamak için yapılır [4]. Kabul testi, müşteriye uygun olup olmadığını belirlemek için kullanılır ve AI tabanlı sistemlerde kabul kriterlerinin tanımlaması zor olabilir [5].",
+   "s": 62.1,
+   "chars": 830,
+   "repeats": 0,
+   "cites": true
+  },
+  "q36": {
+   "text": "Otonom sistemlerin otonомisi test edilirken, sistem insan müdahalesi için belirli senaryolarda istek etmesi, belirli bir süre sonra insan müdahalesi için istek etmesi ve insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1]. Ayrıca, sistem insan müdahalesi gerektirmeyeni belirlemek için belirli sürelerde insan müdahalesi istemesi durumları da test edilir [1]. Sistem insan müdahalesi gerektirmeyene kadar otonom olarak çalışması durumunda insan müdahalesi istemesi de test edilir [1]. Otonom sistemlerin insan müdahalesi gerektirmeyi belirlemesi için belirli sürelerde ve belirli senaryolarda insan müdahalesini istemesi durumları da kontrol edilir [1]. Otopom sistemlerin insan müdahalesini gerektirmeyen senaryolardaki insan müdahalesi istemesi test edilir [1].",
+   "s": 50.9,
+   "chars": 814,
+   "repeats": 0,
+   "cites": true
+  },
+  "q37": {
+   "text": "A/B testing is used to compare two variants of the system to determine which is better, while back-to-back testing is used to detect defects [1]. A/B testing compares two variants of the same system, whereas back-to-back testing is used to find defects [1]. A/B testing does not generate test case and provides no guidance on how the test should be designed, while back-to-back testing requires an equivalent system to act as a pseud-oracle [1][2].",
+   "s": 35.6,
+   "chars": 448,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q10": {
+   "text": "The proton and deuteron radii are known more precisely now because the 2022 adjustment incorporated new and more accurate H-D spectroscopy data and improved muonic atom theory, which were not available in the 2018 adjustments [2]. Additionally, the 2022 adjustment included the Lamb-shift data from muonic hydrogen and deuterium, which are more precise than the scattering data previously used [6]. The inclusion of these more accurate measurements, combined with the theoretical improvements, led to a reduction in the uncertainties of the radii compared to the 2018 adjustment [5].",
+   "s": 41.7,
+   "chars": 583,
+   "repeats": 0,
+   "cites": true
+  },
+  "q01": {
+   "text": "The ISO/IEC JTC 2/SC42 subcommittee on artificial intelligence was set up in 2020 [1].",
+   "s": 22.0,
+   "chars": 86,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q03": {
+   "text": "The 2022 CODATArecommended value of the Newtonian constant ofgravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻² [3]. This value is identical to the 2018 recommended value, as the same 3.9 expansionfactor was applied to the uncertainties of the 16 input values in Table XXX, which were unchanged since the 2018 adjustment [1][5]. The value is presented in Table XXXII [3].",
+   "s": 42.6,
+   "chars": 367,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q05": {
+   "text": "Yes, the elementary charge is an exact constant in CODATA 1973, 2018, and 2022 [1][2]. Its value is 1.60217662634 × 10⁻¹⁹ C [1][2].",
+   "s": 43.9,
+   "chars": 131,
+   "repeats": 0,
+   "cites": true
+  },
+  "q43": {
+   "text": "The documents do not contain information about the capital of Australia.",
+   "s": 29.8,
+   "chars": 72,
+   "repeats": 0,
+   "cites": false
+  },
+  "q09": {
+   "text": "Back-to-back testing is also known as differential testing [1].",
+   "s": 17.7,
+   "chars": 63,
+   "repeats": 0,
+   "cites": true
+  },
+  "d3q20": {
+   "text": "The gamma-ray line at 0.7 MeV represents positron-electron annihilation [1].",
+   "s": 24.4,
+   "chars": 76,
+   "repeats": 0,
+   "cites": true
+  },
+  "q42": {
+   "text": "The documents do not contain information about the accuracy GPT-4 reached on the MMLU benchmark.",
+   "s": 24.1,
+   "chars": 96,
+   "repeats": 0,
+   "cites": false
+  },
+  "q45": {
+   "text": "The documents do not contain information about the average salary for a certified AI testing professional.",
+   "s": 22.5,
+   "chars": 106,
+   "repeats": 0,
+   "cites": false
+  }
+ },
+ "ng12_hf": {
+  "q33": {
+   "text": "Yapay zeka tabanlı sistemlerdeki test seviyeleri, 7.2.1 Girdi Veri Testi, 7.2.2 ML Model Testi, 7.2.3 Komponent Testi, 7.2.4 Komponent Entegrasyon Testi, 7.2.5 Sistem Testi, 7.2.6 Kabul Testi, 7.3 AI Tabanlı Sistemler İçin Test Verisi, 7.4 AI Tabanlı Sistemlerde Otomasyon Biyazı Testi, 7.5 AI Komponenti Belgeleme, 7.6 Kavram Kayması Testi ve 7.7 ML Sistemi İçin Test Yaklaşımı olarak listelenmektedir [3]. Bu test seviyeleri, 7.2 Test Seviyeleri başlığı altında detaylandırılmıştır [1].",
+   "s": 45.4,
+   "chars": 488,
+   "repeats": 0,
+   "cites": true
+  },
+  "q36": {
+   "text": "Otonom sistemlerin otonomisi test edildiğinde, sistem insan müdahalesi için talep etmesi gereken belirli senaryoların test edilmesi gerekir, bu senaryolar genellikle sistemden kontrolün bırakılması durumunda olabilir [1]. Ayrıca, sistem belirli bir süre sonra kontrolün bırakılması durumunda insan müdahalesi talep etmesi gereken senaryoları da test etmelidir [1]. Sistem, kendisi hala otonom olarak çalışırken insan müdahalesi talep etmesi gereken durumları da test etmelidir [1]. Sistemlerin otonomisi test edilirken, insan müdahalesi talep etmesi gereken belirli senarilerin test edilmesi gerekir, bu senariler genellikle sistemden kontrolün bırakılması durumu olabilir [1]. Sistem, belirli bir süre sonra kontrolün bırakılması durumu için insan müdahalesi talep etmesi gereken bir senaryo test edilmelidir [1]. Sistem, kendisi hâlâ otonom olarak çalışırken insan müdahalesi talebini gerektiren bir senaryo test edilmelidir [2].",
+   "s": 57.7,
+   "chars": 931,
+   "repeats": 0,
+   "cites": true
+  },
+  "q37": {
+   "text": "A/B testing is used to compare two variants of the same system to determine which is better, while back-to-back testing is used to detect defects [1]. A/B testing compares two variants of the same system, whereas back-to-back testing is used to detect defects [2]. One major difference between A/B testing and back-to-back testing is that A/B testing compares two variants of the same system, while back-to-back testing is used to detect defects, as stated in the text [1].",
+   "s": 36.4,
+   "chars": 473,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q10": {
+   "text": "The proton and deuteron radii are known more precisely now because the 2022 adjustment incorporated new and more accurate H-D spectroscopic data and improved theoretical models for muonic atoms, which were not available in the 2018 adjustment [2]. Additionally, the 2022 adjustment included data from muonic hydrogen and deuterium Lamb-shift measurements, which are more precise than the scattering data previously used [5]. The inclusion of these more accurate data sets, combined with the theoretical improvements, led to a reduction in the uncertainties of the radii compared to the 2018 adjustment [5].",
+   "s": 40.5,
+   "chars": 606,
+   "repeats": 0,
+   "cites": true
+  },
+  "q01": {
+   "text": "The ISO/IEC JTC 1/SC41 subcommittee on AI was set up in 2017 [1].",
+   "s": 22.2,
+   "chars": 65,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q03": {
+   "text": "The 2022 CODATA recommended value of theNewtonian constant of gravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻² [3]. This value is identical to the 2018 recommended value, as the same 3.9 expansion factor was applied to the uncertainties of the 16 input data values, which were unchanged since the 2018 adjustment [1][5]. The value is presented in Table XXXII [3].",
+   "s": 40.9,
+   "chars": 361,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q05": {
+   "text": "Yes, the elementary charge is an exact constant in CODATA 2022. Its value is 1.602176634 × 0-19 C [1].",
+   "s": 39.5,
+   "chars": 102,
+   "repeats": 0,
+   "cites": true
+  },
+  "q43": {
+   "text": "The documents do not contain information about this.",
+   "s": 29.4,
+   "chars": 52,
+   "repeats": 0,
+   "cites": false
+  },
+  "q09": {
+   "text": "Back-to-back testing is also known as differential testing [1].",
+   "s": 17.6,
+   "chars": 63,
+   "repeats": 0,
+   "cites": true
+  },
+  "d3q20": {
+   "text": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+   "s": 24.2,
+   "chars": 76,
+   "repeats": 0,
+   "cites": true
+  },
+  "q42": {
+   "text": "The documents do not contain information about this [1][2][3][4][5][6].",
+   "s": 24.5,
+   "chars": 71,
+   "repeats": 0,
+   "cites": true
+  },
+  "q45": {
+   "text": "The documents do not contain information about this [1][2][3][4][5][6].",
+   "s": 23.5,
+   "chars": 71,
+   "repeats": 0,
+   "cites": true
+  }
+ },
+ "ans_ng8": {
+  "q33": {
+   "text": "Yapay zeka tabanlı sistemlerdeki test seviyeleri, 7.2.1 Girdi Veri Testi, 7.2.2 ML Model Testi, 7.2,3 Komponent Testi, 7.2.,4 Komponent Entegrasyon Testi, 7.2..5 Sistem Testi, 7.2,.6 Kabul Testi, 7.3 AI Tabanlı Sistemler İçin Test Verisi, 7.4 AI Tabanlı Sistemlerde Otomasyon Biçimi Testi, 7.5 AI Komponenti Belgeleme, 7.6 Kavram Kayması Testi ve 7.7 ML Sistemi İçin Test Yaklaşımı olarak tanımlanır [3]. Bu test seviyeleri, AI tabanlı sistemlerin test edilmesi için gerekli olan farklı düzeylerdir [1].",
+   "s": 44.0,
+   "chars": 503,
+   "repeats": 0,
+   "cites": true
+  },
+  "q36": {
+   "text": "Otonom sistemlerin otonomisi test edilirken, sistem insan müdahalesi için belirli senaryolarda istek etmesi, belirli bir süre sonra insan müdahalesi için istek etmesi ve insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1]. Ayrıca, sistem insan müdahalesi gerektirmeyeni belirli sürelerde insan müdahalesi istemesi durumunda, sistem insan müdahalesi gerektirme durumunda insan müdahalesi istemesi olmaması durumunda, sistem insan müdahalı olmaması durumunda insan müdahalesi gerektirmesi olmaması durumunda sistem insan müdahalesi gerektirmesi durumunda insan müdahalesi olmaması durumundaki sistem insan müdahalesi gerektirmesini olmaması durumunda sistemin insan müdahalesi gerektirmesi için istek etmesi durumunda sistem insan müdahalesini gerektirmesi durumunda sistem insan müdahalesine istek etmesi durumundaki sistem insan müdahalı olmamak için istek etmesi durumu durumunda sistem insan müdahalesinin istek etmesi durumuna istek etmesi durumda sistem insan müdahalesi gerektirmemesi durumunda sistem insan müdahalı olmaz [1]. Sistem insan müdahalesi gerektirmesi istek etmesi durumlarında sistem insan müdahalesi gerektirmeme istek etmesi durumları durumunda sistem insan müdahalesinden istek etmesi durumunun sistem insan müdahalesi gerektirmeye istek etmesi durumunu sistem insan müdahalesi gerektirmemeye istek etmesi durumu sistem insan müdahalesi gerektirmek için istek etmesi durumdaki sistem insan müdahalesi gerektirilmesi durumunda sistem insan müdahale edilmesi durumunda sistem insanların müdahalesi gerektirmesi durumu sistem insan müdahalesi istek etmesi durumudaki sistem insan müdahalesi istek edilmesi durumunda sistemin insan müdahalı olmamasına istek etmesi durumuda sistem insan müdahalesi istek ettikten sonra sistem insan müdahalesi istek ettiği durumda sistem insan müdahalesini istek etmesi durumundayken sistem insan müdahalesi istekleri durumunda sistem insan müdahalesinde istek etmesi durumdayken sistem insan müdahalesi isteği durumunda sistem insan müdahalesin istek etmesi durumuya sistem insan müdahalesi isteklerinin durumunda sistem insan müdahalesidir [1]. Sistem insan müdahalı olmamasını istek etmesi durumında sistem insan müdahalesi istek durumunda sistem insan müdahalesindir [1]. Sistem insan müdahale edilmesi durumu sistem insan müdahalı olmama durumunda sistem insan müdahalesiz olma durumunda sistem insan müdahalesiniz olmaz [1]. Sistemin insan müdahalesi istek etme durumunda sistem insan müdahalesizi istek etme durumunda sistemin insan müdahale edilmesi durumunda insan müdahalesi durumunda sistem insan müdahale edilmesi olmaz [1]. Sitem insan müdahalesi istek etmeyen durumda sistem insan müdahalesiz olur [1]. Sistem insan müdahale edilmesi istek etmeyen sistem insan müdahalesiz olur. Sistem insan müdahalesi istek etmemesi durumunda sistem insan müdahalıdır [1]. Sistem insan müdahali olmaz [1]. Siste insan müdahalesi istek etmez [1]. Sistem insan müdahaledir [1]. Sistem insan Müdahalesi istek etmez [2]. Sistem insan müdahalesi istemeyen sistem insan müdahalesizdir [2]. Sistem insan müdahalı değildir [2]. Sistem insan müdahale edilmeyen sistem insan müdahalesizidir [2]. Sistem insan müdahaledir. Sistem insan müdahalesi olmaz [2]. Sistem insan müdahali olmayan sistem insan müdahalesizdir [3]. Sistem insan müdahalesi olmayan sistem insan müdahalesidir [3]. Sistem insan müdahalı değil [3]. Sistem insan müdahale edilemez [3]. Sistem insan müdahaledir, sistem insan müdahalesi olmaz, sistem insan müdahalesi olmayan, sistem insan müdahalesi olur [3]. Sistem insan müdahali olur [3]. Sistem insanların müdahalesi olmaz [",
+   "s": 178.3,
+   "chars": 3636,
+   "repeats": 0,
+   "cites": true
+  },
+  "q37": {
+   "text": "A/B testing is used to compare two variants of the same system to determine which is better, while back-to-back testing is used to detect defects [1]. A/B testing compares two variants of the same system, whereas back-to-back testing is used to find defects [2]. One major difference between A/B testing and back-to-back testing relates to the use of A/B testing to compare two variants of the same and the use of back-to-back testing to detect defects [1].",
+   "s": 34.6,
+   "chars": 457,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q10": {
+   "text": "The proton and deuteron radii are known more precisely now because the 2022 adjustment incorporated new and more accurate H-D spectroscopic data and improved muonic atom theory, which were not available in the 2018 adjustment [2]. Additionally, the 2022 adjustment included the Lamb-shift data from muonic hydrogen and deuterium, which are more precise than the scattering data previously used [6]. The inclusion of these more accurate measurements, combined with the theoretical improvements, led to a reduction in the uncertainties of the radii compared to the 2018 adjustment, which was the first to include muonic Lamb-shift data [5].",
+   "s": 42.8,
+   "chars": 638,
+   "repeats": 0,
+   "cites": true
+  },
+  "q01": {
+   "text": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+   "s": 21.9,
+   "chars": 65,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q03": {
+   "text": "The 2022 CODATA recommended value of the Newtonian constant of gravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻² [3]. This value is presented in Table XXXII, which lists the recommended values of fundamental constants [3]. The text in Section XV.A confirms that the 2022 recommended value is the same as the 2018 value because the data were unchanged and the same expansion factor was used [1]. Section XV.2 further states that the 2022 and 2018 recommended values of G are therefore identical [4].",
+   "s": 45.5,
+   "chars": 495,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q05": {
+   "text": "Yes, the elementary charge is an exact constant in CODATA 2022, and its value is 1.602176634 × 10⁻¹⁹ C [1].",
+   "s": 40.0,
+   "chars": 107,
+   "repeats": 0,
+   "cites": true
+  },
+  "q43": {
+   "text": "The documents do not contain information about this.",
+   "s": 29.5,
+   "chars": 52,
+   "repeats": 0,
+   "cites": false
+  },
+  "q09": {
+   "text": "Back-to-back testing is also known as differential testing [1].",
+   "s": 17.8,
+   "chars": 63,
+   "repeats": 0,
+   "cites": true
+  },
+  "d3q20": {
+   "text": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+   "s": 24.5,
+   "chars": 76,
+   "repeats": 0,
+   "cites": true
+  },
+  "q42": {
+   "text": "The documents do not contain information about this [1][2][3][4][5][6].",
+   "s": 24.6,
+   "chars": 71,
+   "repeats": 0,
+   "cites": true
+  },
+  "q45": {
+   "text": "The documents do not contain information about this [1][2][3][4][5][6].",
+   "s": 23.4,
+   "chars": 71,
+   "repeats": 0,
+   "cites": true
+  }
+ },
+ "ans_ng12": {
+  "q33": {
+   "text": "Yapay zeka tabanlı sistemlerdeki test seviyeleri, 7.2.1 Girdi Veri Testi, 7.2.2 ML Model Testi, 7.2.3 Komponent Testi, 7.2.4 Komponent Entegrasyon Testi, 7.2.5 Sistem Testi, 7.2.6 Kabul Testi, 7.3 AI Tabanlı Sistemler İçin Test Verisi, 7.4 AI Tabanlı Sistemlerde Otomasyon Biyazı Testi, 7.5 AI Komponenti Belgeleme, 7.6 Kavram Kayması Testi ve 7.7 ML Sistemi İçin Test Yaklaşımı olarak listelenmektedir [3]. Bu test seviyeleri, 7.2 Test Seviyeleri başlığı altında detaylandırılmıştır [1].",
+   "s": 44.1,
+   "chars": 488,
+   "repeats": 0,
+   "cites": true
+  },
+  "q36": {
+   "text": "Otonom sistemlerin otonomisi test edilirken, sistem insan müdahalesi için belirli senaryolarda istek etmesi, belirli bir süre sonra insan müdahalesi için istek etmesi ve insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1]. Ayrıca, sistem insan müdahalesi gerektirmeyen senaryolardaki otonom çalışması için belirli sürelerde insan müdahalesi istemesi durumları da kontrol edilir [1]. Sistem insan müdahalesi gerektirmeyen senaryolara uygun olarak otonom çalışması için belirli süreler içinde insan müdahalesi istemesi durumları da test edilir [1]. Sistem insan müdahalesini gerektirmeyen senaryolarda insan müdahalesini istemesi durumları da test edilir. Sistem insan müdahalesi gerektirmeyen senariyolar için belirli süreler içinde insan müdahalesi gerektirmesi durumları da test edilir [1].",
+   "s": 49.7,
+   "chars": 842,
+   "repeats": 0,
+   "cites": true
+  },
+  "q37": {
+   "text": "A/B testing is used to compare two variants of the same system to determine which is better, while back-to-back testing is used to detect defects [1]. A/B testing compares two variants of the same system, whereas back-to-back testing is used to detect defects [2]. One major difference between A/B testing and back-to-back testing relates to the use of A/B testing to compare two variants of the same system and the use of back-to-back testing to detect defects [1].",
+   "s": 34.9,
+   "chars": 466,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q10": {
+   "text": "The proton and deuteron radii are known more precisely now because the 2022 adjustment incorporated new and more accurate H-D spectroscopic data and improved muonic atom theory, which were not available in the 2018 adjustment [2]. Additionally, the 2022 adjustment included the Lamb-shift data from muonic hydrogen and deuterium, which are more precise than the scattering data previously used [6]. The inclusion of these more accurate measurements, combined with the theoretical improvements, led to a reduction in the uncertainties of the radii compared to the 2018 adjustment [5].",
+   "s": 40.8,
+   "chars": 583,
+   "repeats": 0,
+   "cites": true
+  },
+  "q01": {
+   "text": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+   "s": 21.8,
+   "chars": 65,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q03": {
+   "text": "The 2022 CODATA recommended value of the Newtonian constant of gravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻² [3]. This value is presented in Table XXXII, which lists the recommended values of fundamental constants [3]. The text in Section XV.A confirms that the 2022 recommended value is the same as the 2018 value because the data were unchanged and the same expansion factor was used [1]. Section XV.2 further states that the 2022 and 2018 recommended values of G are therefore identical [4].",
+   "s": 44.3,
+   "chars": 495,
+   "repeats": 0,
+   "cites": true
+  },
+  "d2q05": {
+   "text": "Yes, the elementary charge is an exact constant in CODATA 2022, and its value is 1.602176634 × 10⁻¹⁹ C [1].",
+   "s": 39.6,
+   "chars": 107,
+   "repeats": 0,
+   "cites": true
+  },
+  "q43": {
+   "text": "The documents do not contain information about this.",
+   "s": 29.2,
+   "chars": 52,
+   "repeats": 0,
+   "cites": false
+  },
+  "q09": {
+   "text": "Back-to-back testing is also known as differential testing [1].",
+   "s": 17.5,
+   "chars": 63,
+   "repeats": 0,
+   "cites": true
+  },
+  "d3q20": {
+   "text": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+   "s": 23.9,
+   "chars": 76,
+   "repeats": 0,
+   "cites": true
+  },
+  "q42": {
+   "text": "The documents do not contain information about this [1][2][3][4][5][6].",
+   "s": 24.6,
+   "chars": 71,
+   "repeats": 0,
+   "cites": true
+  },
+  "q45": {
+   "text": "The documents do not contain information about this [1][2][3][4][5][6].",
+   "s": 23.4,
+   "chars": 71,
+   "repeats": 0,
+   "cites": true
+  }
+ }
+}

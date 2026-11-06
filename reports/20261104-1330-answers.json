@@ -1,0 +1,1703 @@
+{
+  "info": {
+    "time": "2026-11-04T13:30:18",
+    "golden": "golden_dev.jsonl",
+    "golden_sha256": "01c2d74b374f",
+    "indexed_documents": 3,
+    "indexed_chunks": 657,
+    "embedder": "BAAI/bge-m3",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "generator": "Qwen/Qwen3-VL-4B-Instruct",
+    "prompt_sha256": "2438dab50609",
+    "candidates": 40,
+    "top_k": 6,
+    "max_search_rounds": 3,
+    "rrf_k": 60
+  },
+  "metrics": {
+    "answer_correctness": 0.9130434782608695,
+    "faithfulness": 0.9251207729468599,
+    "citation_precision": 0.8333333333333334,
+    "cites_expected_page": 0.6231884057971014,
+    "answers_without_citation": 0.30434782608695654,
+    "false_refusals": 0.0,
+    "unanswerable_refused": 0.9230769230769231,
+    "unanswerable_with_citation": 0.07692307692307693,
+    "mean_latency_s": 56.44146341463414,
+    "p50_latency_s": 49.9,
+    "p95_latency_s": 97.8
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 52.0,
+      "answer": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q02",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 35.1,
+      "answer": "The example uptime given in a service-level agreement for AI as a Service is 99.99%. This is mentioned in the text under section 1.7.1, which discusses contracts for AI as a Service [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          16
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q03",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 37.5,
+      "answer": "The 'AI Effect' is the changing perception of what constitutes artificial intelligence, which causes its definition to evolve over time as technology advances, and as a result, any definition made today is likely to change in the future and may not match those from the past [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          13
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q04",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 48.4,
+      "answer": "The OECD principles for AI were adopted by forty-two countries when they were issued.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q05",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 36.8,
+      "answer": "The DeepXplore researchers used a threshold of 0.75 when measuring threshold coverage.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q06",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 41.6,
+      "answer": "According to research, AI can reduce the size of a regression test suite by 50%.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q07",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 31.1,
+      "answer": "The F1-score is calculated as 2 * (Precision * Recall) / (Precision + Recall) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          40
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "id": "q08",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 39.2,
+      "answer": "The silhouette coefficient can take values between -1 and +1. A score of +1 means the clusters are well-separated [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          41
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 34.5,
+      "answer": "Back-to-back testing is also known as differential testing.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q10",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 81.8,
+      "answer": "Mobileye produces the EyeQ family of SoC devices, which are used to support complex and computationally intense vision processing, particularly for use in vehicles [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          16
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q11",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 51.6,
+      "answer": "The syllabus gives the example of an AI-based system teaching itself to play an arcade computer game, where it hacks the data record that stores the highest score to achieve the goal of the highest score, rather than playing the game to achieve it [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          23
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q12",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 30.7,
+      "answer": "Full neuron coverage requires that each neuron in the neural network achieves an activation value greater than zero [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          47
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q13",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 30.3,
+      "answer": "The three basic desirable XAI characteristics are Transparency, Interpretability, and Explainability.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "id": "q14",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 49.0,
+      "answer": "AI-based test generation tools reduced the average number of steps needed to cause a failure from around 15,000 steps to around 100 steps [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          78
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q15",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 38.7,
+      "answer": "The ISTQB® Foundation Level certificate must be obtained before taking the Certified Tester Specialist AI Testing exam.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q16",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 36.9,
+      "answer": "The syllabus requires a minimum of 25.1 hours of instruction for accredited training courses [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          11
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q17",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 40.8,
+      "answer": "This is called overfitting. It can occur when the model tries to fit to every data point, including noise or outliers, or when insufficient data is provided in the training dataset [3].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          31
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q18",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 52.1,
+      "answer": "People sometimes accept a machine's suggestion without checking anything else because of automation bias, which is when humans accept recommendations from the system and fail to consider inputs from other sources, including themselves [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          52
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q19",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 49.9,
+      "answer": "When customer behaviour changes over time but the trained model stays the same, it results in concept drift, which typically causes the model's outputs to become increasingly less accurate and less useful [1]. Systems prone to this issue should be regularly tested against their agreed ML functional performance criteria to detect the drift early, allowing for mitigation such as retiring the system or retraining it with up-to-date data [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q20",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 46.9,
+      "answer": "Graphics processors are usually better than general-purpose processors for machine learning because they are designed to perform massively parallel processing, which is efficient for the simple image processing tasks common in ML, whereas general-purpose CPUs are less efficient for training and running ML models due to their architecture and fewer cores [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          15
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q21",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 46.0,
+      "answer": "By simply changing a few pixels, which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "q22",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 52.0,
+      "answer": "Annotations in a supervised training set can be wrong due to random errors by annotators, systemic errors from poor instructions or training, deliberate errors by malicious annotators, translation errors, subjective judgments leading to conflicting labels, lack of domain knowledge, complex classification tasks, defects in labeling tools, or the probabilistic nature of ML-based labeling approaches [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          38
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 41.8,
+      "answer": "Unsupervised learning is used to group customers for marketing when there are no labels, as it involves identifying similarities in input data points to group them based on common characteristics or attributes [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q24",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 52.2,
+      "answer": "A second, independently built version of a system can help by allowing a comparison of their outputs for the same inputs, which can be used to determine which version performs better, thus helping to establish expected results. The two versions must not share the same underlying logic or algorithm.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": 0.6
+    },
+    {
+      "id": "q25",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 44.1,
+      "answer": "Obsolete data refers to data that is outdated and not current, which can lead to inaccurate results when used for both learning and prediction. For example, using financial data from several years ago may result in inaccurate predictions.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q26",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 78.9,
+      "answer": "In a confusion matrix, a false positive (FP) occurs when the model incorrectly predicts a positive outcome for a negative case, while a false negative (FN) occurs when the model incorrectly predicts a negative outcome for a positive case.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q27",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 41.6,
+      "answer": "The risk that the operational data pipeline may be faulty can be partly mitigated by dynamically testing the individual pipeline components and integrating testing of the complete pipeline [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q28",
+      "type": "figure",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 37.8,
+      "answer": "After testing the model, the workflow proceeds to deploy the model, then use the model, and finally monitor and tune the model.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q29",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 64.0,
+      "answer": "The test levels for AI-based systems are: Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing. These are listed in the table of contents on page 6 [1] and described in detail in Section 7.2 on page 50 [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          6
+        ],
+        [
+          "doc1.pdf",
+          50
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q30",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 87.2,
+      "answer": "The documentation of an AI component should contain the following: General information such as identifiers, description, developer details, hardware requirements, license details, version, date, and point of contact [1]. It should also include Design assumptions and technical decisions [1]. Usage details like primary and secondary use cases, typical users, approach to self-learning, known bias, ethical issues, safety issues, transparency, decision thresholds, platform, and concept drift [1]. Datasets should cover features, collection, availability, pre-processing requirements, use, content, labelling, size, privacy, security, bias/fairness, and restrictions/constraints [1]. Testing information should include test dataset (description and availability), independence of testing, test results, testing approach for robustness, explainability, concept drift, and portability [1]. Training and ML Functional Performance should detail the ML algorithm, weights, validation dataset, selection of ML functional performance metrics, thresholds for ML functional performance metrics, and actual ML functional performance metrics [1]. Additionally, the documentation should cover the purpose of the system and specification of functional and non-functional requirements [2], architectural and design information outlining how AI and non-AI components interact [2], the specification of the operating environment [2], and the source of any input data, including associated metadata [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          53
+        ],
+        [
+          "doc1.pdf",
+          53
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q31",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 54.6,
+      "answer": "Kavram kayması (concept drift), sistem çalışması sırasında veri veya kullanıcı davranışlarının değişmesi sonucu modelin tahminlerinin doğruluğunda kaymasıdır [5]. Bu durum, modelin sürekli olarak güncellenmesi veya yeniden eğitilmesiyle test edilebilir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          89
+        ],
+        [
+          "doc1.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": false,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q32",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 98.9,
+      "answer": "Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim verisini manipüle etmesiyle gerçekleştirilir ve bu, modelin yanlış tahminler vermesine neden olur. Saldırgan, modelin gelecekteki saldırıları kolaylaştırmak için arka kapaklar veya nöronal ağ trojanları ekleyebilir, ancak daha çok, eğitim verisini bozulmuş (örneğin, yanlış etiketlenmiş) olarak kullanarak modelin yanlış tahminler vermesini sağlar [1]. Bu saldırılar, belirli durumlarda modelin yanlış sınıflandırmasını tetiklemeyi hedefleyebilir veya genel olarak, örneğin, bir \"denial-of-service\" saldırısı gibi, sistemdeki tüm verileri etkileyebilir [1]. Ayrıca, Microsoft Tay chatbotu gibi popüler sistemlerde, küçük sayıda zararlı Twitter konuşmalarının eğitim verisine eklenmesiyle, modelin gelecekteki konuşmaları bozulmuş şekilde üretmesi gibi örnekler verilmiştir [1]. Saldırının tespiti için, veri analizi (EDA) kullanılarak bozulmuş verilerin ayırt edilmesi, eğitim veri kaynaklarının doğruluğunu kontrol etmek için veri toplama politikalarının incelenmesi, ya da sistemdeki güncel versiyonun eski versiyonla karşılaştırılması (A/B testi) gibi yöntemler kullanılabilir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ],
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q33",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 41.4,
+      "answer": "Yapay zeka tabanlı sistemlerdeki test seviyeleri şunlardır: giriş veri testi, ML model testi, bileşen testi, bileşen entegrasyon testi, sistem testi ve kabul testi [2][3][4][5].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          50
+        ],
+        [
+          "doc1.pdf",
+          51
+        ],
+        [
+          "doc1.pdf",
+          52
+        ],
+        [
+          "doc1.pdf",
+          51
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.8333333333333334
+    },
+    {
+      "id": "q34",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 51.5,
+      "answer": "Yapay zeka (narrow AI) ve genel yapay zeka arasındaki fark, narrow AI'nin belirli bir görevi gerçekleştirmek için programlanan, sınırlı bir bağlamda çalışan sistemleri ifade ederken, genel yapay zeka ise insanlar gibi geniş kapsamlı zihinsel yeteneklere sahip, çevresini anlamaya ve karar vermeye yetecek kadar genel bir zeka sahibi sistemleri temsil eder [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          13
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 53.0,
+      "answer": "Eşli test (pairwise testing) kullanılır çünkü AI tabanlı sistemlerdeki parametre sayısı çok yüksek olabilir ve tamamen test edilecek kadar test durumu sonsuz olabilir; bu nedenle, test edilecek test durumlarının sayısını azaltmak için bu yöntem tercih edilir [2]. Ayrıca, araştırmalar göstermiştir ki, çoğu hata birkaç parametre arasındaki etkileşimlerden kaynaklanır, bu da eşli testin etkinliğini artırır [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": false,
+      "faithfulness": 0.8
+    },
+    {
+      "id": "q36",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 46.3,
+      "answer": "Otonom sistemlerin otonomisi test edilirken, sistem insan müdahalesi için belirli senaryolarda istek etmesi, belirli bir süre sonra insan müdahalesi için istek etmesi ve insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1]. Ayrıca, sistem insan müdahalesi gerektirmeyen senaryolarda insan müdahalesi istemesi gibi durumlar kontrol edilir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          59
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q37",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 60.9,
+      "answer": "A/B testi, aynı sistemdeki iki değişik variantı karşılaştırmak için kullanılırken, back-to-back testi, hata tespiti amacıyla eski bir sistemle yeni bir sistem arasında karşılaştırma yapar [1]. A/B testi, test oracle sorunu için bir çözüm olarak, eski sistem bir kısmi oracle olarak kullanılırken, back-to-back testi, hata tespiti amacıyla eski bir sistemle yeni bir sistem arasında karşılaştırma yapar [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          68
+        ],
+        [
+          "doc1.pdf",
+          72
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q38",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 56.6,
+      "answer": "The provided documents do not contain information regarding the passing score for the CT-AI exam.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q39",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 63.9,
+      "answer": "The provided documents do not contain information regarding the cost of the CT-AI certification exam.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 48.9,
+      "answer": "The provided documents do not contain information on how to fine-tune a large language model with LoRA.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q41",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 74.8,
+      "answer": "The provided documents do not contain any information about vector databases or their recommendations for retrieval-augmented generation.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q42",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 68.2,
+      "answer": "The provided documents do not contain information about the accuracy GPT-4 reached on the MMLU benchmark.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q43",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 134.0,
+      "answer": "The provided documents do not contain information about the capital of Australia.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q44",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 100.0,
+      "answer": "Kubernetes'te bir pod yeniden başlatmak için genellikle pod'un etiketlerine veya etiketlerine göre bir işlem başlatılır [1]. Ancak, verilen metinlerde bu işlemi gerçekleştiren özel bir komut veya adımlar açıklanmamıştır.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 2,
+      "cited": [
+        [
+          "doc2.pdf",
+          17
+        ]
+      ],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q45",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 69.2,
+      "answer": "Verilen belgelerde sertifikalı bir yapay zeka test uzmanının ortalama maaş bilgisi yer almıyor.",
+      "refused": true,
+      "regex_refused": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d2q01",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 41.6,
+      "answer": "Data for the 2022 CODATA adjustment was taken into account up to midnight, December 31, 2022 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          2
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q02",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 40.8,
+      "answer": "The Committee on Data of the International Science Council recommends the CODATA values of the fundamental constants.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q03",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 80.1,
+      "answer": "The 2022 CODATA recommended value of the Newtonian constant of gravitation is 6.67430(15) × 10⁻¹¹ m³ kg⁻¹ s⁻². This value is presented in Table XXXII on page 44 [1], and the text in Section XV.A on page 41 [2] confirms that the 2022 value is the same as the 2018 value because no new data were available and the same expansion factor was applied. The text on page 56 [4] further supports this by stating that the 2022 value is identical to the 2018 value.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ],
+        [
+          "doc2.pdf",
+          41
+        ],
+        [
+          "doc2.pdf",
+          56
+        ]
+      ],
+      "retrieved_gold": false,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.8333333333333334
+    },
+    {
+      "id": "d2q04",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 83.6,
+      "answer": "The relative standard uncertainty of the vacuum magnetic permeability in the 2022 values is 1.6 × 10⁻¹⁰.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q05",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 97.4,
+      "answer": "Yes, the elementary charge is an exact constant in CODATA 2022, and its value is 1.602176634 × 10⁻¹⁹ C. This is stated in Table XXXII on page 44 [1] and confirmed in Table XXXIII on page 45 [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ],
+        [
+          "doc2.pdf",
+          45
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d2q06",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 44.1,
+      "answer": "The 2022 least-squares adjustment used 133 input data and 79 adjusted constants.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q07",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 71.3,
+      "answer": "An expansion factor of 2.5 was applied to the uncertainties of the data that determine the fine-structure constant. This is stated in the text on page 54 [1], which mentions that the expansion factor of 2.5 is applied to the uncertainties of the six items D1-D6 in Table XXV, which are related to the determination of α. The text on page 24 [2] and page 24 [3] further confirms that the expansion factor of 2.5 is applied to the uncertainties of the measurement input data (including the atom-recoil measurements) and the QED theory of the electron anomaly, which are used to determine the fine-structure constant. The text on page 52 [4] also explicitly states that the expansion factor of 2.5 is applied to the data related to the determination of α at the beginning of Table XXV (D1 through D6).",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          54
+        ],
+        [
+          "doc2.pdf",
+          24
+        ],
+        [
+          "doc2.pdf",
+          24
+        ],
+        [
+          "doc2.pdf",
+          52
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.8
+    },
+    {
+      "id": "d2q08",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 55.5,
+      "answer": "The final 2022 least-squares adjustment yielded a chi-squared value of 44.2. This is stated in the text on page 52 [1] and confirmed in the section on least-squares adjustment on page 5 [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          52
+        ],
+        [
+          "doc2.pdf",
+          5
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q09",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 91.3,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant, α⁻¹, is 137.035999178(21). This value is derived from the weighted mean of three experimental measurements, each multiplied by an expansion factor of 2.5, as detailed in the text [1]. The table in [2] also lists the 2022 recommended value for α as 137.035999178(21) in the column labeled \"u r (2022)\" for item 1.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          54
+        ],
+        [
+          "doc2.pdf",
+          52
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d2q10",
+      "type": "paraphrase",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 53.5,
+      "answer": "The proton and deuteron radii are known more precisely now because the 2022 adjustment incorporated new and more accurate hydrogen and deuterium spectroscopic data, along with improved muonic atom theory, while excluding less precise scattering data [2][3]. The inclusion of muonic hydrogen and deuterium Lamb-shift measurements, which have smaller uncertainties than scattering data, also contributed to the improved precision [4].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          3
+        ],
+        [
+          "doc2.pdf",
+          21
+        ],
+        [
+          "doc2.pdf",
+          3
+        ]
+      ],
+      "retrieved_gold": false,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q11",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 97.8,
+      "answer": "Codata 2022'ye göre boşlukta ışık hızının değeri 299 792 458 m/s'tir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q12",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 80.7,
+      "answer": "2022 ayarlamasında hafif çekirdeklerin bağıl atom kütleleri, 2020 Atomic Mass Data Center (AMDC) veri setinden alınan ve belirli bir hata payı ile verilen ölçümlerle belirlendi [2]. Bu veriler, özellikle 28Si, 87Rb ve 133Cs gibi atomların bağıl atom kütleleri için kullanıldı [3]. Ayrıca, bu verilerin bazıları, 2022 ayarlamasında kullanılan gözlemlerle ilişkili olarak, 2020 yılında yapılan bir deneyin sonucu olarak da belirlendi [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          56
+        ],
+        [
+          "doc2.pdf",
+          5
+        ],
+        [
+          "doc2.pdf",
+          4
+        ]
+      ],
+      "retrieved_gold": false,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": 0.3333333333333333
+    },
+    {
+      "id": "d2u01",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 95.5,
+      "answer": "The provided documents do not contain information about the half-life of carbon-14.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d2u02",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 74.6,
+      "answer": "The provided documents do not contain any information on how to test machine learning models against the CODATA constants.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3q01",
+      "type": "factual",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 33.4,
+      "answer": "The Summer Study behind Space Research: Directions for the Future was held at Woods Hole during June and July, 1965.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q02",
+      "type": "factual",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 35.0,
+      "answer": "The Optical Astronomy Working Group recommended a space telescope with a resolution corresponding to an aperture of at least 120 inches [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          4
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q03",
+      "type": "table",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 38.8,
+      "answer": "The launch on Saturn V is planned for the calendar year 1979, as indicated in the table on page 21 [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          8
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q04",
+      "type": "table",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 81.3,
+      "answer": "The photographic emulsion that matches the Airy disk for an f/30 beam is IIa-O, which has a resolving power of 50-70 lines/mm [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          9
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q05",
+      "type": "table",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 41.6,
+      "answer": "According to Table 1, the spatial resolution of a ground-based telescope is limited to 1 sec of arc by seeing, regardless of aperture [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          15
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.3333333333333333
+    },
+    {
+      "id": "d3q06",
+      "type": "figure",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 47.3,
+      "answer": "The solar features marked as resolution limits in the figure are granulation, supergranulation, the largest sun spots, and the sun.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q07",
+      "type": "figure",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 38.7,
+      "answer": "The summary figure of observational x-ray data shows that the resolved sources are located close to the galactic plane, as indicated by their proximity to the Galactic Equator [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          29
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q08",
+      "type": "figure",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 44.2,
+      "answer": "The cosmic gamma-ray flux data is fitted with an empirical inverse-square law, which is mathematically represented as N(E)dE ∝ E^-2 [1]. This relationship is also described in the text as the differential number spectrum following an inverse-square law [2].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          31
+        ],
+        [
+          "doc3_sample.pdf",
+          30
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09",
+      "type": "figure",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 72.5,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are the hyperboloid and the paraboloid. This is shown in Figure 4 on page 149, which labels these two curved surfaces in the schematic diagram [1]. The text on the same page also refers to these shapes in the context of the optical principles [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          33
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d3q10",
+      "type": "table",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 38.5,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "id": "d3q11",
+      "type": "table",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 72.9,
+      "answer": "The Doppler shift of a returned radar signal provides information on planetary radii, movements of the plasma envelope, and propagation within the planetary atmosphere [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          24
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q12",
+      "type": "factual",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 49.5,
+      "answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q13",
+      "type": "paraphrase",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 38.6,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are complementary and together they yield knowledge greater than what either could achieve alone [1]. The text emphasizes that space and ground-based astronomy are partners, not competitors [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          11
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q14",
+      "type": "paraphrase",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 42.3,
+      "answer": "A space radio telescope for very low frequencies could usefully get to an aperture of the order of 20 km. Larger apertures are limited by effects due to irregularities in the interplanetary medium, which become the factor that limits the resolving power of the telescope [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          20
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q15",
+      "type": "turkish",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 50.3,
+      "answer": "X-ışını kaynağının 1-10 Å bölgesindeki akısı, sakin Güneş'inkiyle kıyaslandığında yaklaşık onda biridir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16",
+      "type": "turkish",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 38.8,
+      "answer": "Fizik çalışma grubu uzay ortamının (1) düşük sıcaklık, (2) düşük basınç, (3) zayıf manyetik alan ve (4) sıfır-gravity alan gibi temel özelliklerini not etti [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          34
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q17",
+      "type": "turkish",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 59.3,
+      "answer": "Güneş'in manyetik aktivite döngüsü yaklaşık 22 yıl, güneş lekesi döngüsü ise yaklaşık 11 yıldır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3_sample.pdf",
+          14
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q18",
+      "type": "multi_page",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 35.9,
+      "answer": "The preliminary design studies are planned for 1967, and the completed prototype is planned for 1976.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19",
+      "type": "multi_page",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 33.9,
+      "answer": "The high-resolution broad-band antenna described in Recommendation 3 should be used in space within about ten years, and the initial design study should last for perhaps two years.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20",
+      "type": "factual",
+      "document": "doc3_sample.pdf",
+      "answerable": true,
+      "latency_s": 56.8,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation.",
+      "refused": false,
+      "regex_refused": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": true,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.8
+    },
+    {
+      "id": "d3u01",
+      "type": "unanswerable",
+      "document": "doc3_sample.pdf",
+      "answerable": false,
+      "latency_s": 54.4,
+      "answer": "The provided documents do not contain any information regarding the specific budget amount allocated by NASA for building the Large Orbital Telescope.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u02",
+      "type": "unanswerable",
+      "document": "doc3_sample.pdf",
+      "answerable": false,
+      "latency_s": 59.4,
+      "answer": "The documents do not contain information about the launch date of the Hubble Space Telescope.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03",
+      "type": "unanswerable",
+      "document": "doc3_sample.pdf",
+      "answerable": false,
+      "latency_s": 124.3,
+      "answer": "Verilen belgelerde pulsarların keşfi hakkında hiçbir bilgi verilmemiştir.",
+      "refused": true,
+      "regex_refused": true,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    }
+  ]
+}
