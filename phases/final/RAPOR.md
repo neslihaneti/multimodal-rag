@@ -62,3 +62,7 @@ Etiketlerle final sadakati 0.94 → 0.958. Yargıcın correctness kararlarıyla 
 Final holdout setinde retrieval (6/6), cevap kalitesi (11/11) ve yargıç güvenilirliği (3/3) ölçütleri geçti; TTFT p50
 15.2 sn kullanıcı kararıyla kabul edildi. Birim + entegrasyon 80/80, e2e 25/25 (Faz 7). **Başarı tanımı karşılandı**,
 tek açık madde: GitHub'a gönderim ve CI (§4), kullanıcı onayı bekliyor.
+
+## CI (6 Kasım 2026)
+
+Depo GitHub'a gönderildi (https://github.com/neslihaneti/multimodal-rag). GitHub Actions `tests` iş akışı yeşil: 83 test geçti, 2 modül atlandı (gerçek model/Docling gerektirenler). BASARI_TANIMI §4'ün son maddesi de karşılandı.

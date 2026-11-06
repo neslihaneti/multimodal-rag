@@ -25,6 +25,7 @@ karşılanana kadar devam et. doc3'ün tamamı en sonda, final testten önce bir
 
 ## Sıradaki adım
 
+**EN GÜNCEL 32 (6 Kas):** GitHub'a gönderildi (kullanıcı onayı): https://github.com/neslihaneti/multimodal-rag (public). CI yeşil: 83 geçti, 2 modül atlandı (yerel 89: Docling/model gerektirenler CI'da atlanıyor). Portfolyo GitHub Pages: https://neslihaneti.github.io/multimodal-rag/ (docs/). Commit kimliği noreply e-posta. BASARI_TANIMI §4 CI maddesi karşılandı.
 **EN GÜNCEL 31 (6 Kas): PROJE BİTTİ.** Kod Faz 9'a döndürüldü (kullanıcı kararı): cevap dili var, çeviri yok. Faz 10 kodu `phases/faz-10/rag_faz10.py`. Birim+entegrasyon 89 geçti, prompt_sha 2856d18117b9 = Faz 9. Resmi sonuç: final holdout (Faz 8b). Açık: GitHub push/CI (onay yok), docs taslaklarının kullanıcı incelemesi.
 **EN GÜNCEL 30 (6 Kas): PROJE KULLANICI İSTEĞİYLE DURDURULDU.** Kod Faz 10 haliyle (çeviri dahil) bırakıldı. Uygulanmayan öneri: birleşik adaylara tek rerank (Türkçe TTFT için). Taslaklar: docs/MODEL_CARD.md, docs/NIST_AI_RMF.md (kullanıcı gözden geçirecek). GitHub push/CI yapılmadı (onay yok). Final holdout sonucu (Faz 8b ayarlarıyla) resmi sonuç olarak geçerli.
 **EN GÜNCEL 29 (6 Kas):** Faz 10 ölçüldü `phases/faz-10/RAPOR.md`: correct 0.99, Türkçe 12/12, ama p95 75.3 ❌, TTFT p50 17.1 ❌ (İngilizce cevaplar 67/67 aynı → onların yavaşlığı ortam; Türkçe TTFT +9 sn gerçek: iki retrieve+çift rerank). KULLANICIYA ÖNERİ: adayları birleştir, tek rerank (İngilizce çeviriye göre). docs/MODEL_CARD.md + docs/NIST_AI_RMF.md taslak yazıldı (Faz 10 sonucu bekliyor).
