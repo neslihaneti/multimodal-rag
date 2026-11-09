@@ -1,4 +1,4 @@
-"""N-gram repeat block for answers (phases/faz-5b/RAPOR.md)."""
+"""N-gram repeat block for answers (phases/phase-5b/REPORT.md)."""
 from transformers import LogitsProcessor
 
 

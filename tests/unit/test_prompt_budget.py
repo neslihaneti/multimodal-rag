@@ -1,4 +1,4 @@
-"""rag.fit_prompt keeps the answer prompt under PROMPT_TOKEN_BUDGET (the generator degrades on long prompts, phases/faz-2)."""
+"""rag.fit_prompt keeps the answer prompt under PROMPT_TOKEN_BUDGET (the generator degrades on long prompts, phases/phase-2)."""
 import pytest
 from PIL import Image
 

@@ -1,6 +1,6 @@
 """Eager attention computed one block of query rows at a time, registered as attn_implementation="blocked_eager".
 
-On MPS the generator runs eager attention (SDPA there produces garbage on long prompts, phases/ZORLUKLAR.md Z10). Eager
+On MPS the generator runs eager attention (SDPA there produces garbage on long prompts, phases/CHALLENGES.md Z10). Eager
 builds the whole heads × queries × keys matrix at once: for a 9k-token prompt that is 10+ GB per layer and pushed the
 evaluation process to 63 GB. Each row's softmax needs only its own row, so splitting the queries into blocks gives the
 same output while only a block × keys slice is in memory.
@@ -28,5 +28,5 @@ def blocked_eager_attention(module, query, key, value, attention_mask, scaling, 
 
 AttentionInterface.register("blocked_eager", blocked_eager_attention)
 # Without a mask function of the same name transformers builds no mask at all, so the prompt was attended without the
-# causal mask and the answers came out garbage (phases/ZORLUKLAR.md Z12)
+# causal mask and the answers came out garbage (phases/CHALLENGES.md Z12)
 AttentionMaskInterface.register("blocked_eager", eager_mask)

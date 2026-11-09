@@ -33,13 +33,13 @@ DTYPE = torch.float32 if DEVICE == "cpu" else torch.bfloat16
 OCR_MODEL_NAME = "datalab-to/chandra-ocr-2"  # the checkpoint chandra-ocr 0.2 prompts are written for
 GEN_MODEL_NAME = os.getenv("GEN_MODEL", "Qwen/Qwen3-VL-4B-Instruct")
 # On MPS, eager attention builds the full attention matrix and segfaults on long prompts (13.3k tokens crashed the
-# process); prompts over this limit are refused instead (phases/faz-2/RAPOR.md)
+# process); prompts over this limit are refused instead (phases/phase-2/REPORT.md)
 MAX_INPUT_TOKENS = int(os.getenv("MAX_INPUT_TOKENS", "10000"))
 EMBED_MODEL_NAME = "BAAI/bge-m3"
 RERANK_MODEL_NAME = "BAAI/bge-reranker-v2-m3"
 EMBED_DIM = 1024
 # MPS compiles and keeps a graph for every new input shape: with a different length per batch a retrieval evaluation
-# grew by 2 GB per question (73 GB after 30). Padding to a multiple of this keeps the shapes few (phases/ZORLUKLAR.md Z13)
+# grew by 2 GB per question (73 GB after 30). Padding to a multiple of this keeps the shapes few (phases/CHALLENGES.md Z13)
 PAD_MULTIPLE = 128
 # Larger pages make Chandra return a blank page or hallucinate on MPS (tested: 2200 ok, 2800 fails)
 OCR_MAX_SIDE = int(os.getenv("OCR_MAX_SIDE", "2000"))

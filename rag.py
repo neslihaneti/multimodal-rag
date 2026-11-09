@@ -9,22 +9,22 @@ from model import count_tokens, embed_texts, generate, generate_stream, rerank_s
 CANDIDATES = 40         # hybrid search results passed to the reranker
 TOP_K = 6               # chunks given to the answer model
 MAX_SEARCH_ROUNDS = 3   # agentic search: first search + up to 2 follow-up searches
-MAX_PAGE_IMAGES = 2  # 1 image was 1 s faster but answered q24 and q29 wrongly (a repetition loop); 3 is 2 s slower (phases/faz-8)
-IMAGE_MAX_SIDE = 896  # 1280 cost ~1.170 prompt tokens per page and the same answers (phases/faz-6a)
+MAX_PAGE_IMAGES = 2  # 1 image was 1 s faster but answered q24 and q29 wrongly (a repetition loop); 3 is 2 s slower (phases/phase-8)
+IMAGE_MAX_SIDE = 896  # 1280 cost ~1.170 prompt tokens per page and the same answers (phases/phase-6a)
 # Prompts are kept under this many tokens: on MPS the generator crashes on long prompts (model.MAX_INPUT_TOKENS)
 PROMPT_TOKEN_BUDGET = int(os.getenv("PROMPT_TOKEN_BUDGET", "9000"))
 MIN_CHUNKS = 3
 # Characters held back at most while waiting for the end of the first sentence: a refusal shows within them
-# (the same decisions as on the whole first sentence for all 82 dev answers; phases/faz-8)
+# (the same decisions as on the whole first sentence for all 82 dev answers; phases/phase-8)
 FIRST_SENTENCE_MAX = 60
 # When the best reranked chunk scores at least this much, the results count as enough without asking the model
-# (None: always ask). Every answerable development question already stopped after one search (phases/faz-6)
+# (None: always ask). Every answerable development question already stopped after one search (phases/phase-6)
 ENOUGH_SCORE = 0.5  # answerable dev questions: 62 of 69 score above it; unanswerable ones at most 0.34
 
 NOT_FOUND = re.compile(r"bilgi (verilmemiş|bulunmamakta|bulunmuyor|yer almamakta|yer almıyor|yok)|belirtilmemiş|not (mentioned|found|contain|provide)|no information", re.IGNORECASE)
 
 # The model's refusal is replaced by a fixed sentence without citations: the prompt alone did not stop it from citing
-# excerpts while refusing, nor from refusing a Turkish question in English (phases/faz-5b)
+# excerpts while refusing, nor from refusing a Turkish question in English (phases/phase-5b)
 REFUSAL = {"tr": "Belgelerde bu konuda bilgi yok.", "en": "The documents do not contain information about this."}
 # No re.IGNORECASE: with it "ı" also matches "i" and "I", and every English question looks Turkish
 TURKISH = re.compile(r"[çğıöşüÇĞİÖŞÜ]|\b(?:[Nn]e|[Nn]eler|[Nn]edir|[Hh]angi|[Kk]aç|[Nn]asıl|[Nn]eden|[Nn]için|m[iıuü]|ve|ile|için|bu|bir|göre|edilir)\b")
@@ -62,7 +62,7 @@ def is_refusal(text):
     first_sentence = re.split(r"(?<=[.!?])\s", text.strip(), maxsplit=1)[0]
     return bool(NOT_FOUND.search(first_sentence))
 
-# Extra model.generate options for answers only (search decisions and the judge are left as they are; phases/faz-5b)
+# Extra model.generate options for answers only (search decisions and the judge are left as they are; phases/phase-5b)
 ANSWER_OPTIONS = {}
 
 REWRITE_PROMPT = """Conversation so far:

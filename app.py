@@ -86,8 +86,8 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
         show_sources(message.get("sources"))
 
-# RAG akisi: soru sohbet gecmisine gore yeniden yaziliyor, hibrit arama + reranker ile parcalar bulunuyor,
-# model gerekirse yeni sorguyla tekrar arıyor, sonra parcalar ve sayfa goruntuleriyle tek seferde cevap uretiliyor.
+# RAG flow: the question is rewritten using the chat history, hybrid search + reranker find the chunks,
+# the model searches again with a new query if needed, then answers from the chunks and page images in one pass.
 if prompt := st.chat_input("Ask a question about your documents"):
     history = [(m["role"], m["content"]) for m in st.session_state.messages]
     st.session_state.messages.append({"role": "user", "content": prompt})

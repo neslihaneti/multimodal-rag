@@ -34,7 +34,7 @@ from model import embed_texts, generate
 GOLDEN = os.path.join(os.path.dirname(os.path.abspath(__file__)), "eval", "golden_dev.jsonl")
 REPORT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports")
 K = rag.TOP_K
-MIN_N = 8  # below this a per-type rate is informational only (phases/BASARI_TANIMI.md)
+MIN_N = 8  # below this a per-type rate is informational only (phases/SUCCESS_CRITERIA.md)
 
 CORRECTNESS_PROMPT = """Question: {question}
 Expected answer: {expected}
@@ -212,7 +212,7 @@ def cited_chunks(text, chunks):
 def answer_sentences(text):
     """(sentence without citation markers, cited excerpt numbers) for each sentence of an answer.
     The answer's own sentences are the claims: an LLM asked to split a one-sentence answer into statements invented
-    new ones from its own knowledge, which then counted as unsupported (phases/faz-j/RAPOR.md)."""
+    new ones from its own knowledge, which then counted as unsupported (phases/phase-j/REPORT.md)."""
     # A sentence the model repeated (a repetition loop) is one claim: its citations are merged
     sentences = {}
     for match in SENTENCE.finditer(text):
@@ -283,7 +283,7 @@ def answers(args):
         row = {
             "id": item["id"], "type": item["type"], "document": item["document"], "answerable": bool(item["pages"]), "latency_s": round(latency, 1), "ttft_s": round(ttft, 1),
             "answer": text, "refused": refused, "regex_refused": bool(rag.NOT_FOUND.search(text)),
-            # The model's text before rag.answer replaced a refusal; informational (phases/BASARI_TANIMI.md)
+            # The model's text before rag.answer replaced a refusal; informational (phases/SUCCESS_CRITERIA.md)
             "raw_answer": result.get("raw_answer", text), "raw_cited": bool(cited_chunks(result.get("raw_answer", text), chunks)),
             "search_rounds": len(result["queries"]), "cited": [(c["file_name"], c["page_number"]) for c in cited],
             "retrieved_gold": any((c["file_name"], c["page_number"]) in gold for c in chunks),

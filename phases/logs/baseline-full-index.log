@@ -1,4 +1,4 @@
-=== 2026-11-05 07:49:42 baseline: doc1+doc2+doc3 full, Faz 5c ===
+=== 2026-11-05 07:49:42 baseline: doc1+doc2+doc3 full, Phase 5c ===
 Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 10602.29it/s]
 Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:24, 15.44it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 670.06it/s]
 [1/82] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  When was the ISO/IEC JTC 1/SC42 subcommittee on AI set up?

@@ -411,7 +411,7 @@ telescope are a paraboloid and a hyperboloid [1]."</span>
           <span class="section-kicker">BENCHMARKS &amp; ITERATIVE PHASES</span>
           <h2>Phase-by-phase engineering progression</h2>
           <p>
-            Every improvement is isolated into a dedicated phase with dated Markdown/JSON reports committed under <code>phases/faz-N/reports/</code>.
+            Every improvement is isolated into a dedicated phase with dated Markdown/JSON reports committed under <code>phases/phase-N/reports/</code>.
             Final success is declared only on a separate, unseen holdout set.
           </p>
         </div>
@@ -519,7 +519,7 @@ telescope are a paraboloid and a hyperboloid [1]."</span>
         <div class="table-wrap">
           <div class="table-header-bar">
             <h3>End-to-End Answer Quality, Citation &amp; Latency Progression (Phases 2&ndash;8b &rarr; Final Unseen Holdout)</h3>
-            <span class="table-meta">Reports: Faz 2 &bull; Faz 5 &bull; Full Baseline &bull; Faz 8b &bull; Final Holdout (20261105-1952)</span>
+            <span class="table-meta">Reports: Phase 2 &bull; Phase 5 &bull; Full Baseline &bull; Phase 8b &bull; Final Holdout (20261105-1952)</span>
           </div>
           <table class="data-table">
             <thead>
@@ -712,23 +712,23 @@ telescope are a paraboloid and a hyperboloid [1]."</span>
               <!-- Pareto Curve Path -->
               <polyline points="435,90 385,72 285,52 245,60 140,125" fill="none" stroke="#c084fc" stroke-width="2.2"/>
 
-              <!-- Point 1: Faz 2 (49.9s, 0.91) -->
+              <!-- Point 1: Phase 2 (49.9s, 0.91) -->
               <circle cx="435" cy="90" r="5" fill="#fb7185"/>
-              <text x="425" y="110" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Faz 2 (49.9s, 0.91)</text>
+              <text x="425" y="110" fill="#cbb8dc" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">Phase 2 (49.9s, 0.91)</text>
 
               <!-- Point 2: Baseline Full 1280px (31.4s, 0.97) -->
               <circle cx="385" cy="72" r="5" fill="#fbbf24"/>
               <text x="415" y="65" fill="#fde68a" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">1280px (31.4s, 0.97)</text>
 
-              <!-- Point 3: Faz 7 896px 3 Imgs (19.9s, 0.99) -->
+              <!-- Point 3: Phase 7 896px 3 Imgs (19.9s, 0.99) -->
               <circle cx="285" cy="52" r="6" fill="#34d399"/>
-              <text x="285" y="38" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">Faz 7: 3 Imgs (19.9s, 0.99)</text>
+              <text x="285" y="38" fill="#34d399" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">Phase 7: 3 Imgs (19.9s, 0.99)</text>
 
-              <!-- Point 4: Faz 8b 2 Imgs Pareto Optimum (17.8s, 0.97) -->
+              <!-- Point 4: Phase 8b 2 Imgs Pareto Optimum (17.8s, 0.97) -->
               <circle cx="245" cy="60" r="7" fill="#34d399" stroke="#ffffff" stroke-width="2"/>
               <text x="240" y="80" fill="#ffffff" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" text-anchor="middle">&starf; Pareto: 2 Imgs (17.8s, 0.97)</text>
 
-              <!-- Point 5: Faz 8 1 Img (14.6s, 0.96 - Rejected) -->
+              <!-- Point 5: Phase 8 1 Img (14.6s, 0.96 - Rejected) -->
               <circle cx="140" cy="125" r="5.5" fill="#fb7185"/>
               <text x="145" y="146" fill="#fb7185" font-family="JetBrains Mono, monospace" font-size="9" text-anchor="middle">1 Img (14.6s, 0.96 &mdash; q24/q29 fail)</text>
             </svg>
@@ -757,7 +757,7 @@ telescope are a paraboloid and a hyperboloid [1]."</span>
             <ul class="pm-list">
               <li><strong>Symptom:</strong> On dense tables (<code>q33, q36, q37, d2q10</code>), the 4B VLM occasionally entered a sentence repetition loop.</li>
               <li><strong>Failed Hypothesis:</strong> Adding standard <code>no_repeat_ngram_size=5</code> or <code>repetition_penalty=1.05</code> during generation.</li>
-              <li><strong>Root Cause Discovered:</strong> Controlled sweeps (<code>phases/faz-5b/RAPOR.md</code>) proved HF’s n-gram filter blocks n-grams appearing in the <em>input prompt</em> too. When a question and source excerpt shared a 5-gram, the model was forbidden from repeating the exact year or number, silently mutating <code>2017 &rarr; 2020</code> (<code>q01</code>) and <code>0.5 MeV &rarr; 0.7 MeV</code> (<code>d2q05</code>).</li>
+              <li><strong>Root Cause Discovered:</strong> Controlled sweeps (<code>phases/phase-5b/REPORT.md</code>) proved HF’s n-gram filter blocks n-grams appearing in the <em>input prompt</em> too. When a question and source excerpt shared a 5-gram, the model was forbidden from repeating the exact year or number, silently mutating <code>2017 &rarr; 2020</code> (<code>q01</code>) and <code>0.5 MeV &rarr; 0.7 MeV</code> (<code>d2q05</code>).</li>
               <li><strong>Engineering Resolution:</strong> Rejected all decoding penalties. Eliminated loops at the root by splitting 6,104-char tables into <code>&le;1,500</code>-char chunks with repeated headers (Phase 5) and deduplicating identical sentences in the judge.</li>
             </ul>
           </article>

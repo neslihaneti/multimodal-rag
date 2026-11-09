@@ -1,5 +1,5 @@
 """The judge (real model) must count rag.answer's fixed refusal sentences as refusals, in both languages
-(phases/faz-5b): otherwise unanswerable_refused would drop although the system refused."""
+(phases/phase-5b): otherwise unanswerable_refused would drop although the system refused."""
 import json
 import os
 

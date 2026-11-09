@@ -149,7 +149,7 @@ def list_documents():
 
 
 # Question words that match nearly every chunk; left in, they push long chunks to the top of keyword search
-# (keyword Recall@6 0.29 with them, 0.86 without; phases/faz-4/RAPOR.md)
+# (keyword Recall@6 0.29 with them, 0.86 without; phases/phase-4/REPORT.md)
 STOPWORDS = frozenset("""
 a an the and or of to in on for by with from at as is are was were be been being it its this that these those what which
 who whom whose when where why how does do did can could should would will shall may might must has have had not no than

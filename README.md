@@ -22,7 +22,7 @@ from. Everything runs on one machine: no document text leaves it.
 ## Results
 
 Measured on a sealed holdout set of 72 questions, run once after all development
-([report](phases/final/RAPOR.md)):
+([report](phases/final/REPORT.md)):
 
 | | Result |
 |---|---|
@@ -68,5 +68,4 @@ python3 evaluate.py calibrate <run>-judgments.jsonl   # judge vs. human labels
 ```
 
 Details: [tests/README.md](tests/README.md). Every change was made as a measured phase with its own report in
-[`phases/`](phases/README.md); difficulties and lessons are logged in [`phases/ZORLUKLAR.md`](phases/ZORLUKLAR.md)
-(phase reports are in Turkish).
+[`phases/`](phases/README.md); difficulties and lessons are logged in [`phases/CHALLENGES.md`](phases/CHALLENGES.md).

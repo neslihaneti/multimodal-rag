@@ -12,14 +12,14 @@ not apply to a single-user local tool.
 
 | Function | What the outcome asks for | Evidence in this project | Status | Gap |
 |---|---|---|---|---|
-| GOVERN | Policies and processes for AI risk, documented and in place | Success criteria and thresholds agreed in writing before the work (`phases/BASARI_TANIMI.md`); rule that model changes are proposed and approved before they start; non-regression rule (> 1 question drop must be justified or rolled back) | Partial | No organizational policy, risk tolerance statement or review board |
-| GOVERN | Roles, accountability, training | One owner decides; each phase has a dated report (`phases/faz-N/RAPOR.md`) and a lessons log (`phases/ZORLUKLAR.md`) | Partial | No separation between developer and approver beyond the owner |
+| GOVERN | Policies and processes for AI risk, documented and in place | Success criteria and thresholds agreed in writing before the work (`phases/SUCCESS_CRITERIA.md`); rule that model changes are proposed and approved before they start; non-regression rule (> 1 question drop must be justified or rolled back) | Partial | No organizational policy, risk tolerance statement or review board |
+| GOVERN | Roles, accountability, training | One owner decides; each phase has a dated report (`phases/phase-N/REPORT.md`) and a lessons log (`phases/CHALLENGES.md`) | Partial | No separation between developer and approver beyond the owner |
 | GOVERN | Third-party models and data | Model names recorded in every evaluation report | Partial | No license or model-provenance review written down |
 | MAP | Context, intended use and users established | `docs/MODEL_CARD.md`: purpose, intended use, out-of-scope uses, languages | Met | |
 | MAP | Capabilities, limits and risks of the AI identified | Limitations in the model card; failure analyses in phase reports (sdpa collapse, repetition loops, n-gram blocking changing numbers) | Met | |
 | MAP | Impacts on individuals and groups | Turkish vs. English gap measured and reported | Partial | No assessment beyond language |
 | MEASURE | Methods and metrics chosen and documented | Retrieval (Recall@k, MRR), answer (correctness, faithfulness, citation precision, refusals), latency and time to first text; `evaluate.py` | Met | |
-| MEASURE | Evaluated before deployment, on data not used for development | Sealed 72-question holdout, run once (`phases/final/RAPOR.md`) | Met | |
+| MEASURE | Evaluated before deployment, on data not used for development | Sealed 72-question holdout, run once (`phases/final/REPORT.md`) | Met | |
 | MEASURE | Measurement validity | LLM judge checked against human labels on stratified samples, Cohen's κ per decision type, three rounds | Met | Labels from one person: no inter-annotator agreement |
 | MEASURE | Feedback and tracking over time | Every run versioned: golden set, prompt and judge hashes, settings | Partial | No monitoring after deployment |
 | MANAGE | Risks prioritized and treated | Refusal rewritten in code; prompt token budget; memory guard; injection-safe context summaries | Met | |
@@ -30,7 +30,7 @@ not apply to a single-user local tool.
 
 | GAI risk | How it shows up in a document RAG system | Control and evidence | Status |
 |---|---|---|---|
-| Confabulation | Answering beyond the excerpts or inventing facts | Prompt limited to excerpts and page images; claim-level faithfulness 0.94 on the holdout (0.958 human-checked); unanswerable questions refused 15 / 15; false refusals 0.02. Case: HF `no_repeat_ngram_size` (tried against repetition loops) also blocks n-grams of the prompt, so the model silently changed copied numbers (2017 → 2020, 0.5 → 0.7 MeV); decoding penalties were rejected and loops reduced by re-chunking instead (`phases/faz-5b/RAPOR.md`) | Met |
+| Confabulation | Answering beyond the excerpts or inventing facts | Prompt limited to excerpts and page images; claim-level faithfulness 0.94 on the holdout (0.958 human-checked); unanswerable questions refused 15 / 15; false refusals 0.02. Case: HF `no_repeat_ngram_size` (tried against repetition loops) also blocks n-grams of the prompt, so the model silently changed copied numbers (2017 → 2020, 0.5 → 0.7 MeV); decoding penalties were rejected and loops reduced by re-chunking instead (`phases/phase-5b/REPORT.md`) | Met |
 | Information integrity | Users cannot check where an answer came from | Every sentence cited; citation precision 0.87; gold page cited 0.95; source pages shown in the UI | Met |
 | Information security | Instructions hidden in indexed documents (indirect prompt injection) | End-to-end test with hidden white text and a fake note to AI systems: no canary or URL in context or answer | Met (one attack type tested) |
 | Data privacy | Documents sent to third parties | Everything runs locally; no external API; credentials in `.env`, outside version control | Met |

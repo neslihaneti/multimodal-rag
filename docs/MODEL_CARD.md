@@ -33,7 +33,7 @@ retrieval-augmented system, not a newly trained model: no model was trained or f
 
 Golden sets written in advance. The development set (82 questions on 3 documents) was used for every change; the
 final holdout set (72 questions, written by the project owner) was opened once, after all changes, and no setting was
-changed on its results. Success thresholds were agreed before the work began (`phases/BASARI_TANIMI.md`).
+changed on its results. Success thresholds were agreed before the work began (`phases/SUCCESS_CRITERIA.md`).
 
 Documents: an ISTQB AI-testing syllabus (99 pages, born-digital), the CODATA 2022 fundamental constants report
 (62 pages, equations and tables), a 1966 scanned space research report (200 pages, OCR).
@@ -92,7 +92,7 @@ Measured on the development set only; the holdout was not run again.
   questions answered in English 1 → 0, correctness unchanged (0.97).
 - **Phase 10 (tried, rolled back):** searching Turkish queries also with an English translation raised dev
   correctness to 0.99 (Turkish 12 / 12) but made Turkish questions ~9 s slower to first text, over the latency
-  thresholds. The released code is Phase 9. Details: `phases/faz-10/RAPOR.md`.
+  thresholds. The released code is Phase 9. Details: `phases/phase-10/REPORT.md`.
 
 ## Reproducing
 
