@@ -1,0 +1,102 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 8911.88it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5594.40it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 9167.88it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<06:28,  1.83it/s]Loading weights:   2%|▏         | 14/713 [00:00<00:24, 28.29it/s]Loading weights:   4%|▎         | 25/713 [00:00<00:14, 46.90it/s]Loading weights:   5%|▍         | 35/713 [00:00<00:11, 59.01it/s]Loading weights:   7%|▋         | 47/713 [00:00<00:09, 72.91it/s]Loading weights:   8%|▊         | 58/713 [00:01<00:08, 81.17it/s]Loading weights:  10%|▉         | 69/713 [00:01<00:07, 87.13it/s]Loading weights:  11%|█         | 80/713 [00:01<00:06, 91.68it/s]Loading weights:  13%|█▎        | 91/713 [00:01<00:06, 94.81it/s]Loading weights:  14%|█▍        | 102/713 [00:01<00:06, 97.12it/s]Loading weights:  16%|█▌        | 113/713 [00:01<00:06, 99.49it/s]Loading weights:  18%|█▊        | 125/713 [00:01<00:05, 102.27it/s]Loading weights:  19%|█▉        | 136/713 [00:01<00:05, 103.32it/s]Loading weights:  21%|██        | 147/713 [00:01<00:05, 103.78it/s]Loading weights:  22%|██▏       | 158/713 [00:02<00:05, 104.38it/s]Loading weights:  24%|██▍       | 170/713 [00:02<00:05, 103.43it/s]Loading weights:  26%|██▌       | 185/713 [00:02<00:04, 114.05it/s]Loading weights:  28%|██▊       | 197/713 [00:02<00:04, 113.67it/s]Loading weights:  29%|██▉       | 209/713 [00:02<00:04, 109.31it/s]Loading weights:  31%|███▏      | 223/713 [00:02<00:04, 111.40it/s]Loading weights:  33%|███▎      | 235/713 [00:02<00:04, 105.12it/s]Loading weights:  35%|███▍      | 246/713 [00:02<00:04, 104.11it/s]Loading weights:  36%|███▌      | 257/713 [00:02<00:04, 103.31it/s]Loading weights:  38%|███▊      | 269/713 [00:03<00:04, 103.19it/s]Loading weights:  39%|███▉      | 280/713 [00:03<00:04, 103.25it/s]Loading weights:  41%|████      | 291/713 [00:03<00:04, 102.96it/s]Loading weights:  42%|████▏     | 302/713 [00:03<00:03, 102.97it/s]Loading weights:  44%|████▍     | 313/713 [00:03<00:03, 103.24it/s]Loading weights:  45%|████▌     | 324/713 [00:03<00:03, 102.79it/s]Loading weights:  47%|████▋     | 335/713 [00:03<00:03, 102.55it/s]Loading weights:  49%|████▊     | 346/713 [00:03<00:03, 103.13it/s]Loading weights:  50%|█████     | 357/713 [00:03<00:03, 102.74it/s]Loading weights:  52%|█████▏    | 368/713 [00:04<00:03, 103.92it/s]Loading weights:  53%|█████▎    | 379/713 [00:04<00:03, 105.30it/s]Loading weights:  55%|█████▌    | 394/713 [00:04<00:02, 117.22it/s]Loading weights:  67%|██████▋   | 478/713 [00:04<00:00, 327.37it/s]Loading weights:  81%|████████▏ | 581/713 [00:04<00:00, 531.28it/s]Loading weights:  95%|█████████▌| 680/713 [00:04<00:00, 662.45it/s]Loading weights: 100%|██████████| 713/713 [00:04<00:00, 153.76it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[1/52] q09__formal  17.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[2/52] q09__casual  11.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[3/52] q09__non_native  10.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[4/52] q09__typos  10.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[5/52] d2q09__formal  29.9s refused=False correct=True faith=0.0 cites=[('doc2.pdf', 2)]
+[6/52] d2q09__casual  41.9s refused=False correct=True faith=0.3333333333333333 cites=[('doc2.pdf', 2), ('doc2.pdf', 54), ('doc2.pdf', 45), ('doc2.pdf', 44)]
+[7/52] d2q09__non_native  26.4s refused=False correct=True faith=0.0 cites=[('doc2.pdf', 2)]
+[8/52] d2q09__typos  26.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45)]
+[9/52] d3q20__formal  15.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[10/52] d3q20__casual  18.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143), ('doc3.pdf', 144)]
+[11/52] d3q20__non_native  13.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[12/52] d3q20__typos  12.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[13/52] q23__formal  15.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[14/52] q23__casual  17.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26), ('doc1.pdf', 30)]
+[15/52] q23__non_native  15.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[16/52] q23__typos  14.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[17/52] d3q13__formal  11.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 40)]
+[18/52] d3q13__casual  16.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 40)]
+[19/52] d3q13__non_native  31.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 40), ('doc3.pdf', 63), ('doc3.pdf', 42), ('doc3.pdf', 43)]
+[20/52] d3q13__typos  26.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 40), ('doc3.pdf', 42), ('doc3.pdf', 43), ('doc3.pdf', 63)]
+[21/52] d3q10__formal  11.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[22/52] d3q10__casual  12.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[23/52] d3q10__non_native  11.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[24/52] d3q10__typos  11.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[25/52] d3q09__formal  19.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[26/52] d3q09__casual  13.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[27/52] d3q09__non_native  16.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[28/52] d3q09__typos  12.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[29/52] d3q19__formal  13.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[30/52] d3q19__casual  12.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[31/52] d3q19__non_native  13.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[32/52] d3q19__typos  12.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[33/52] q35__formal  26.1s refused=False correct=False faith=1.0 cites=[('doc1.pdf', 67), ('doc1.pdf', 67), ('doc1.pdf', 72)]
+[34/52] q35__casual  29.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[35/52] q35__no_diacritics  22.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[36/52] q35__typos  30.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67), ('doc1.pdf', 72)]
+[37/52] d3q16__formal  15.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[38/52] d3q16__casual  16.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[39/52] d3q16__no_diacritics  32.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[40/52] d3q16__typos  14.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[41/52] q40__formal  23.8s refused=True correct=- faith=None cites=[]
+[42/52] q40__casual  27.4s refused=True correct=- faith=None cites=[]
+[43/52] q40__non_native  22.5s refused=True correct=- faith=None cites=[]
+[44/52] q40__typos  20.9s refused=True correct=- faith=None cites=[]
+[45/52] d3u01__formal  29.6s refused=True correct=- faith=None cites=[]
+[46/52] d3u01__casual  29.5s refused=True correct=- faith=None cites=[]
+[47/52] d3u01__non_native  36.7s refused=True correct=- faith=None cites=[]
+[48/52] d3u01__typos  34.5s refused=True correct=- faith=None cites=[]
+[49/52] d3u03__formal  21.2s refused=True correct=- faith=None cites=[]
+[50/52] d3u03__casual  23.3s refused=True correct=- faith=None cites=[]
+[51/52] d3u03__no_diacritics  29.5s refused=True correct=- faith=None cites=[]
+[52/52] d3u03__typos  22.7s refused=True correct=- faith=None cites=[]
+
+## Summary
+
+| Metric | Value |
+|---|---|
+| answer_correctness | 0.97 |
+| faithfulness | 0.93 |
+| citation_precision | 0.83 |
+| cites_expected_page | 0.93 |
+| answers_without_citation | 0.00 |
+| false_refusals | 0.00 |
+| unanswerable_refused | 1.00 |
+| unanswerable_with_citation | 0.00 |
+| raw_unanswerable_with_citation | 0.00 |
+| mean_latency_s | 20.29 |
+| p50_latency_s | 17.20 |
+| p95_latency_s | 34.50 |
+| p50_ttft_s | 12.50 |
+| p95_ttft_s | 29.60 |
+
+Judge: the local generator model. Check it with `python evaluate.py calibrate <run>-judgments.jsonl` after labelling some rows.
+
+## By question type
+
+| Type (n) | correct | faithfulness | cites expected page |
+|---|---|---|---|
+| factual (12) | 1.00 | 0.78 | 0.75 |
+| figure (4) * | 1.00 | 1.00 | 1.00 |
+| multi_page (4) * | 1.00 | 1.00 | 1.00 |
+| paraphrase (8) | 1.00 | 1.00 | 1.00 |
+| table (4) * | 1.00 | 1.00 | 1.00 |
+| turkish (8) | 0.88 | 1.00 | 1.00 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## By document
+
+| Document (n) | correct | faithfulness | cites expected page | without citation | unanswerable refused |
+|---|---|---|---|---|---|
+| doc1.pdf (16) | 0.92 | 1.00 | 1.00 | 0.00 | 1.00 |
+| doc2.pdf (4) * | 1.00 | 0.33 | 0.25 | 0.00 | - |
+| doc3.pdf (32) | 1.00 | 1.00 | 1.00 | 0.00 | 1.00 |
+
+Report: /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-1628-answers.md
+Judge decisions to label: /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-1628-answers-judgments.jsonl (set "human" to true/false)

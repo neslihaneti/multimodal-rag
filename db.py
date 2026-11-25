@@ -18,6 +18,16 @@ def connect():
     return psycopg.connect(dbname=PG_DB, user=PG_USER, password=PG_PASS, host=PG_HOST, port=PG_PORT)
 
 
+# Turkish letters folded to ASCII on both sides of keyword search, so "Gunes dongusu" (typed on an English keyboard)
+# matches "Güneş döngüsü": without it the gold page of d3q17 fell from rank 1 to 27 (phases/phase-11/REPORT.md, finding B)
+FOLD_FROM, FOLD_TO = "çğıöşüâîûÇĞİÖŞÜÂÎÛ", "cgiosuaiuCGIOSUAIU"
+FOLD = str.maketrans(FOLD_FROM, FOLD_TO)
+
+
+def fold(text):
+    return text.translate(FOLD)
+
+
 def to_vector(embedding):
     return "[" + ",".join(f"{x:.6f}" for x in embedding) + "]"
 
@@ -60,6 +70,15 @@ def create_tables():
         conn.execute("ALTER TABLE rag_pages ADD COLUMN IF NOT EXISTS text_source TEXT;")
         conn.execute("CREATE INDEX IF NOT EXISTS rag_chunks_embedding_idx ON rag_chunks USING hnsw (embedding vector_cosine_ops);")
         conn.execute("CREATE INDEX IF NOT EXISTS rag_chunks_tsv_idx ON rag_chunks USING gin (tsv);")
+        # Keyword search runs on this accent-folded copy (phases/phase-11, 11b); `tsv` is kept so that older code
+        # (the Phase 9 baseline of the holdout) still runs on an unchanged index
+        conn.execute(f"""
+            ALTER TABLE rag_chunks ADD COLUMN IF NOT EXISTS tsv_folded TSVECTOR GENERATED ALWAYS AS (
+                to_tsvector('simple', translate(coalesce(heading, '') || ' ' || coalesce(context, '') || ' ' || content,
+                                                '{FOLD_FROM}', '{FOLD_TO}'))
+            ) STORED;
+        """)
+        conn.execute("CREATE INDEX IF NOT EXISTS rag_chunks_tsv_folded_idx ON rag_chunks USING gin (tsv_folded);")
 
 
 def find_document(file_hash):
@@ -158,11 +177,12 @@ other some only same so very just
 ve veya ile bir bu şu o da de mi mı mu mü ne nedir neler nasıl hangi hangisi kaç için gibi göre olan olarak ise ki çok
 daha en her ya
 """.split())
+STOPWORDS = frozenset(fold(w) for w in STOPWORDS)  # compared with folded query words
 
 
 def keyword_query(text):
     # OR the words together; AND-ing every word of a natural-language question rarely matches anything
-    terms = dict.fromkeys(t for t in re.findall(r"\w+", text.lower()) if len(t) > 2 and t not in STOPWORDS)
+    terms = dict.fromkeys(t for t in re.findall(r"\w+", fold(text).lower()) if len(t) > 2 and t not in STOPWORDS)
     return " | ".join(terms)
 
 
@@ -191,9 +211,9 @@ def keyword_search(query_text, limit=40):
     if not terms:
         return []
     with connect() as conn:
-        rows = conn.execute(SEARCH_SELECT.format(score="ts_rank(c.tsv, q, 1)") + """
+        rows = conn.execute(SEARCH_SELECT.format(score="ts_rank(c.tsv_folded, q, 1)") + """
             , to_tsquery('simple', %(terms)s) q
-            WHERE d.status = 'done' AND c.tsv @@ q ORDER BY ts_rank(c.tsv, q, 1) DESC LIMIT %(n)s;
+            WHERE d.status = 'done' AND c.tsv_folded @@ q ORDER BY ts_rank(c.tsv_folded, q, 1) DESC LIMIT %(n)s;
         """, {"terms": terms, "n": limit}).fetchall()
     return [dict(zip(SEARCH_COLUMNS, row)) for row in rows]
 
@@ -204,7 +224,7 @@ def hybrid_search(query_text, query_embedding, limit=40):
     with connect() as conn:
         rows = conn.execute("""
             WITH ready AS (  -- rank only chunks of fully indexed documents, or half-indexed ones shift the ranks
-                SELECT c.id, c.embedding, c.tsv
+                SELECT c.id, c.embedding, c.tsv_folded AS tsv
                 FROM rag_chunks c JOIN rag_pages p ON p.id = c.page_id JOIN rag_documents d ON d.id = p.document_id
                 WHERE d.status = 'done'
             ),

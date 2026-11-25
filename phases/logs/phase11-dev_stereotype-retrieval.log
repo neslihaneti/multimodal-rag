@@ -1,0 +1,31 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 9179.50it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5663.15it/s]
+[11/13] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which attributes can inappropriate bias in AI-based systems 
+[12/13] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  In which kinds of systems have cases of inappropriate bias b
+[13/13] vector=1  keyword=4  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  According to the data quality table, what can cause unbalanc
+
+## Overall (3 answerable questions)
+
+| Method | Recall@1 | Recall@6 | MRR | All pages@6 (multi-page) |
+|---|---|---|---|---|
+| vector | 1.00 | 1.00 | 1.000 | - |
+| keyword | 0.67 | 1.00 | 0.750 | - |
+| hybrid (RRF) | 0.67 | 1.00 | 0.833 | - |
+| vector + reranker | 1.00 | 1.00 | 1.000 | - |
+| hybrid + reranker | 1.00 | 1.00 | 1.000 | - |
+
+## Recall@6 by question type
+
+| Type (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| bias_control (3) * | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## Recall@6 / MRR by document
+
+| Document (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| doc1.pdf (3) * | 1.00 / 1.00 | 1.00 / 0.75 | 1.00 / 0.83 | 1.00 / 1.00 | 1.00 / 1.00 |
+
+Report: /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-0013-retrieval.md

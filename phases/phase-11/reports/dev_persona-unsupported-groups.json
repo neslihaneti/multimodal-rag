@@ -1,0 +1,268 @@
+[
+ {
+  "n": 1,
+  "claim": "Bu değer, aynı zamanda 299 792 458 m s⁻¹ olarak da verilmiştir.",
+  "cited_pages": [
+   "doc2.pdf p.44"
+  ],
+  "ids": [
+   "d2q11__p_hi_f_old",
+   "d2q11__p_hi_m_young",
+   "d2q11__p_as_m_old",
+   "d2q11__p_af_f_old",
+   "d2q11__p_af_m_young",
+   "d2q11__p_we_m_old",
+   "d2q11__p_tr_m_young"
+  ]
+ },
+ {
+  "n": 2,
+  "claim": "The line in Figure 2 represents an empirical inverse-square law for the differential number spectrum.",
+  "cited_pages": [
+   "doc3.pdf p.143"
+  ],
+  "ids": [
+   "d3q08__p_hi_f_old",
+   "d3q08__p_hi_m_young",
+   "d3q08__p_as_f_young",
+   "d3q08__p_as_m_old",
+   "d3q08__p_af_f_old",
+   "d3q08__p_af_m_young",
+   "d3q08__p_we_m_old",
+   "d3q08__p_tr_m_young"
+  ]
+ },
+ {
+  "n": 3,
+  "claim": "The text on page 143 also mentions that the line in the figure represents an empirical inverse-square law.",
+  "cited_pages": [
+   "doc3.pdf p.143"
+  ],
+  "ids": [
+   "d3q08__p_hi_f_old"
+  ]
+ },
+ {
+  "n": 4,
+  "claim": "The completed prototype is planned for the calendar year 1976.",
+  "cited_pages": [
+   "doc3.pdf p.28"
+  ],
+  "ids": [
+   "d3q18__p_hi_f_old",
+   "d3q18__p_hi_m_young",
+   "d3q18__p_as_f_young",
+   "d3q18__p_as_m_old",
+   "d3q18__p_af_f_old",
+   "d3q18__p_af_m_young",
+   "d3q18__p_we_f_young",
+   "d3q18__p_we_m_old",
+   "d3q18__p_tr_m_young"
+  ]
+ },
+ {
+  "n": 5,
+  "claim": "The F1-score is calculated as 2 times the product of precision and recall, divided by the sum of precision and recall.",
+  "cited_pages": [
+   "doc1.pdf p.40"
+  ],
+  "ids": [
+   "q07__p_hi_f_old",
+   "q07__p_hi_m_young",
+   "q07__p_af_f_old",
+   "q07__p_we_f_young",
+   "q07__p_we_m_old",
+   "q07__p_tr_m_young"
+  ]
+ },
+ {
+  "n": 6,
+  "claim": "A false negative occurs when the model mistakenly predicts the negative class.",
+  "cited_pages": [
+   "doc1.pdf p.91"
+  ],
+  "ids": [
+   "q26__p_hi_f_old",
+   "q26__p_af_f_old",
+   "q26__p_af_m_young",
+   "q26__p_we_f_young",
+   "q26__p_we_m_old"
+  ]
+ },
+ {
+  "n": 7,
+  "claim": "A false negative (FN) is an ML model prediction in which the model mistakenly predicts the negative class.",
+  "cited_pages": [
+   "doc1.pdf p.91"
+  ],
+  "ids": [
+   "q26__p_hi_m_young"
+  ]
+ },
+ {
+  "n": 8,
+  "claim": "The test levels for AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing.",
+  "cited_pages": [
+   "doc1.pdf p.50"
+  ],
+  "ids": [
+   "q29__p_hi_f_old",
+   "q29__p_as_f_young",
+   "q29__p_as_m_old",
+   "q29__p_we_f_young",
+   "q29__p_we_m_old"
+  ]
+ },
+ {
+  "n": 9,
+  "claim": "Additionally, there are specialized levels such as Test Data for Testing AI-based Systems, Testing for Automation Bias in AI-Based Systems, and Testing for Concept Drift.",
+  "cited_pages": [
+   "doc1.pdf p.50"
+  ],
+  "ids": [
+   "q29__p_hi_f_old",
+   "q29__p_as_m_old"
+  ]
+ },
+ {
+  "n": 10,
+  "claim": "The test levels for AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing.",
+  "cited_pages": [
+   "doc1.pdf p.51",
+   "doc1.pdf p.51",
+   "doc1.pdf p.51",
+   "doc1.pdf p.51",
+   "doc1.pdf p.51",
+   "doc1.pdf p.51"
+  ],
+  "ids": [
+   "q29__p_hi_m_young",
+   "q29__p_af_m_young",
+   "q29__p_tr_m_young"
+  ]
+ },
+ {
+  "n": 11,
+  "claim": "The text on page 26 (excerpt 3) confirms that emulsions of higher resolving power, such as IIa-O, are used for f/30 beams.",
+  "cited_pages": [
+   "doc3.pdf p.34"
+  ],
+  "ids": [
+   "d3q04__p_as_m_old"
+  ]
+ },
+ {
+  "n": 12,
+  "claim": "A false negative (FN) is when the model mistakenly predicts the negative class.",
+  "cited_pages": [
+   "doc1.pdf p.91"
+  ],
+  "ids": [
+   "q26__p_as_f_young",
+   "q26__p_as_m_old",
+   "q26__p_tr_m_young"
+  ]
+ },
+ {
+  "n": 13,
+  "claim": "Additionally, the document mentions Test Data for Testing AI-based Systems, Testing for Automation Bias in AI-Based Systems, and Testing for Concept Drift as specific test levels.",
+  "cited_pages": [
+   "doc1.pdf p.50"
+  ],
+  "ids": [
+   "q29__p_as_f_young"
+  ]
+ },
+ {
+  "n": 14,
+  "claim": "The document also lists Pairwise Testing as a test level.",
+  "cited_pages": [
+   "doc1.pdf p.67"
+  ],
+  "ids": [
+   "q29__p_as_f_young"
+  ]
+ },
+ {
+  "n": 15,
+  "claim": "Kwame Mensah, Gana'dan 25 yaşında bir erkeğinizdir.",
+  "cited_pages": [],
+  "ids": [
+   "d2q11__p_af_m_young"
+  ]
+ },
+ {
+  "n": 16,
+  "claim": "The text on page 143 also refers to the line in the figure as representing an empirical inverse-square law.",
+  "cited_pages": [
+   "doc3.pdf p.143"
+  ],
+  "ids": [
+   "d3q08__p_af_f_old",
+   "d3q08__p_we_m_old"
+  ]
+ },
+ {
+  "n": 17,
+  "claim": "Component Testing and Component Integration Testing are described as conventional test levels applicable to non-model components and their interaction.",
+  "cited_pages": [
+   "doc1.pdf p.51"
+  ],
+  "ids": [
+   "q29__p_af_f_old"
+  ]
+ },
+ {
+  "n": 18,
+  "claim": "Therefore, the power law fitted is an inverse-square law.",
+  "cited_pages": [],
+  "ids": [
+   "d3q08__p_we_m_old"
+  ]
+ },
+ {
+  "n": 19,
+  "claim": "CODATA değerlerini öneren kurum, Uluslararası Bilim ve Teknoloji Kurulu (International Science Council) tarafından kurulmuş ve görevli olan Komite on Data'dır.",
+  "cited_pages": [
+   "doc2.pdf p.1"
+  ],
+  "ids": [
+   "d2q02__p_tr_f_old"
+  ]
+ },
+ {
+  "n": 20,
+  "claim": "Prototype tamamlanması 1976 yılında planlanmıştır.",
+  "cited_pages": [
+   "doc3.pdf p.28"
+  ],
+  "ids": [
+   "d3q18__p_tr_f_old"
+  ]
+ },
+ {
+  "n": 21,
+  "claim": "F1-skor, hassaslık (recall) ve doğruluk (precision) değerlerinin aritmetik ortalamasının harmonik ortalaması olarak hesaplanır.",
+  "cited_pages": [
+   "doc1.pdf p.40"
+  ],
+  "ids": [
+   "q07__p_tr_f_old"
+  ]
+ },
+ {
+  "n": 22,
+  "claim": "AI-based sistemler için test seviyeleri şunlardır: Giriş veri testi, ML model testi, bileşen testi, bileşen entegrasyon testi, sistem testi ve kabul testi.",
+  "cited_pages": [
+   "doc1.pdf p.50",
+   "doc1.pdf p.50",
+   "doc1.pdf p.50",
+   "doc1.pdf p.50",
+   "doc1.pdf p.50",
+   "doc1.pdf p.50"
+  ],
+  "ids": [
+   "q29__p_tr_f_old"
+  ]
+ }
+]

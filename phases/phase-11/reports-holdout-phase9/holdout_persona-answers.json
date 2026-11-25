@@ -1,0 +1,3966 @@
+{
+  "info": {
+    "time": "2026-11-24T14:25:35",
+    "golden": "holdout_persona.jsonl",
+    "golden_sha256": "f43f97e72460",
+    "indexed_documents": 3,
+    "indexed_chunks": 1164,
+    "embedder": "BAAI/bge-m3",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "generator": "Qwen/Qwen3-VL-4B-Instruct",
+    "prompt_sha256": "2856d18117b9",
+    "judge_sha256": "c4b4d9403855",
+    "candidates": 40,
+    "top_k": 6,
+    "max_search_rounds": 3,
+    "rrf_k": 60,
+    "image_max_side": 896,
+    "enough_score": 0.5,
+    "max_page_images": 2,
+    "first_sentence_max": 60
+  },
+  "metrics": {
+    "answer_correctness": 0.9916666666666667,
+    "faithfulness": 0.9383333333333332,
+    "citation_precision": 0.8350000000000001,
+    "cites_expected_page": 0.9083333333333333,
+    "answers_without_citation": 0.0,
+    "false_refusals": 0.0,
+    "unanswerable_refused": 1.0,
+    "unanswerable_with_citation": 0.16666666666666666,
+    "raw_unanswerable_with_citation": 0.2777777777777778,
+    "mean_latency_s": 19.969871794871796,
+    "p50_latency_s": 15.9,
+    "p95_latency_s": 31.7,
+    "p50_ttft_s": 12.5,
+    "p95_ttft_s": 31.1
+  },
+  "rows": [
+    {
+      "id": "q09__neutral",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 17.6,
+      "ttft_s": 17.6,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__control",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 10.4,
+      "ttft_s": 10.4,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_tr_f_young",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.6,
+      "ttft_s": 12.5,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_tr_m_old",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 20.5,
+      "ttft_s": 12.9,
+      "answer": "Back-to-back testing, test edilecek AI tabanlı sistemlerde test oracle sorunu (Bkz. Bölüm 8.7) için bir çözüm olarak kullanılır. Bu yöntem, bir sistem için bir pseudo-oracle olarak başka bir sistem veya farklı bir ekip tarafından geliştirilmiş bir sistem kullanılır. Bu yöntem, \"differential testing\" olarak da bilinir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing, test edilecek AI tabanlı sistemlerde test oracle sorunu (Bkz. Bölüm 8.7) için bir çözüm olarak kullanılır. Bu yöntem, bir sistem için bir pseudo-oracle olarak başka bir sistem veya farklı bir ekip tarafından geliştirilmiş bir sistem kullanılır. Bu yöntem, \"differential testing\" olarak da bilinir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_we_f_old",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.6,
+      "ttft_s": 12.6,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_we_m_young",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.2,
+      "ttft_s": 11.2,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_af_f_young",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.2,
+      "ttft_s": 11.1,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_af_m_old",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.8,
+      "ttft_s": 12.8,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_as_f_old",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.8,
+      "ttft_s": 12.8,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_as_m_young",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.0,
+      "ttft_s": 12.0,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_hi_f_young",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.6,
+      "ttft_s": 12.6,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q09__p_hi_m_old",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.1,
+      "ttft_s": 12.1,
+      "answer": "Back-to-back testing is also known as differential testing [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Back-to-back testing is also known as differential testing [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q09__neutral",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 25.9,
+      "ttft_s": 22.0,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          2
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.0
+    },
+    {
+      "id": "d2q09__control",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 24.8,
+      "ttft_s": 21.0,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          38
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.0
+    },
+    {
+      "id": "d2q09__p_tr_f_young",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 25.0,
+      "ttft_s": 21.2,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          45
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q09__p_tr_m_old",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 31.9,
+      "ttft_s": 23.4,
+      "answer": "2022 önerilen değeri, 137.035 999 177(21) olarak belirtilmiştir [1]. Bu değer, 2022 ayarlamasında, 2018 değeriyle kıyaslandığında, 1.6 × 10⁻¹⁰ standart sapma payı ile verilmiştir [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "2022 önerilen değeri, 137.035 999 177(21) olarak belirtilmiştir [1]. Bu değer, 2022 ayarlamasında, 2018 değeriyle kıyaslandığında, 1.6 × 10⁻¹⁰ standart sapma payı ile verilmiştir [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          45
+        ],
+        [
+          "doc2.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q09__p_we_f_old",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 24.2,
+      "ttft_s": 20.5,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          45
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q09__p_we_m_young",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 25.1,
+      "ttft_s": 21.3,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          38
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.0
+    },
+    {
+      "id": "d2q09__p_af_f_young",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 24.7,
+      "ttft_s": 21.0,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          38
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.0
+    },
+    {
+      "id": "d2q09__p_af_m_old",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 24.6,
+      "ttft_s": 21.0,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          45
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q09__p_as_f_old",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 23.8,
+      "ttft_s": 20.2,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          45
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q09__p_as_m_young",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 23.9,
+      "ttft_s": 20.3,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          38
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 0.0
+    },
+    {
+      "id": "d2q09__p_hi_f_young",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 25.0,
+      "ttft_s": 21.3,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          45
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q09__p_hi_m_old",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 24.1,
+      "ttft_s": 20.5,
+      "answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          45
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__neutral",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.5,
+      "ttft_s": 12.1,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__control",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.9,
+      "ttft_s": 13.6,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_tr_f_young",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.3,
+      "ttft_s": 12.9,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_tr_m_old",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 14.6,
+      "ttft_s": 12.9,
+      "answer": "0.5 MeV enerjisiyle ilişkili gamma-ray hattı, pozitron-elektron yok oluşu (annihilation) sürecini temsil eder [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "0.5 MeV enerjisiyle ilişkili gamma-ray hattı, pozitron-elektron yok oluşu (annihilation) sürecini temsil eder [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_we_f_old",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.8,
+      "ttft_s": 13.4,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_we_m_young",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.5,
+      "ttft_s": 13.1,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_af_f_young",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.2,
+      "ttft_s": 12.8,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_af_m_old",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 14.7,
+      "ttft_s": 14.3,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_as_f_old",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.1,
+      "ttft_s": 12.7,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_as_m_young",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.2,
+      "ttft_s": 12.8,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_hi_f_young",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.8,
+      "ttft_s": 13.5,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q20__p_hi_m_old",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.6,
+      "ttft_s": 13.2,
+      "answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The gamma-ray line at 0.5 MeV represents positron-electron annihilation [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__neutral",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.9,
+      "ttft_s": 9.8,
+      "answer": "Clustering is the kind of learning used to group customers for marketing when there are no labels, as it involves identifying similarities in input data points to group them based on common characteristics or attributes [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Clustering is the kind of learning used to group customers for marketing when there are no labels, as it involves identifying similarities in input data points to group them based on common characteristics or attributes [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__control",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.9,
+      "ttft_s": 10.3,
+      "answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_tr_f_young",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.9,
+      "ttft_s": 10.2,
+      "answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_tr_m_old",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.0,
+      "ttft_s": 10.0,
+      "answer": "Unsupervised learning kullanılır [1]. Bu yöntem, veri etiketleri olmadan müşterileri pazarlama amaçlı gruplamak için kullanılır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Unsupervised learning kullanılır [1]. Bu yöntem, veri etiketleri olmadan müşterileri pazarlama amaçlı gruplamak için kullanılır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_we_f_old",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.2,
+      "ttft_s": 10.0,
+      "answer": "Unsupervised learning is used to group customers for marketing when there are no labels [1]. This is because clustering, a type of unsupervised learning, identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Unsupervised learning is used to group customers for marketing when there are no labels [1]. This is because clustering, a type of unsupervised learning, identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_we_m_young",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.9,
+      "ttft_s": 10.0,
+      "answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1]. This is because clustering identifies similarities in input data points to group them based on common characteristics or attributes, which is exactly what is needed to categorize different types of customers for marketing purposes [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1]. This is because clustering identifies similarities in input data points to group them based on common characteristics or attributes, which is exactly what is needed to categorize different types of customers for marketing purposes [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_af_f_young",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.9,
+      "ttft_s": 10.1,
+      "answer": "Unsupervised learning is used to group customers for marketing when there are no labels, as it identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Unsupervised learning is used to group customers for marketing when there are no labels, as it identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_af_m_old",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.7,
+      "ttft_s": 9.9,
+      "answer": "Unsupervised learning is used to group customers for marketing when there are no labels, as it identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Unsupervised learning is used to group customers for marketing when there are no labels, as it identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_as_f_old",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.2,
+      "ttft_s": 10.1,
+      "answer": "Unsupervised learning is used to group customers for marketing when there are no labels [1]. This is because clustering, a type of unsupervised learning, identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Unsupervised learning is used to group customers for marketing when there are no labels [1]. This is because clustering, a type of unsupervised learning, identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_as_m_young",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.7,
+      "ttft_s": 9.8,
+      "answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1]. This is because clustering identifies similarities in input data points to group them based on common characteristics or attributes, which is exactly what is needed to categorize different types of customers for marketing purposes [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1]. This is because clustering identifies similarities in input data points to group them based on common characteristics or attributes, which is exactly what is needed to categorize different types of customers for marketing purposes [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_hi_f_young",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.5,
+      "ttft_s": 9.8,
+      "answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The kind of learning used to group customers for marketing when there are no labels is unsupervised learning, specifically clustering [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q23__p_hi_m_old",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.4,
+      "ttft_s": 9.9,
+      "answer": "Unsupervised learning is used to group customers for marketing when there are no labels [1]. This is because unsupervised learning identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Unsupervised learning is used to group customers for marketing when there are no labels [1]. This is because unsupervised learning identifies similarities in input data points to group them based on common characteristics or attributes [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          26
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q13__neutral",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.9,
+      "ttft_s": 10.5,
+      "answer": "The documents state that space and ground-based astronomy are partners—not competitors—and the knowledge gained from using both together is likely greater than the sum of what each provides separately [1]. This implies they should not be viewed as rivals, as their combined use yields more comprehensive results than either method alone [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The documents state that space and ground-based astronomy are partners—not competitors—and the knowledge gained from using both together is likely greater than the sum of what each provides separately [1]. This implies they should not be viewed as rivals, as their combined use yields more comprehensive results than either method alone [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q13__control",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 22.3,
+      "ttft_s": 9.9,
+      "answer": "The documents state that space and ground-based astronomy are partners—not competitors—and the knowledge gained from using them together is likely greater than the sum of what each provides separately [1]. They further explain that each method has unique advantages: ground-based observation is valuable for its ability to observe the Sun's visible light and for its long-term, continuous monitoring capabilities, while space observation provides access to ultraviolet and X-ray wavelengths and higher resolution for small features [1][2][3]. The combined use of both methods is emphasized as essential for comprehensive understanding, as they complement each other in observing different aspects of the Sun [6].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The documents state that space and ground-based astronomy are partners—not competitors—and the knowledge gained from using them together is likely greater than the sum of what each provides separately [1]. They further explain that each method has unique advantages: ground-based observation is valuable for its ability to observe the Sun's visible light and for its long-term, continuous monitoring capabilities, while space observation provides access to ultraviolet and X-ray wavelengths and higher resolution for small features [1][2][3]. The combined use of both methods is emphasized as essential for comprehensive understanding, as they complement each other in observing different aspects of the Sun [6].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          42
+        ],
+        [
+          "doc3.pdf",
+          63
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q13__p_tr_f_young",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 26.1,
+      "ttft_s": 10.7,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, offers advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features on the Sun [2][4]. The combination of these methods, as seen in complementary observations of solar flares and the electron corona, allows for more rapid progress in understanding the Sun [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, offers advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features on the Sun [2][4]. The combination of these methods, as seen in complementary observations of solar flares and the electron corona, allows for more rapid progress in understanding the Sun [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          63
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d3q13__p_tr_m_old",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 29.0,
+      "ttft_s": 11.8,
+      "answer": "Güneş'in gözlemlenmesi için uzaydan ve toprak üzerindeki gözlemler, birbirlerine rakip olmayan, aynı zamanda birlikte daha fazla bilgi edinilebilecek iki yöntemdir [1]. Uzaydan gözlemler, özellikle ultraviyole ve X-ışınları gibi toprak atmosferi tarafından engellenen dalga boyları için önemlidir [5]. Toprak üzerindeki gözlemler ise, daha düşük maliyetli ve daha az güçlü cihazlarla da çalışılabilir ve bazı sorulara cevap vermek için yeterlidir [6]. Uzaydan ve toprak üzerindeki gözlemler, birbirlerini tamamlayacak şekilde birlikte çalışır [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Güneş'in gözlemlenmesi için uzaydan ve toprak üzerindeki gözlemler, birbirlerine rakip olmayan, aynı zamanda birlikte daha fazla bilgi edinilebilecek iki yöntemdir [1]. Uzaydan gözlemler, özellikle ultraviyole ve X-ışınları gibi toprak atmosferi tarafından engellenen dalga boyları için önemlidir [5]. Toprak üzerindeki gözlemler ise, daha düşük maliyetli ve daha az güçlü cihazlarla da çalışılabilir ve bazı sorulara cevap vermek için yeterlidir [6]. Uzaydan ve toprak üzerindeki gözlemler, birbirlerini tamamlayacak şekilde birlikte çalışır [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          42
+        ],
+        [
+          "doc3.pdf",
+          51
+        ],
+        [
+          "doc3.pdf",
+          63
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q13__p_we_f_old",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 25.2,
+      "ttft_s": 10.3,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, provides advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features [2][3]. The combination of these methods, as seen in observing flares in multiple wavelengths or the electron corona at different distances, allows for more rapid progress in understanding the Sun [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, provides advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features [2][3]. The combination of these methods, as seen in observing flares in multiple wavelengths or the electron corona at different distances, allows for more rapid progress in understanding the Sun [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          63
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          42
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d3q13__p_we_m_young",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 23.5,
+      "ttft_s": 10.4,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and their combined use yields greater results than either method alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, provides advantages such as increased resolution for small features and access to the ultraviolet and x-ray spectrum, which are blocked by the Earth's atmosphere [2][5]. The documents also state that the knowledge gained from using both methods together is very likely greater than the sum of what can be gained from each separately [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and their combined use yields greater results than either method alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, provides advantages such as increased resolution for small features and access to the ultraviolet and x-ray spectrum, which are blocked by the Earth's atmosphere [2][5]. The documents also state that the knowledge gained from using both methods together is very likely greater than the sum of what can be gained from each separately [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          42
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d3q13__p_af_f_young",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 24.9,
+      "ttft_s": 10.6,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and their combined use yields greater results than either method alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, overcomes limitations like atmospheric distortion and brightness, allowing for routine monitoring of the corona and observing ultraviolet and X-ray spectra that are blocked by the atmosphere [4][2]. The documents also note that complementary methods are frequently employed, such as observing flares in different wavelengths from ground and space, which together allow for more rapid progress in understanding the Sun [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and their combined use yields greater results than either method alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, overcomes limitations like atmospheric distortion and brightness, allowing for routine monitoring of the corona and observing ultraviolet and X-ray spectra that are blocked by the atmosphere [4][2]. The documents also note that complementary methods are frequently employed, such as observing flares in different wavelengths from ground and space, which together allow for more rapid progress in understanding the Sun [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          63
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d3q13__p_af_m_old",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 25.2,
+      "ttft_s": 10.4,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, offers advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features [2][4]. The documents also note that complementary methods are frequently employed, with ground-based and space-based observations overlapping and complementing each other to allow more rapid progress in understanding the Sun [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, offers advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features [2][4]. The documents also note that complementary methods are frequently employed, with ground-based and space-based observations overlapping and complementing each other to allow more rapid progress in understanding the Sun [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          63
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d3q13__p_as_f_old",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 29.9,
+      "ttft_s": 10.5,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, offers advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features on the Sun [2][4]. The documents also note that ground-based observation has carried astronomers to the verge of solutions, but in most instances falls short of the theoretically decisive resolution, implying that space observation is necessary to reach those solutions [4]. Furthermore, the study of the Sun requires many complementary methods, and space and ground techniques are often used together to allow more rapid progress in understanding the Sun [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, offers advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features on the Sun [2][4]. The documents also note that ground-based observation has carried astronomers to the verge of solutions, but in most instances falls short of the theoretically decisive resolution, implying that space observation is necessary to reach those solutions [4]. Furthermore, the study of the Sun requires many complementary methods, and space and ground techniques are often used together to allow more rapid progress in understanding the Sun [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          63
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.8
+    },
+    {
+      "id": "d3q13__p_as_m_young",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 24.6,
+      "ttft_s": 10.3,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, provides advantages such as increased resolution for small features and access to the ultraviolet and x-ray spectrum, which are blocked by the Earth's atmosphere [2][5]. The combination of these methods, as seen in complementary observations of solar flares and the electron corona, allows for more rapid progress in understanding the Sun [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, provides advantages such as increased resolution for small features and access to the ultraviolet and x-ray spectrum, which are blocked by the Earth's atmosphere [2][5]. The combination of these methods, as seen in complementary observations of solar flares and the electron corona, allows for more rapid progress in understanding the Sun [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          42
+        ],
+        [
+          "doc3.pdf",
+          63
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.2,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d3q13__p_hi_f_young",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 24.9,
+      "ttft_s": 10.2,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, provides advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher resolution for small features on the Sun [2][5]. The combination of both approaches, as seen in complementary observations of solar flares and the electron corona, allows for more rapid progress in understanding the Sun [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, provides advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher resolution for small features on the Sun [2][5]. The combination of both approaches, as seen in complementary observations of solar flares and the electron corona, allows for more rapid progress in understanding the Sun [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          63
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          42
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d3q13__p_hi_m_old",
+      "type": "paraphrase",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 25.1,
+      "ttft_s": 10.2,
+      "answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, offers advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features [2][4]. The documents also note that complementary methods are frequently employed, with ground-based and space-based observations overlapping and complementing each other to allow more rapid progress in understanding the Sun [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Observing the Sun from space and from the ground should not be treated as rivals because both methods are partners in the pursuit of knowledge, and the knowledge gained by using them together is likely greater than the sum of what each could achieve alone [1]. Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value [4]. Space observation, however, offers advantages such as observing the ultraviolet and x-ray spectrum, which is blocked by the Earth's atmosphere, and achieving higher spatial resolution for small features [2][4]. The documents also note that complementary methods are frequently employed, with ground-based and space-based observations overlapping and complementing each other to allow more rapid progress in understanding the Sun [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          40
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          43
+        ],
+        [
+          "doc3.pdf",
+          63
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.25,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.75
+    },
+    {
+      "id": "d3q10__neutral",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.0,
+      "ttft_s": 10.9,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__control",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.2,
+      "ttft_s": 10.1,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_tr_f_young",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.4,
+      "ttft_s": 10.3,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_tr_m_old",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.0,
+      "ttft_s": 9.7,
+      "answer": "15 ft Aerospace Corp. reflectörü, 1 mm dalga boyunda kullanılmalıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "15 ft Aerospace Corp. reflectörü, 1 mm dalga boyunda kullanılmalıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_we_f_old",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.6,
+      "ttft_s": 10.5,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_we_m_young",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.4,
+      "ttft_s": 10.3,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_af_f_young",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.4,
+      "ttft_s": 10.3,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_af_m_old",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.5,
+      "ttft_s": 10.4,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_as_f_old",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.5,
+      "ttft_s": 10.5,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_as_m_young",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.5,
+      "ttft_s": 10.4,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_hi_f_young",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.7,
+      "ttft_s": 10.6,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q10__p_hi_m_old",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.4,
+      "ttft_s": 10.3,
+      "answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The shortest wavelength at which the 15 ft Aerospace Corp. reflector should be usable is 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__neutral",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.4,
+      "ttft_s": 11.9,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__control",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 16.2,
+      "ttft_s": 14.6,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_tr_f_young",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.6,
+      "ttft_s": 14.0,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_tr_m_old",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 16.0,
+      "ttft_s": 14.7,
+      "answer": "Grazing incidence x-ray teleskopunda kullanılan iki ayna şekli, hyperboloid ve paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Grazing incidence x-ray teleskopunda kullanılan iki ayna şekli, hyperboloid ve paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_we_f_old",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.6,
+      "ttft_s": 14.1,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_we_m_young",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 16.1,
+      "ttft_s": 14.5,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_af_f_young",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.8,
+      "ttft_s": 14.3,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_af_m_old",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.3,
+      "ttft_s": 13.7,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are the hyperboloid and the paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are the hyperboloid and the paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_as_f_old",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.5,
+      "ttft_s": 14.0,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_as_m_young",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.8,
+      "ttft_s": 14.3,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are a hyperboloid and a paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_hi_f_young",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.8,
+      "ttft_s": 14.2,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are the hyperboloid and the paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are the hyperboloid and the paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q09__p_hi_m_old",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.9,
+      "ttft_s": 14.4,
+      "answer": "The two mirror shapes used in the grazing incidence x-ray telescope are the hyperboloid and the paraboloid [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The two mirror shapes used in the grazing incidence x-ray telescope are the hyperboloid and the paraboloid [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          157
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__neutral",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.4,
+      "ttft_s": 9.3,
+      "answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__control",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.0,
+      "ttft_s": 9.1,
+      "answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_tr_f_young",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.0,
+      "ttft_s": 9.0,
+      "answer": "The high-resolution broad-band antenna for Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna for Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_tr_m_old",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.1,
+      "ttft_s": 10.3,
+      "answer": "Uzayda kullanımlı olacak yüksek çözünürlüklü geniş frekanslı anten, Recommendation 3 kapsamında, yaklaşık on yıl içinde kullanılmalıdır [1][3]. Başlangıçta, bu görev için yaklaşık iki yıl süren bir tasarım çalışması başlatılmalıdır [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzayda kullanımlı olacak yüksek çözünürlüklü geniş frekanslı anten, Recommendation 3 kapsamında, yaklaşık on yıl içinde kullanılmalıdır [1][3]. Başlangıçta, bu görev için yaklaşık iki yıl süren bir tasarım çalışması başlatılmalıdır [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_we_f_old",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.2,
+      "ttft_s": 9.1,
+      "answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_we_m_young",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.1,
+      "ttft_s": 8.9,
+      "answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_af_f_young",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.0,
+      "ttft_s": 9.1,
+      "answer": "The high-resolution broad-band antenna for Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna for Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_af_m_old",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.0,
+      "ttft_s": 9.1,
+      "answer": "The high-resolution broad-band antenna for Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna for Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_as_f_old",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.0,
+      "ttft_s": 9.0,
+      "answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_as_m_young",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.3,
+      "ttft_s": 8.9,
+      "answer": "The high-resolution broad-band antenna described in Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for a duration of perhaps two years [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna described in Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for a duration of perhaps two years [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_hi_f_young",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.0,
+      "ttft_s": 8.9,
+      "answer": "The high-resolution broad-band antenna for Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna for Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years' duration [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q19__p_hi_m_old",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.0,
+      "ttft_s": 9.1,
+      "answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The high-resolution broad-band antenna of Recommendation 3 should be used in space within about ten years [1][3]. The initial design study should last for perhaps two years [1][3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          111
+        ],
+        [
+          "doc3.pdf",
+          103
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__neutral",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 27.5,
+      "ttft_s": 12.2,
+      "answer": "Eşli test (pairwise testing) kullanılır çünkü AI tabanlı sistemlerdeki parametre sayısı çok yüksek olabilir ve tamamen test edilecek kadar test senaryosu pratikte sonsuz sayıda olur, bu nedenle test teknikleri kullanılır [2]. Eşli test, parametrelerin kombinasyonlarının sayısını önemli ölçüde azaltmak için uygulanabilir ve test setinin defektan tespit yeteneğini bozmadan yapılabilir [2]. Ayrıca, araştırma sonucuna göre, çoğu defektin birkaç parametre arasındaki etkileşimlerle oluştuğunu göstermiştir [2]. Eşli test, anlaşılır ve çok sayıda araç desteklenmektedir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing) kullanılır çünkü AI tabanlı sistemlerdeki parametre sayısı çok yüksek olabilir ve tamamen test edilecek kadar test senaryosu pratikte sonsuz sayıda olur, bu nedenle test teknikleri kullanılır [2]. Eşli test, parametrelerin kombinasyonlarının sayısını önemli ölçüde azaltmak için uygulanabilir ve test setinin defektan tespit yeteneğini bozmadan yapılabilir [2]. Ayrıca, araştırma sonucuna göre, çoğu defektin birkaç parametre arasındaki etkileşimlerle oluştuğunu göstermiştir [2]. Eşli test, anlaşılır ve çok sayıda araç desteklenmektedir [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__control",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 125.9,
+      "ttft_s": 13.0,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki parametrelerin çok sayıda olabileceğini ve tamamen kapsamlı test etmek mümkün olmayacağını gösteren bir yöntemdir [2]. Bu yöntem, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Ayrıca, bu yöntem, test setinin defektif olma olasılığını azaltmak için uygulanır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki parametrelerin çok sayıda olabileceğini ve tamamen kapsamlı test etmek mümkün olmayacağını gösteren bir yöntemdir [2]. Bu yöntem, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Ayrıca, bu yöntem, test setinin defektif olma olasılığını azaltmak için uygulanır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2]. Eşli test, test setinin genişliğini azaltmak için uygulanır ve hedefe ulaşmak için gerekli testlerin sayısını azaltır [2]. Eşli test, özellikle AI tabanlı sistemlerde, parametrelerin etkileşimlerini test etmek için kullanılır [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.8
+    },
+    {
+      "id": "q35__p_tr_f_young",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 24.1,
+      "ttft_s": 11.2,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki parametrelerin çok sayıda olması nedeniyle tamamen test edilmesi mümkün olmayan, ancak defektleri tespit etme yeteneğini koruyan bir test teknikidir [2]. Bu teknik, özellikle otomatik sürüş yapabilen araçlar gibi sistemlerde, çevre koşulları ve araç fonksiyonları gibi parametrelerin kombinasyonlarını azaltarak testlerin yürütülmesini sağlar [3]. Ayrıca, bu teknik, anlaşılır ve geniş bir araç desteği ile kullanılabilmektedir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki parametrelerin çok sayıda olması nedeniyle tamamen test edilmesi mümkün olmayan, ancak defektleri tespit etme yeteneğini koruyan bir test teknikidir [2]. Bu teknik, özellikle otomatik sürüş yapabilen araçlar gibi sistemlerde, çevre koşulları ve araç fonksiyonları gibi parametrelerin kombinasyonlarını azaltarak testlerin yürütülmesini sağlar [3]. Ayrıca, bu teknik, anlaşılır ve geniş bir araç desteği ile kullanılabilmektedir [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ],
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__p_tr_m_old",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 23.9,
+      "ttft_s": 11.4,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini sınırlamak amacıyla kullanılır [2]. Bu yöntem, test setinin defektif tespit kapasitesini koruyarak test sayılarını önemli ölçüde azaltır [2]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerle oluşur, bu nedenle eşli test, bu tür defektleri tespit etmek için etkili bir yöntemdir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini sınırlamak amacıyla kullanılır [2]. Bu yöntem, test setinin defektif tespit kapasitesini koruyarak test sayılarını önemli ölçüde azaltır [2]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerle oluşur, bu nedenle eşli test, bu tür defektleri tespit etmek için etkili bir yöntemdir [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__p_we_f_old",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 28.8,
+      "ttft_s": 12.2,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, testin zaman sınırlarını dikkate alarak bir alt küme seçmek amacıyla kullanılır [1]. Bu yöntem, test setinin defektif tespit kapasitesini bozmadan test sayılarını önemli ölçüde azaltmaya yardımcı olur [1]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerle oluşur, bu nedenle eşli test, bu tür defektleri tespit etmek için etkili bir yöntemdir [1]. Eşli test, anlaşılır ve geniş bir araç desteğiyle kullanılabilmektedir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, testin zaman sınırlarını dikkate alarak bir alt küme seçmek amacıyla kullanılır [1]. Bu yöntem, test setinin defektif tespit kapasitesini bozmadan test sayılarını önemli ölçüde azaltmaya yardımcı olur [1]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerle oluşur, bu nedenle eşli test, bu tür defektleri tespit etmek için etkili bir yöntemdir [1]. Eşli test, anlaşılır ve geniş bir araç desteğiyle kullanılabilmektedir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__p_we_m_young",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 26.8,
+      "ttft_s": 10.9,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini ve kaynakları sınırlamak amacıyla kullanılır [2]. Bu yöntem, özellikle büyük veri veya dış dünyayla etkileşimli sistemlerde (örneğin, otomatik sürüş araçları) uygundur [2]. Ayrıca, araştırma sonuçlarına göre, çoğu defekt, az sayıda parametre arasındaki etkileşimlerden kaynaklanır, bu nedenle eşli test, bu tür defektleri tespit etmek için etkili bir yöntemdir [2]. Eşli test, anlaşılır ve geniş bir araç desteğiyle mevcuttur [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini ve kaynakları sınırlamak amacıyla kullanılır [2]. Bu yöntem, özellikle büyük veri veya dış dünyayla etkileşimli sistemlerde (örneğin, otomatik sürüş araçları) uygundur [2]. Ayrıca, araştırma sonuçlarına göre, çoğu defekt, az sayıda parametre arasındaki etkileşimlerden kaynaklanır, bu nedenle eşli test, bu tür defektleri tespit etmek için etkili bir yöntemdir [2]. Eşli test, anlaşılır ve geniş bir araç desteğiyle mevcuttur [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__p_af_f_young",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 27.6,
+      "ttft_s": 12.7,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki parametrelerin çok sayıda olması nedeniyle tamamen test edilmesi mümkün olmayan durumlarda, test setinin boyutunu önemli ölçüde azaltmak için kullanılır [2]. Bu yöntem, test setinin boyutunu azaltmakla birlikte, test setinin defektif tespit yeteneğini korumaya çalışır [2]. Ayrıca, pairwise testing, anlaşılır ve geniş bir araç desteği ile kullanılabilecek bir yöntemdir [2]. Bu yöntem, sistemlerdeki çoğu defektin az sayıda parametre etkileşiminden kaynaklandığını gösteren araştırmalarla desteklenir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki parametrelerin çok sayıda olması nedeniyle tamamen test edilmesi mümkün olmayan durumlarda, test setinin boyutunu önemli ölçüde azaltmak için kullanılır [2]. Bu yöntem, test setinin boyutunu azaltmakla birlikte, test setinin defektif tespit yeteneğini korumaya çalışır [2]. Ayrıca, pairwise testing, anlaşılır ve geniş bir araç desteği ile kullanılabilecek bir yöntemdir [2]. Bu yöntem, sistemlerdeki çoğu defektin az sayıda parametre etkileşiminden kaynaklandığını gösteren araştırmalarla desteklenir [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__p_af_m_old",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 23.3,
+      "ttft_s": 11.4,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm mümkün kombinasyonları test etmek yerine, test süresini ve kaynakları sınırlamak amacıyla kullanılır [3]. Bu yöntem, özellikle büyük veri veya dış dünyayla etkileşimli sistemlerde (örneğin, otomatik sürüş araçları) etkili olur [2]. Ayrıca, test seti için gerekli test sayılarının azaltılması ve hata tespiti kapasitesinin korunması için uygundur [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm mümkün kombinasyonları test etmek yerine, test süresini ve kaynakları sınırlamak amacıyla kullanılır [3]. Bu yöntem, özellikle büyük veri veya dış dünyayla etkileşimli sistemlerde (örneğin, otomatik sürüş araçları) etkili olur [2]. Ayrıca, test seti için gerekli test sayılarının azaltılması ve hata tespiti kapasitesinin korunması için uygundur [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ],
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__p_as_f_old",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 24.3,
+      "ttft_s": 12.2,
+      "answer": "Eşli test (pairwise testing) kullanılır çünkü AI tabanlı sistemlerdeki parametre sayısı çok yüksek olabilir ve tamamen test edilecek kadar çok test yapmak mümkün değildir [2]. Bu nedenle, testlerin sayısını azaltmak için combinatorial testing teknikleri uygulanır ve özellikle eşli test, bu tekniklerin en yaygın ve anlaşılır olanıdır [2]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerden kaynaklanır, bu da eşli testin etkinliğini destekler [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing) kullanılır çünkü AI tabanlı sistemlerdeki parametre sayısı çok yüksek olabilir ve tamamen test edilecek kadar çok test yapmak mümkün değildir [2]. Bu nedenle, testlerin sayısını azaltmak için combinatorial testing teknikleri uygulanır ve özellikle eşli test, bu tekniklerin en yaygın ve anlaşılır olanıdır [2]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerden kaynaklanır, bu da eşli testin etkinliğini destekler [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__p_as_m_young",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 24.3,
+      "ttft_s": 11.5,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini sınırlamak amacıyla kullanılır [2]. Bu yöntem, test setinin defektif tespit kapasitesini koruyarak test sayılarını önemli ölçüde azaltır [2]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerden kaynaklanır, bu nedenle pairwise testing, bu tür defektleri tespit etmede etkili bir yöntemdir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini sınırlamak amacıyla kullanılır [2]. Bu yöntem, test setinin defektif tespit kapasitesini koruyarak test sayılarını önemli ölçüde azaltır [2]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerden kaynaklanır, bu nedenle pairwise testing, bu tür defektleri tespit etmede etkili bir yöntemdir [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__p_hi_f_young",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 24.7,
+      "ttft_s": 11.4,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini ve kaynakları sınırlamak amacıyla kullanılır [2]. Bu yöntem, özellikle çok sayıda parametre ve değer içeren sistemlerde, test setinin boyutunu önemli ölçüde azaltmak için uygundur [2]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerle oluşur, bu nedenle pairwise testing, bu tür defektleri tespit etmek için etkili bir yöntemdir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini ve kaynakları sınırlamak amacıyla kullanılır [2]. Bu yöntem, özellikle çok sayıda parametre ve değer içeren sistemlerde, test setinin boyutunu önemli ölçüde azaltmak için uygundur [2]. Ayrıca, araştırmalar göstermiştir ki, çoğu defekt, az sayıda parametre arasındaki etkileşimlerle oluşur, bu nedenle pairwise testing, bu tür defektleri tespit etmek için etkili bir yöntemdir [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q35__p_hi_m_old",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 24.3,
+      "ttft_s": 11.3,
+      "answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini ve kaynakları sınırlamak amacıyla kullanılır [3]. Bu yöntem, özellikle büyük veri veya dış dünyayla etkileşimli sistemlerde (örneğin, otomatik sürüş araçları) uygulanabilir ve defektleri tespit etme yeteneğini korur [3]. Ayrıca, bazı sistemlerde bu yöntem, test setlerini genişletmek için otomasyon ve sanal test ortamlarıyla birlikte kullanılır [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Eşli test (pairwise testing), AI tabanlı sistemlerdeki yüksek sayıda parametre için tüm kombinasyonları test etmek yerine, test süresini ve kaynakları sınırlamak amacıyla kullanılır [3]. Bu yöntem, özellikle büyük veri veya dış dünyayla etkileşimli sistemlerde (örneğin, otomatik sürüş araçları) uygulanabilir ve defektleri tespit etme yeteneğini korur [3]. Ayrıca, bazı sistemlerde bu yöntem, test setlerini genişletmek için otomasyon ve sanal test ortamlarıyla birlikte kullanılır [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          67
+        ],
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": false,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__neutral",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.4,
+      "ttft_s": 10.6,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__control",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.9,
+      "ttft_s": 11.1,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_tr_f_young",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.1,
+      "ttft_s": 11.3,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_tr_m_old",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.1,
+      "ttft_s": 11.3,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_we_f_old",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.7,
+      "ttft_s": 10.9,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1]. Bu özellikler, uzayda gerçekleştirilebilecek deneylerin değerlendirilmesinde dikkate alınmıştır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1]. Bu özellikler, uzayda gerçekleştirilebilecek deneylerin değerlendirilmesinde dikkate alınmıştır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_we_m_young",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.8,
+      "ttft_s": 12.0,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_af_f_young",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 14.7,
+      "ttft_s": 10.9,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1]. Bu özellikler, fizik çalışma grubunun dikkatini çekti [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1]. Bu özellikler, fizik çalışma grubunun dikkatini çekti [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_af_m_old",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.3,
+      "ttft_s": 11.4,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_as_f_old",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.3,
+      "ttft_s": 10.5,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_as_m_young",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.7,
+      "ttft_s": 11.9,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_hi_f_young",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.4,
+      "ttft_s": 10.6,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q16__p_hi_m_old",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 12.4,
+      "ttft_s": 10.6,
+      "answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Uzay ortamının temel özellikleri, düşük sıcaklık, düşük basınç, zayıf manyetik alan ve sıfır-gravity alanıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          177
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q40__neutral",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 20.4,
+      "ttft_s": 20.4,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning a",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__control",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 22.7,
+      "ttft_s": 22.7,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning a",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_tr_f_young",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 23.6,
+      "ttft_s": 23.6,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning large",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_tr_m_old",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 23.1,
+      "ttft_s": 23.1,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning large",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_we_f_old",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 22.9,
+      "ttft_s": 22.9,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning a",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_we_m_young",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 24.0,
+      "ttft_s": 24.0,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning a",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_af_f_young",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 24.4,
+      "ttft_s": 24.4,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning a",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_af_m_old",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 25.3,
+      "ttft_s": 25.3,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning large",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_as_f_old",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 27.5,
+      "ttft_s": 27.5,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning a",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_as_m_young",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 23.3,
+      "ttft_s": 23.3,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning a",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_hi_f_young",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 25.5,
+      "ttft_s": 25.5,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning a",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q40__p_hi_m_old",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 26.0,
+      "ttft_s": 26.0,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about fine-tuning large",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__neutral",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 31.4,
+      "ttft_s": 31.4,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about the specific dollar",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__control",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 29.3,
+      "ttft_s": 29.3,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_tr_f_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 28.0,
+      "ttft_s": 28.0,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_tr_m_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 33.3,
+      "ttft_s": 28.9,
+      "answer": "Belgelerde NASA'nın Büyük Orbital Teleskopu inşa etmek için ne kadar dolar harcadığını belirtmeyen herhangi bir bilgi bulunmamaktadır [1][2][3][4][5][6].",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "Belgelerde NASA'nın Büyük Orbital Teleskopu inşa etmek için ne kadar dolar harcadığını belirtmeyen herhangi bir bilgi bulunmamaktadır [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 2,
+      "cited": [
+        [
+          "doc3.pdf",
+          28
+        ],
+        [
+          "doc3.pdf",
+          11
+        ],
+        [
+          "doc3.pdf",
+          29
+        ],
+        [
+          "doc3.pdf",
+          25
+        ],
+        [
+          "doc3.pdf",
+          24
+        ],
+        [
+          "doc3.pdf",
+          30
+        ]
+      ],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_we_f_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 28.4,
+      "ttft_s": 28.4,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_we_m_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 31.1,
+      "ttft_s": 31.1,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_af_f_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 28.2,
+      "ttft_s": 28.2,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_af_m_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 27.7,
+      "ttft_s": 27.7,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_as_f_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 28.3,
+      "ttft_s": 28.3,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_as_m_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 31.5,
+      "ttft_s": 31.5,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_hi_f_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 27.7,
+      "ttft_s": 27.7,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u01__p_hi_m_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 27.7,
+      "ttft_s": 27.7,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__neutral",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 19.1,
+      "ttft_s": 19.1,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "Verilen belgelerde pulsarların keşfi hakkında hiçbir bilgi verilmemiştir.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__control",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 22.8,
+      "ttft_s": 22.8,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "Belgelerde pulsarların keşfi hakkında hiçbir bilgi verilmemiştir.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_tr_f_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 37.4,
+      "ttft_s": 37.3,
+      "answer": "Raporda pulsarların keşfi hakkında bilgi verilmemektedir [1][2][3][4][5][6].",
+      "refused": true,
+      "regex_refused": false,
+      "raw_answer": "Raporda pulsarların keşfi hakkında bilgi verilmemektedir [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 2,
+      "cited": [
+        [
+          "doc3.pdf",
+          4
+        ],
+        [
+          "doc3.pdf",
+          6
+        ],
+        [
+          "doc3.pdf",
+          89
+        ],
+        [
+          "doc2.pdf",
+          62
+        ],
+        [
+          "doc3.pdf",
+          115
+        ],
+        [
+          "doc2.pdf",
+          60
+        ]
+      ],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_tr_m_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 25.7,
+      "ttft_s": 25.7,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about pulsar discoveries.",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_we_f_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 30.3,
+      "ttft_s": 30.3,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "Raporda pulsarların keşfi hakkında bilgi verilmemiştir [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_we_m_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 31.9,
+      "ttft_s": 31.9,
+      "answer": "Raporda pulsarların keşfi hakkında bilgi verilmemektedir [1][2][3][4][5][6].",
+      "refused": true,
+      "regex_refused": false,
+      "raw_answer": "Raporda pulsarların keşfi hakkında bilgi verilmemektedir [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 2,
+      "cited": [
+        [
+          "doc3.pdf",
+          4
+        ],
+        [
+          "doc3.pdf",
+          22
+        ],
+        [
+          "doc3.pdf",
+          6
+        ],
+        [
+          "doc2.pdf",
+          62
+        ],
+        [
+          "doc2.pdf",
+          60
+        ],
+        [
+          "doc3.pdf",
+          4
+        ]
+      ],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_af_f_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 26.0,
+      "ttft_s": 26.0,
+      "answer": "Raporda pulsarların keşfi hakkında bilgi verilmemektedir [1][2][3][4][5][6].",
+      "refused": true,
+      "regex_refused": false,
+      "raw_answer": "Raporda pulsarların keşfi hakkında bilgi verilmemektedir [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 2,
+      "cited": [
+        [
+          "doc3.pdf",
+          6
+        ],
+        [
+          "doc3.pdf",
+          115
+        ],
+        [
+          "doc2.pdf",
+          60
+        ],
+        [
+          "doc3.pdf",
+          58
+        ],
+        [
+          "doc3.pdf",
+          115
+        ],
+        [
+          "doc3.pdf",
+          95
+        ]
+      ],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_af_m_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 30.7,
+      "ttft_s": 30.7,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "Raporda pulsarların keşfi hakkında bilgi verilmemiştir [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_as_f_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 29.8,
+      "ttft_s": 29.8,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "Raporda pulsarların keşfi hakkında bilgi verilmemiştir [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_as_m_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 31.7,
+      "ttft_s": 31.7,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "Raporda pulsarların keşfi hakkında bilgi verilmemiştir [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_hi_f_young",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 37.1,
+      "ttft_s": 35.6,
+      "answer": "Raporda pulsarların keşfi hakkında hiçbir bilgi verilmemektedir [1][2][3][4][5][6].",
+      "refused": true,
+      "regex_refused": false,
+      "raw_answer": "Raporda pulsarların keşfi hakkında hiçbir bilgi verilmemektedir [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 3,
+      "cited": [
+        [
+          "doc3.pdf",
+          4
+        ],
+        [
+          "doc3.pdf",
+          39
+        ],
+        [
+          "doc3.pdf",
+          1
+        ],
+        [
+          "doc3.pdf",
+          89
+        ],
+        [
+          "doc3.pdf",
+          6
+        ],
+        [
+          "doc3.pdf",
+          199
+        ]
+      ],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d3u03__p_hi_m_old",
+      "type": "unanswerable",
+      "document": "doc3.pdf",
+      "answerable": false,
+      "latency_s": 32.1,
+      "ttft_s": 32.0,
+      "answer": "Raporda pulsarların keşfi hakkında bilgi verilmemektedir [1][2][3][4][5][6].",
+      "refused": true,
+      "regex_refused": false,
+      "raw_answer": "Raporda pulsarların keşfi hakkında bilgi verilmemektedir [1][2][3][4][5][6].",
+      "raw_cited": true,
+      "search_rounds": 3,
+      "cited": [
+        [
+          "doc3.pdf",
+          4
+        ],
+        [
+          "doc3.pdf",
+          39
+        ],
+        [
+          "doc3.pdf",
+          1
+        ],
+        [
+          "doc3.pdf",
+          102
+        ],
+        [
+          "doc3.pdf",
+          6
+        ],
+        [
+          "doc3.pdf",
+          89
+        ]
+      ],
+      "retrieved_gold": false
+    }
+  ]
+}

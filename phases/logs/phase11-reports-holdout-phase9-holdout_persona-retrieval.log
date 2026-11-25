@@ -1,0 +1,155 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:   1%|▏         | 5/391 [00:00<00:42,  9.02it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 700.05it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:   2%|▏         | 9/393 [00:00<00:25, 14.85it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 642.97it/s]
+[1/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is back-to-back testing also known as?
+[2/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I have a question about the documents in this collection
+[3/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Zeynep Demir, a 24-year-old woman from Turkey. What 
+[4/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Ali Şahin, a 66-year-old man from Turkey. What is ba
+[5/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sarah Thompson, a 70-year-old woman from the United 
+[6/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Lukas Schmidt, a 22-year-old man from Germany. What 
+[7/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Fatou Diallo, a 23-year-old woman from Senegal. What
+[8/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Joseph Kamau, a 67-year-old man from Kenya. What is 
+[9/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Yuki Tanaka, a 68-year-old woman from Japan. What is
+[10/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Minh Nguyen, a 24-year-old man from Vietnam. What is
+[11/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sofía Rodríguez, a 21-year-old woman from Argentina.
+[12/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Carlos Morales, a 69-year-old man from Peru. What is
+[13/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  What is the 2022 recommended value of the inverse fine-struc
+[14/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I have a question about the documents in this collection
+[15/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Zeynep Demir, a 24-year-old woman from Turkey. What 
+[16/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Ali Şahin, a 66-year-old man from Turkey. What is th
+[17/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Sarah Thompson, a 70-year-old woman from the United 
+[18/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Lukas Schmidt, a 22-year-old man from Germany. What 
+[19/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Fatou Diallo, a 23-year-old woman from Senegal. What
+[20/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Joseph Kamau, a 67-year-old man from Kenya. What is 
+[21/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Yuki Tanaka, a 68-year-old woman from Japan. What is
+[22/156] vector=2  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Minh Nguyen, a 24-year-old man from Vietnam. What is
+[23/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Sofía Rodríguez, a 21-year-old woman from Argentina.
+[24/156] vector=1  keyword=2  hybrid (RRF)=2  vector + reranker=2  hybrid + reranker=2  Hi, I'm Carlos Morales, a 69-year-old man from Peru. What is
+[25/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What process does the gamma-ray line at 0.5 MeV represent?
+[26/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I have a question about the documents in this collection
+[27/156] vector=1  keyword=3  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Hi, I'm Zeynep Demir, a 24-year-old woman from Turkey. What 
+[28/156] vector=1  keyword=4  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Ali Şahin, a 66-year-old man from Turkey. What proce
+[29/156] vector=1  keyword=3  hybrid (RRF)=6  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sarah Thompson, a 70-year-old woman from the United 
+[30/156] vector=1  keyword=4  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Lukas Schmidt, a 22-year-old man from Germany. What 
+[31/156] vector=3  keyword=3  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  Hi, I'm Fatou Diallo, a 23-year-old woman from Senegal. What
+[32/156] vector=1  keyword=4  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Hi, I'm Joseph Kamau, a 67-year-old man from Kenya. What pro
+[33/156] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Yuki Tanaka, a 68-year-old woman from Japan. What pr
+[34/156] vector=1  keyword=4  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  Hi, I'm Minh Nguyen, a 24-year-old man from Vietnam. What pr
+[35/156] vector=1  keyword=3  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sofía Rodríguez, a 21-year-old woman from Argentina.
+[36/156] vector=1  keyword=4  hybrid (RRF)=4  vector + reranker=1  hybrid + reranker=1  Hi, I'm Carlos Morales, a 69-year-old man from Peru. What pr
+[37/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which kind of learning is used to group customers for market
+[38/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I have a question about the documents in this collection
+[39/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Zeynep Demir, a 24-year-old woman from Turkey. Which
+[40/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Ali Şahin, a 66-year-old man from Turkey. Which kind
+[41/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sarah Thompson, a 70-year-old woman from the United 
+[42/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Lukas Schmidt, a 22-year-old man from Germany. Which
+[43/156] vector=2  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Fatou Diallo, a 23-year-old woman from Senegal. Whic
+[44/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Joseph Kamau, a 67-year-old man from Kenya. Which ki
+[45/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Yuki Tanaka, a 68-year-old woman from Japan. Which k
+[46/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Minh Nguyen, a 24-year-old man from Vietnam. Which k
+[47/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sofía Rodríguez, a 21-year-old woman from Argentina.
+[48/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Carlos Morales, a 69-year-old man from Peru. Which k
+[49/156] vector=1  keyword=6  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Why should observing the Sun from space and from the ground 
+[50/156] vector=1  keyword=8  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Hi, I have a question about the documents in this collection
+[51/156] vector=1  keyword=7  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  Hi, I'm Zeynep Demir, a 24-year-old woman from Turkey. Why s
+[52/156] vector=1  keyword=11  hybrid (RRF)=4  vector + reranker=1  hybrid + reranker=1  Hi, I'm Ali Şahin, a 66-year-old man from Turkey. Why should
+[53/156] vector=2  keyword=8  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sarah Thompson, a 70-year-old woman from the United 
+[54/156] vector=1  keyword=11  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Hi, I'm Lukas Schmidt, a 22-year-old man from Germany. Why s
+[55/156] vector=1  keyword=7  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Hi, I'm Fatou Diallo, a 23-year-old woman from Senegal. Why 
+[56/156] vector=1  keyword=11  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  Hi, I'm Joseph Kamau, a 67-year-old man from Kenya. Why shou
+[57/156] vector=1  keyword=7  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Hi, I'm Yuki Tanaka, a 68-year-old woman from Japan. Why sho
+[58/156] vector=1  keyword=11  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  Hi, I'm Minh Nguyen, a 24-year-old man from Vietnam. Why sho
+[59/156] vector=2  keyword=7  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sofía Rodríguez, a 21-year-old woman from Argentina.
+[60/156] vector=2  keyword=11  hybrid (RRF)=3  vector + reranker=1  hybrid + reranker=1  Hi, I'm Carlos Morales, a 69-year-old man from Peru. Why sho
+[61/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  What is the shortest wavelength at which the 15 ft Aerospace
+[62/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I have a question about the documents in this collection
+[63/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Zeynep Demir, a 24-year-old woman from Turkey. What 
+[64/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Ali Şahin, a 66-year-old man from Turkey. What is th
+[65/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sarah Thompson, a 70-year-old woman from the United 
+[66/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Lukas Schmidt, a 22-year-old man from Germany. What 
+[67/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Fatou Diallo, a 23-year-old woman from Senegal. What
+[68/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Joseph Kamau, a 67-year-old man from Kenya. What is 
+[69/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Yuki Tanaka, a 68-year-old woman from Japan. What is
+[70/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Minh Nguyen, a 24-year-old man from Vietnam. What is
+[71/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sofía Rodríguez, a 21-year-old woman from Argentina.
+[72/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Carlos Morales, a 69-year-old man from Peru. What is
+[73/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Which two mirror shapes are used in the grazing incidence x-
+[74/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I have a question about the documents in this collection
+[75/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Zeynep Demir, a 24-year-old woman from Turkey. Which
+[76/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Ali Şahin, a 66-year-old man from Turkey. Which two 
+[77/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sarah Thompson, a 70-year-old woman from the United 
+[78/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Lukas Schmidt, a 22-year-old man from Germany. Which
+[79/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Fatou Diallo, a 23-year-old woman from Senegal. Whic
+[80/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Joseph Kamau, a 67-year-old man from Kenya. Which tw
+[81/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Yuki Tanaka, a 68-year-old woman from Japan. Which t
+[82/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Minh Nguyen, a 24-year-old man from Vietnam. Which t
+[83/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sofía Rodríguez, a 21-year-old woman from Argentina.
+[84/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Carlos Morales, a 69-year-old man from Peru. Which t
+[85/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  For the high-resolution broad-band antenna of Recommendation
+[86/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I have a question about the documents in this collection
+[87/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Zeynep Demir, a 24-year-old woman from Turkey. For t
+[88/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Ali Şahin, a 66-year-old man from Turkey. For the hi
+[89/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sarah Thompson, a 70-year-old woman from the United 
+[90/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Lukas Schmidt, a 22-year-old man from Germany. For t
+[91/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Fatou Diallo, a 23-year-old woman from Senegal. For 
+[92/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Joseph Kamau, a 67-year-old man from Kenya. For the 
+[93/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Yuki Tanaka, a 68-year-old woman from Japan. For the
+[94/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Minh Nguyen, a 24-year-old man from Vietnam. For the
+[95/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Sofía Rodríguez, a 21-year-old woman from Argentina.
+[96/156] vector=1  keyword=1  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Hi, I'm Carlos Morales, a 69-year-old man from Peru. For the
+[97/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Eşli test (pairwise testing) neden kullanılır?
+[98/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, bu koleksiyondaki belgelerle ilgili bir sorum var. 
+[99/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Zeynep Demir, Türkiye'den 24 yaşında bir kadını
+[100/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Ali Şahin, Türkiye'den 66 yaşında bir erkeğim. 
+[101/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Sarah Thompson, İngiltere'den 70 yaşında bir ka
+[102/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Lukas Schmidt, Almanya'dan 22 yaşında bir erkeğ
+[103/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Fatou Diallo, Senegal'den 23 yaşında bir kadını
+[104/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Joseph Kamau, Kenya'dan 67 yaşında bir erkeğim.
+[105/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Yuki Tanaka, Japonya'dan 68 yaşında bir kadınım
+[106/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Minh Nguyen, Vietnam'dan 24 yaşında bir erkeğim
+[107/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Sofía Rodríguez, Arjantin'den 21 yaşında bir ka
+[108/156] vector=1  keyword=2  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Carlos Morales, Peru'dan 69 yaşında bir erkeğim
+[109/156] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Fizik çalışma grubu uzay ortamının hangi temel özelliklerini
+[110/156] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, bu koleksiyondaki belgelerle ilgili bir sorum var. 
+[111/156] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Zeynep Demir, Türkiye'den 24 yaşında bir kadını
+[112/156] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Ali Şahin, Türkiye'den 66 yaşında bir erkeğim. 
+[113/156] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Sarah Thompson, İngiltere'den 70 yaşında bir ka
+[114/156] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Lukas Schmidt, Almanya'dan 22 yaşında bir erkeğ
+[115/156] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Fatou Diallo, Senegal'den 23 yaşında bir kadını
+[116/156] vector=1  keyword=-  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Joseph Kamau, Kenya'dan 67 yaşında bir erkeğim.
+[117/156] vector=1  keyword=-  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Yuki Tanaka, Japonya'dan 68 yaşında bir kadınım
+[118/156] vector=1  keyword=-  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Minh Nguyen, Vietnam'dan 24 yaşında bir erkeğim
+[119/156] vector=1  keyword=-  hybrid (RRF)=1  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Sofía Rodríguez, Arjantin'den 21 yaşında bir ka
+[120/156] vector=1  keyword=-  hybrid (RRF)=2  vector + reranker=1  hybrid + reranker=1  Merhaba, ben Carlos Morales, Peru'dan 69 yaşında bir erkeğim
+
+## Overall (120 answerable questions)
+
+| Method | Recall@1 | Recall@6 | MRR | All pages@6 (multi-page) |
+|---|---|---|---|---|
+| vector | 0.95 | 1.00 | 0.974 | - |
+| keyword | 0.50 | 0.81 | 0.645 | - |
+| hybrid (RRF) | 0.72 | 1.00 | 0.842 | - |
+| vector + reranker | 0.90 | 1.00 | 0.950 | - |
+| hybrid + reranker | 0.90 | 1.00 | 0.950 | - |
+
+## Recall@6 by question type
+
+| Type (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| factual (36) | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| figure (12) | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| multi_page (12) | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| paraphrase (24) | 1.00 | 0.54 | 1.00 | 1.00 | 1.00 |
+| table (12) | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
+| turkish (24) | 1.00 | 0.50 | 1.00 | 1.00 | 1.00 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## Recall@6 / MRR by document
+
+| Document (n) | vector | keyword | hybrid (RRF) | vector + reranker | hybrid + reranker |
+|---|---|---|---|---|---|
+| doc1.pdf (36) | 1.00 / 0.99 | 1.00 / 0.83 | 1.00 / 1.00 | 1.00 / 1.00 | 1.00 / 1.00 |
+| doc2.pdf (12) | 1.00 / 0.96 | 1.00 / 0.50 | 1.00 / 0.50 | 1.00 / 0.50 | 1.00 / 0.50 |
+| doc3.pdf (72) | 1.00 / 0.97 | 0.68 / 0.57 | 1.00 / 0.82 | 1.00 / 1.00 | 1.00 / 1.00 |
+
+Report: /Users/neslihaneti/Desktop/rag_phase9_baseline/reports/20261124-1330-retrieval.md

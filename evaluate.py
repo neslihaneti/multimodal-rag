@@ -89,7 +89,7 @@ def run_info(golden_path):
         "embedder": model.EMBED_MODEL_NAME, "reranker": model.RERANK_MODEL_NAME, "generator": model.GEN_MODEL_NAME,
         # Which prompts were measured: a resumed run reloads the code, so a changed prompt shows up here
         "prompt_sha256": hashlib.sha256((rag.ANSWER_SYSTEM + rag.ANSWER_PROMPT + json.dumps(rag.REFUSAL) + rag.NOT_FOUND.pattern
-                                         + rag.TURKISH.pattern + inspect.getsource(rag.is_refusal)
+                                         + rag.TURKISH.pattern + inspect.getsource(rag.question_language) + " ".join(sorted(rag.TURKISH_WORDS | rag.ENGLISH_WORDS)) + inspect.getsource(rag.is_refusal)
                                          + inspect.getsource(rag.answer_language) + inspect.getsource(rag.without_language_request)
                                          + "".join(r.pattern for r in rag.ASKED_LANGUAGE.values())).encode()).hexdigest()[:12],
         "judge_sha256": hashlib.sha256((CORRECTNESS_PROMPT + REFUSAL_PROMPT + SUPPORT_PROMPT + SENTENCE.pattern + inspect.getsource(answer_sentences) + inspect.getsource(faithfulness)).encode()).hexdigest()[:12],

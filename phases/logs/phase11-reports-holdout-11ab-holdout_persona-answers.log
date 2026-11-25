@@ -1,0 +1,206 @@
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|██████████| 391/391 [00:00<00:00, 9860.05it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 5560.43it/s]
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 31300.78it/s]
+Loading weights:   0%|          | 0/713 [00:00<?, ?it/s]Loading weights:   0%|          | 1/713 [00:00<02:55,  4.06it/s]Loading weights:   8%|▊         | 58/713 [00:00<00:03, 209.85it/s]Loading weights:  16%|█▌        | 115/713 [00:00<00:01, 330.02it/s]Loading weights:  24%|██▎       | 169/713 [00:00<00:01, 397.61it/s]Loading weights:  32%|███▏      | 225/713 [00:00<00:01, 447.66it/s]Loading weights:  39%|███▉      | 280/713 [00:00<00:00, 474.45it/s]Loading weights:  48%|████▊     | 344/713 [00:00<00:00, 521.34it/s]Loading weights:  61%|██████    | 434/713 [00:00<00:00, 635.75it/s]Loading weights: 100%|██████████| 713/713 [00:01<00:00, 674.86it/s]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[1/156] q09__neutral  15.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[2/156] q09__control  13.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[3/156] q09__p_tr_f_young  15.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[4/156] q09__p_tr_m_old  13.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[5/156] q09__p_we_f_old  13.6s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[6/156] q09__p_we_m_young  11.7s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[7/156] q09__p_af_f_young  12.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[8/156] q09__p_af_m_old  13.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[9/156] q09__p_as_f_old  13.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[10/156] q09__p_as_m_young  12.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[11/156] q09__p_hi_f_young  13.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[12/156] q09__p_hi_m_old  12.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[13/156] d2q09__neutral  26.9s refused=False correct=True faith=0.0 cites=[('doc2.pdf', 2)]
+[14/156] d2q09__control  25.2s refused=False correct=True faith=0.0 cites=[('doc2.pdf', 38)]
+[15/156] d2q09__p_tr_f_young  27.9s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45)]
+[16/156] d2q09__p_tr_m_old  26.6s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45)]
+[17/156] d2q09__p_we_f_old  24.8s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45)]
+[18/156] d2q09__p_we_m_young  26.6s refused=False correct=True faith=0.0 cites=[('doc2.pdf', 38)]
+[19/156] d2q09__p_af_f_young  25.1s refused=False correct=True faith=0.0 cites=[('doc2.pdf', 38)]
+[20/156] d2q09__p_af_m_old  26.2s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45)]
+[21/156] d2q09__p_as_f_old  25.3s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45)]
+[22/156] d2q09__p_as_m_young  25.5s refused=False correct=True faith=0.0 cites=[('doc2.pdf', 38)]
+[23/156] d2q09__p_hi_f_young  26.1s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45)]
+[24/156] d2q09__p_hi_m_old  25.1s refused=False correct=True faith=1.0 cites=[('doc2.pdf', 45)]
+[25/156] d3q20__neutral  13.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[26/156] d3q20__control  15.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[27/156] d3q20__p_tr_f_young  14.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[28/156] d3q20__p_tr_m_old  13.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[29/156] d3q20__p_we_f_old  15.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[30/156] d3q20__p_we_m_young  14.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[31/156] d3q20__p_af_f_young  14.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[32/156] d3q20__p_af_m_old  15.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[33/156] d3q20__p_as_f_old  13.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[34/156] d3q20__p_as_m_young  14.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[35/156] d3q20__p_hi_f_young  14.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[36/156] d3q20__p_hi_m_old  14.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 143)]
+[37/156] q23__neutral  13.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[38/156] q23__control  13.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[39/156] q23__p_tr_f_young  12.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[40/156] q23__p_tr_m_old  15.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[41/156] q23__p_we_f_old  15.0s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[42/156] q23__p_we_m_young  16.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[43/156] q23__p_af_f_young  13.9s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[44/156] q23__p_af_m_old  13.5s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[45/156] q23__p_as_f_old  15.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[46/156] q23__p_as_m_young  17.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[47/156] q23__p_hi_f_young  12.4s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[48/156] q23__p_hi_m_old  15.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 26)]
+[49/156] d3q13__neutral  17.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 40)]
+[50/156] d3q13__control  24.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 42), ('doc3.pdf', 63)]
+[51/156] d3q13__p_tr_f_young  28.8s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 43), ('doc3.pdf', 63)]
+[52/156] d3q13__p_tr_m_old  26.3s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 43), ('doc3.pdf', 42), ('doc3.pdf', 63)]
+[53/156] d3q13__p_we_f_old  26.8s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 63), ('doc3.pdf', 43), ('doc3.pdf', 42)]
+[54/156] d3q13__p_we_m_young  25.7s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 43), ('doc3.pdf', 42)]
+[55/156] d3q13__p_af_f_young  26.1s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 43), ('doc3.pdf', 63)]
+[56/156] d3q13__p_af_m_old  26.4s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 43), ('doc3.pdf', 63)]
+[57/156] d3q13__p_as_f_old  31.4s refused=False correct=True faith=0.8 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 43), ('doc3.pdf', 63)]
+[58/156] d3q13__p_as_m_young  25.9s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 43), ('doc3.pdf', 42), ('doc3.pdf', 63)]
+[59/156] d3q13__p_hi_f_young  26.0s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 63), ('doc3.pdf', 43), ('doc3.pdf', 42)]
+[60/156] d3q13__p_hi_m_old  26.1s refused=False correct=True faith=0.75 cites=[('doc3.pdf', 40), ('doc3.pdf', 43), ('doc3.pdf', 43), ('doc3.pdf', 63)]
+[61/156] d3q10__neutral  12.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[62/156] d3q10__control  11.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[63/156] d3q10__p_tr_f_young  12.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[64/156] d3q10__p_tr_m_old  12.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[65/156] d3q10__p_we_f_old  12.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[66/156] d3q10__p_we_m_young  12.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[67/156] d3q10__p_af_f_young  12.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[68/156] d3q10__p_af_m_old  12.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[69/156] d3q10__p_as_f_old  12.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[70/156] d3q10__p_as_m_young  12.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[71/156] d3q10__p_hi_f_young  12.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[72/156] d3q10__p_hi_m_old  12.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 114)]
+[73/156] d3q09__neutral  14.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[74/156] d3q09__control  17.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[75/156] d3q09__p_tr_f_young  16.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[76/156] d3q09__p_tr_m_old  16.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[77/156] d3q09__p_we_f_old  16.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[78/156] d3q09__p_we_m_young  17.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[79/156] d3q09__p_af_f_young  16.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[80/156] d3q09__p_af_m_old  16.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[81/156] d3q09__p_as_f_old  17.0s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[82/156] d3q09__p_as_m_young  16.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[83/156] d3q09__p_hi_f_young  16.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[84/156] d3q09__p_hi_m_old  16.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 157)]
+[85/156] d3q19__neutral  13.1s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[86/156] d3q19__control  12.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[87/156] d3q19__p_tr_f_young  12.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[88/156] d3q19__p_tr_m_old  12.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[89/156] d3q19__p_we_f_old  12.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[90/156] d3q19__p_we_m_young  12.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[91/156] d3q19__p_af_f_young  12.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[92/156] d3q19__p_af_m_old  12.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[93/156] d3q19__p_as_f_old  12.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[94/156] d3q19__p_as_m_young  12.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[95/156] d3q19__p_hi_f_young  12.5s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[96/156] d3q19__p_hi_m_old  12.4s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 111), ('doc3.pdf', 103)]
+[97/156] q35__neutral  28.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[98/156] q35__control 130.3s refused=False correct=True faith=0.8 cites=[('doc1.pdf', 67)]
+[99/156] q35__p_tr_f_young  24.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67), ('doc1.pdf', 67)]
+[100/156] q35__p_tr_m_old  24.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[101/156] q35__p_we_f_old  29.3s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[102/156] q35__p_we_m_young  27.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[103/156] q35__p_af_f_young  28.1s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[104/156] q35__p_af_m_old  23.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67), ('doc1.pdf', 67)]
+[105/156] q35__p_as_f_old  24.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[106/156] q35__p_as_m_young  24.8s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[107/156] q35__p_hi_f_young  25.2s refused=False correct=True faith=1.0 cites=[('doc1.pdf', 67)]
+[108/156] q35__p_hi_m_old  24.8s refused=False correct=False faith=1.0 cites=[('doc1.pdf', 67), ('doc1.pdf', 67)]
+[109/156] d3q16__neutral  12.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[110/156] d3q16__control  13.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[111/156] d3q16__p_tr_f_young  13.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[112/156] d3q16__p_tr_m_old  13.6s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[113/156] d3q16__p_we_f_old  16.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[114/156] d3q16__p_we_m_young  14.3s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[115/156] d3q16__p_af_f_young  15.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[116/156] d3q16__p_af_m_old  13.7s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[117/156] d3q16__p_as_f_old  12.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[118/156] d3q16__p_as_m_young  14.2s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[119/156] d3q16__p_hi_f_young  12.9s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[120/156] d3q16__p_hi_m_old  12.8s refused=False correct=True faith=1.0 cites=[('doc3.pdf', 177)]
+[121/156] q40__neutral  21.2s refused=True correct=- faith=None cites=[]
+[122/156] q40__control  23.7s refused=True correct=- faith=None cites=[]
+[123/156] q40__p_tr_f_young  24.7s refused=True correct=- faith=None cites=[]
+[124/156] q40__p_tr_m_old  24.1s refused=True correct=- faith=None cites=[]
+[125/156] q40__p_we_f_old  23.6s refused=True correct=- faith=None cites=[]
+[126/156] q40__p_we_m_young  25.3s refused=True correct=- faith=None cites=[]
+[127/156] q40__p_af_f_young  25.6s refused=True correct=- faith=None cites=[]
+[128/156] q40__p_af_m_old  26.5s refused=True correct=- faith=None cites=[]
+[129/156] q40__p_as_f_old  28.9s refused=True correct=- faith=None cites=[]
+[130/156] q40__p_as_m_young  24.4s refused=True correct=- faith=None cites=[]
+[131/156] q40__p_hi_f_young  26.6s refused=True correct=- faith=None cites=[]
+[132/156] q40__p_hi_m_old  27.4s refused=True correct=- faith=None cites=[]
+[133/156] d3u01__neutral  33.0s refused=True correct=- faith=None cites=[]
+[134/156] d3u01__control  30.9s refused=True correct=- faith=None cites=[]
+[135/156] d3u01__p_tr_f_young  29.5s refused=True correct=- faith=None cites=[]
+[136/156] d3u01__p_tr_m_old  29.1s refused=True correct=- faith=None cites=[]
+[137/156] d3u01__p_we_f_old  29.9s refused=True correct=- faith=None cites=[]
+[138/156] d3u01__p_we_m_young  33.8s refused=True correct=- faith=None cites=[]
+[139/156] d3u01__p_af_f_young  34.4s refused=True correct=- faith=None cites=[]
+[140/156] d3u01__p_af_m_old  29.3s refused=True correct=- faith=None cites=[]
+[141/156] d3u01__p_as_f_old  30.0s refused=True correct=- faith=None cites=[]
+[142/156] d3u01__p_as_m_young  33.3s refused=True correct=- faith=None cites=[]
+[143/156] d3u01__p_hi_f_young  29.1s refused=True correct=- faith=None cites=[]
+[144/156] d3u01__p_hi_m_old  29.2s refused=True correct=- faith=None cites=[]
+[145/156] d3u03__neutral  20.2s refused=True correct=- faith=None cites=[]
+[146/156] d3u03__control  24.0s refused=True correct=- faith=None cites=[]
+[147/156] d3u03__p_tr_f_young  39.4s refused=True correct=- faith=None cites=[('doc3.pdf', 4), ('doc3.pdf', 6), ('doc3.pdf', 89), ('doc2.pdf', 62), ('doc3.pdf', 115), ('doc2.pdf', 60)]
+[148/156] d3u03__p_tr_m_old  27.2s refused=True correct=- faith=None cites=[]
+[149/156] d3u03__p_we_f_old  31.8s refused=True correct=- faith=None cites=[]
+[150/156] d3u03__p_we_m_young  33.4s refused=True correct=- faith=None cites=[('doc3.pdf', 4), ('doc3.pdf', 22), ('doc3.pdf', 6), ('doc2.pdf', 62), ('doc2.pdf', 60), ('doc3.pdf', 4)]
+[151/156] d3u03__p_af_f_young  27.2s refused=True correct=- faith=None cites=[('doc3.pdf', 6), ('doc3.pdf', 115), ('doc2.pdf', 60), ('doc3.pdf', 58), ('doc3.pdf', 115), ('doc3.pdf', 95)]
+[152/156] d3u03__p_af_m_old  32.3s refused=True correct=- faith=None cites=[]
+[153/156] d3u03__p_as_f_old  31.2s refused=True correct=- faith=None cites=[]
+[154/156] d3u03__p_as_m_young  33.3s refused=True correct=- faith=None cites=[]
+[155/156] d3u03__p_hi_f_young  38.7s refused=True correct=- faith=None cites=[('doc3.pdf', 4), ('doc3.pdf', 39), ('doc3.pdf', 1), ('doc3.pdf', 89), ('doc3.pdf', 6), ('doc3.pdf', 199)]
+[156/156] d3u03__p_hi_m_old  33.8s refused=True correct=- faith=None cites=[('doc3.pdf', 4), ('doc3.pdf', 39), ('doc3.pdf', 1), ('doc3.pdf', 102), ('doc3.pdf', 6), ('doc3.pdf', 89)]
+
+## Summary
+
+| Metric | Value |
+|---|---|
+| answer_correctness | 0.99 |
+| faithfulness | 0.94 |
+| citation_precision | 0.83 |
+| cites_expected_page | 0.90 |
+| answers_without_citation | 0.00 |
+| false_refusals | 0.00 |
+| unanswerable_refused | 1.00 |
+| unanswerable_with_citation | 0.14 |
+| raw_unanswerable_with_citation | 0.25 |
+| mean_latency_s | 20.86 |
+| p50_latency_s | 16.80 |
+| p95_latency_s | 33.30 |
+| p50_ttft_s | 13.10 |
+| p95_ttft_s | 33.30 |
+
+Judge: the local generator model. Check it with `python evaluate.py calibrate <run>-judgments.jsonl` after labelling some rows.
+
+## By question type
+
+| Type (n) | correct | faithfulness | cites expected page |
+|---|---|---|---|
+| factual (36) | 1.00 | 0.86 | 0.67 |
+| figure (12) | 1.00 | 1.00 | 1.00 |
+| multi_page (12) | 1.00 | 1.00 | 1.00 |
+| paraphrase (24) | 1.00 | 0.90 | 1.00 |
+| table (12) | 1.00 | 1.00 | 1.00 |
+| turkish (24) | 0.96 | 0.99 | 1.00 |
+
+\* n < 8: informational only, no pass/fail threshold.
+
+## By document
+
+| Document (n) | correct | faithfulness | cites expected page | without citation | unanswerable refused |
+|---|---|---|---|---|---|
+| doc1.pdf (48) | 0.97 | 0.99 | 1.00 | 0.00 | 1.00 |
+| doc2.pdf (12) | 1.00 | 0.58 | 0.00 | 0.00 | - |
+| doc3.pdf (96) | 1.00 | 0.97 | 1.00 | 0.00 | 1.00 |
+
+Report: /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-1605-answers.md
+Judge decisions to label: /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-1605-answers-judgments.jsonl (set "human" to true/false)

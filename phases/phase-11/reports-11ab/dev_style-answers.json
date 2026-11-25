@@ -1,0 +1,2460 @@
+{
+  "info": {
+    "time": "2026-11-24T12:28:42",
+    "golden": "dev_style.jsonl",
+    "golden_sha256": "06c9e8981963",
+    "indexed_documents": 3,
+    "indexed_chunks": 1164,
+    "embedder": "BAAI/bge-m3",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "generator": "Qwen/Qwen3-VL-4B-Instruct",
+    "prompt_sha256": "641178ef9c95",
+    "judge_sha256": "c4b4d9403855",
+    "candidates": 40,
+    "top_k": 6,
+    "max_search_rounds": 3,
+    "rrf_k": 60,
+    "image_max_side": 896,
+    "enough_score": 0.5,
+    "max_page_images": 2,
+    "first_sentence_max": 60
+  },
+  "metrics": {
+    "answer_correctness": 0.9625,
+    "faithfulness": 0.8683544303797468,
+    "citation_precision": 0.930379746835443,
+    "cites_expected_page": 0.975,
+    "answers_without_citation": 0.0,
+    "false_refusals": 0.0125,
+    "unanswerable_refused": 0.95,
+    "unanswerable_with_citation": 0.05,
+    "raw_unanswerable_with_citation": 0.05,
+    "mean_latency_s": 23.346,
+    "p50_latency_s": 18.4,
+    "p95_latency_s": 51.0,
+    "p50_ttft_s": 12.4,
+    "p95_ttft_s": 51.0
+  },
+  "rows": [
+    {
+      "id": "q01__formal",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 22.1,
+      "ttft_s": 21.7,
+      "answer": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          18
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q01__casual",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.2,
+      "ttft_s": 14.2,
+      "answer": "The ISO/IEC JTC 1/SC42 AI subcommittee was set up in 2017 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The ISO/IEC JTC 1/SC42 AI subcommittee was set up in 2017 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          18
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q01__non_native",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.1,
+      "ttft_s": 14.7,
+      "answer": "The ISO/IEC JTC 1/SC42 subcommittee for AI was set up in 2017 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The ISO/IEC JTC 1/SC42 subcommittee for AI was set up in 2017 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          18
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q01__typos",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.6,
+      "ttft_s": 13.2,
+      "answer": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The ISO/IEC JTC 1/SC42 subcommittee on AI was set up in 2017 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          18
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q04__formal",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.4,
+      "ttft_s": 12.9,
+      "answer": "The OECD principles on artificial intelligence were adopted by forty-two countries at the time of their issuance [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The OECD principles on artificial intelligence were adopted by forty-two countries at the time of their issuance [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          23
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q04__casual",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.4,
+      "ttft_s": 12.6,
+      "answer": "The OECD AI principles were adopted by forty-two countries when they were issued [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The OECD AI principles were adopted by forty-two countries when they were issued [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          23
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q04__non_native",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.5,
+      "ttft_s": 11.6,
+      "answer": "The OECD principles for AI were adopted by forty-two countries when they were issued [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The OECD principles for AI were adopted by forty-two countries when they were issued [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          23
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q04__typos",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.6,
+      "ttft_s": 13.7,
+      "answer": "The OECD principles for AI were adopted by forty-two countries when they were issued [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The OECD principles for AI were adopted by forty-two countries when they were issued [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          23
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q07__formal",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.3,
+      "ttft_s": 11.3,
+      "answer": "The F1-score is calculated as 2 times the product of precision and recall, divided by the sum of precision and recall [1]. It is computed as the harmonic mean of precision and recall [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The F1-score is calculated as 2 times the product of precision and recall, divided by the sum of precision and recall [1]. It is computed as the harmonic mean of precision and recall [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          40
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "q07__casual",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.6,
+      "ttft_s": 10.8,
+      "answer": "The F1-score is computed as the harmonic mean of precision and recall, using the formula: F1-score = 2 * (Precision * Recall) / (Precision + Recall) [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The F1-score is computed as the harmonic mean of precision and recall, using the formula: F1-score = 2 * (Precision * Recall) / (Precision + Recall) [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          40
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q07__non_native",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.9,
+      "ttft_s": 12.4,
+      "answer": "The F1-score is calculated as 2 times the product of precision and recall, divided by the sum of precision and recall [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The F1-score is calculated as 2 times the product of precision and recall, divided by the sum of precision and recall [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          40
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.0
+    },
+    {
+      "id": "q07__typos",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.8,
+      "ttft_s": 11.2,
+      "answer": "The F1-score is calculated as 2 times the product of precision and recall, divided by the sum of precision and recall [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The F1-score is calculated as 2 times the product of precision and recall, divided by the sum of precision and recall [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          40
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.0
+    },
+    {
+      "id": "q13__formal",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 17.3,
+      "ttft_s": 7.9,
+      "answer": "The three fundamental characteristics considered desirable for explainable AI (XAI) are transparency, interpretability, and explainability. Transparency is defined as the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is considered to be the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The three fundamental characteristics considered desirable for explainable AI (XAI) are transparency, interpretability, and explainability. Transparency is defined as the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is considered to be the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          24
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q13__casual",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 18.6,
+      "ttft_s": 9.7,
+      "answer": "The three basic desirable XAI characteristics for AI-based systems are transparency, interpretability, and explainability [1]. Transparency refers to the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The three basic desirable XAI characteristics for AI-based systems are transparency, interpretability, and explainability [1]. Transparency refers to the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          24
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q13__non_native",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 17.7,
+      "ttft_s": 8.7,
+      "answer": "The three basic desirable XAI characteristics for AI-based systems are transparency, interpretability, and explainability [1]. Transparency is defined as the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is considered to be the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The three basic desirable XAI characteristics for AI-based systems are transparency, interpretability, and explainability [1]. Transparency is defined as the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is considered to be the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          24
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q13__typos",
+      "type": "factual",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 18.4,
+      "ttft_s": 9.6,
+      "answer": "The three basic desirable XAI characteristics for AI-based systems are transparency, interpretability, and explainability. Transparency is defined as the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is considered to be the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The three basic desirable XAI characteristics for AI-based systems are transparency, interpretability, and explainability. Transparency is defined as the ease with which the algorithm and training data used to generate the model can be determined [1]. Interpretability is considered to be the understandability of the AI technology by various stakeholders, including the users [1]. Explainability is considered to be the ease with which users can determine how the AI-based system comes up with a particular result [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          24
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q02__formal",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 24.2,
+      "ttft_s": 14.5,
+      "answer": "The organisation responsible for recommending the CODATA values is the Committee on Data of the International Science Council [2]. This is further confirmed by the text on page 1, which states that the report was prepared under the auspices of the CODATA Task Group on Fundamental Constants [1]. The Committee on Data of the International Science Council is also mentioned as the body that the Task Group on Fundamental Constants (TGFC) is affiliated with [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The organisation responsible for recommending the CODATA values is the Committee on Data of the International Science Council [2]. This is further confirmed by the text on page 1, which states that the report was prepared under the auspices of the CODATA Task Group on Fundamental Constants [1]. The Committee on Data of the International Science Council is also mentioned as the body that the Task Group on Fundamental Constants (TGFC) is affiliated with [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          2
+        ],
+        [
+          "doc2.pdf",
+          1
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q02__casual",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 21.0,
+      "ttft_s": 12.1,
+      "answer": "The CODATA values for the fundamental constants are recommended by the Committee on Data of the International Science Council (CODATA) [3]. This committee is responsible for providing internationally accepted, self-consistent values of fundamental physical constants and related conversion factors [1]. The specific values reported in this document are the result of a least-squares adjustment conducted by the Task Group on Fundamental Constants (TGFC) under the auspices of CODATA [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The CODATA values for the fundamental constants are recommended by the Committee on Data of the International Science Council (CODATA) [3]. This committee is responsible for providing internationally accepted, self-consistent values of fundamental physical constants and related conversion factors [1]. The specific values reported in this document are the result of a least-squares adjustment conducted by the Task Group on Fundamental Constants (TGFC) under the auspices of CODATA [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          1
+        ],
+        [
+          "doc2.pdf",
+          2
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q02__non_native",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 26.8,
+      "ttft_s": 14.3,
+      "answer": "The CODATA recommended values of fundamental constants are provided by the Committee on Data of the International Science Council [1]. The Task Group on Fundamental Constants (TGFC), which is part of this committee, is responsible for the adjustment [3]. The TGFC was established in 1969 by the Committee on Data for Science and Technology, which is now known as the Committee on Data of the International Science Council [3]. The 2022 adjustment was prepared by the authors under the auspices of the CODATA Task Group on Fundamental Constants [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The CODATA recommended values of fundamental constants are provided by the Committee on Data of the International Science Council [1]. The Task Group on Fundamental Constants (TGFC), which is part of this committee, is responsible for the adjustment [3]. The TGFC was established in 1969 by the Committee on Data for Science and Technology, which is now known as the Committee on Data of the International Science Council [3]. The 2022 adjustment was prepared by the authors under the auspices of the CODATA Task Group on Fundamental Constants [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          1
+        ],
+        [
+          "doc2.pdf",
+          2
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q02__typos",
+      "type": "factual",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 21.1,
+      "ttft_s": 15.0,
+      "answer": "The recommended values of the fundamental constants are provided by the Committee on Data of the International Science Council (CODATA) [1]. This body was established by the Committee on Data for Science and Technology, which is now known as the Committee on Data of the International Science Council [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The recommended values of the fundamental constants are provided by the Committee on Data of the International Science Council (CODATA) [1]. This body was established by the Committee on Data for Science and Technology, which is now known as the Committee on Data of the International Science Council [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          1
+        ],
+        [
+          "doc2.pdf",
+          2
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q12__formal",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 10.9,
+      "ttft_s": 10.9,
+      "answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q12__casual",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.4,
+      "ttft_s": 11.4,
+      "answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q12__non_native",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 10.6,
+      "ttft_s": 10.6,
+      "answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q12__typos",
+      "type": "factual",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 11.1,
+      "ttft_s": 11.1,
+      "answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The Sun shows blackbody temperatures of 5800°K at 1 mm [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          114
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q17__formal",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.8,
+      "ttft_s": 9.7,
+      "answer": "This phenomenon is called overfitting [1]. It may occur when the model tries to fit to every data point, including those described as noise or outliers [1]. It can also occur when insufficient data is provided in the training dataset [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "This phenomenon is called overfitting [1]. It may occur when the model tries to fit to every data point, including those described as noise or outliers [1]. It can also occur when insufficient data is provided in the training dataset [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          31
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q17__casual",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.1,
+      "ttft_s": 12.5,
+      "answer": "The issue you're describing is called overfitting [2]. This happens when the model fits too closely to the training data, causing it to struggle with new, unseen data [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The issue you're describing is called overfitting [2]. This happens when the model fits too closely to the training data, causing it to struggle with new, unseen data [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          31
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q17__non_native",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 15.4,
+      "ttft_s": 9.2,
+      "answer": "This is called overfitting [4]. It occurs when the model fits too closely to the training data and fails to generalize to new data [4]. The model can struggle to provide accurate predictions for new data [4]. This can happen when the model tries to fit to every data point, including noise or outliers [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "This is called overfitting [4]. It occurs when the model fits too closely to the training data and fails to generalize to new data [4]. The model can struggle to provide accurate predictions for new data [4]. This can happen when the model tries to fit to every data point, including noise or outliers [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          31
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q17__typos",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 16.7,
+      "ttft_s": 12.1,
+      "answer": "This is called underfitting [2]. It can occur when the model is not sophisticated enough to accurately fit the patterns in the training data [2]. It can also happen when the training dataset lacks features that reflect important relationships between inputs and outputs [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "This is called underfitting [2]. It can occur when the model is not sophisticated enough to accurately fit the patterns in the training data [2]. It can also happen when the training dataset lacks features that reflect important relationships between inputs and outputs [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          31
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": false,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q19__formal",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 18.0,
+      "ttft_s": 10.1,
+      "answer": "The operational environment can change over time without the trained model changing correspondingly. This phenomenon is known as concept drift and typically causes the outputs of the model to become increasingly less accurate and less useful [1]. An example of such an abrupt change is the impact of the COVID-19 pandemic and its effect on the accuracy of the models used for sales projections and stock markets [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The operational environment can change over time without the trained model changing correspondingly. This phenomenon is known as concept drift and typically causes the outputs of the model to become increasingly less accurate and less useful [1]. An example of such an abrupt change is the impact of the COVID-19 pandemic and its effect on the accuracy of the models used for sales projections and stock markets [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q19__casual",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 20.9,
+      "ttft_s": 11.2,
+      "answer": "If customers start behaving differently over time but the model never gets updated, the model's outputs will become increasingly less accurate and less useful, a phenomenon known as concept drift [1]. This drift may be detected by regularly evaluating the operational model against its acceptance criteria [2]. The model may then drift away from its intended performance [2]. To mitigate this, the model settings may need to be updated, or re-training with new data may be required to create a more accurate or robust model [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "If customers start behaving differently over time but the model never gets updated, the model's outputs will become increasingly less accurate and less useful, a phenomenon known as concept drift [1]. This drift may be detected by regularly evaluating the operational model against its acceptance criteria [2]. The model may then drift away from its intended performance [2]. To mitigate this, the model settings may need to be updated, or re-training with new data may be required to create a more accurate or robust model [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          54
+        ],
+        [
+          "doc1.pdf",
+          29
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q19__non_native",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.6,
+      "ttft_s": 9.8,
+      "answer": "This phenomenon is known as concept drift, which typically causes the outputs of the model to become increasingly less accurate and less useful [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "This phenomenon is known as concept drift, which typically causes the outputs of the model to become increasingly less accurate and less useful [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q19__typos",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 18.2,
+      "ttft_s": 10.2,
+      "answer": "When customer behavior changes over time but the trained model stays the same, the model's outputs become increasingly less accurate and less useful, a phenomenon known as concept drift [1]. This can occur due to seasonal changes or abrupt changes like the impact of the COVID-19 pandemic [1]. To mitigate this, systems should be regularly tested against their agreed ML functional performance criteria to detect concept drift early [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "When customer behavior changes over time but the trained model stays the same, the model's outputs become increasingly less accurate and less useful, a phenomenon known as concept drift [1]. This can occur due to seasonal changes or abrupt changes like the impact of the COVID-19 pandemic [1]. To mitigate this, systems should be regularly tested against their agreed ML functional performance criteria to detect concept drift early [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          54
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q21__formal",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.0,
+      "ttft_s": 10.6,
+      "answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q21__casual",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.8,
+      "ttft_s": 10.2,
+      "answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q21__non_native",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.7,
+      "ttft_s": 10.3,
+      "answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q21__typos",
+      "type": "paraphrase",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.6,
+      "ttft_s": 10.2,
+      "answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "By simply changing a few pixels which are invisible to the human eye, it is possible to persuade a neural network to change its image classification to a very different object and with a high degree of confidence [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q26__formal",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.1,
+      "ttft_s": 9.8,
+      "answer": "A false positive occurs when the model mistakenly predicts the positive class, while a false negative occurs when the model mistakenly predicts the negative class [1][2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "A false positive occurs when the model mistakenly predicts the positive class, while a false negative occurs when the model mistakenly predicts the negative class [1][2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          40
+        ],
+        [
+          "doc1.pdf",
+          91
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q26__casual",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 14.7,
+      "ttft_s": 11.3,
+      "answer": "A false positive (FP) is an ML model prediction in which the model mistakenly predicts the positive class [5]. A false negative (FN) is an ML model prediction in which the model mistakenly predicts the negative class [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "A false positive (FP) is an ML model prediction in which the model mistakenly predicts the positive class [5]. A false negative (FN) is an ML model prediction in which the model mistakenly predicts the negative class [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          91
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.0,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "q26__non_native",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 18.9,
+      "ttft_s": 11.5,
+      "answer": "In a confusion matrix, a false positive (FP) occurs when the model mistakenly predicts the positive class, while a false negative (FN) occurs when the model mistakenly predicts the negative class [1][6]. The confusion matrix table visually distinguishes these two outcomes, with FP in the \"Positive\" row and \"Negative\" column, and FN in the \"Negative\" row and \"Positive\" column [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "In a confusion matrix, a false positive (FP) occurs when the model mistakenly predicts the positive class, while a false negative (FN) occurs when the model mistakenly predicts the negative class [1][6]. The confusion matrix table visually distinguishes these two outcomes, with FP in the \"Positive\" row and \"Negative\" column, and FN in the \"Negative\" row and \"Positive\" column [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          40
+        ],
+        [
+          "doc1.pdf",
+          91
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q26__typos",
+      "type": "table",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.3,
+      "ttft_s": 10.5,
+      "answer": "In a confusion matrix, a false positive (FP) is when the model mistakenly predicts the positive class [1]. A false negative (FN) is when the model mistakenly predicts the negative class [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "In a confusion matrix, a false positive (FP) is when the model mistakenly predicts the positive class [1]. A false negative (FN) is when the model mistakenly predicts the negative class [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          40
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d2q05__formal",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 31.3,
+      "ttft_s": 22.4,
+      "answer": "Yes, in the CODATA 2022 adjustment, the elementary charge is treated as an exact constant, and its value is given as 1.602176634 × 10⁻¹⁹ C [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yes, in the CODATA 2022 adjustment, the elementary charge is treated as an exact constant, and its value is given as 1.602176634 × 10⁻¹⁹ C [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q05__casual",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 26.9,
+      "ttft_s": 22.3,
+      "answer": "Yes, the elementary charge is exact in the CODATA 2022 recommended values. Its value is 1.602176634 × 10⁻¹⁹ C [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yes, the elementary charge is exact in the CODATA 2022 recommended values. Its value is 1.602176634 × 10⁻¹⁹ C [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q05__non_native",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 27.3,
+      "ttft_s": 22.7,
+      "answer": "In the CODATA 2022 adjustment, the elementary charge is an exact constant. Its value is 1.602176634 × 10⁻¹⁹ C [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "In the CODATA 2022 adjustment, the elementary charge is an exact constant. Its value is 1.602176634 × 10⁻¹⁹ C [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q05__typos",
+      "type": "table",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 27.7,
+      "ttft_s": 23.0,
+      "answer": "Yes, the elementary charge is an exact constant in CODATA 2022, and its value is 1.602176634 × 10⁻¹⁹ C [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yes, the elementary charge is an exact constant in CODATA 2022, and its value is 1.602176634 × 10⁻¹⁹ C [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q04__formal",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.4,
+      "ttft_s": 11.4,
+      "answer": "The photographic emulsion matched to the Airy disk of an f/30 beam is IIa-O (50-70 lines/mm) [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The photographic emulsion matched to the Airy disk of an f/30 beam is IIa-O (50-70 lines/mm) [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          34
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q04__casual",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 23.3,
+      "ttft_s": 12.3,
+      "answer": "The emulsion that matches the Airy disk for an f/30 beam is IIa-O (50-70 lines/mm) [2]. This is found in the table on page 26, which lists the matching detector for each f-ratio, and the row for f/30 explicitly states \"IIa-O (50-70 lines/mm)\" [2]. The text on page 26 also discusses the use of emulsions like Eastman IIa-O for f/30 beams, confirming the table's information [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The emulsion that matches the Airy disk for an f/30 beam is IIa-O (50-70 lines/mm) [2]. This is found in the table on page 26, which lists the matching detector for each f-ratio, and the row for f/30 explicitly states \"IIa-O (50-70 lines/mm)\" [2]. The text on page 26 also discusses the use of emulsions like Eastman IIa-O for f/30 beams, confirming the table's information [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          34
+        ],
+        [
+          "doc3.pdf",
+          34
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.3333333333333333
+    },
+    {
+      "id": "d3q04__non_native",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.3,
+      "ttft_s": 10.9,
+      "answer": "The photographic emulsion matching with the Airy disk for an f/30 beam is IIa-O (50-70 lines/mm) [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The photographic emulsion matching with the Airy disk for an f/30 beam is IIa-O (50-70 lines/mm) [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          34
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q04__typos",
+      "type": "table",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.9,
+      "ttft_s": 12.0,
+      "answer": "The photographic emulsion that matches the Airy disk for an f/30 beam is IIa-O (50-70 lines/mm) [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The photographic emulsion that matches the Airy disk for an f/30 beam is IIa-O (50-70 lines/mm) [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          34
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q28__formal",
+      "type": "figure",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.7,
+      "ttft_s": 9.5,
+      "answer": "After the model is tested, the next step is to deploy the model [1]. Following deployment, the model is used operationally [5]. The final step in the workflow shown is to monitor and tune the model [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "After the model is tested, the next step is to deploy the model [1]. Following deployment, the model is used operationally [5]. The final step in the workflow shown is to monitor and tune the model [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          29
+        ],
+        [
+          "doc1.pdf",
+          29
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q28__casual",
+      "type": "figure",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 13.4,
+      "ttft_s": 9.8,
+      "answer": "After testing the model, the next step in the ML workflow is to deploy the model [1]. Following deployment, the model is used [1]. The final step shown in the workflow is to monitor and tune the model [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "After testing the model, the next step in the ML workflow is to deploy the model [1]. Following deployment, the model is used [1]. The final step shown in the workflow is to monitor and tune the model [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          29
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q28__non_native",
+      "type": "figure",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 11.8,
+      "ttft_s": 9.3,
+      "answer": "After the model is tested, the next step is to deploy the model [1]. Following deployment, the model is used [1]. After usage, the model is monitored and tuned [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "After the model is tested, the next step is to deploy the model [1]. Following deployment, the model is used [1]. After usage, the model is monitored and tuned [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          29
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q28__typos",
+      "type": "figure",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 12.9,
+      "ttft_s": 9.8,
+      "answer": "After testing the model, the next step is to deploy the model [1]. Following deployment, the model is used [1]. The final step in the depicted workflow is to monitor and tune the model [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "After testing the model, the next step is to deploy the model [1]. Following deployment, the model is used [1]. The final step in the depicted workflow is to monitor and tune the model [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          29
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q08__formal",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 20.5,
+      "ttft_s": 12.4,
+      "answer": "The power law fitted to the cosmic gamma-ray flux data is an empirical inverse-square law, represented by the formula J(>E) = 0.02/E (MeV) cm⁻² sec⁻¹ ster⁻¹ [2]. The figure in the document also shows a solid line labeled \"N(E)dE ∝ E⁻²\", which is the mathematical representation of this inverse-square law [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The power law fitted to the cosmic gamma-ray flux data is an empirical inverse-square law, represented by the formula J(>E) = 0.02/E (MeV) cm⁻² sec⁻¹ ster⁻¹ [2]. The figure in the document also shows a solid line labeled \"N(E)dE ∝ E⁻²\", which is the mathematical representation of this inverse-square law [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          142
+        ],
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d3q08__casual",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 20.3,
+      "ttft_s": 12.2,
+      "answer": "The line in Figure 2 represents an empirical inverse-square law for the differential number spectrum [1]. The corresponding integral spectrum, which is the total flux above a given energy E, would be given by the formula J(>E) = 0.02/E (MeV) cm⁻² sec⁻¹ ster⁻¹ [2]. This formula represents the power law fit to the cosmic gamma-ray flux data.",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The line in Figure 2 represents an empirical inverse-square law for the differential number spectrum [1]. The corresponding integral spectrum, which is the total flux above a given energy E, would be given by the formula J(>E) = 0.02/E (MeV) cm⁻² sec⁻¹ ster⁻¹ [2]. This formula represents the power law fit to the cosmic gamma-ray flux data.",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ],
+        [
+          "doc3.pdf",
+          142
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "id": "d3q08__non_native",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 20.6,
+      "ttft_s": 12.4,
+      "answer": "The power law fit to the data of cosmic gamma-ray flux is an empirical inverse-square law, represented by the formula J(>E) = 0.02/E (MeV) cm⁻² sec⁻¹ ster⁻¹ [2]. The graph in Figure 2 also shows a solid line labeled \"N(E)dE ∝ E⁻²\", which is the mathematical representation of this inverse-square law [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The power law fit to the data of cosmic gamma-ray flux is an empirical inverse-square law, represented by the formula J(>E) = 0.02/E (MeV) cm⁻² sec⁻¹ ster⁻¹ [2]. The graph in Figure 2 also shows a solid line labeled \"N(E)dE ∝ E⁻²\", which is the mathematical representation of this inverse-square law [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          142
+        ],
+        [
+          "doc3.pdf",
+          143
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q08__typos",
+      "type": "figure",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 19.3,
+      "ttft_s": 11.8,
+      "answer": "The line in Figure 2 represents an empirical inverse-square law for the differential number spectrum [1]. The corresponding integral spectrum, which is the total flux above a given energy E, is given by the formula J(>E) = 0.02/E (MeV) cm⁻² sec⁻¹ ster⁻¹ [2]. This formula represents the power law fit to the data.",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The line in Figure 2 represents an empirical inverse-square law for the differential number spectrum [1]. The corresponding integral spectrum, which is the total flux above a given energy E, is given by the formula J(>E) = 0.02/E (MeV) cm⁻² sec⁻¹ ster⁻¹ [2]. This formula represents the power law fit to the data.",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          143
+        ],
+        [
+          "doc3.pdf",
+          142
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "id": "q29__formal",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 20.0,
+      "ttft_s": 10.1,
+      "answer": "The test levels that apply to AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing [1]. Additionally, specific test levels for AI-based systems are Test Data for Testing AI-based Systems, Testing for Automation Bias in AI-Based Systems, Documenting an AI Component, Testing for Concept Drift, and Selecting a Test Approach for an ML System [2]. Experience-based testing, which includes exploratory testing, is also applicable [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The test levels that apply to AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing [1]. Additionally, specific test levels for AI-based systems are Test Data for Testing AI-based Systems, Testing for Automation Bias in AI-Based Systems, Documenting an AI Component, Testing for Concept Drift, and Selecting a Test Approach for an ML System [2]. Experience-based testing, which includes exploratory testing, is also applicable [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          50
+        ],
+        [
+          "doc1.pdf",
+          6
+        ],
+        [
+          "doc1.pdf",
+          70
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.3333333333333333,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.6666666666666666
+    },
+    {
+      "id": "q29__casual",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 19.3,
+      "ttft_s": 11.3,
+      "answer": "The test levels for AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing [1]. Additionally, the document mentions two new specialized test levels for AI-based systems: Test Data for Testing AI-based Systems and Testing for Automation Bias in AI-Based Systems [1]. The document also lists Testing for Concept Drift as a separate test level [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The test levels for AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing [1]. Additionally, the document mentions two new specialized test levels for AI-based systems: Test Data for Testing AI-based Systems and Testing for Automation Bias in AI-Based Systems [1]. The document also lists Testing for Concept Drift as a separate test level [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          50
+        ],
+        [
+          "doc1.pdf",
+          6
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.3333333333333333
+    },
+    {
+      "id": "q29__non_native",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 24.4,
+      "ttft_s": 9.9,
+      "answer": "The test levels for AI-based systems include input data testing, ML model testing, component testing, component integration testing, system testing, acceptance testing, and test data for testing AI-based systems [3]. Component testing and component integration testing are conventional test levels applicable to non-model components and the interaction between AI and non-AI components, respectively [4]. Acceptance testing is a conventional level used to determine if the complete system is acceptable to the customer, with specific considerations for AI-based systems [5]. The test levels for AI-based systems are explicitly listed as input data testing, ML model testing, component testing, component integration testing, system testing, and acceptance testing [3]. The test data for testing AI-based systems is also a distinct level [3].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The test levels for AI-based systems include input data testing, ML model testing, component testing, component integration testing, system testing, acceptance testing, and test data for testing AI-based systems [3]. Component testing and component integration testing are conventional test levels applicable to non-model components and the interaction between AI and non-AI components, respectively [4]. Acceptance testing is a conventional level used to determine if the complete system is acceptable to the customer, with specific considerations for AI-based systems [5]. The test levels for AI-based systems are explicitly listed as input data testing, ML model testing, component testing, component integration testing, system testing, and acceptance testing [3]. The test data for testing AI-based systems is also a distinct level [3].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          6
+        ],
+        [
+          "doc1.pdf",
+          51
+        ],
+        [
+          "doc1.pdf",
+          52
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.6666666666666666,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.6
+    },
+    {
+      "id": "q29__typos",
+      "type": "multi_page",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 18.9,
+      "ttft_s": 10.8,
+      "answer": "The test levels for AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing [1]. Additionally, the document lists Test Data for Testing AI-based Systems, Testing for Automation Bias in AI-Based Systems, and Testing for Concept Drift as specific test levels [1]. The table on page 6 also lists these levels under section 7.2 [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The test levels for AI-based systems include Input Data Testing, ML Model Testing, Component Testing, Component Integration Testing, System Testing, and Acceptance Testing [1]. Additionally, the document lists Test Data for Testing AI-based Systems, Testing for Automation Bias in AI-Based Systems, and Testing for Concept Drift as specific test levels [1]. The table on page 6 also lists these levels under section 7.2 [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          50
+        ],
+        [
+          "doc1.pdf",
+          6
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.3333333333333333
+    },
+    {
+      "id": "d3q18__formal",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.4,
+      "ttft_s": 12.4,
+      "answer": "The preliminary design studies are planned for the calendar year 1967 [1]. The completion of the prototype is planned for the calendar year 1976 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The preliminary design studies are planned for the calendar year 1967 [1]. The completion of the prototype is planned for the calendar year 1976 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          28
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d3q18__casual",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.1,
+      "ttft_s": 12.3,
+      "answer": "The preliminary design studies are planned for the calendar year 1967 [1]. The finished prototype is planned for the calendar year 1976 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The preliminary design studies are planned for the calendar year 1967 [1]. The finished prototype is planned for the calendar year 1976 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          28
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d3q18__non_native",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.3,
+      "ttft_s": 12.4,
+      "answer": "The preliminary design studies are planned for the calendar year 1967 [1]. The prototype is planned to be completed in the calendar year 1976 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The preliminary design studies are planned for the calendar year 1967 [1]. The prototype is planned to be completed in the calendar year 1976 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          28
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d3q18__typos",
+      "type": "multi_page",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 15.1,
+      "ttft_s": 12.4,
+      "answer": "The preliminary design studies are planned for the calendar year 1967 [1]. The completed prototype is planned for the calendar year 1976 [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The preliminary design studies are planned for the calendar year 1967 [1]. The completed prototype is planned for the calendar year 1976 [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          28
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "q32__formal",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 40.1,
+      "ttft_s": 10.4,
+      "answer": "Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim verisini manipüle etmesiyle gerçekleştirilir ve bu, bir makine öğrenimi (ML) sisteminin belirli durumlarda yanlış sınıflandırma yapmasına neden olur [1]. Bu saldırılar, sistemdeki backdoor veya nöronal ağ trojanları yerleştirmekle başlar veya daha çok, eğitim verisini bozuk hale getirmekle (örneğin, yanlış etiketlenmiş veri) gerçekleştirilir [1]. Bu saldırılar hedefe yönelik olabilir, örneğin belirli durumlarda ML sistemi yanlış sınıflandırmaya yönlendirme amaçlıdır [1]. Ayrıca, sistemdeki tüm verilerin bozulması gibi genel saldırılar da olabilir [1]. Microsoft Tay chatbotu gibi bir örnekte, küçük sayıda zararlı Twitter konuşmaları sistemi kendi yanıtlarını bozarak etkilemiştir [1]. Ayrıca, spam filtreleme yazılımına zarar vermek amacıyla milyonlarca spam e-postasının \"spam olmayan\" olarak raporlanmasını sağlayarak sistemdeki yanlış sınıflandırma yaratmak da bir veri zehirlenmesi saldırısıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim verisini manipüle etmesiyle gerçekleştirilir ve bu, bir makine öğrenimi (ML) sisteminin belirli durumlarda yanlış sınıflandırma yapmasına neden olur [1]. Bu saldırılar, sistemdeki backdoor veya nöronal ağ trojanları yerleştirmekle başlar veya daha çok, eğitim verisini bozuk hale getirmekle (örneğin, yanlış etiketlenmiş veri) gerçekleştirilir [1]. Bu saldırılar hedefe yönelik olabilir, örneğin belirli durumlarda ML sistemi yanlış sınıflandırmaya yönlendirme amaçlıdır [1]. Ayrıca, sistemdeki tüm verilerin bozulması gibi genel saldırılar da olabilir [1]. Microsoft Tay chatbotu gibi bir örnekte, küçük sayıda zararlı Twitter konuşmaları sistemi kendi yanıtlarını bozarak etkilemiştir [1]. Ayrıca, spam filtreleme yazılımına zarar vermek amacıyla milyonlarca spam e-postasının \"spam olmayan\" olarak raporlanmasını sağlayarak sistemdeki yanlış sınıflandırma yaratmak da bir veri zehirlenmesi saldırısıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q32__casual",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 43.8,
+      "ttft_s": 12.5,
+      "answer": "Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim veri setini manipüle etmesiyle gerçekleştirilir. Bu saldırı, modelin yanlış sınıflandırmalar yapmasına neden olmak amacıyla, eğitim veri setine backdoor veya nöronal ağ trojanları eklemek veya bozulmuş eğitim verileri (örneğin, yanlış etiketlenmiş veriler) eklemek gibi iki sonuç elde etmeye çalışır [1]. Bu saldırılar, belirli durumlarda ML sisteminin yanlış sınıflandırmalar yapmasına neden olmak üzere hedeflenir veya, örneğin, bir отказ (denial-of-service) saldırısı gibi, belirsiz bir şekilde gerçekleşebilir [1]. Microsoft Tay chatbotu gibi bir örnekte, küçük sayıda zararlı Twitter konuşmaları, sistemdeki zararlı konuşmaların gelecekte nasıl oluşturulacağını eğitmek için kullanılmıştır [1]. Ayrıca, binlerce spam e-postasının \"spam olmayan\" olarak raporlanmasından kaynaklanan bir saldırı, spam filtreleme yazılımını etkilemek için kullanılmıştır [1]. Saldırının tespiti için, veri toplama politikaları incelenerek eğitim veri setinin kökeni garanti edilebilir [5].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim veri setini manipüle etmesiyle gerçekleştirilir. Bu saldırı, modelin yanlış sınıflandırmalar yapmasına neden olmak amacıyla, eğitim veri setine backdoor veya nöronal ağ trojanları eklemek veya bozulmuş eğitim verileri (örneğin, yanlış etiketlenmiş veriler) eklemek gibi iki sonuç elde etmeye çalışır [1]. Bu saldırılar, belirli durumlarda ML sisteminin yanlış sınıflandırmalar yapmasına neden olmak üzere hedeflenir veya, örneğin, bir отказ (denial-of-service) saldırısı gibi, belirsiz bir şekilde gerçekleşebilir [1]. Microsoft Tay chatbotu gibi bir örnekte, küçük sayıda zararlı Twitter konuşmaları, sistemdeki zararlı konuşmaların gelecekte nasıl oluşturulacağını eğitmek için kullanılmıştır [1]. Ayrıca, binlerce spam e-postasının \"spam olmayan\" olarak raporlanmasından kaynaklanan bir saldırı, spam filtreleme yazılımını etkilemek için kullanılmıştır [1]. Saldırının tespiti için, veri toplama politikaları incelenerek eğitim veri setinin kökeni garanti edilebilir [5].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ],
+        [
+          "doc1.pdf",
+          67
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q32__no_diacritics",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 44.3,
+      "ttft_s": 16.3,
+      "answer": "Veri zehirlenmesi (data poisoning), bir saldırganın eğitim verisini manipüle etmesiyle ilgili bir saldırı türüdür. Bu saldırı, makine öğrenimi (ML) sistemlerinin belirli durumlarda yanlış sınıflandırma yapmasına neden olmak amacıyla uygulanır. Saldırgan, eğitim verisini bozarak (örneğin, yanlış etiketlenmiş veri) veya sistemlere \"neural network trojans\" gibi arka kapaklar ekleyerek gelecekteki saldırmaları kolaylaştırmayı hedefler [1]. Bu saldırılar, özellikle büyük ölçekli ve yaygın olarak kullanılan AI veri setlerinin zehirlenmesi potansiyelini de içerir [1]. Ayrıca, veri zehirlenmesi saldırıları, sistemlerin çalışması sırasında beklenmedik değişikliklere (örneğin, çevresel girişlerin değişmesi) karşı direnç göstermesi için test edilmesi gereken bir zorluk olarak da tanımlanır [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Veri zehirlenmesi (data poisoning), bir saldırganın eğitim verisini manipüle etmesiyle ilgili bir saldırı türüdür. Bu saldırı, makine öğrenimi (ML) sistemlerinin belirli durumlarda yanlış sınıflandırma yapmasına neden olmak amacıyla uygulanır. Saldırgan, eğitim verisini bozarak (örneğin, yanlış etiketlenmiş veri) veya sistemlere \"neural network trojans\" gibi arka kapaklar ekleyerek gelecekteki saldırmaları kolaylaştırmayı hedefler [1]. Bu saldırılar, özellikle büyük ölçekli ve yaygın olarak kullanılan AI veri setlerinin zehirlenmesi potansiyelini de içerir [1]. Ayrıca, veri zehirlenmesi saldırıları, sistemlerin çalışması sırasında beklenmedik değişikliklere (örneğin, çevresel girişlerin değişmesi) karşı direnç göstermesi için test edilmesi gereken bir zorluk olarak da tanımlanır [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ],
+        [
+          "doc1.pdf",
+          58
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q32__typos",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 40.4,
+      "ttft_s": 12.8,
+      "answer": "Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim verisini manipüle etmesiyle gerçekleştirilir ve bu, bir makine öğrenimi (ML) sisteminin belirli durumlarda yanlış sınıflandırma yapmasına neden olur [1]. Bu saldırılar, sistemdeki backdoor veya nöronal ağ trojanları gibi yollarla gelebilir, ancak daha çok, eğitim verisini bozulmuş (örneğin, yanlış etiketlenmiş) verilerle değiştirerek gerçekleştirilir [1]. Bu saldırılar, hedefli olabilir (örneğin, belirli bir durumda sistemde yanlış sınıflandırma yapması için) veya belirsiz olabilir (örneğin, bir reddedici hizmet saldırıları olarak) [1]. Microsoft Tay chatbotu gibi bir örnekte, küçük sayıda zararlı Twitter konuşmaları, sistemdeki zararlı konuşmaları üretmeye neden oldu [1]. Ayrıca, binlerce spam e-postasının \"spam olmayan\" olarak raporlanmasından kaynaklanan bir saldırı, spam filtreleme yazılımını bozma amacıyla kullanılır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Veri zehirlenmesi (data poisoning) saldırısı, bir saldırganın eğitim verisini manipüle etmesiyle gerçekleştirilir ve bu, bir makine öğrenimi (ML) sisteminin belirli durumlarda yanlış sınıflandırma yapmasına neden olur [1]. Bu saldırılar, sistemdeki backdoor veya nöronal ağ trojanları gibi yollarla gelebilir, ancak daha çok, eğitim verisini bozulmuş (örneğin, yanlış etiketlenmiş) verilerle değiştirerek gerçekleştirilir [1]. Bu saldırılar, hedefli olabilir (örneğin, belirli bir durumda sistemde yanlış sınıflandırma yapması için) veya belirsiz olabilir (örneğin, bir reddedici hizmet saldırıları olarak) [1]. Microsoft Tay chatbotu gibi bir örnekte, küçük sayıda zararlı Twitter konuşmaları, sistemdeki zararlı konuşmaları üretmeye neden oldu [1]. Ayrıca, binlerce spam e-postasının \"spam olmayan\" olarak raporlanmasından kaynaklanan bir saldırı, spam filtreleme yazılımını bozma amacıyla kullanılır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          66
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q34__formal",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 30.3,
+      "ttft_s": 13.5,
+      "answer": "Yapay zekâ (narrow AI) sistemleri, belirli bir görevi gerçekleştirmek için programlanmıştır ve sınırlı bir bağlamda çalışır. Bu tür sistemler, oyun oynama, spam filtreleme, test durumları üretme ve ses asistanları gibi uygulamalarda yaygın olarak kullanılır [1][2]. Genel yapay zekâ (general AI) ise insanlara benzer geniş kapsamlı zihinsel yeteneklere sahip olup, çevresini anlamaya ve düşünmeye, ayrıca hareket etmeye ve karar vermeye yetecek kadar zekâya sahiptir [2]. Ancak, 2021 yılına kadar genel yapay zekâ sistemleri henüz gerçekleştirmemiştir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yapay zekâ (narrow AI) sistemleri, belirli bir görevi gerçekleştirmek için programlanmıştır ve sınırlı bir bağlamda çalışır. Bu tür sistemler, oyun oynama, spam filtreleme, test durumları üretme ve ses asistanları gibi uygulamalarda yaygın olarak kullanılır [1][2]. Genel yapay zekâ (general AI) ise insanlara benzer geniş kapsamlı zihinsel yeteneklere sahip olup, çevresini anlamaya ve düşünmeye, ayrıca hareket etmeye ve karar vermeye yetecek kadar zekâya sahiptir [2]. Ancak, 2021 yılına kadar genel yapay zekâ sistemleri henüz gerçekleştirmemiştir [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          12
+        ],
+        [
+          "doc1.pdf",
+          13
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 0.5,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q34__casual",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 32.5,
+      "ttft_s": 13.6,
+      "answer": "Yapay zeka (narrow AI) sistemleri, belirli bir görevi gerçekleştirmek için programlanmıştır ve sınırlı bir bağlamda çalışır. Genel yapay zeka (general AI) ise insanlara benzer geniş kapsamlı zihinsel yeteneklere sahiptir ve çevresini anlamaya ve etkileşime geçmeye yetecek kadar düşünme ve karar verme kapasitesine sahiptir. Bu iki kategori arasındaki temel fark, narrow AI'nin belirli görevlere odaklanırken, general AI'nin insan gibi düşünme ve çevresini anlamaya yönelik geniş yeteneklere sahip olmasıdır [1]. Ayrıca, genel yapay zeka henüz gerçekleştirmemiş olup, 2021 yılına kadar hiçbir genel yapay zeka sistemi oluşturulmamıştır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yapay zeka (narrow AI) sistemleri, belirli bir görevi gerçekleştirmek için programlanmıştır ve sınırlı bir bağlamda çalışır. Genel yapay zeka (general AI) ise insanlara benzer geniş kapsamlı zihinsel yeteneklere sahiptir ve çevresini anlamaya ve etkileşime geçmeye yetecek kadar düşünme ve karar verme kapasitesine sahiptir. Bu iki kategori arasındaki temel fark, narrow AI'nin belirli görevlere odaklanırken, general AI'nin insan gibi düşünme ve çevresini anlamaya yönelik geniş yeteneklere sahip olmasıdır [1]. Ayrıca, genel yapay zeka henüz gerçekleştirmemiş olup, 2021 yılına kadar hiçbir genel yapay zeka sistemi oluşturulmamıştır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          13
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q34__no_diacritics",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 29.9,
+      "ttft_s": 13.4,
+      "answer": "Yapay zeka (narrow AI) sistemleri, belirli bir görevi gerçekleştirmek için programlanmıştır ve sınırlı bir bağlamda çalışır. Bu tür sistemler, oyun oynama, spam filtreleme, test durumları üretme ve ses asistanları gibi uygulamalarda yaygın olarak kullanılır [1]. Genel yapay zeka (general AI) ise insanlara benzer geniş kapsamlı zihinsel yeteneklere sahip olup, çevresini anlamaya ve etkileşime geçmeye yetecek kadar düşünme ve karar verme kapasitesine sahiptir [1]. Ancak, 2021 yılına kadar genel yapay zeka sistemleri henüz gerçekleştirmemiştir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yapay zeka (narrow AI) sistemleri, belirli bir görevi gerçekleştirmek için programlanmıştır ve sınırlı bir bağlamda çalışır. Bu tür sistemler, oyun oynama, spam filtreleme, test durumları üretme ve ses asistanları gibi uygulamalarda yaygın olarak kullanılır [1]. Genel yapay zeka (general AI) ise insanlara benzer geniş kapsamlı zihinsel yeteneklere sahip olup, çevresini anlamaya ve etkileşime geçmeye yetecek kadar düşünme ve karar verme kapasitesine sahiptir [1]. Ancak, 2021 yılına kadar genel yapay zeka sistemleri henüz gerçekleştirmemiştir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          13
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q34__typos",
+      "type": "turkish",
+      "document": "doc1.pdf",
+      "answerable": true,
+      "latency_s": 34.0,
+      "ttft_s": 13.0,
+      "answer": "Yapay zeka (narrow AI) ve genel yapay zeka arasındaki fark, narrow AI'nin belirli bir görevi gerçekleştirmek üzere programlanmıştır, ancak genel yapay zeka ise insanlar gibi geniş kapsamlı zihinsel yeteneklere sahip olup, çevresini anlamaya ve etkileşime geçmeye yetecek kadar düşünme ve karar verme kapasitesine sahiptir [1]. Narrow AI, genellikle sınırlı bir bağlamda çalışır ve örnek olarak oyun oynayan sistemler, spam filtreleri, test durum üreticileri ve ses asistanları gibi uygulamalarda kullanılır [1]. Genel yapay zeka ise, 2021 yılına kadar henüz gerçekleştirmemiş olup, insanlar gibi düşünme ve çevresini anlamaya yetecek kadar zihinsel yeteneklere sahip olmalıdır [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Yapay zeka (narrow AI) ve genel yapay zeka arasındaki fark, narrow AI'nin belirli bir görevi gerçekleştirmek üzere programlanmıştır, ancak genel yapay zeka ise insanlar gibi geniş kapsamlı zihinsel yeteneklere sahip olup, çevresini anlamaya ve etkileşime geçmeye yetecek kadar düşünme ve karar verme kapasitesine sahiptir [1]. Narrow AI, genellikle sınırlı bir bağlamda çalışır ve örnek olarak oyun oynayan sistemler, spam filtreleri, test durum üreticileri ve ses asistanları gibi uygulamalarda kullanılır [1]. Genel yapay zeka ise, 2021 yılına kadar henüz gerçekleştirmemiş olup, insanlar gibi düşünme ve çevresini anlamaya yetecek kadar zihinsel yeteneklere sahip olmalıdır [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          13
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q11__formal",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 40.4,
+      "ttft_s": 32.0,
+      "answer": "CODATA 2022 verilerine göre boşlukta ışık hızının değeri 299 792 458 m/s'dir [1]. Bu değer, aynı zamanda 299 792 458 m s⁻¹ olarak da belirtilmiştir [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "CODATA 2022 verilerine göre boşlukta ışık hızının değeri 299 792 458 m/s'dir [1]. Bu değer, aynı zamanda 299 792 458 m s⁻¹ olarak da belirtilmiştir [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ],
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d2q11__casual",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 35.7,
+      "ttft_s": 31.6,
+      "answer": "CODATA 2022'ye göre boşlukta ışık hızı 299 792 458 m/s'tir [1]. Bu değer, tabloda \"Speed of light in vacuum\" başlığı altında verilmiştir [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "CODATA 2022'ye göre boşlukta ışık hızı 299 792 458 m/s'tir [1]. Bu değer, tabloda \"Speed of light in vacuum\" başlığı altında verilmiştir [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q11__no_diacritics",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 49.8,
+      "ttft_s": 48.3,
+      "answer": "CODATA 2022'ye göre boşlukta ışık hızının değeri 299 792 458 m/s'tir [2].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "CODATA 2022'ye göre boşlukta ışık hızının değeri 299 792 458 m/s'tir [2].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d2q11__typos",
+      "type": "turkish",
+      "document": "doc2.pdf",
+      "answerable": true,
+      "latency_s": 37.7,
+      "ttft_s": 31.0,
+      "answer": "CODATA 2022'ye göre boşlukta ışık hızının değeri 299 792 458 m/s'tir [1]. Bu değer, aynı zamanda 299 792 458 m s⁻¹ olarak da verilmiştir [4].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "CODATA 2022'ye göre boşlukta ışık hızının değeri 299 792 458 m/s'tir [1]. Bu değer, aynı zamanda 299 792 458 m s⁻¹ olarak da verilmiştir [4].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc2.pdf",
+          44
+        ],
+        [
+          "doc2.pdf",
+          44
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 0.5
+    },
+    {
+      "id": "d3q17__formal",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.3,
+      "ttft_s": 11.6,
+      "answer": "Güneş'in manyetik aktivite döngüsü yaklaşık 22 yıl sürerken, güneş lekesi döngüsü 11 yıl sürer [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Güneş'in manyetik aktivite döngüsü yaklaşık 22 yıl sürerken, güneş lekesi döngüsü 11 yıl sürer [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          50
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q17__casual",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 13.4,
+      "ttft_s": 11.7,
+      "answer": "Güneşin manyetik aktivite döngüsü yaklaşık 22 yıl sürerken, güneş lekesi döngüsü 11 yıl sürer [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Güneşin manyetik aktivite döngüsü yaklaşık 22 yıl sürerken, güneş lekesi döngüsü 11 yıl sürer [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          50
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "d3q17__no_diacritics",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 78.1,
+      "ttft_s": 78.1,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about Gunes'in manyetik",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false,
+      "citation_precision": null,
+      "cites_gold_page": false,
+      "correct": false,
+      "faithfulness": null
+    },
+    {
+      "id": "d3q17__typos",
+      "type": "turkish",
+      "document": "doc3.pdf",
+      "answerable": true,
+      "latency_s": 14.5,
+      "ttft_s": 12.7,
+      "answer": "Güneş'in manyetik aktivite döngüsü yaklaşık 22 yıl sürerken, güneş lekesi döngüsü 11 yıl sürer [1].",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "Güneş'in manyetik aktivite döngüsü yaklaşık 22 yıl sürerken, güneş lekesi döngüsü 11 yıl sürer [1].",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc3.pdf",
+          50
+        ]
+      ],
+      "retrieved_gold": true,
+      "citation_precision": 1.0,
+      "cites_gold_page": true,
+      "correct": true,
+      "faithfulness": 1.0
+    },
+    {
+      "id": "q39__formal",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 21.5,
+      "ttft_s": 21.5,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q39__casual",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 20.1,
+      "ttft_s": 13.9,
+      "answer": "The Certified Tester AI Testing (CT-AI) exam is based on a syllabus that includes eleven chapters with examinable content, as outlined in the table of contents [1]. The exam requires a minimum of 25.1 hours of instruction distributed across these chapters [4]. The total time for the exam is not explicitly stated in the provided excerpts.",
+      "refused": false,
+      "regex_refused": false,
+      "raw_answer": "The Certified Tester AI Testing (CT-AI) exam is based on a syllabus that includes eleven chapters with examinable content, as outlined in the table of contents [1]. The exam requires a minimum of 25.1 hours of instruction distributed across these chapters [4]. The total time for the exam is not explicitly stated in the provided excerpts.",
+      "raw_cited": true,
+      "search_rounds": 1,
+      "cited": [
+        [
+          "doc1.pdf",
+          4
+        ],
+        [
+          "doc1.pdf",
+          11
+        ]
+      ],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q39__non_native",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 13.4,
+      "ttft_s": 13.4,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q39__typos",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 21.4,
+      "ttft_s": 21.4,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q41__formal",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 31.5,
+      "ttft_s": 31.5,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about vector databases",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q41__casual",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 22.9,
+      "ttft_s": 22.9,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about which vector db",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q41__non_native",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 26.9,
+      "ttft_s": 26.9,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about vector databases",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q41__typos",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 28.1,
+      "ttft_s": 28.1,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about recommended vector",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q43__formal",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 54.7,
+      "ttft_s": 54.6,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about the capital city",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q43__casual",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 61.6,
+      "ttft_s": 61.6,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q43__non_native",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 49.1,
+      "ttft_s": 49.1,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about the capital of",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q43__typos",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 56.9,
+      "ttft_s": 56.9,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d2u01__formal",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 51.0,
+      "ttft_s": 51.0,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about the half-life",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d2u01__casual",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 64.9,
+      "ttft_s": 64.9,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about carbon-14's half-life.",
+      "raw_cited": false,
+      "search_rounds": 3,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d2u01__non_native",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 45.9,
+      "ttft_s": 45.9,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about the half-life",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "d2u01__typos",
+      "type": "unanswerable",
+      "document": "doc2.pdf",
+      "answerable": false,
+      "latency_s": 37.9,
+      "ttft_s": 37.9,
+      "answer": "The documents do not contain information about this.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about the half-life",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q45__formal",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 14.7,
+      "ttft_s": 14.7,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q45__casual",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 25.1,
+      "ttft_s": 25.1,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 2,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q45__no_diacritics",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 15.0,
+      "ttft_s": 15.0,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    },
+    {
+      "id": "q45__typos",
+      "type": "unanswerable",
+      "document": "doc1.pdf",
+      "answerable": false,
+      "latency_s": 14.3,
+      "ttft_s": 14.3,
+      "answer": "Belgelerde bu konuda bilgi yok.",
+      "refused": true,
+      "regex_refused": true,
+      "raw_answer": "The documents do not contain information about this.",
+      "raw_cited": false,
+      "search_rounds": 1,
+      "cited": [],
+      "retrieved_gold": false
+    }
+  ]
+}

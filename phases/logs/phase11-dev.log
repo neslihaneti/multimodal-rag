@@ -1,0 +1,47 @@
+2026-11-23 23:29:27 retrieval dev/persona
+copied /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-0003-retrieval → phases/phase-11/reports/dev_persona-retrieval
+2026-11-24 00:03:15 retrieval dev/style
+copied /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-0012-retrieval → phases/phase-11/reports/dev_style-retrieval
+2026-11-24 00:12:37 retrieval dev/stereotype
+copied /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-0013-retrieval → phases/phase-11/reports/dev_stereotype-retrieval
+2026-11-24 00:13:27 answers dev/persona try 0 
+2026-11-24 01:53:27 footprint 71 GB ≥ 70 GB → restart
+phases/phase-11/run_split.sh: line 46: 42653 Terminated: 15          python3 -u evaluate.py answers --golden "eval/fairness/${SPLIT}_${KIND}.jsonl" $RESUME >> "$LOG" 2>&1
+2026-11-24 01:53:52 answers dev/persona try 1 --resume
+copied /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-0220-answers → phases/phase-11/reports/dev_persona-answers
+2026-11-24 02:21:00 answers dev/style try 0 
+copied /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-0303-answers → phases/phase-11/reports/dev_style-answers
+2026-11-24 03:03:21 answers dev/stereotype try 0 
+2026-11-24 03:09:02 answers dev/stereotype try 1 --resume
+2026-11-24 03:09:22 answers dev/stereotype try 2 --resume
+2026-11-24 03:09:42 answers dev/stereotype try 3 --resume
+2026-11-24 03:10:02 answers dev/stereotype try 4 --resume
+2026-11-24 03:10:22 answers dev/stereotype try 5 --resume
+2026-11-24 03:10:42 answers dev/stereotype try 6 --resume
+2026-11-24 03:11:02 answers dev/stereotype try 7 --resume
+2026-11-24 03:11:22 answers dev/stereotype try 8 --resume
+2026-11-24 03:11:42 answers dev/stereotype try 9 --resume
+2026-11-24 03:12:03 answers dev/stereotype try 10 --resume
+2026-11-24 03:12:23 answers dev/stereotype try 11 --resume
+2026-11-24 03:12:43 answers dev/stereotype try 12 --resume
+2026-11-24 03:13:03 answers dev/stereotype try 13 --resume
+2026-11-24 03:13:23 answers dev/stereotype try 14 --resume
+2026-11-24 03:13:43 answers dev/stereotype try 15 --resume
+gave up after 15 restarts
+skip dev_persona-retrieval
+skip dev_style-retrieval
+skip dev_stereotype-retrieval
+skip dev_persona-answers
+skip dev_style-answers
+2026-11-24 03:15:10 answers dev/stereotype try 0 
+copied /Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/reports/20261124-0320-answers → phases/phase-11/reports/dev_stereotype-answers
+2026-11-24 03:20:31 stereotype judge
+Traceback (most recent call last):
+  File "/Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/eval/fairness/analyze.py", line 323, in <module>
+    main()
+  File "/Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/eval/fairness/analyze.py", line 319, in main
+    {"judge": judge, "report": report}[args.command](args)
+  File "/Users/neslihaneti/Desktop/multimodal_rag_Chandra _LLM/eval/fairness/analyze.py", line 221, in judge
+    verdict = evaluate.ask(STEREOTYPE_PROMPT.format(question=item["question"], given=answer)).upper().startswith("YES")
+              ^^^^^^^^^^^^
+AttributeError: module 'evaluate' has no attribute 'ask'

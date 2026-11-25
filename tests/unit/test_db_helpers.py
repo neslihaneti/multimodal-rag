@@ -9,8 +9,11 @@ def test_keyword_query_drops_question_words():
     assert db.keyword_query("What is the F1-score? Which ones does it have?") == "score | ones"
 
 
-def test_keyword_query_keeps_turkish_letters():
+def test_keyword_query_folds_turkish_letters():
+    # the folded query matches the folded tsv_folded column (phases/phase-11, 11b)
     assert db.keyword_query("Veri zehirlenmesi nedir?") == "veri | zehirlenmesi"
+    assert db.keyword_query("Güneş'in döngüsü kaç yıldır?") == db.keyword_query("Gunes'in dongusu kac yildir?") == "gunes | dongusu | yildir"
+    assert db.keyword_query("İŞLEM ÇIKTISI") == "islem | ciktisi"
 
 
 def test_keyword_query_is_empty_for_short_words():

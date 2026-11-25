@@ -80,3 +80,17 @@ def test_unfinished_documents_are_not_returned(chunks):
     names |= {c["file_name"] for c in db.dense_search(chunks["query"])}
     names |= {c["file_name"] for c in db.keyword_search("zebra")}
     assert names == {"test.pdf"}
+
+
+def test_keyword_search_ignores_turkish_diacritics(chunks):
+    # Turkish typed on an English keyboard finds the text with diacritics, and the other way round (phases/phase-11, 11b)
+    doc = db.insert_document("turkish.pdf", "hash-3")
+    db.mark_document_done(doc)
+    db.insert_chunks(db.insert_page(doc, 1, "/tmp/3.png", "text", "text_layer"),
+                     [{"heading": "T", "content": "Güneş lekesi döngüsü on bir yıldır.", "context": "", "embedding": unit(0, 1)}])
+    try:
+        assert [c["heading"] for c in db.keyword_search("gunes lekesi dongusu")] == ["T"]
+        assert [c["heading"] for c in db.keyword_search("GÜNEŞ DÖNGÜSÜ")] == ["T"]
+        assert "T" in [c["heading"] for c in db.hybrid_search("gunes dongusu", unit(1, 0))]
+    finally:
+        db.delete_document(doc)

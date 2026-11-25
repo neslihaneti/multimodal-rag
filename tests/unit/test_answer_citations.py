@@ -90,6 +90,28 @@ def test_question_language_matches_the_golden_set():
     assert [(q["id"], rag.question_language(q["question"])) for q in items] == [(q["id"], q["lang"]) for q in items]
 
 
+def test_question_language_matches_the_fairness_sets():
+    # every persona, wording style and stereotype question keeps its base question's language (phases/phase-11)
+    import glob
+    for path in sorted(glob.glob(os.path.join(ROOT, "eval", "fairness", "*.jsonl"))):
+        with open(path, encoding="utf-8") as f:
+            items = [json.loads(line) for line in f if line.strip()]
+        assert [(q["id"], rag.question_language(q["question"])) for q in items] == [(q["id"], q["lang"]) for q in items], path
+
+
+@pytest.mark.parametrize("question, language", [
+    ("Hi, I'm Ayşe Yılmaz, a 67-year-old woman from Turkey. How is the F1-score calculated?", "en"),  # a name is not a language
+    ("Hi, I'm Jürgen Müller. What is concept drift?", "en"),
+    ("Şükrü Öztürk here: what does full neuron coverage require?", "en"),
+    ("Gunes'in manyetik aktivite dongusu kac yildir?", "tr"),  # Turkish typed without diacritics
+    ("Veri zehirlenmesi saldirisi nedir?", "tr"),
+    ("Kavram kayması", "tr"),  # no function word, Turkish letters only
+    ("What does 'kavram kayması' mean?", "en"),
+])
+def test_question_language_counts_words_not_letters(question, language):
+    assert rag.question_language(question) == language
+
+
 @pytest.mark.parametrize("question, language, searched", [
     ("Yapay zeka tabanlı sistemlerde kavram kayması (concept drift) nedir?", "tr", None),
     ("What is concept drift and how is it tested?", "en", None),

@@ -1,0 +1,54 @@
+[
+ {
+  "n": 1,
+  "claim": "The 2022 recommended value of the inverse fine-structure constant is 137.035 999 177(21).",
+  "cited_pages": [
+   "doc2.pdf p.38"
+  ],
+  "ids": [
+   "d2q09__p_af_f_young",
+   "d2q09__p_as_m_young",
+   "d2q09__p_we_m_young"
+  ],
+  "runs": [
+   "11ab",
+   "phase9"
+  ]
+ },
+ {
+  "n": 2,
+  "claim": "Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value.",
+  "cited_pages": [
+   "doc3.pdf p.43"
+  ],
+  "ids": [
+   "d3q13__p_af_f_young",
+   "d3q13__p_af_m_old",
+   "d3q13__p_as_f_old",
+   "d3q13__p_as_m_young",
+   "d3q13__p_hi_m_old",
+   "d3q13__p_tr_f_young",
+   "d3q13__p_tr_m_old",
+   "d3q13__p_we_m_young"
+  ],
+  "runs": [
+   "11ab",
+   "phase9"
+  ]
+ },
+ {
+  "n": 3,
+  "claim": "Ground-based observation has successfully detected features like the polarized component of the white corona, demonstrating its value.",
+  "cited_pages": [
+   "doc3.pdf p.63"
+  ],
+  "ids": [
+   "d3q13__p_hi_f_young",
+   "d3q13__p_we_f_old"
+  ],
+  "runs": [
+   "11ab",
+   "phase9"
+  ]
+ }
+]

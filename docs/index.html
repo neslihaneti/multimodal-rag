@@ -23,6 +23,7 @@
           <a href="#testing">7-Layer Testing</a>
           <a href="#evaluation">Holdout Benchmarks</a>
           <a href="#failures">Failure Analysis</a>
+          <a href="#fairness">Bias &amp; Fairness</a>
           <a href="#limitations">Limitations</a>
           <a href="#calibration">Judge Calibration</a>
           <a href="https://github.com/neslihaneti/multimodal-rag/blob/main/docs/MODEL_CARD.md" target="_blank" style="color: var(--accent-purple); font-weight: 600;">Model Card</a>
@@ -856,6 +857,61 @@ telescope are a paraboloid and a hyperboloid [1]."</span>
         </div>
       </section>
 
+      <!-- BIAS & FAIRNESS (PHASE 11) -->
+      <section class="section" id="fairness">
+        <div class="section-heading">
+          <span class="section-kicker">PHASE 11 &bull; COUNTERFACTUAL FAIRNESS TESTING</span>
+          <h2>Persona and wording invariance, with a dev / holdout before-after</h2>
+          <p>
+            Every question was asked again with a self-introduction (10 personas per split: one woman and one man from each of five regions, young and old),
+            a length-matched control prefix and four wording styles, plus stereotype traps and bias-control questions. Generation is greedy, so any change
+            against the neutral wording is caused by the input. Thresholds were registered before the run; human labels used the strict cited-page rule.
+            The sealed final holdout set was not used.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <div class="table-header-bar">
+            <h3>Before (Phase 9) / after (Phase 11)</h3>
+            <span class="table-meta">dev 413 rows &bull; holdout 218 rows &bull; 135 / 135 tests pass</span>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr><th>Check (threshold)</th><th>Dev: before &rarr; after</th><th>Holdout: before &rarr; after</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>English question with a Turkish-letter name ("Ay&#351;e Y&#305;lmaz") answered in Turkish</td><td>15/20 &rarr; <strong>0/20</strong></td><td>8/10 &rarr; <strong>0/10</strong></td><td><span class="pill pill-fix">FIXED</span></td></tr>
+              <tr><td>Answers changed outside the fix (regression)</td><td>golden_dev 82/82 byte-identical</td><td>only the 10 fixed rows changed (146/156 identical)</td><td><span class="pill pill-pass">0 REGRESSIONS</span></td></tr>
+              <tr><td>Persona flips: became wrong / refused / hallucinated (&le; 1 question)</td><td>pass</td><td>pass</td><td><span class="pill pill-pass">PASS</span></td></tr>
+              <tr><td>Correctness gap region / gender / age (&le; 0.05)</td><td>0.05 / 0.02 / 0.02</td><td>0.05 / 0.02 / 0.02</td><td><span class="pill pill-pass">PASS</span></td></tr>
+              <tr><td>Refusal gap on unanswerable questions (0)</td><td>0</td><td>0</td><td><span class="pill pill-pass">PASS</span></td></tr>
+              <tr><td>Faithfulness gap, human-checked (&le; 0.05)</td><td>0.04 (judge said 0.06)</td><td>0.06 region / age, from one question</td><td><span class="pill pill-warn">HOLDOUT FAIL</span></td></tr>
+              <tr><td>Turkish without diacritics: MRR drop (&le; 0.10)</td><td>0.37 (n = 4)</td><td>0.42 (n = 2)</td><td><span class="pill pill-fail">KNOWN LIMIT</span></td></tr>
+              <tr><td>Answers endorsing a stereotype (0)</td><td>0/10</td><td>0/8</td><td><span class="pill pill-pass">PASS</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="split-grid">
+          <div class="bullet-card">
+            <h3>What was found and fixed</h3>
+            <ul class="clean-list">
+              <li><strong>Language routing by a name:</strong> the question language was decided by any of <code>&ccedil;&#287;&#305;&ouml;&#351;&uuml;</code>, so a Turkish name turned an English question Turkish. Now the language comes from the question's function words; the old rule was wrong on 30 of 713 test rows, the new one on 0.</li>
+              <li><strong>Accent-insensitive keyword index</strong> (<code>tsv_folded</code>): added, measured neutral on this English corpus, kept for Turkish documents.</li>
+              <li><strong>Judge noise separated from bias:</strong> the dev region gap (0.06) fell to 0.04 once the owner labelled the 62 "unsupported" claims.</li>
+            </ul>
+          </div>
+          <div class="bullet-card">
+            <h3>What stays open</h3>
+            <ul class="clean-list">
+              <li><strong>Holdout faithfulness gap 0.06:</strong> all 12 variants of one question give the same correct sentence and differ only in the excerpt number; the neutral wording also cites a wrong page. Without it: 0.014 / 0.000. Reported as failed, threshold unchanged.</li>
+              <li><strong>Turkish without diacritics:</strong> the hybrid search still ranks the gold page first; the reranker pushes it to 27 (dev) or 6 (holdout).</li>
+              <li><strong>One Turkish stereotype trap</strong> was not refused: the word "old" matched a page on ageing in test data; no stereotype endorsed.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <!-- LIMITATIONS & FAILURE MODES -->
       <section class="section" id="limitations">
         <div class="section-heading">
@@ -876,6 +932,7 @@ telescope are a paraboloid and a hyperboloid [1]."</span>
             <ul class="clean-list">
               <li><strong>Language-Drift in Generation (Resolved in Phase 9):</strong> The 4B VLM occasionally answered Turkish queries in English (e.g., <code>f57</code>). Phase 9 introduced deterministic <code>answer_language()</code> enforcement, reducing language mismatch to <code>0</code> with 89 passing tests.</li>
               <li><strong>Cross-Lingual Terminology Mismatch (Tested in Phase 10):</strong> Conceptual Turkish queries (e.g., <em>"Kavram kayması nedir?"</em>) cannot match English passages without query translation. Phase 10 proved translation lifted dev correctness to <strong>0.99</strong> (12/12 Turkish correct), but added ~9s latency; rolled back to Phase 9 to respect TTFT limits. Phase 10 code preserved; single-pass reranking is the planned fix.</li>
+              <li><strong>Diacritic-free Turkish (Phase 11):</strong> "Gunes'in &hellip; dongusu" loses the gold page at the cross-encoder reranker (rank 1 &rarr; 27), not in keyword search; kept as a known limitation.</li>
               <li><strong>Inflectional Stemming Deficit:</strong> PostgreSQL full-text search uses the unstemmed <code>simple</code> dictionary, so inflected Turkish words rely on dense vector recall.</li>
               <li><strong>Failed Holdout Questions:</strong> <code>f49</code> (flexibility vs. resilience nuance), <code>f51</code> (over-cautious false refusal on valid passage), and <code>f54</code> (omitted binding energy derivation).</li>
               <li><strong>Governance Artifacts:</strong> Full system reporting committed in <a href="https://github.com/neslihaneti/multimodal-rag/blob/main/docs/MODEL_CARD.md" style="color: var(--accent-cyan);"><code>docs/MODEL_CARD.md</code></a> and risk self-assessment in <a href="https://github.com/neslihaneti/multimodal-rag/blob/main/docs/NIST_AI_RMF.md" style="color: var(--accent-cyan);"><code>docs/NIST_AI_RMF.md</code></a>.</li>

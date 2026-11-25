@@ -27,7 +27,7 @@ NOT_FOUND = re.compile(r"bilgi (verilmemiş|bulunmamakta|bulunmuyor|yer almamakt
 # excerpts while refusing, nor from refusing a Turkish question in English (phases/phase-5b)
 REFUSAL = {"tr": "Belgelerde bu konuda bilgi yok.", "en": "The documents do not contain information about this."}
 # No re.IGNORECASE: with it "ı" also matches "i" and "I", and every English question looks Turkish
-TURKISH = re.compile(r"[çğıöşüÇĞİÖŞÜ]|\b(?:[Nn]e|[Nn]eler|[Nn]edir|[Hh]angi|[Kk]aç|[Nn]asıl|[Nn]eden|[Nn]için|m[iıuü]|ve|ile|için|bu|bir|göre|edilir)\b")
+TURKISH = re.compile(r"[çğıöşüÇĞİÖŞÜ]")  # letters only; the words are in TURKISH_WORDS below
 
 
 # An explicit request for a language ("İngilizce cevap ver", "answer in Turkish") wins over the question's own language
@@ -38,8 +38,29 @@ ASKED_LANGUAGE = {
 LANGUAGE_NAMES = {"tr": "Turkish", "en": "English"}
 
 
+# The question's language is decided by its words, not by single letters: one Turkish letter in a name
+# ("Hi, I'm Ayşe Yılmaz, …") made 16 of 20 English questions get Turkish answers (phases/phase-11/REPORT.md, finding A).
+# Turkish function words are listed with and without diacritics, so Turkish typed on an English keyboard still counts.
+TURKISH_WORDS = frozenset("""
+ne neler nedir nelerdir hangi hangisi hangileri kaç kac nasıl nasil neden niçin nicin niye nerede kim kimdir mi mı mu mü
+midir mıdır mudur müdür ve ile için icin bu bir bi göre gore edilir kadar arasındaki arasindaki ilgili hakkında hakkinda
+olan olarak nedenle merhaba ben belgeye belgelere belgelerde raporda raporu var yok
+""".split())
+ENGLISH_WORDS = frozenset("""
+the a an is are was were what which who whom when where why how does do did of in on for to and with from by i i'm my me
+you your can could should would this that these those it its be been has have there about according hi please
+""".split())
+WORD = re.compile(r"[\w']+")
+
+
 def question_language(question):
-    return "tr" if TURKISH.search(question) else "en"
+    """'tr' when Turkish words outweigh English ones; a word with a Turkish letter counts as Turkish, so plain Turkish
+    sentences without function words are still recognised."""
+    words = WORD.findall(question)
+    lower = [w.lower() for w in words]
+    turkish = sum(w in TURKISH_WORDS for w in lower) + sum(bool(TURKISH.search(w)) and w.lower() not in TURKISH_WORDS for w in words)
+    english = sum(w in ENGLISH_WORDS for w in lower)
+    return "tr" if turkish > english else "en"
 
 
 def answer_language(question):

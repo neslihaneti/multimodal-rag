@@ -109,3 +109,30 @@ noticed → root cause → fix → result → lesson**. New phases add entries; 
 - **Cause:** In Python's Unicode case folding, `ı` (U+0131) is treated as equivalent to `i` and `I`. So a case-insensitive `[ı]` matches every `i`.
 - **Fix:** The flag was removed and the capital letters were written into the class explicitly. Language detection is compared with the golden `lang` field on 82 questions in a unit test.
 - **Lesson:** Do not use `re.IGNORECASE` in a regex that works with Turkish characters; or test the result against labelled data.
+
+## Z16. A `None` document crashed the report after all answers were done (Phase 11)
+
+- **Symptom:** The stereotype run answered all 13 questions, then `evaluate.py answers` failed while writing the report (`'<' not supported between 'str' and 'NoneType'`); the runner retried 15 times and gave up.
+- **Cause:** The stereotype traps belong to no document, and `build.py` wrote `"document": null`; the report sorts rows by document.
+- **Fix:** The traps get the document name `"none (stereotype trap)"`; a unit test checks that every row names a document. The 13 questions were run again from scratch (the checkpoint was kept aside, not edited); the persona and style files stayed byte-identical, so their 400 answers stayed valid.
+- **Lesson:** Run a new golden file end to end with `--limit 2` before a multi-hour run: the report step only runs at the very end.
+
+## Z17. `import evaluate` loaded the HuggingFace package (Phase 11)
+
+- **Symptom:** `eval/fairness/analyze.py judge` failed: `module 'evaluate' has no attribute 'ask'`.
+- **Cause:** Python puts the script's own folder (`eval/fairness/`) first on `sys.path`, not the project root, so `import evaluate` found the installed HuggingFace `evaluate` package.
+- **Fix:** The project root is inserted into `sys.path` before the import.
+
+## Z18. A wait condition matched "thresholds failed" (Phase 11)
+
+- **Symptom:** The background wait for the Part 2 chain (`grep -E "…|failed|…"` on the chain log) reported the end after the first of four steps; the chain was still running.
+- **Cause:** The fairness report prints "❌ thresholds failed: …" when a threshold fails, which is a normal result, not a crash.
+- **Fix:** The wait matches only the runner's own messages (`part 2 done|retrieval failed|no report|gave up|keep failing`) and checks that the process is alive. Nothing was lost; only the notice came early.
+- **Lesson:** Wait for a runner's specific end markers, not for generic words that the measured output can also contain.
+
+## Z19. A claim's page must come from its own citation number (Phase 11)
+
+- **Symptom:** The first holdout label list showed every page an answer cited next to each claim (one claim with 4 pages), which would have made the strict page rule impossible to apply.
+- **Cause:** A row's `cited` lists the cited pages in order of first appearance of each `[n]` in the answer; the judgment's `cited` holds the claim's own excerpt numbers `n`. The two were joined without mapping `n` → page.
+- **Fix:** `n` is mapped through the distinct `[n]` of the answer in order of appearance (asserted to have the same length as `cited`); the list was rebuilt before the user saw it (3 claim groups instead of 5).
+- **Lesson:** When a label decision depends on a page, show the page of that claim's citation only, and assert the mapping.
